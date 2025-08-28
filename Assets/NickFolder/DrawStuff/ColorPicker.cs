@@ -2,17 +2,24 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class thingy : MonoBehaviour
+public class ColorPicker : MonoBehaviour
 {
+    [SerializeField] GameObject drawThingy;
+    [SerializeField] Color color;
     // Start is called before the first frame update
     void Start()
     {
-
+        
     }
 
     // Update is called once per frame
     void Update()
     {
         
+    }
+
+    private void OnMouseDown()
+    {
+        drawThingy.GetComponent<SpriteRenderer>().color = color;
     }
 }
