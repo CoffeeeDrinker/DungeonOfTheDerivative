@@ -2,9 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class ColorPicker : MonoBehaviour
+public class ChangeColor : MonoBehaviour
 {
-    [SerializeField] GameObject drawThingy;
+    [SerializeField] Draw drawer;
     [SerializeField] Color color;
     // Start is called before the first frame update
     void Start()
@@ -18,8 +18,8 @@ public class ColorPicker : MonoBehaviour
         
     }
 
-    private void OnMouseDown()
+    public void OnMouseDown()
     {
-        drawThingy.GetComponent<SpriteRenderer>().color = color;
+        drawer.ChangeColor(color);
     }
 }

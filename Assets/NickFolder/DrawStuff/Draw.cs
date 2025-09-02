@@ -6,6 +6,9 @@ public class Draw : MonoBehaviour
 {
     [SerializeField] GameObject drawThing;
     [SerializeField] GameObject eraseThing;
+    [SerializeField] Color defaultColor;
+    [SerializeField] double defaultSize;
+    [SerializeField] double defaultEraserSize;
     private int currOrder;
     private bool drawing;
 
@@ -13,6 +16,9 @@ public class Draw : MonoBehaviour
     void Start()
     {
         currOrder = 0;
+        drawThing.transform.localScale = new Vector2((float)defaultSize, (float)defaultSize);
+        eraseThing.transform.localScale = new Vector2((float)defaultEraserSize, (float)defaultEraserSize);
+        ChangeColor(defaultColor);
         drawing = false;
     }
 
@@ -43,5 +49,20 @@ public class Draw : MonoBehaviour
             eraseObject.transform.GetComponent<Renderer>().sortingOrder = currOrder;
             
         }   
+    }
+
+    public void ChangeColor(Color color) {
+        drawThing.GetComponent<SpriteRenderer>().color = color;
+        currOrder++;
+    }
+
+    public void ChangeDrawSize(int size)
+    {
+        drawThing.transform.localScale = new Vector2((float)defaultSize * size, (float)defaultSize * size);
+    }
+
+    public void ChangeEraseSize(int size)
+    {
+        eraseThing.transform.localScale = new Vector2((float)defaultSize * size, (float)defaultSize * size);
     }
 }
