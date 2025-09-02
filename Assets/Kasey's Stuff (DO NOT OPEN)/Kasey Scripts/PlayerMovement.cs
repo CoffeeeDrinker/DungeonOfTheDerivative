@@ -32,7 +32,6 @@ public class PlayerMovement : MonoBehaviour
                 PlayAnimation("walkDown");
             } 
         } else{ //Find direction to play idle animation in
-            Debug.Log("idle"+currentAnim.Substring(4));
             PlayAnimation("idle"+currentAnim.Substring(4));
         }
     }
