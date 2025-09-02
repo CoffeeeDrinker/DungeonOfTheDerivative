@@ -5,4 +5,6 @@ using UnityEngine;
 public interface ICombatant
 {
     int Turn();
+    bool IsAlive();
+    public bool TakeDamage(int damage);
 }

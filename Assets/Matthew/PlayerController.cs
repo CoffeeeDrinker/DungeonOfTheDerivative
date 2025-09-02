@@ -6,7 +6,7 @@ public class PlayerController : MonoBehaviour, ICombatant
 {
     public GameObject player;
     private int health;
-
+    AttackButton control;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,15 +19,17 @@ public class PlayerController : MonoBehaviour, ICombatant
         //idle animation
     }
 
-    public int Turn()
+    int ICombatant.Turn()
     {
         //Tell player it's their turn
+        Debug.Log("It's your turn!");
         //Wait for input
         //Recieve input
         //Send to math screen
         //If fail then miss, otherwise calculate damage
+        int damage = 10;
         //return damage
-        return 0;
+        return damage;
     }
 
     //Decreases health by damage, to a minimum of 0
@@ -47,7 +49,7 @@ public class PlayerController : MonoBehaviour, ICombatant
         return health;
     }
 
-    public bool isAlive()
+    public bool IsAlive()
     {
         if (health > 0)
         {

@@ -4,15 +4,26 @@ using UnityEngine;
 
 public class TurnSystem : MonoBehaviour
 {
-    List<ICombatant> combatants; //First entry is player, rest are enemies
-
+    ICombatant player;
+    ICombatant enemy;
     // Start is called before the first frame update
     void Start()
     {
+        player = GetComponent<PlayerController>();
+        enemy = GetComponent<EnemyController>();
+
         do
         {
-            //Run the first turn
-        } while (((PlayerController)combatants[0]).isAlive()); //Run until one side is completely dead
+            enemy.TakeDamage(player.Turn());
+            if (enemy.IsAlive())
+            {
+                player.TakeDamage(enemy.Turn());
+            }
+            else
+            {
+                //add xp, leave encounter, break
+            }
+        } while (player.IsAlive()); //Run until one side is completely dead
     }
 
     // Update is called once per frame
