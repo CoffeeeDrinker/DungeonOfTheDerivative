@@ -1,0 +1,8 @@
+﻿Mr. Huff
+You are going to fail AP Calculus 2.
+You are a failure.
+~
+This is my second dialogue option.
+~
+This is my third dialogue option.
+~~

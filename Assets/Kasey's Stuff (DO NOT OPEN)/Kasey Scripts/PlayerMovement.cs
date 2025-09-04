@@ -12,6 +12,7 @@ public class PlayerMovement : MonoBehaviour
     //Player sprites/animation
     public Animator PlayerAnim;
     private string currentAnim = "idleDown";
+    public string currentFacing = "down";
 
     void Update()
     {
@@ -33,6 +34,7 @@ public class PlayerMovement : MonoBehaviour
             } 
         } else{ //Find direction to play idle animation in
             PlayAnimation("idle"+currentAnim.Substring(4));
+            currentFacing = currentAnim.Substring(4).ToLower();
         }
     }
 
