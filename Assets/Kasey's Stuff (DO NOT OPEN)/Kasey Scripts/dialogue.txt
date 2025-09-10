@@ -1,8 +1,16 @@
 ﻿Mr. Huff
 You are going to fail AP Calculus 2.
+Then you are going to fail Linear Algebra.
 You are a failure.
 ~
 This is my second dialogue option.
 ~
 This is my third dialogue option.
+~~
+NPC2
+Dialogue Line 1
+~
+Dialogue Line 2
+~
+Dialogue Line 3
 ~~

@@ -1,5 +1,9 @@
+using EasyTextEffects;
+using EasyTextEffects.Effects;
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
+using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -8,25 +12,33 @@ public class NPCDialogueScript : MonoBehaviour
     //Player stuff
     public Transform player;
     public PlayerMovement playerScript;
+    public bool stopMovementWhenTalking;
 
     //NPC and NPC Dialogue Stuff
-    //public string NPCName;
     public TextAsset allDialogueText;
     public List<Dialogue> NPCDialogue = new List<Dialogue>();
     private bool playerIsHere = false;
 
     private int currentDialogueI = 0;
     private int currentDialogueLineI = 0;
+    private string file;
 
     //Dialogue Text Box Stuff
     public GameObject dialogueTextBox;
-    public Text dialogueText;
+    public TextMeshProUGUI dialogueText;
+    public TextEffect typewriterInstance;
+
+    //Typewriter
+    public Effect_Color typewriterEffect;
+    private bool typewriterEffectComplete = true;
+    public float dialogueCooldownTime;
+    private float startTime;
 
     //All code in the Start method gathers all the dialogue from the text file and assigns it to the NPC
     void Start()
     {
         //Convert text file to string
-        string file = allDialogueText.text;
+        file = allDialogueText.text;
 
         //Loop until there is no more dialgoue
         while (file.Length > 0) 
@@ -52,21 +64,59 @@ public class NPCDialogueScript : MonoBehaviour
                 }
                 file = file.Substring(file.IndexOf("~") + 1);
             }
-            else //If the name isn't correct skip this person
+            else
             {
-                
+                file = file.Substring(file.IndexOf("~~") + 2).Trim();
             }
-            file = "";
         } 
     }
 
     // Update is called once per frame
     void Update()
     {
+        //Check if player is nearby, facing NPC, and clicks/presses E
         if (playerIsHere && PlayerFacingNPC() && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0)))
         {
-            dialogueTextBox.SetActive(true);
-            dialogueText.text = "";
+            //Disable Player Movement
+            if (stopMovementWhenTalking)
+            {
+                playerScript.enabled = false;
+            }
+
+            //Decide what is displayed in text box
+            if (currentDialogueLineI >= NPCDialogue[currentDialogueI].NumLines() && typewriterEffectComplete)
+            {
+                //Reset dialogue
+                dialogueTextBox.SetActive(false);
+                currentDialogueLineI = 0;
+                dialogueText.text = "";
+                typewriterInstance.StopManualEffects();
+
+                //Enable Player Movement
+                playerScript.enabled = true;
+            }
+            else
+            {
+                //Activate dialogue box
+                typewriterInstance.Refresh();
+                dialogueTextBox.SetActive(true);
+                if (typewriterEffectComplete) //If the typewriter effect is already done/not active
+                {
+                    typewriterInstance.StopManualEffects();
+                    startTime = Time.fixedTime;
+                    dialogueText.text = NPCDialogue[currentDialogueI].GetLine(currentDialogueLineI);
+                    typewriterInstance.Refresh();
+
+                    typewriterInstance.StartManualEffects();
+                    currentDialogueLineI++;
+                    typewriterEffectComplete = false;
+                }
+                else //End typewriter effect
+                {
+                    typewriterEffectComplete = true;
+                    typewriterInstance.StopManualEffects();
+                }
+            }
         }
     }
 
@@ -78,6 +128,11 @@ public class NPCDialogueScript : MonoBehaviour
     void OnTriggerExit2D(Collider2D col)
     {
         playerIsHere = false;
+        dialogueTextBox.SetActive(false);
+        dialogueText.text = "";
+        typewriterInstance.Refresh();
+        currentDialogueLineI = 0;
+        currentDialogueI = 0;
     }
 
     public void PrintAllDialogue()
@@ -113,5 +168,10 @@ public class NPCDialogueScript : MonoBehaviour
 
         //If all else fails return false
         return false;
+    }
+
+    public void SetTypewriterComplete()
+    {
+        typewriterEffectComplete = true;
     }
 }

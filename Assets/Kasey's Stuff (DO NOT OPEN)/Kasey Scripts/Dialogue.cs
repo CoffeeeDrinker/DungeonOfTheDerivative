@@ -6,24 +6,29 @@ using UnityEngine;
 //Creates a Dialogue object that contains a list of lines that the NPC will say when the user talks to them
 public class Dialogue
 {
-    public List<string> dialogueLine = new List<string>();
+    public List<string> dialogueLines = new List<string>();
 
     public void AddLine(string newLine)
     {
-        dialogueLine.Add(newLine);
+        dialogueLines.Add(newLine.TrimStart('\n').TrimEnd('\n'));
     }
 
     public string GetLine(int index)
     {
-        return dialogueLine[index];
+        return dialogueLines[index];
+    }
+
+    public int NumLines()
+    {
+        return dialogueLines.Count;
     }
 
     public string GetAllLines()
     {
         string allLines = "";
-        foreach (string line in dialogueLine)
+        foreach (string line in dialogueLines)
         {
-            allLines += line+"\n";
+            allLines += "Line: "+line+"\n";
         }
         return allLines;
     }

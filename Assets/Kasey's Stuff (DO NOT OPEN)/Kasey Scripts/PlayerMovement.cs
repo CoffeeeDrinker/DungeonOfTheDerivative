@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     //Player Movement Stuff
     public Rigidbody2D PlayerRB;
     public float speed;
-    private Vector2 move = new Vector2();
+    private Vector3 move = new Vector2();
 
     //Player sprites/animation
     public Animator PlayerAnim;
@@ -19,6 +19,7 @@ public class PlayerMovement : MonoBehaviour
         //Move Player
         move.x = Input.GetAxis("Horizontal");
         move.y = Input.GetAxis("Vertical");
+        move.Normalize();
         PlayerRB.velocity = move * speed * Time.deltaTime;
 
         //Walk Animation
