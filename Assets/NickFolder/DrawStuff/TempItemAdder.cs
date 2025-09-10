@@ -9,7 +9,7 @@ public class TempItemAdder : MonoBehaviour
     void Start()
     {
         inventory.AddItem("TestItem1", 1);
-        inventory.AddItem("TestItem1", 1);
+        inventory.AddItem("TestItem1", 4);
         inventory.AddItem("TestItem2", 1);
     }
 

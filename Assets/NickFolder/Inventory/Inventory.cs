@@ -7,6 +7,7 @@ public class Inventory : MonoBehaviour
     [SerializeField] ItemManager itemManager;
     [SerializeField] Grid grid;
     [SerializeField] GameObject canvas;
+    [SerializeField] HeldItemManager heldItemManager;
     bool inventoryOpen;
     List<Item> currItems;
 
@@ -23,6 +24,12 @@ public class Inventory : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.E))
         {
+            if(inventoryOpen && heldItemManager.HoldingItem())
+            {
+                grid.AddItem(heldItemManager.GetItem(), heldItemManager.GetItemAmount());
+                heldItemManager.RemoveItem();
+            }
+
             canvas.GetComponent<Canvas>().enabled = !inventoryOpen;
             inventoryOpen = !inventoryOpen;
         }
