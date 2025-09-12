@@ -33,11 +33,11 @@ public class HeldItemManager : MonoBehaviour
         return currItem != null;
     }
 
-    public string GetItemName()
+    public ItemNameEnum GetItemName()
     {
         if(currItem == null)
         {
-            return "ERROR: Not holding item";
+            return ItemNameEnum.ERROR;
         } else
         {
             return currItem.GetName();

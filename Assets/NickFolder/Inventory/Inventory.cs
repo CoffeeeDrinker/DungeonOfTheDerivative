@@ -35,12 +35,10 @@ public class Inventory : MonoBehaviour
         }
     }
 
-    public void AddItem(string itemName, int amount)
+    public void AddItem(ItemNameEnum itemName, int amount)
     {
         Item item = gameObject.AddComponent<Item>();
         item.SetName(itemName);
-        Debug.Log(itemName);
-        Debug.Log(item.GetName() + "?");
         item.SetSprite(itemManager.GetSprite(itemName));
         currItems.Add(item);
         grid.AddItem(item, amount);

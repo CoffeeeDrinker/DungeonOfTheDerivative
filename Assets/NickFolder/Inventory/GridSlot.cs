@@ -10,15 +10,21 @@ public class GridSlot : MonoBehaviour
     Item currItem;
     int amount;
     Image itemSprite;
+    ItemEffectsBackground itemEffectsBackground;
+    GameObject itemEffectsBackgroundImage;
     TextMeshProUGUI amountText;
+    [SerializeField] ItemManager itemManager;
     [SerializeField] Sprite defaultSprite;
     [SerializeField] HeldItemManager heldItemManager;
+    
 
     void Start()
     {
         currItem = null;
         itemSprite = transform.GetChild(0).GetComponent<Image>();
         amountText = transform.GetChild(1).GetComponent<TextMeshProUGUI>();
+        itemEffectsBackground = transform.GetChild(2).GetComponent<ItemEffectsBackground>();
+        itemEffectsBackgroundImage = transform.GetChild(2).gameObject;
         itemSprite.sprite = defaultSprite;
         amount = 0;
     }
@@ -35,11 +41,11 @@ public class GridSlot : MonoBehaviour
         return currItem != null;
     }
 
-    public string GetItemName()
+    public ItemNameEnum GetItemName()
     {
         if(currItem == null)
         {
-            return "";
+            return ItemNameEnum.ERROR;
         } else
         {
             return currItem.GetName();
@@ -61,6 +67,24 @@ public class GridSlot : MonoBehaviour
         if(amount > 1)
         {
             amountText.text = amount.ToString();
+        } else
+        {
+            amountText.text = "";
+        }
+    }
+
+    public void SubtractItem()
+    {
+        amount--;
+        if(amount <= 0)
+        {
+            RemoveItem();
+        } else if(amount > 1)
+        {
+            amountText.text = amount.ToString();
+        } else
+        {
+            amountText.text = "";
         }
     }
 
@@ -68,6 +92,8 @@ public class GridSlot : MonoBehaviour
     {
         currItem = null;
         itemSprite.sprite = defaultSprite;
+        itemEffectsBackground.ClearBackground();
+        itemEffectsBackgroundImage.SetActive(false);
         amount = 0;
         amountText.text = "";
     }
@@ -100,6 +126,17 @@ public class GridSlot : MonoBehaviour
             } else
             {
                 heldItemManager.AddItem(currItem, heldItemManager.GetItemAmount() - 1, GetComponent<GridSlot>());
+            }
+        } else if(currItem != null)
+        {
+            if(itemEffectsBackgroundImage.activeSelf)
+            {
+                itemEffectsBackground.ClearBackground();
+                itemEffectsBackgroundImage.SetActive(false);
+            } else
+            {
+                itemEffectsBackgroundImage.SetActive(true);
+                itemEffectsBackground.LoadItemBackground(currItem.GetName());
             }
         }
     }

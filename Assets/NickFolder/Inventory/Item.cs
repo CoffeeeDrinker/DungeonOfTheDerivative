@@ -4,10 +4,10 @@ using UnityEngine;
 
 public class Item : MonoBehaviour
 {
-    string itemName;
+    ItemNameEnum itemName;
     Sprite itemSprite;
 
-    public void SetName(string name)
+    public void SetName(ItemNameEnum name)
     {
         itemName = name;
     }
@@ -17,7 +17,7 @@ public class Item : MonoBehaviour
         itemSprite = sprite;
     }
 
-    public string GetName()
+    public ItemNameEnum GetName()
     {
         return itemName;
     }
