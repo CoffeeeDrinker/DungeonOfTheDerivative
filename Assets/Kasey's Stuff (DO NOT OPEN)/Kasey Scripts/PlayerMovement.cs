@@ -7,7 +7,7 @@ public class PlayerMovement : MonoBehaviour
     //Player Movement Stuff
     public Rigidbody2D PlayerRB;
     public float speed;
-    private Vector3 move = new Vector2();
+    public Vector3 move = new Vector3();
 
     //Player sprites/animation
     public Animator PlayerAnim;

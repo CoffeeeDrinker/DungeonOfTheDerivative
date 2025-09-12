@@ -37,6 +37,7 @@ public class NPCDialogueScript : MonoBehaviour
     //All code in the Start method gathers all the dialogue from the text file and assigns it to the NPC
     void Start()
     {
+        /*
         //Convert text file to string
         file = allDialogueText.text;
 
@@ -69,6 +70,7 @@ public class NPCDialogueScript : MonoBehaviour
                 file = file.Substring(file.IndexOf("~~") + 2).Trim();
             }
         } 
+        */
     }
 
     // Update is called once per frame
@@ -81,6 +83,7 @@ public class NPCDialogueScript : MonoBehaviour
             if (stopMovementWhenTalking)
             {
                 playerScript.enabled = false;
+                playerScript.move = new Vector3(0, 0, 0);
             }
 
             //Decide what is displayed in text box

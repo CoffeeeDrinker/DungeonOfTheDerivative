@@ -8,9 +8,13 @@ This is my second dialogue option.
 This is my third dialogue option.
 ~~
 NPC2
-Dialogue Line 1
+Hello!
+I am a student. 
 ~
-Dialogue Line 2
-~
-Dialogue Line 3
+I also think that you are going to fail.
+~~
+NPC3
+Hi there idiot.
+You're stupid.
+bye
 ~~
