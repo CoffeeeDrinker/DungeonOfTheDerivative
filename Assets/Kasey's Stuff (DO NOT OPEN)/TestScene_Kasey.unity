@@ -637,7 +637,7 @@ SpriteRenderer:
   m_SortingLayerID: 0
   m_SortingLayer: 0
   m_SortingOrder: 0
-  m_Sprite: {fileID: 7482667652216324306, guid: 311925a002f4447b3a28927169b83ea6, type: 3}
+  m_Sprite: {fileID: 2829232388215122354, guid: 1900f98d8e1be9f48874bda69c75e532, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -718,7 +718,7 @@ Animator:
   m_GameObject: {fileID: 558174819}
   m_Enabled: 1
   m_Avatar: {fileID: 0}
-  m_Controller: {fileID: 0}
+  m_Controller: {fileID: 9100000, guid: 24f9e22282214304db4efe0d0a821501, type: 2}
   m_CullingMode: 0
   m_UpdateMode: 0
   m_ApplyRootMotion: 0
@@ -768,13 +768,13 @@ BoxCollider2D:
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
-    oldSize: {x: 1, y: 1}
+    oldSize: {x: 1, y: 2}
     newSize: {x: 1, y: 1}
     adaptiveTilingThreshold: 0.5
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 1}
+  m_Size: {x: 0.8, y: 1.8}
   m_EdgeRadius: 0
 --- !u!1 &619394800
 GameObject:
@@ -1470,8 +1470,9 @@ GameObject:
   m_Component:
   - component: {fileID: 1957497728}
   - component: {fileID: 1957497729}
+  - component: {fileID: 1957497730}
   m_Layer: 0
-  m_Name: DialogueAssigner
+  m_Name: GameManager
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -1509,6 +1510,21 @@ MonoBehaviour:
   - {fileID: 1059428256}
   - {fileID: 807938415}
   allDialogueText: {fileID: 4900000, guid: 999034be586677149a6e25a53d01e46e, type: 3}
+--- !u!114 &1957497730
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1957497727}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba1884cd3f5135c49b53e2f22440c38f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mathProblemsFile: {fileID: 4900000, guid: 8e41dce351b1f624b964e6b1750cfb8b, type: 3}
+  images:
+  - {fileID: -3521443743514171454, guid: 1900f98d8e1be9f48874bda69c75e532, type: 3}
 --- !u!1 &1971967890
 GameObject:
   m_ObjectHideFlags: 0
