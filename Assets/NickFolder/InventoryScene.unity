@@ -3888,12 +3888,12 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35349fc6e7d4bf2468b30c763901a27a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemEffects: 00000000020000000300000001000000
+  itemEffects: 00000000020000000300000004000000
   itemWorldButtons:
   - {fileID: 696733601738147440, guid: 4d5adabe6b93d6a4785894372d59c0b3, type: 3}
-  - {fileID: 696733601738147440, guid: 360ed9373708ece42bb1384c79cedf04, type: 3}
-  - {fileID: 696733601738147440, guid: 3ed5fed1582a9764b8a9773dcf269893, type: 3}
-  - {fileID: 696733601738147440, guid: 456eb4a806139c342a6b8a8ac1ad356e, type: 3}
+  - {fileID: 696733601738147440, guid: d3e1f5b4fb722c544a69f609eb9cfb1b, type: 3}
+  - {fileID: 696733601738147440, guid: 25ca8f9889fb11449b16468a317443a2, type: 3}
+  - {fileID: 696733601738147440, guid: b3d58e3bc6061b34396cd43b2ec0b033, type: 3}
 --- !u!4 &954644570
 Transform:
   m_ObjectHideFlags: 0

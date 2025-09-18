@@ -12,10 +12,10 @@ GameObject:
   - component: {fileID: 259662225147939502}
   - component: {fileID: 4779391047592692483}
   - component: {fileID: 3870738324601233757}
+  - component: {fileID: 1729127766418400078}
   - component: {fileID: -8301857645879095506}
-  - component: {fileID: 7966283441669369936}
   m_Layer: 5
-  m_Name: DiscardButton
+  m_Name: PetButton
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -68,7 +68,7 @@ MonoBehaviour:
   m_OnCullStateChanged:
     m_PersistentCalls:
       m_Calls: []
-  m_Sprite: {fileID: 2734770117860449740, guid: 71c670565dc623a419a99336e560423d, type: 3}
+  m_Sprite: {fileID: 6408437906761009445, guid: 4a3a3f3195785264a951ed474ee650aa, type: 3}
   m_Type: 0
   m_PreserveAspect: 0
   m_FillCenter: 1
@@ -122,10 +122,10 @@ MonoBehaviour:
   m_OnClick:
     m_PersistentCalls:
       m_Calls:
-      - m_Target: {fileID: 7966283441669369936}
-        m_TargetAssemblyTypeName: Discard, Assembly-CSharp
-        m_MethodName: DiscardItem
-        m_Mode: 1
+      - m_Target: {fileID: 1729127766418400078}
+        m_TargetAssemblyTypeName: Heal, Assembly-CSharp
+        m_MethodName: HealPlayer
+        m_Mode: 3
         m_Arguments:
           m_ObjectArgument: {fileID: 0}
           m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
@@ -146,6 +146,18 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
+--- !u!114 &1729127766418400078
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 696733601738147440}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 5eca3a1a8edb1de45a88a6aa466b91b9, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!114 &-8301857645879095506
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,17 +168,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5c740e9b99484f04a8bc4a48fbd4ca16, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &7966283441669369936
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 696733601738147440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 14bb4fcf90183a24386469e9203ac07e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

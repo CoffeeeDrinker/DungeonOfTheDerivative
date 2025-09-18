@@ -36,11 +36,43 @@ public class ItemManager : MonoBehaviour
     void LoadItemEffectWorldMap()
     {
         itemEffectWorldMap = new Dictionary<ItemNameEnum, List<ItemEffectEnums>>();
+
+        //Health Potion
         List<ItemEffectEnums> itemEffects = new List<ItemEffectEnums>();
-        //Health potion
         itemEffects.Add(ItemEffectEnums.heal);
         itemEffects.Add(ItemEffectEnums.discard);
         itemEffectWorldMap[ItemNameEnum.healthPotion] = itemEffects;
-        //
+
+        //Bomb
+        itemEffects = new List<ItemEffectEnums>();
+        itemEffects.Add(ItemEffectEnums.blowUp);
+        itemEffects.Add(ItemEffectEnums.discard);
+        itemEffectWorldMap[ItemNameEnum.bomb] = itemEffects;
+
+        //Blue Cards
+        itemEffects = new List<ItemEffectEnums>();
+        itemEffects.Add(ItemEffectEnums.discard);
+        itemEffectWorldMap[ItemNameEnum.blueCards] = itemEffects;
+
+        //Fred
+        itemEffects = new List<ItemEffectEnums>();
+        itemEffects.Add(ItemEffectEnums.pet);
+        itemEffects.Add(ItemEffectEnums.discard);
+        itemEffectWorldMap[ItemNameEnum.fred] = itemEffects;
+
+        //Red Cards
+        itemEffects = new List<ItemEffectEnums>();
+        itemEffects.Add(ItemEffectEnums.discard);
+        itemEffectWorldMap[ItemNameEnum.redCards] = itemEffects;
+
+        //Stamina Potion
+        itemEffects = new List<ItemEffectEnums>();
+        itemEffects.Add(ItemEffectEnums.discard);
+        itemEffectWorldMap[ItemNameEnum.staminaPotion] = itemEffects;
+
+        //Super Stamina Potion
+        itemEffects = new List<ItemEffectEnums>();
+        itemEffects.Add(ItemEffectEnums.discard);
+        itemEffectWorldMap[ItemNameEnum.superStaminaPotion] = itemEffects;
     }
 }
