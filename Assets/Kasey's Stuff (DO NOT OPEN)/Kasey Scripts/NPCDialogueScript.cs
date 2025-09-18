@@ -3,6 +3,7 @@ using EasyTextEffects.Effects;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
+using Unity.VisualScripting;
 using UnityEditor.Rendering;
 using UnityEngine;
 using UnityEngine.UI;
@@ -34,46 +35,9 @@ public class NPCDialogueScript : MonoBehaviour
     public float dialogueCooldownTime;
     private float startTime;
 
-    //All code in the Start method gathers all the dialogue from the text file and assigns it to the NPC
-    void Start()
-    {
-        /*
-        //Convert text file to string
-        file = allDialogueText.text;
+    //Draw Screen stuff (probably not here in final game)
+    public GameObject drawscreenStuff;
 
-        //Loop until there is no more dialgoue
-        while (file.Length > 0) 
-        {
-            //Check if NPC name is correct
-            if (transform.name.Trim() == file.Substring(0, file.IndexOf("\n")).Trim())
-            {
-                //Delete the name from the file
-                file = file.Substring(file.IndexOf("\n") + 1);
-
-                //Get Dialogue objects to add to the NPCDialogue
-                while (file.IndexOf("~") != 0)
-                {
-                    //Create new Dialogue object and add lines to it
-                    Dialogue newDialogue = new Dialogue();
-                    while (file.IndexOf("~") > 1)
-                    {
-                        newDialogue.AddLine(file.Substring(0, file.IndexOf("\n")).Trim());
-                        file = file.Substring(file.IndexOf("\n") + 1);
-                    }
-                    NPCDialogue.Add(newDialogue);
-                    file = file.Substring(file.IndexOf("~") + 1);
-                }
-                file = file.Substring(file.IndexOf("~") + 1);
-            }
-            else
-            {
-                file = file.Substring(file.IndexOf("~~") + 2).Trim();
-            }
-        } 
-        */
-    }
-
-    // Update is called once per frame
     void Update()
     {
         //Check if player is nearby, facing NPC, and clicks/presses E
@@ -97,31 +61,34 @@ public class NPCDialogueScript : MonoBehaviour
                 typewriterInstance.StopManualEffects();
 
                 //Check if combat should start (Finish this when Blond Guy 3 has combat fully implemented)
-                //StartCombat();
+                StartCombat();
 
                 //Enable Player Movement
                 playerScript.enabled = true;
             }
             else
             {
-                //Activate dialogue box
-                typewriterInstance.Refresh();
-                dialogueTextBox.SetActive(true);
-                if (typewriterEffectComplete) //If the typewriter effect is already done/not active
+                if (!drawscreenStuff.activeSelf)
                 {
-                    typewriterInstance.StopManualEffects();
-                    startTime = Time.fixedTime;
-                    dialogueText.text = NPCDialogue[currentDialogueI].GetLine(currentDialogueLineI);
+                    //Activate dialogue box
                     typewriterInstance.Refresh();
+                    dialogueTextBox.SetActive(true);
+                    if (typewriterEffectComplete) //If the typewriter effect is already done/not active
+                    {
+                        typewriterInstance.StopManualEffects();
+                        startTime = Time.fixedTime;
+                        dialogueText.text = NPCDialogue[currentDialogueI].GetLine(currentDialogueLineI);
+                        typewriterInstance.Refresh();
 
-                    typewriterInstance.StartManualEffects();
-                    currentDialogueLineI++;
-                    typewriterEffectComplete = false;
-                }
-                else //End typewriter effect
-                {
-                    typewriterEffectComplete = true;
-                    typewriterInstance.StopManualEffects();
+                        typewriterInstance.StartManualEffects();
+                        currentDialogueLineI++;
+                        typewriterEffectComplete = false;
+                    }
+                    else //End typewriter effect
+                    {
+                        typewriterEffectComplete = true;
+                        typewriterInstance.StopManualEffects();
+                    }
                 }
             }
         }
@@ -140,6 +107,18 @@ public class NPCDialogueScript : MonoBehaviour
         typewriterInstance.Refresh();
         currentDialogueLineI = 0;
         currentDialogueI = 0;
+    }
+
+    public void StartCombat()
+    {
+        //For now this will just start the draw system but it won't in the final game
+        StartDraw();
+    }
+
+    public void StartDraw()
+    {
+        drawscreenStuff.SetActive(true);
+        drawscreenStuff.transform.position = player.position;
     }
 
     public void PrintAllDialogue()
