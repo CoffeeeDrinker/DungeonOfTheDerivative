@@ -8,9 +8,6 @@ public class TempItemAdder : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        inventory.AddItem(ItemNameEnum.testItem1, 1);
-        inventory.AddItem(ItemNameEnum.testItem1, 4);
-        inventory.AddItem(ItemNameEnum.testItem2, 1);
     }
 
     // Update is called once per frame

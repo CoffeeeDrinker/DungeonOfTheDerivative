@@ -39,15 +39,8 @@ public class ItemManager : MonoBehaviour
         List<ItemEffectEnums> itemEffects = new List<ItemEffectEnums>();
         //Health potion
         itemEffects.Add(ItemEffectEnums.heal);
+        itemEffects.Add(ItemEffectEnums.discard);
         itemEffectWorldMap[ItemNameEnum.healthPotion] = itemEffects;
-        //Test item 1
-        itemEffects = new List<ItemEffectEnums>();
-        itemEffects.Add(ItemEffectEnums.nothing);
-        itemEffectWorldMap[ItemNameEnum.testItem1] = itemEffects;
-        //Test item 2
-        itemEffects = new List<ItemEffectEnums>();
-        itemEffects.Add(ItemEffectEnums.randomStuff);
-        itemEffects.Add(ItemEffectEnums.randomStuffTwo);
-        itemEffectWorldMap[ItemNameEnum.testItem2] = itemEffects;
+        //
     }
 }

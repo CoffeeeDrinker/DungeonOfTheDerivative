@@ -9,6 +9,7 @@ public class Draw : MonoBehaviour
     [SerializeField] Color defaultColor;
     [SerializeField] double defaultSize;
     [SerializeField] double defaultEraserSize;
+    [SerializeField] GameObject holder;
     private int currOrder;
     private bool drawing;
 
@@ -35,6 +36,7 @@ public class Draw : MonoBehaviour
             }
 
             GameObject drawObject = Instantiate(drawThing, new Vector3(mousePosition.x, mousePosition.y, 0), Quaternion.identity);
+            drawObject.transform.parent = holder.transform;
             drawObject.transform.GetComponent<Renderer>().sortingOrder = currOrder;
         } else if(Input.GetMouseButton(1)) {
             Vector3 mousePosition = Camera.main.ScreenToWorldPoint(Input.mousePosition);
@@ -46,6 +48,7 @@ public class Draw : MonoBehaviour
             }
 
             GameObject eraseObject = Instantiate(eraseThing, new Vector3(mousePosition.x, mousePosition.y, 0), Quaternion.identity);
+            eraseObject.transform.parent = holder.transform;
             eraseObject.transform.GetComponent<Renderer>().sortingOrder = currOrder;
             
         }   

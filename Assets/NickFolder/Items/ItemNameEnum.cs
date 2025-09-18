@@ -5,7 +5,11 @@ using UnityEngine;
 public enum ItemNameEnum
 {
     healthPotion,
-    testItem1,
-    testItem2,
+    bomb,
+    blueCards,
+    fred,
+    redCards,
+    staminaPotion,
+    superStaminaPotion,
     ERROR
 }

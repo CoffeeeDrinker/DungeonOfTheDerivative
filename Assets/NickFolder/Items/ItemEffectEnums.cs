@@ -5,7 +5,9 @@ using UnityEngine;
 public enum ItemEffectEnums
 {
     heal,
+    stamina,
+    blowUp,
+    discard,
     nothing,
-    randomStuff,
-    randomStuffTwo
+    
 }
