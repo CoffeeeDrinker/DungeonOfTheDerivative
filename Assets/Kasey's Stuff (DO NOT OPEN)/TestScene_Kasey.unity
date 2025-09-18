@@ -1523,8 +1523,7 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   mathProblemsFile: {fileID: 4900000, guid: 8e41dce351b1f624b964e6b1750cfb8b, type: 3}
-  images:
-  - {fileID: -3521443743514171454, guid: 1900f98d8e1be9f48874bda69c75e532, type: 3}
+  images: []
 --- !u!1 &1971967890
 GameObject:
   m_ObjectHideFlags: 0

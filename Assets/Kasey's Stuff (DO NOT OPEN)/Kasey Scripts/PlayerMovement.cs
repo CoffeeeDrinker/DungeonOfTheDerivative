@@ -12,7 +12,7 @@ public class PlayerMovement : MonoBehaviour
 
     //Player sprites/animation
     public Animator PlayerAnim;
-    private string currentAnim = "idleDown";
+    public string currentAnim = "idleDown";
     public string currentFacing = "down";
 
     void Update()

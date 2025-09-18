@@ -83,6 +83,7 @@ public class NPCDialogueScript : MonoBehaviour
             if (stopMovementWhenTalking)
             {
                 playerScript.enabled = false;
+                playerScript.PlayAnimation("idle" + playerScript.currentAnim.Substring(4));
                 playerScript.move = new Vector3(0, 0, 0);
             }
 
@@ -94,6 +95,9 @@ public class NPCDialogueScript : MonoBehaviour
                 currentDialogueLineI = 0;
                 dialogueText.text = "";
                 typewriterInstance.StopManualEffects();
+
+                //Check if combat should start (Finish this when Blond Guy 3 has combat fully implemented)
+                //StartCombat();
 
                 //Enable Player Movement
                 playerScript.enabled = true;

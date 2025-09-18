@@ -1,6 +1,16 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.UI;
+
+/* How to use this class guide:
+ * Create a gameobject and assign this script to it.
+ * Give the script the text file for all the questions and the list of images that go with the questions.
+ * 
+ * You can then get a random math problem with GetRandProblem(string), with the sring parameter being the subject (Algebra 1, Geometry, etc).
+ * Get the name of the image associated with a problem using GetProblem().Substring(0, m.GetProblem().IndexOf("_image"))
+ * Compare this with the list of problem images. 
+ */
 
 public class MathProblemGetter : MonoBehaviour
 {
@@ -32,6 +42,7 @@ public class MathProblemGetter : MonoBehaviour
 
     private void Update()
     {
+        /*
         if (Input.GetKey(KeyCode.Space))
         {
             MathProblem m = GetRandProblem("Geometry");
@@ -40,8 +51,9 @@ public class MathProblemGetter : MonoBehaviour
             {
                 Debug.Log(m.GetProblem().Substring(0, m.GetProblem().IndexOf("_image")) +" "+ images[0].name);
                 Debug.Log(m.GetProblem().Substring(0, m.GetProblem().IndexOf("_image")) == images[0].name);
+                testImage.sprite = images[0];
             }
-        }
+        } */
     }
 
     public MathProblem GetRandProblem(string subject)
@@ -62,10 +74,9 @@ public class MathProblemGetter : MonoBehaviour
     {
         for (int i = 0; i < images.Count; i++)
         {
-            if (prob.GetProblem().Substring(0, prob.GetProblem().IndexOf("_image")) == images[i].name);
+            if (prob.GetProblem().Substring(0, prob.GetProblem().IndexOf("_image")) == images[i].name)
                 return images[i];
         }
         return null;
-        //You left off here, today finish the getting the image for a math problem script
     }
 }
