@@ -9,6 +9,7 @@ public enum ItemEffectEnums
     blowUp,
     discard,
     pet,
+    kill,
     nothing,
     
 }

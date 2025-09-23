@@ -57,7 +57,7 @@ public class ItemManager : MonoBehaviour
         //Fred
         itemEffects = new List<ItemEffectEnums>();
         itemEffects.Add(ItemEffectEnums.pet);
-        itemEffects.Add(ItemEffectEnums.discard);
+        itemEffects.Add(ItemEffectEnums.kill);
         itemEffectWorldMap[ItemNameEnum.fred] = itemEffects;
 
         //Red Cards

@@ -16,7 +16,7 @@ public class GridSlot : MonoBehaviour
     [SerializeField] ItemManager itemManager;
     [SerializeField] Sprite defaultSprite;
     [SerializeField] HeldItemManager heldItemManager;
-    
+    [SerializeField] SoundManager soundManager;
 
     void Start()
     {
@@ -32,7 +32,7 @@ public class GridSlot : MonoBehaviour
 
     void Update()
     {
-        
+
     }
 
     public bool HasItem()
@@ -54,6 +54,11 @@ public class GridSlot : MonoBehaviour
 
     public void AddItem(Item item, int newAmount)
     {
+        if(item.GetName() == ItemNameEnum.fred)
+        {
+            soundManager.PlaySound(SoundEnums.fredIdle);
+        }
+
         if(currItem != null && currItem.GetName() == item.GetName())
         {
             amount += newAmount;
@@ -90,6 +95,11 @@ public class GridSlot : MonoBehaviour
 
     public void RemoveItem()
     {
+        if(currItem != null && currItem.GetName() == ItemNameEnum.fred)
+        {
+            soundManager.StopSound(SoundEnums.fredIdle);
+        }
+
         currItem = null;
         itemSprite.sprite = defaultSprite;
         itemEffectsBackground.ClearBackground();
