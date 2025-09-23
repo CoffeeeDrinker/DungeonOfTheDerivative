@@ -41,6 +41,7 @@ public class MathProblemManager : MonoBehaviour
     public void CheckAnswer()
     {
         Debug.Log(answerInput.text.Trim() == currentProb.GetAnswer());
+        answerInput.text = "";
         drawscreenStuff.SetActive(false);
     }
 }

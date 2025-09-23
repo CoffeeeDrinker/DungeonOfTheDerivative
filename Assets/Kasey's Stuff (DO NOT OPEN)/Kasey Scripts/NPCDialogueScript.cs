@@ -17,13 +17,11 @@ public class NPCDialogueScript : MonoBehaviour
     public bool startCombatPostDialogue;
 
     //NPC and NPC Dialogue Stuff
-    public TextAsset allDialogueText;
     public List<Dialogue> NPCDialogue = new List<Dialogue>();
     private bool playerIsHere = false;
 
     private int currentDialogueI = 0;
     private int currentDialogueLineI = 0;
-    private string file;
 
     //Dialogue Text Box Stuff
     public GameObject dialogueTextBox;
