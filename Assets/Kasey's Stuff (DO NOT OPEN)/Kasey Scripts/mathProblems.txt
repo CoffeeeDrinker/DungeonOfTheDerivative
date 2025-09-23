@@ -19,7 +19,15 @@ Algebra 2
 -1
 ~~
 Geometry
+the answer is a
 down1_image
 ~
 a
+~~
+Geometry
+the answer is b
+bla bla bla
+left1_image
+~
+b
 ~~

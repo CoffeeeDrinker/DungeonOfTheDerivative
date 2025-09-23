@@ -14,6 +14,7 @@ public class NPCDialogueScript : MonoBehaviour
     public Transform player;
     public PlayerMovement playerScript;
     public bool stopMovementWhenTalking;
+    public bool startCombatPostDialogue;
 
     //NPC and NPC Dialogue Stuff
     public TextAsset allDialogueText;
@@ -35,8 +36,8 @@ public class NPCDialogueScript : MonoBehaviour
     public float dialogueCooldownTime;
     private float startTime;
 
-    //Draw Screen stuff (probably not here in final game)
-    public GameObject drawscreenStuff;
+    //Math Problem Manager
+    public MathProblemManager problemManager;
 
     void Update()
     {
@@ -61,14 +62,14 @@ public class NPCDialogueScript : MonoBehaviour
                 typewriterInstance.StopManualEffects();
 
                 //Check if combat should start (Finish this when Blond Guy 3 has combat fully implemented)
-                StartCombat();
-
-                //Enable Player Movement
-                playerScript.enabled = true;
+                if(startCombatPostDialogue)
+                    problemManager.StartDraw();
+                else
+                    playerScript.enabled = true;
             }
             else
             {
-                if (!drawscreenStuff.activeSelf)
+                if (!problemManager.drawscreenStuff.activeSelf)
                 {
                     //Activate dialogue box
                     typewriterInstance.Refresh();
@@ -107,18 +108,6 @@ public class NPCDialogueScript : MonoBehaviour
         typewriterInstance.Refresh();
         currentDialogueLineI = 0;
         currentDialogueI = 0;
-    }
-
-    public void StartCombat()
-    {
-        //For now this will just start the draw system but it won't in the final game
-        StartDraw();
-    }
-
-    public void StartDraw()
-    {
-        drawscreenStuff.SetActive(true);
-        drawscreenStuff.transform.position = player.position;
     }
 
     public void PrintAllDialogue()

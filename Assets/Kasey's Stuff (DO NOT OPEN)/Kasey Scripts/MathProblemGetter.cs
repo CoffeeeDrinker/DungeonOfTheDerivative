@@ -72,11 +72,23 @@ public class MathProblemGetter : MonoBehaviour
 
     public Sprite GetProblemImage(MathProblem prob)
     {
-        for (int i = 0; i < images.Count; i++)
+        if(prob == null || prob.GetProblem().IndexOf("_image") < 0)
         {
-            if (prob.GetProblem().Substring(0, prob.GetProblem().IndexOf("_image")) == images[i].name)
-                return images[i];
+            return null;
+        }
+        else
+        {
+            for (int i = 0; i < images.Count; i++)
+            {
+                if (prob.GetProblem().Substring(prob.GetProblem().LastIndexOf("\n") + 1, prob.GetProblem().IndexOf("_image") - prob.GetProblem().LastIndexOf("\n") - 1).Trim() == images[i].name.Trim())
+                    return images[i];
+            }
         }
         return null;
+    }
+
+    public string GetProblemWithoutImage(MathProblem prob)
+    {
+        return prob.GetProblem().Substring(0, prob.GetProblem().LastIndexOf("\n"));
     }
 }
