@@ -24,7 +24,13 @@ public class ItemSlot : MonoBehaviour
 
     public void SetItem(ItemNameEnum item)
     {
+        if(itemSprite == null)
+        {
+            itemSprite = GetComponent<Image>();
+        }
+
         itemSprite.sprite = itemManager.GetSprite(item);
+        itemName = item;
     }
 
     public void OnClick()

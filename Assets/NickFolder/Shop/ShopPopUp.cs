@@ -7,6 +7,7 @@ using UnityEngine.UI;
 public class ShopPopUp : MonoBehaviour
 {
     ItemNameEnum currItem;
+    Shop shop;
     [SerializeField] Image itemSprite;
     [SerializeField] ItemManager itemManager;
     [SerializeField] TextMeshProUGUI itemPrice;
@@ -15,7 +16,8 @@ public class ShopPopUp : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        shop = GetComponentInParent<Shop>();
+        itemSprite.color = new Color(0, 0, 0, 0);
     }
 
     // Update is called once per frame
@@ -28,7 +30,8 @@ public class ShopPopUp : MonoBehaviour
     {
         currItem = item;
         itemSprite.sprite = itemManager.GetSprite(item);
-        itemPrice.text = itemManager.GetPrice(item).ToString();
+        itemSprite.color = new Color(255, 255, 255, 255);
+        itemPrice.text = (itemManager.GetPrice(item) * shop.GetShopPriceMultiplier()).ToString();
         itemDescription.text = itemManager.GetDescription(item);
     }
 }
