@@ -43,4 +43,9 @@ public class Inventory : MonoBehaviour
         currItems.Add(item);
         grid.AddItem(item, amount);
     }
+
+    public List<Item> GetCurrItems()
+    {
+        return currItems;
+    }
 }

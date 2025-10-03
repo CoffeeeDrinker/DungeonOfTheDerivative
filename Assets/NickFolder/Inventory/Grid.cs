@@ -1,10 +1,13 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Globalization;
 using UnityEngine;
 
 public class Grid : MonoBehaviour
 {
     [SerializeField] List<GridSlot> gridSlots;
+    [SerializeField] ItemManager itemManager;
 
     // Start is called before the first frame update
     void Start()
@@ -40,5 +43,30 @@ public class Grid : MonoBehaviour
             }
         }
 
+    }
+
+    public List<GridSlot> GetGridSlots()
+    {
+        return gridSlots;
+    }
+
+    public void LoadGrid(string[] lines)
+    {
+        for(int i=0; i<lines.Length; i++)
+        {
+            string line = lines[i];
+            string[] parts = line.Split(' ');
+
+            if (parts[0] == ItemNameEnum.ERROR.ToString())
+            {
+                continue;
+            } else
+            {
+                Item item = new Item();
+                item.SetName((ItemNameEnum)Enum.Parse(typeof(ItemNameEnum), parts[0]));
+                item.SetSprite(itemManager.GetSprite(item.GetName()));
+                gridSlots[i].AddItem(item, int.Parse(parts[1]));
+            }
+        }
     }
 }

@@ -41,6 +41,11 @@ public class GridSlot : MonoBehaviour
         return currItem != null;
     }
 
+    public int GetItemAmount()
+    {
+        return amount;
+    }
+
     public ItemNameEnum GetItemName()
     {
         if(currItem == null)
