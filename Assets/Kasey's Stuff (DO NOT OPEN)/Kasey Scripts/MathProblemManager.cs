@@ -23,7 +23,6 @@ public class MathProblemManager : MonoBehaviour
         drawscreenStuff.transform.position = player.position;
         currentProb = mathProblemGetterScript.GetRandProblem("Geometry");
         //Check if there is an image
-        Debug.Log(mathProblemGetterScript.GetProblemImage(currentProb).name);
         if (mathProblemGetterScript.GetProblemImage(currentProb) == null)
         {
             //Show text
@@ -37,11 +36,30 @@ public class MathProblemManager : MonoBehaviour
         }
     }
 
+    public void DeleteDrawings()
+    {
+        GameObject holder = null;
+        for (int i = 0; i < drawscreenStuff.transform.childCount; i++)
+        {
+            if (drawscreenStuff.transform.GetChild(i).name == "DrawEraseThingyHolder")
+                holder = drawscreenStuff.transform.GetChild(i).gameObject;
+        }
+
+        if (holder != null)
+        {
+            for(int i = 0; i<holder.transform.childCount; i++)
+            {
+                Destroy(holder.transform.GetChild(i).gameObject);
+            }
+        }
+    }
+
     //CODE HERE IS TEMPORARY UNTIL THE BATTLE SYSTEM IS COMPLETE
     public void CheckAnswer()
     {
-        Debug.Log(answerInput.text.Trim() == currentProb.GetAnswer());
         answerInput.text = "";
         drawscreenStuff.SetActive(false);
+        DeleteDrawings();
+        player.GetComponent<PlayerMovement>().enabled = true;
     }
 }
