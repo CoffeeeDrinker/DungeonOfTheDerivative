@@ -1,1 +1,15 @@
-Work?
+healthPotion 1
+fred 1
+bomb 5
+staminaPotion 1
+redCards 9
+blueCards 5
+superStaminaPotion 2
+ERROR 0
+ERROR 0
+ERROR 0
+ERROR 0
+ERROR 0
+ERROR 0
+healthPotion 1
+ERROR 0

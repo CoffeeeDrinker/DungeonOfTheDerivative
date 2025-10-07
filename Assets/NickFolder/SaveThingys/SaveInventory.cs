@@ -16,7 +16,8 @@ public class SaveInventory : MonoBehaviour
     {
         string saveFile = "";
 
-        List<GridSlot> slots = new List<GridSlot>();
+        List<GridSlot> slots = inventory.GetGridSlots();
+
         foreach(GridSlot slot in slots)
         {
             if(!slot.HasItem())
@@ -24,6 +25,7 @@ public class SaveInventory : MonoBehaviour
                 saveFile += ItemNameEnum.ERROR + " " + 0 + "\n";
             } else
             {
+                Debug.Log(slot.GetItemName());
                 saveFile += slot.GetItemName() + " " + slot.GetItemAmount() + "\n";
             }
         }

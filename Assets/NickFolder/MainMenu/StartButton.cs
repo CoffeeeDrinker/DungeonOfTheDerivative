@@ -6,10 +6,10 @@ using UnityEngine.SceneManagement;
 
 public class StartButton : MonoBehaviour
 {
-    [SerializeField] string sceneName;
+    [SerializeField] ScreenManager screenManager;
 
     public void StartGame()
     {
-        SceneManager.LoadScene(sceneName);
+        screenManager.SwitchToSaves();
     }
 }

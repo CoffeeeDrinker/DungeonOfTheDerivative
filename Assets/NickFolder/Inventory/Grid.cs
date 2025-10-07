@@ -62,9 +62,10 @@ public class Grid : MonoBehaviour
                 continue;
             } else
             {
-                Item item = new Item();
+                Item item = gameObject.AddComponent<Item>();
                 item.SetName((ItemNameEnum)Enum.Parse(typeof(ItemNameEnum), parts[0]));
                 item.SetSprite(itemManager.GetSprite(item.GetName()));
+                gridSlots[i].RemoveItem();
                 gridSlots[i].AddItem(item, int.Parse(parts[1]));
             }
         }
