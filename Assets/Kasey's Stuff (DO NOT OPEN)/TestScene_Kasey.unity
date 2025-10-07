@@ -659,6 +659,76 @@ RectTransform:
   m_AnchoredPosition: {x: 0, y: 0}
   m_SizeDelta: {x: 0, y: 0}
   m_Pivot: {x: 0, y: 0}
+--- !u!1 &1162825767
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1162825768}
+  m_Layer: 5
+  m_Name: HolyGrailHolder
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1162825768
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1162825767}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2128437516}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 0, y: 0}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
+--- !u!1 &1424127410
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 1424127411}
+  m_Layer: 5
+  m_Name: BlackHoleCenter
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!224 &1424127411
+RectTransform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 1424127410}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 2128437516}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 250, y: -54.999992}
+  m_SizeDelta: {x: 100, y: 100}
+  m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1798924666
 GameObject:
   m_ObjectHideFlags: 0
@@ -1135,16 +1205,62 @@ PrefabInstance:
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 2159066696952626980, guid: d5f7b3b51af87034c8a291a2c3887892, type: 3}
+      propertyPath: canvas
+      value: 
+      objectReference: {fileID: 1009121874}
+    - target: {fileID: 2159066696952626980, guid: d5f7b3b51af87034c8a291a2c3887892, type: 3}
       propertyPath: playerScript
       value: 
       objectReference: {fileID: 558174823}
+    - target: {fileID: 2159066696952626980, guid: d5f7b3b51af87034c8a291a2c3887892, type: 3}
+      propertyPath: holyGrailSpeed
+      value: 400
+      objectReference: {fileID: 0}
+    - target: {fileID: 2159066696952626980, guid: d5f7b3b51af87034c8a291a2c3887892, type: 3}
+      propertyPath: blackHoleCenter
+      value: 
+      objectReference: {fileID: 1424127411}
+    - target: {fileID: 2159066696952626980, guid: d5f7b3b51af87034c8a291a2c3887892, type: 3}
+      propertyPath: holyGrailHolder
+      value: 
+      objectReference: {fileID: 1162825768}
+    - target: {fileID: 2159066696952626980, guid: d5f7b3b51af87034c8a291a2c3887892, type: 3}
+      propertyPath: holyGrailPrefab
+      value: 
+      objectReference: {fileID: 3662957531144111, guid: 6a4ca3d80064e2048b939f7c6e7a0542, type: 3}
+    - target: {fileID: 2159066696952626980, guid: d5f7b3b51af87034c8a291a2c3887892, type: 3}
+      propertyPath: holyGrailRotationSpeed
+      value: 200
+      objectReference: {fileID: 0}
+    - target: {fileID: 2159066696952626980, guid: d5f7b3b51af87034c8a291a2c3887892, type: 3}
+      propertyPath: holyGrailPrefabs.Array.size
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 2159066696952626980, guid: d5f7b3b51af87034c8a291a2c3887892, type: 3}
+      propertyPath: 'holyGrailPrefabs.Array.data[0]'
+      value: 
+      objectReference: {fileID: 3662957531144111, guid: 6a4ca3d80064e2048b939f7c6e7a0542, type: 3}
+    - target: {fileID: 2159066696952626980, guid: d5f7b3b51af87034c8a291a2c3887892, type: 3}
+      propertyPath: 'holyGrailPrefabs.Array.data[1]'
+      value: 
+      objectReference: {fileID: 3662957531144111, guid: d99040ae85b20664484df24eed7b01e7, type: 3}
     - target: {fileID: 5291978676548320892, guid: d5f7b3b51af87034c8a291a2c3887892, type: 3}
       propertyPath: m_Name
       value: StoryBook
       objectReference: {fileID: 0}
+    - target: {fileID: 5291978676548320892, guid: d5f7b3b51af87034c8a291a2c3887892, type: 3}
+      propertyPath: m_IsActive
+      value: 1
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
-    m_AddedGameObjects: []
+    m_AddedGameObjects:
+    - targetCorrespondingSourceObject: {fileID: 1663850098286432056, guid: d5f7b3b51af87034c8a291a2c3887892, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1162825768}
+    - targetCorrespondingSourceObject: {fileID: 1663850098286432056, guid: d5f7b3b51af87034c8a291a2c3887892, type: 3}
+      insertIndex: -1
+      addedObject: {fileID: 1424127411}
     m_AddedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: d5f7b3b51af87034c8a291a2c3887892, type: 3}
 --- !u!1 &286947745157307551
@@ -1323,10 +1439,10 @@ RectTransform:
   - {fileID: 3042909096515808241}
   m_Father: {fileID: 3509607943399682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.69600004, y: 0.04383658}
-  m_AnchorMax: {x: 0.7673764, y: 0.09123736}
-  m_AnchoredPosition: {x: -0.1000061, y: -0.2999878}
-  m_SizeDelta: {x: -1.1207886, y: 3.4}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 213.9, y: -224.79999}
+  m_SizeDelta: {x: 65, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1513779502888364524
 GameObject:
@@ -1399,10 +1515,10 @@ RectTransform:
   - {fileID: 3576653826778463434}
   m_Father: {fileID: 3509607943399682}
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
-  m_AnchorMin: {x: 0.5427835, y: 0.038000003}
-  m_AnchorMax: {x: 0.611, y: 0.09123736}
-  m_AnchoredPosition: {x: 0.039596558, y: 1.2000122}
-  m_SizeDelta: {x: 1.8792038, y: 0.4000001}
+  m_AnchorMin: {x: 0.5, y: 0.5}
+  m_AnchorMax: {x: 0.5, y: 0.5}
+  m_AnchoredPosition: {x: 70.5396, y: -224.79999}
+  m_SizeDelta: {x: 65, y: 30}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &1814533447544531587
 GameObject:
@@ -1810,7 +1926,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.50000095}
+  m_AnchoredPosition: {x: 0, y: -0.5}
   m_SizeDelta: {x: -20, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!114 &3084348852452352236
@@ -2062,7 +2178,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0, y: 0}
   m_AnchorMax: {x: 1, y: 1}
-  m_AnchoredPosition: {x: 0, y: -0.50000095}
+  m_AnchoredPosition: {x: 0, y: -0.5}
   m_SizeDelta: {x: -20, y: -13}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!1 &3654455271238745093
@@ -2079,7 +2195,7 @@ GameObject:
   - component: {fileID: 3084348852452352236}
   - component: {fileID: 5157673945564919226}
   m_Layer: 5
-  m_Name: EraseSize
+  m_Name: EraseSizeInput
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -2616,7 +2732,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25728b1e91a6a2149ac551cad885e98e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawer: {fileID: 0}
+  drawer: {fileID: 1918831461667483579}
   color: {r: 0, g: 0.07727194, b: 1, a: 1}
 --- !u!222 &5104094492364517749
 CanvasRenderer:
@@ -2934,7 +3050,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25728b1e91a6a2149ac551cad885e98e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawer: {fileID: 0}
+  drawer: {fileID: 1918831461667483579}
   color: {r: 1, g: 0, b: 0, a: 1}
 --- !u!1 &6405221569654154744
 GameObject:
@@ -3185,7 +3301,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25728b1e91a6a2149ac551cad885e98e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawer: {fileID: 0}
+  drawer: {fileID: 1918831461667483579}
   color: {r: 1, g: 0.8620171, b: 0, a: 1}
 --- !u!114 &7178150882710242773
 MonoBehaviour:
@@ -3400,7 +3516,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25728b1e91a6a2149ac551cad885e98e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawer: {fileID: 0}
+  drawer: {fileID: 1918831461667483579}
   color: {r: 0, g: 1, b: 0.08719444, a: 1}
 --- !u!114 &7576644618471794835
 MonoBehaviour:
@@ -3537,7 +3653,7 @@ GameObject:
   - component: {fileID: 5897979105133786301}
   - component: {fileID: 8074730324755764982}
   m_Layer: 5
-  m_Name: InputField (TMP)
+  m_Name: PenSizeInput
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -3738,7 +3854,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 25728b1e91a6a2149ac551cad885e98e, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  drawer: {fileID: 0}
+  drawer: {fileID: 1918831461667483579}
   color: {r: 0.62352943, g: 0.61960787, b: 0.61960787, a: 1}
 --- !u!224 &8133064582818941959
 RectTransform:
