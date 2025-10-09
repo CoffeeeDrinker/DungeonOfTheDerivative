@@ -92,5 +92,10 @@ public class ItemManager : MonoBehaviour
         itemEffects = new List<ItemEffectEnums>();
         itemEffects.Add(ItemEffectEnums.discard);
         itemEffectWorldMap[ItemNameEnum.superStaminaPotion] = itemEffects;
+
+        //Fireball
+        itemEffects = new List<ItemEffectEnums>();
+        itemEffects.Add(ItemEffectEnums.discard);
+        itemEffectWorldMap[ItemNameEnum.fireball] = itemEffects;
     }
 }

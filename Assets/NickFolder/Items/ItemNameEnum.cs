@@ -11,5 +11,6 @@ public enum ItemNameEnum
     redCards,
     staminaPotion,
     superStaminaPotion,
+    fireball,
     ERROR
 }

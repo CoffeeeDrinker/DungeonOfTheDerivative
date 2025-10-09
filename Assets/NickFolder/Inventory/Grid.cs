@@ -59,6 +59,7 @@ public class Grid : MonoBehaviour
 
             if (parts[0] == ItemNameEnum.ERROR.ToString())
             {
+                gridSlots[i].RemoveItem();
                 continue;
             } else
             {
