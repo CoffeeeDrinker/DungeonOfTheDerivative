@@ -91,6 +91,15 @@ public class NPCDialogueScript : MonoBehaviour
                 }
             }
         }
+
+        if(player.position.y > this.transform.position.y)
+        {
+            this.GetComponent<SpriteRenderer>().sortingOrder = player.GetComponent<SpriteRenderer>().sortingOrder + 1;
+        }
+        else
+        {
+            this.GetComponent<SpriteRenderer>().sortingOrder = player.GetComponent<SpriteRenderer>().sortingOrder - 1;
+        }
     }
 
     void OnTriggerEnter2D(Collider2D col)

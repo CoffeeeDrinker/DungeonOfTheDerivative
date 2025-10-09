@@ -18,8 +18,8 @@ public class PlayerMovement : MonoBehaviour
     void Update()
     {
         //Move Player
-        move.x = Input.GetAxis("Horizontal");
-        move.y = Input.GetAxis("Vertical");
+        move.x = Input.GetAxisRaw("Horizontal");
+        move.y = Input.GetAxisRaw("Vertical");
         move.Normalize();
         PlayerRB.velocity = move * speed * Time.deltaTime;
 

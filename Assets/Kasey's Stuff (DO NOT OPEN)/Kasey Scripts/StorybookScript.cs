@@ -31,6 +31,8 @@ public class StorybookScript : MonoBehaviour
 
     public Transform holyGrailHolder;
     public List<GameObject> holyGrails;
+    public List<float> realHolyGrailSpeed;
+    public List<float> realHolyGrailRotationSpeed;
 
     public Transform blackHoleCenter;
 
@@ -41,6 +43,11 @@ public class StorybookScript : MonoBehaviour
     //Player Stuff
     public PlayerMovement playerScript;
 
+    //Pedro
+    public Image Pedro;
+    public float PedroSpeed;
+    private Vector3 PedroLocation;
+
     void Start()
     {
         //Get story from text file
@@ -50,30 +57,50 @@ public class StorybookScript : MonoBehaviour
             storyLines.Add(file.Substring(0, file.IndexOf("\n")));
             file = file.Substring(file.IndexOf("\n")+1);
         }
+
+        //Set Pedro Location
+        PedroLocation = new Vector3(Pedro.transform.localPosition.x, -30f, 0f);
     }
 
     void Update()
     {
         //Check if we should summon the Holy Grails (line is 13)
-        if (storyLineI == 2)
+        if (storyLineI == 13)
         {
-            //SUMMON THE HOLY GRAILS
-            SummonHolyGrail();
-        }
-        
-        for(int i = 0; i < holyGrails.Count; i++)
-        {
-            //Move the holy grail
-            holyGrails[i].transform.position = Vector3.MoveTowards(holyGrails[i].transform.position, blackHoleCenter.position, holyGrailSpeed * Time.deltaTime);
-            holyGrails[i].transform.Rotate(new Vector3(0, 0, holyGrailRotationSpeed * Time.deltaTime));
+            //Levitate Pedro
+            Pedro.gameObject.SetActive(true);
+            Pedro.transform.localPosition = Vector3.MoveTowards(Pedro.transform.localPosition, PedroLocation, PedroSpeed * Time.deltaTime);
 
-            //Check if we should delete the holy grail
-            if (holyGrails[i].transform.position == blackHoleCenter.position)
+            //SUMMON THE HOLY GRAILS
+            if (Pedro.transform.localPosition == PedroLocation)
+                SummonHolyGrail();
+        } else if (holyGrailHolder.childCount > 0)
+        {
+            for (int i = 0; i < holyGrails.Count; i++)
             {
                 Destroy(holyGrails[i]);
                 holyGrails.RemoveAt(i);
+                realHolyGrailSpeed.RemoveAt(i);
+                realHolyGrailRotationSpeed.RemoveAt(i);
             }
+            Pedro.gameObject.SetActive(false);
         }
+
+            for (int i = 0; i < holyGrails.Count; i++)
+            {
+                //Move the holy grail
+                holyGrails[i].transform.position = Vector3.MoveTowards(holyGrails[i].transform.position, blackHoleCenter.position, realHolyGrailSpeed[i] * Time.deltaTime);
+                holyGrails[i].transform.Rotate(new Vector3(0, 0, realHolyGrailRotationSpeed[i] * Time.deltaTime));
+
+                //Check if we should delete the holy grail
+                if (holyGrails[i].transform.position == blackHoleCenter.position)
+                {
+                    Destroy(holyGrails[i]);
+                    holyGrails.RemoveAt(i);
+                    realHolyGrailSpeed.RemoveAt(i);
+                    realHolyGrailRotationSpeed.RemoveAt(i);
+                }
+            }
     }
 
     public void NextPage()
@@ -145,5 +172,16 @@ public class StorybookScript : MonoBehaviour
                 break;
         }
         holyGrails.Add(Instantiate(holyGrailPrefabs[Random.Range(0, holyGrailPrefabs.Count)], randLocation, Quaternion.identity, holyGrailHolder));
+
+        //Get speeds
+        realHolyGrailSpeed.Add(holyGrailSpeed*Random.Range(0.75f, 1.5f));
+        if(Random.Range(-1f, 1f) < 0)
+        {
+            realHolyGrailRotationSpeed.Add(-1*holyGrailRotationSpeed*Random.Range(0.75f, 1.5f));
+        }
+        else
+        {
+            realHolyGrailRotationSpeed.Add(holyGrailRotationSpeed * Random.Range(0.75f, 1.5f));
+        }
     }
 }
