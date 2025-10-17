@@ -12,5 +12,6 @@ public enum ItemNameEnum
     staminaPotion,
     superStaminaPotion,
     fireball,
+    coffee,
     ERROR
 }

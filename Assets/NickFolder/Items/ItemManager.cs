@@ -97,5 +97,11 @@ public class ItemManager : MonoBehaviour
         itemEffects = new List<ItemEffectEnums>();
         itemEffects.Add(ItemEffectEnums.discard);
         itemEffectWorldMap[ItemNameEnum.fireball] = itemEffects;
+
+        //Coffee
+        itemEffects = new List<ItemEffectEnums>();
+        itemEffects.Add(ItemEffectEnums.drinkCoffee);
+        itemEffects.Add(ItemEffectEnums.discard);
+        itemEffectWorldMap[ItemNameEnum.coffee] = itemEffects;
     }
 }

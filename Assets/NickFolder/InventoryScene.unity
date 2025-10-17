@@ -4395,13 +4395,14 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35349fc6e7d4bf2468b30c763901a27a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemEffects: 0000000002000000030000000400000005000000
+  itemEffects: 000000000200000003000000040000000500000006000000
   itemWorldButtons:
   - {fileID: 696733601738147440, guid: 4d5adabe6b93d6a4785894372d59c0b3, type: 3}
   - {fileID: 696733601738147440, guid: d3e1f5b4fb722c544a69f609eb9cfb1b, type: 3}
   - {fileID: 696733601738147440, guid: 25ca8f9889fb11449b16468a317443a2, type: 3}
   - {fileID: 696733601738147440, guid: b3d58e3bc6061b34396cd43b2ec0b033, type: 3}
   - {fileID: 696733601738147440, guid: 02130f36d3a2bbe44a503da1dd4ca968, type: 3}
+  - {fileID: 696733601738147440, guid: 12a989fefbded4c4fa41813bc04bd65d, type: 3}
 --- !u!4 &954644570
 Transform:
   m_ObjectHideFlags: 0
@@ -6600,7 +6601,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 781e70115a0880b4abc557d169bdfb52, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  itemNames: 0000000001000000020000000300000004000000050000000600000007000000
+  itemNames: 000000000100000002000000030000000400000005000000060000000700000008000000
   itemSprites:
   - {fileID: -3483574656620730349, guid: 270500544c606e14c9323c648fa55e0b, type: 3}
   - {fileID: -3019691197429073785, guid: 83607ebc9cc19974792eed129d7256f2, type: 3}
@@ -6610,7 +6611,8 @@ MonoBehaviour:
   - {fileID: -5102031685824391456, guid: c92f9d7cbdc99064b8164c0464de8632, type: 3}
   - {fileID: 6216831003021151245, guid: a89d76abff0a39446b5d404498aa8d34, type: 3}
   - {fileID: -6607481912129624618, guid: a798c2cee0b8b5846a3aea51000fa89a, type: 3}
-  itemPrices: 0000000000000000000000000000000000000000000000000000000096000000
+  - {fileID: 7512573258141172106, guid: a6f39b40a30cc0b42b108c5e1480a557, type: 3}
+  itemPrices: 000000000000000000000000000000000000000000000000000000009600000064000000
   itemDescriptions:
   - 
   - 
@@ -6618,7 +6620,9 @@ MonoBehaviour:
   - 
   - 
   - 
+  - 
   - Does __ Damage and sets fire to the enemy
+  - Increases Movement Speed by __
 --- !u!4 &1594280691
 Transform:
   m_ObjectHideFlags: 0

@@ -10,6 +10,7 @@ public enum ItemEffectEnums
     discard,
     pet,
     kill,
+    drinkCoffee,
     nothing,
     
 }
