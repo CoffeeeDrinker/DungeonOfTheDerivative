@@ -1,0 +1,3285 @@
+fileFormatVersion: 2
+guid: 594305b3b2528594d88636f09ff87de0
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -2480186279602575777
+    second: mainhallwaylighting0.3opacity (2)_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_0
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 484
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f56ad7328bb949dd0800000000000000
+      internalID: -2480186279602575777
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_1
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 484
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb812de226405f46aa919b1421d5798
+      internalID: 1811331316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_2
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 484
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a54a66c45f4d02043aa7549a5558dc3c
+      internalID: -2099418003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_3
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 484
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e99aa507e02ac894a84755109098731c
+      internalID: -483707021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_4
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 484
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9303d30734c76344889c87958562067e
+      internalID: -1160056970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_5
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 484
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1750fe7d0394c844baadad4bd31f8942
+      internalID: 459956647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_6
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 484
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 667d253b7ce653747b2e4070ef487775
+      internalID: -1902253948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 468
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5e352113ee7347048996bb2de7d34093
+      internalID: -242595295
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 468
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70a4f5ca5cfa71744af3810e7644b9b3
+      internalID: -1200721187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 468
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d203cd452a9263e41b08061d6873b814
+      internalID: 1154472256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 468
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 839a6396b838fe94da682ffcb6ee824b
+      internalID: 1732800569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 468
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 056a1dbe4dcb6ff42b1dc7ef078ff772
+      internalID: 1952899326
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 468
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f30ec5c8e63779449f97b3caeb73728
+      internalID: 1997747006
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 468
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bbda413ff1d7d344fbc2005036c7af0a
+      internalID: 2085947312
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_14
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 452
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d906bcd28a584547a4b52329673c9b1
+      internalID: -83742003
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_15
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 452
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 609b2aa4c3fc5f249b68b5a5c34c2c21
+      internalID: -976611989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_16
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 452
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1531692092ff9a74cac6352030b41125
+      internalID: -943202325
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_17
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 452
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6643eb24378c7274c9254baa120cffa7
+      internalID: 1345028032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_18
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 452
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da06bdfee17f5f14cacb261b311a6d52
+      internalID: 1010258440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_19
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 452
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2db6996daef5daa44b35725908bb5c0c
+      internalID: 2105720036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_20
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 452
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 56aab3cfae83c394b8551f7f0acb1779
+      internalID: 207742548
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_21
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 436
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26fc289314771744cb96098137339fe0
+      internalID: 607255956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_22
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 436
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40bb896e5006b4e4b82b1b02ad8d5366
+      internalID: 294626340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_23
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 436
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de4bee6128b57ae4ea9a1291e8e1a728
+      internalID: 1922586403
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_24
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 436
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92af9d41ed81ed04fb06b3e31a92fdaa
+      internalID: 948740241
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_25
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 436
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aca97b94ed490034493477523536c62c
+      internalID: -1674693045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_26
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 436
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91e85402fefc24043bd3e06cd888b922
+      internalID: 422979920
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_27
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 436
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a9d68f8988fb214491e2059414887b3
+      internalID: -902991918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_28
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b24be96a38a5c6a47802252b01761a62
+      internalID: 662157039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_29
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e6538e090675a7449c82dbd489529a2
+      internalID: 1501568995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_30
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3d8eb9edad06880478736209ab864e55
+      internalID: -198533620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_31
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5ca3c4909080840959fee069dc08df
+      internalID: 1763798840
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_32
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31880ed1c0a60904eba0570644e0f020
+      internalID: 582319817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_33
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3cf64b2e80786a4429799ac9a4e43c35
+      internalID: 844580151
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_34
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 851deb04e02b51e489b68b8658e6e525
+      internalID: -1565700437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_35
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 973f3a0b8509c484f8612046051c364a
+      internalID: 875671182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_36
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b32a4d23261b9334181d6ab0481b9c51
+      internalID: -1112709476
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_37
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9732206bc2f9394a85e76e9c94a1159
+      internalID: 1538321951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_38
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64829347baa27e54ebf07a6daf72fcab
+      internalID: 996191785
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_39
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7bf8001e5634a224795e291f62364e4d
+      internalID: -935360277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_40
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fc0d84a8f777c9e4dbc45787f6632253
+      internalID: -1357686318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_41
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fd01d4141c9430d4a94d10adb0becc57
+      internalID: 991329211
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_42
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 341ff8ff14409d84c83a88e25278f521
+      internalID: 1560936287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_43
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 148847cf618ba3d41bdb69cc95f51297
+      internalID: 1882756623
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_44
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8c2c39dc64a246a4f8833c6991772741
+      internalID: 836767196
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_45
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 765de749505c43b4d85cb5374ceb8eb6
+      internalID: 23466603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_46
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d92f0b43dc31d0c469134d3e1b1bc576
+      internalID: -814452293
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_47
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 420
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3c0cba49b3d0c4847b587aa2e4f39375
+      internalID: 290440849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_48
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1fc7699f3836e1046aa4256329af78f9
+      internalID: 1720888338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_49
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 03f3b349e43ef3a45bd46408cffb8fa5
+      internalID: -2065847029
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_50
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: adde71b773aba8b44bbb5c4d620a2c3b
+      internalID: -642849929
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_51
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f31211c5aef5748bbd62e589dfffbe
+      internalID: 2075096439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_52
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59afc323fec824d44a5023d708f379d9
+      internalID: 880887514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_53
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c46dad63116962049823268880016336
+      internalID: -1378377496
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_54
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4546821b4e4677641a5f6437250c3ea6
+      internalID: 615338847
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_55
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6358bab516c956e4e862bc3a20c6b6f0
+      internalID: -2038978757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_56
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c754f3e9f1ec57544a8f62fd6bc3a8a9
+      internalID: -1150181183
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_57
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16b9a825f74a45846aa31d0203918133
+      internalID: -56355092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_58
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78eb535a15e54e241967236880f93586
+      internalID: 372856959
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_59
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e45587334eb5d584b8343c521c821ed7
+      internalID: -1527903060
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_60
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d83507c8d87d4f43a49a898e5bf3aeb
+      internalID: 648638080
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_61
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891efb9d84906ea4e929e52dbdefab88
+      internalID: -1169929715
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_62
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cae10a98ee5e88b42a787dbf16eb3e22
+      internalID: -386407543
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_63
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c90feab0c645c31478f6f44e16d5635e
+      internalID: 990437306
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_64
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f33a592a5832674db3a0e49a7ee1c5b
+      internalID: 177513488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_65
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71504d4871e87964a8bed5181e519319
+      internalID: 41913007
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_66
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87166c2fc362ca746a3ebea62f6e29ab
+      internalID: -2069574344
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_67
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 404
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c0b2e9b612cde23429da87cc78182ad4
+      internalID: 1145630472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_68
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee5ca904560c8bf4cbb1a6efb6c666b4
+      internalID: -1840542972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_69
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2fc9f10606eeef645bb5384fbcad4226
+      internalID: 1291107808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_70
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4620360d2de17544fab315ac9102eac6
+      internalID: -396697932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_71
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1af4d6fb5287bb94797e73d89e18445b
+      internalID: -96325606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_72
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8f20bcac82bdeca409d8d7b96da7ea1d
+      internalID: 929947190
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_73
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ba57ca7fb7cab145956035c0d121404
+      internalID: -2056735640
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_74
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 612530ed34de32a41a378a4c37f4da37
+      internalID: -916607285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_75
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc2dcefeb4044e842aa08175cef2d1f6
+      internalID: 1332101913
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_76
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eff1e3d17f094b6429663bbf2903b336
+      internalID: -1814109807
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_77
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 19155ecdf00f0f54586ceca7152fa765
+      internalID: -1730895182
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_78
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e5a6c1bfaf26f14c88f80eba49958bb
+      internalID: 1671501164
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_79
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 376a514f94f81f4469bc37ad2685a6d1
+      internalID: -724045134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_80
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c6043eb977032754ab7206a93f9534d2
+      internalID: -1863553470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_81
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd281a52f48747a41a8ae39c9c29154b
+      internalID: -145549260
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_82
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27afa2b27a5bcd443ba00b364270244b
+      internalID: 1390256470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_83
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8ee0ed45714834fbbc06274e15a5fc
+      internalID: -268059563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_84
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6da32fc01cb1f0d4d812fac623e822eb
+      internalID: -535943628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_85
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4671edaaa1a13d4da2c9e052ef94794
+      internalID: -1181337952
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_86
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e9247d13859f8549851586e49b3b92d
+      internalID: 315936808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_87
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 388
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ea2b1a390a26f494bada8032656770f3
+      internalID: 1757868935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_88
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a9cd5b37b274af941a2ca4d15b9ba491
+      internalID: -929642495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_89
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 347a1242a91f2e3409ac7acacbbaf06d
+      internalID: 1934200969
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_90
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 172c9c92e66de87498e7dea03020704e
+      internalID: -1686000859
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_91
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18bead5e1409ed244b2cc125f13982ea
+      internalID: 1140340823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_92
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9775fb4cad11f442b7fe42877f6a938
+      internalID: -1657514282
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_93
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d866204807825a94b8673103cab279ef
+      internalID: -152057830
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_94
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9258de40b45222e41808521ae89229ad
+      internalID: 932786197
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_95
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04be529083c315445b156f3bc3ab8b24
+      internalID: -465525899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_96
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c2ab74d371ca61d4294bd49a17c092bb
+      internalID: 2106913512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_97
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a4ae3bf2412b9e44be828cf8c5f244d
+      internalID: 1601321790
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_98
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d988cc542534c8f43a861676bd5ee463
+      internalID: -1218995897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_99
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91b4ffc030337b048a090f2d7d8bef77
+      internalID: -1948703047
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_100
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7601b15b3e987a48be7ddf613733190
+      internalID: -1562156968
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_101
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1135069f4b5fc7408bd66d80e3b17b1
+      internalID: -1310483236
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_102
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 637184d50c01b0541b74cc6ef65d7fe6
+      internalID: -575109628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_103
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8779c6985db86f54288a68acc5e33035
+      internalID: 1755011763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_104
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02ecbc2b39112f24697a3c2a697f2780
+      internalID: -154133093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_105
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5763c5cbbff5c0743836eaebe434f73b
+      internalID: -934525373
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_106
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3ddbabdd99c3fc94b94d30606e91b092
+      internalID: -45770353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_107
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 372
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659c2802b9d7fdd4fa20410e67b1f8f8
+      internalID: 1931093536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_108
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e247b1aceb8fdbb42af48b6b2829596d
+      internalID: 2074563552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_109
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b48da3c3d5b54c4f89fc2546449cbfc
+      internalID: 373200707
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_110
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7804b184a31b59b4a9eb851eddedf3ba
+      internalID: 662452694
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_111
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bded88ec5dc416b4d87286d6f62ffeb2
+      internalID: 1595145452
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_112
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fe27b2500d8a2e94b9420988f198c081
+      internalID: 345681731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_113
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ebb8e0d3f1abf1842afb0b19b91d87db
+      internalID: -752786048
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_114
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35a620d8429c8c4e8f24c0b0c9adaf0
+      internalID: 1291601932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_115
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1d8c379f85d9f442b8ff397bfdd8c1e
+      internalID: -105652419
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_116
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 08f056a4a2fc28045b997f8cf2c57935
+      internalID: -539335804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_117
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6a4bdab9bda1e9448472de500a95975
+      internalID: -1738397602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_118
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a07089514b616fd44a1ca35792d6fa5f
+      internalID: -132512901
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_119
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 659063f4e34a70a4fb221dd49c00d0ce
+      internalID: -202232934
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_120
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6547bb51831d54b4fb9540dbc7b02ac2
+      internalID: 167856289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_121
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 12fd0e06f3b53df4c969f0ff6f820601
+      internalID: 1995421704
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_122
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9290e8401f8f4d648a63b8997db11d0a
+      internalID: -1479120037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_123
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df40af6164e78ae4eaf7f00b47e1bddf
+      internalID: 2032961645
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_124
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ecc7ba665333be44cb49a8c41a561cdb
+      internalID: 494950846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_125
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df5d8e034f857b34080af0f9d154e657
+      internalID: 1717852584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_126
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 647b1fce74b7db84e96b99d90acec5d0
+      internalID: -508113137
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_127
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 356
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bac79834b4311ae4babeddee33bd2eb1
+      internalID: 1707989248
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_128
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 340
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5153ad2bcd0ce8547938426b242b74da
+      internalID: -1731311964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_129
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 340
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77c653d10c6ebf545a8411f5c746f604
+      internalID: -242439010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_130
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 340
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 321c14452d87de9418b22caaa1686bf2
+      internalID: 2110819914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_131
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 340
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32b93060275b6c342a3411c3e50e76ef
+      internalID: 1770094761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_132
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 340
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b77a539dce965fd45afd583f669592fa
+      internalID: 955991948
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_133
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 340
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df2c8532f5902d547945b7e109de788b
+      internalID: -1345199851
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_134
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 340
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 188ab3134ba62324abf5254394fae6d9
+      internalID: -1188775654
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_135
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 340
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa2be78cd81eb7245b0ba1ac189f82e9
+      internalID: 988042463
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_136
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 324
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93437fcbbca2cf84493df176a6a30711
+      internalID: -1245772752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_137
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 324
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 990dbfb2cc24c8e4d937701351131742
+      internalID: -503317795
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_138
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 324
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 840f592d5e92b3b489b6051af2c3dee4
+      internalID: 1195673490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_139
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 324
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0ea4f7dc75f7a048a2cd573323a0d25
+      internalID: 1996742849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_140
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 324
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e0bfc86d1fd7074f86a11e3199b29ff
+      internalID: 1988961002
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_141
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 324
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320f2285d3fe6ab4fae3c815db808edb
+      internalID: -1862760508
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_142
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 324
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd98eda8587d53b46aa1e73824c4a7bf
+      internalID: -339643680
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: mainhallwaylighting0.3opacity (2)_143
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 324
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 652338ef74fc3fb489220a8b90fcb2b9
+      internalID: -516928720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: bc7953643836cd84aada9e209b09c59f
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      mainhallwaylighting0.3opacity (2)_0: -2480186279602575777
+      mainhallwaylighting0.3opacity (2)_1: 1811331316
+      mainhallwaylighting0.3opacity (2)_10: 1732800569
+      mainhallwaylighting0.3opacity (2)_100: -1562156968
+      mainhallwaylighting0.3opacity (2)_101: -1310483236
+      mainhallwaylighting0.3opacity (2)_102: -575109628
+      mainhallwaylighting0.3opacity (2)_103: 1755011763
+      mainhallwaylighting0.3opacity (2)_104: -154133093
+      mainhallwaylighting0.3opacity (2)_105: -934525373
+      mainhallwaylighting0.3opacity (2)_106: -45770353
+      mainhallwaylighting0.3opacity (2)_107: 1931093536
+      mainhallwaylighting0.3opacity (2)_108: 2074563552
+      mainhallwaylighting0.3opacity (2)_109: 373200707
+      mainhallwaylighting0.3opacity (2)_11: 1952899326
+      mainhallwaylighting0.3opacity (2)_110: 662452694
+      mainhallwaylighting0.3opacity (2)_111: 1595145452
+      mainhallwaylighting0.3opacity (2)_112: 345681731
+      mainhallwaylighting0.3opacity (2)_113: -752786048
+      mainhallwaylighting0.3opacity (2)_114: 1291601932
+      mainhallwaylighting0.3opacity (2)_115: -105652419
+      mainhallwaylighting0.3opacity (2)_116: -539335804
+      mainhallwaylighting0.3opacity (2)_117: -1738397602
+      mainhallwaylighting0.3opacity (2)_118: -132512901
+      mainhallwaylighting0.3opacity (2)_119: -202232934
+      mainhallwaylighting0.3opacity (2)_12: 1997747006
+      mainhallwaylighting0.3opacity (2)_120: 167856289
+      mainhallwaylighting0.3opacity (2)_121: 1995421704
+      mainhallwaylighting0.3opacity (2)_122: -1479120037
+      mainhallwaylighting0.3opacity (2)_123: 2032961645
+      mainhallwaylighting0.3opacity (2)_124: 494950846
+      mainhallwaylighting0.3opacity (2)_125: 1717852584
+      mainhallwaylighting0.3opacity (2)_126: -508113137
+      mainhallwaylighting0.3opacity (2)_127: 1707989248
+      mainhallwaylighting0.3opacity (2)_128: -1731311964
+      mainhallwaylighting0.3opacity (2)_129: -242439010
+      mainhallwaylighting0.3opacity (2)_13: 2085947312
+      mainhallwaylighting0.3opacity (2)_130: 2110819914
+      mainhallwaylighting0.3opacity (2)_131: 1770094761
+      mainhallwaylighting0.3opacity (2)_132: 955991948
+      mainhallwaylighting0.3opacity (2)_133: -1345199851
+      mainhallwaylighting0.3opacity (2)_134: -1188775654
+      mainhallwaylighting0.3opacity (2)_135: 988042463
+      mainhallwaylighting0.3opacity (2)_136: -1245772752
+      mainhallwaylighting0.3opacity (2)_137: -503317795
+      mainhallwaylighting0.3opacity (2)_138: 1195673490
+      mainhallwaylighting0.3opacity (2)_139: 1996742849
+      mainhallwaylighting0.3opacity (2)_14: -83742003
+      mainhallwaylighting0.3opacity (2)_140: 1988961002
+      mainhallwaylighting0.3opacity (2)_141: -1862760508
+      mainhallwaylighting0.3opacity (2)_142: -339643680
+      mainhallwaylighting0.3opacity (2)_143: -516928720
+      mainhallwaylighting0.3opacity (2)_15: -976611989
+      mainhallwaylighting0.3opacity (2)_16: -943202325
+      mainhallwaylighting0.3opacity (2)_17: 1345028032
+      mainhallwaylighting0.3opacity (2)_18: 1010258440
+      mainhallwaylighting0.3opacity (2)_19: 2105720036
+      mainhallwaylighting0.3opacity (2)_2: -2099418003
+      mainhallwaylighting0.3opacity (2)_20: 207742548
+      mainhallwaylighting0.3opacity (2)_21: 607255956
+      mainhallwaylighting0.3opacity (2)_22: 294626340
+      mainhallwaylighting0.3opacity (2)_23: 1922586403
+      mainhallwaylighting0.3opacity (2)_24: 948740241
+      mainhallwaylighting0.3opacity (2)_25: -1674693045
+      mainhallwaylighting0.3opacity (2)_26: 422979920
+      mainhallwaylighting0.3opacity (2)_27: -902991918
+      mainhallwaylighting0.3opacity (2)_28: 662157039
+      mainhallwaylighting0.3opacity (2)_29: 1501568995
+      mainhallwaylighting0.3opacity (2)_3: -483707021
+      mainhallwaylighting0.3opacity (2)_30: -198533620
+      mainhallwaylighting0.3opacity (2)_31: 1763798840
+      mainhallwaylighting0.3opacity (2)_32: 582319817
+      mainhallwaylighting0.3opacity (2)_33: 844580151
+      mainhallwaylighting0.3opacity (2)_34: -1565700437
+      mainhallwaylighting0.3opacity (2)_35: 875671182
+      mainhallwaylighting0.3opacity (2)_36: -1112709476
+      mainhallwaylighting0.3opacity (2)_37: 1538321951
+      mainhallwaylighting0.3opacity (2)_38: 996191785
+      mainhallwaylighting0.3opacity (2)_39: -935360277
+      mainhallwaylighting0.3opacity (2)_4: -1160056970
+      mainhallwaylighting0.3opacity (2)_40: -1357686318
+      mainhallwaylighting0.3opacity (2)_41: 991329211
+      mainhallwaylighting0.3opacity (2)_42: 1560936287
+      mainhallwaylighting0.3opacity (2)_43: 1882756623
+      mainhallwaylighting0.3opacity (2)_44: 836767196
+      mainhallwaylighting0.3opacity (2)_45: 23466603
+      mainhallwaylighting0.3opacity (2)_46: -814452293
+      mainhallwaylighting0.3opacity (2)_47: 290440849
+      mainhallwaylighting0.3opacity (2)_48: 1720888338
+      mainhallwaylighting0.3opacity (2)_49: -2065847029
+      mainhallwaylighting0.3opacity (2)_5: 459956647
+      mainhallwaylighting0.3opacity (2)_50: -642849929
+      mainhallwaylighting0.3opacity (2)_51: 2075096439
+      mainhallwaylighting0.3opacity (2)_52: 880887514
+      mainhallwaylighting0.3opacity (2)_53: -1378377496
+      mainhallwaylighting0.3opacity (2)_54: 615338847
+      mainhallwaylighting0.3opacity (2)_55: -2038978757
+      mainhallwaylighting0.3opacity (2)_56: -1150181183
+      mainhallwaylighting0.3opacity (2)_57: -56355092
+      mainhallwaylighting0.3opacity (2)_58: 372856959
+      mainhallwaylighting0.3opacity (2)_59: -1527903060
+      mainhallwaylighting0.3opacity (2)_6: -1902253948
+      mainhallwaylighting0.3opacity (2)_60: 648638080
+      mainhallwaylighting0.3opacity (2)_61: -1169929715
+      mainhallwaylighting0.3opacity (2)_62: -386407543
+      mainhallwaylighting0.3opacity (2)_63: 990437306
+      mainhallwaylighting0.3opacity (2)_64: 177513488
+      mainhallwaylighting0.3opacity (2)_65: 41913007
+      mainhallwaylighting0.3opacity (2)_66: -2069574344
+      mainhallwaylighting0.3opacity (2)_67: 1145630472
+      mainhallwaylighting0.3opacity (2)_68: -1840542972
+      mainhallwaylighting0.3opacity (2)_69: 1291107808
+      mainhallwaylighting0.3opacity (2)_7: -242595295
+      mainhallwaylighting0.3opacity (2)_70: -396697932
+      mainhallwaylighting0.3opacity (2)_71: -96325606
+      mainhallwaylighting0.3opacity (2)_72: 929947190
+      mainhallwaylighting0.3opacity (2)_73: -2056735640
+      mainhallwaylighting0.3opacity (2)_74: -916607285
+      mainhallwaylighting0.3opacity (2)_75: 1332101913
+      mainhallwaylighting0.3opacity (2)_76: -1814109807
+      mainhallwaylighting0.3opacity (2)_77: -1730895182
+      mainhallwaylighting0.3opacity (2)_78: 1671501164
+      mainhallwaylighting0.3opacity (2)_79: -724045134
+      mainhallwaylighting0.3opacity (2)_8: -1200721187
+      mainhallwaylighting0.3opacity (2)_80: -1863553470
+      mainhallwaylighting0.3opacity (2)_81: -145549260
+      mainhallwaylighting0.3opacity (2)_82: 1390256470
+      mainhallwaylighting0.3opacity (2)_83: -268059563
+      mainhallwaylighting0.3opacity (2)_84: -535943628
+      mainhallwaylighting0.3opacity (2)_85: -1181337952
+      mainhallwaylighting0.3opacity (2)_86: 315936808
+      mainhallwaylighting0.3opacity (2)_87: 1757868935
+      mainhallwaylighting0.3opacity (2)_88: -929642495
+      mainhallwaylighting0.3opacity (2)_89: 1934200969
+      mainhallwaylighting0.3opacity (2)_9: 1154472256
+      mainhallwaylighting0.3opacity (2)_90: -1686000859
+      mainhallwaylighting0.3opacity (2)_91: 1140340823
+      mainhallwaylighting0.3opacity (2)_92: -1657514282
+      mainhallwaylighting0.3opacity (2)_93: -152057830
+      mainhallwaylighting0.3opacity (2)_94: 932786197
+      mainhallwaylighting0.3opacity (2)_95: -465525899
+      mainhallwaylighting0.3opacity (2)_96: 2106913512
+      mainhallwaylighting0.3opacity (2)_97: 1601321790
+      mainhallwaylighting0.3opacity (2)_98: -1218995897
+      mainhallwaylighting0.3opacity (2)_99: -1948703047
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
