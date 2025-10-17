@@ -1,5 +1,9 @@
 fileFormatVersion: 2
+<<<<<<< HEAD
 guid: bb65859eccdc90c4fa1793308e48866b
+=======
+guid: 1cacfe26b078abe469f9d64605bd19b6
+>>>>>>> BetterMathewBranch
 TextScriptImporter:
   externalObjects: {}
   userData: 
