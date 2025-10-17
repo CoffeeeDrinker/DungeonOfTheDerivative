@@ -8,6 +8,9 @@ public enum ItemEffectEnums
     stamina,
     blowUp,
     discard,
+    pet,
+    kill,
+    drinkCoffee,
     nothing,
     
 }
