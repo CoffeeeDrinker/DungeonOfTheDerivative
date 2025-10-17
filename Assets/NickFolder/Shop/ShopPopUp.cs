@@ -6,9 +6,10 @@ using UnityEngine.UI;
 
 public class ShopPopUp : MonoBehaviour
 {
-    ItemNameEnum currItem;
+    ItemNameEnum currItem = ItemNameEnum.ERROR;
     Shop shop;
     [SerializeField] Image itemSprite;
+    [SerializeField] Grid grid;
     [SerializeField] ItemManager itemManager;
     [SerializeField] TextMeshProUGUI itemPrice;
     [SerializeField] TextMeshProUGUI itemDescription;
@@ -33,5 +34,15 @@ public class ShopPopUp : MonoBehaviour
         itemSprite.color = new Color(255, 255, 255, 255);
         itemPrice.text = (itemManager.GetPrice(item) * shop.GetShopPriceMultiplier()).ToString();
         itemDescription.text = itemManager.GetDescription(item);
+    }
+
+    public void BuyShownItem()
+    {
+        if(currItem == ItemNameEnum.ERROR)
+        {
+            return;
+        }
+
+
     }
 }
