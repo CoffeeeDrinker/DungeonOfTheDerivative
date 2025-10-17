@@ -1,0 +1,20 @@
+﻿Mr. Huff
+You are going to fail AP Calculus 2.
+Then you are going to fail Linear Algebra.
+You are a failure.
+~
+This is my second dialogue option.
+~
+This is my third dialogue option.
+~~
+NPC2
+Hello!
+I am a student. 
+~
+I also think that you are going to fail.
+~~
+NPC3
+Hi there idiot.
+You're stupid.
+bye
+~~

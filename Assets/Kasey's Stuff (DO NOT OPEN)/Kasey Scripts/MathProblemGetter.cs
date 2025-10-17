@@ -1,0 +1,94 @@
+using System.Collections;
+using System.Collections.Generic;
+using UnityEngine;
+using UnityEngine.UI;
+
+/* How to use this class guide:
+ * Create a gameobject and assign this script to it.
+ * Give the script the text file for all the questions and the list of images that go with the questions.
+ * 
+ * You can then get a random math problem with GetRandProblem(string), with the sring parameter being the subject (Algebra 1, Geometry, etc).
+ * Get the name of the image associated with a problem using GetProblem().Substring(0, m.GetProblem().IndexOf("_image"))
+ * Compare this with the list of problem images. 
+ */
+
+public class MathProblemGetter : MonoBehaviour
+{
+    public TextAsset mathProblemsFile;
+    public List<Sprite> images;
+    private string text;
+    
+    public List<MathProblem> problems = new List<MathProblem>();
+
+    void Start()
+    {
+        text = mathProblemsFile.text;
+        string subj, prob, answ;
+
+        while (text.Length > 1)
+        {
+            subj = text.Substring(0, text.IndexOf("\n"));
+            text = text.Substring(text.IndexOf("\n") + 1);
+
+            prob = text.Substring(0, text.IndexOf("~")-1);
+            text = text.Substring(text.IndexOf("~") + 3);
+
+            answ = text.Substring(0, text.IndexOf("~~")-1);
+            text = text.Substring(text.IndexOf("~~")+4);
+
+            problems.Add(new MathProblem(subj, prob, answ));
+        }
+    }
+
+    private void Update()
+    {
+        /*
+        if (Input.GetKey(KeyCode.Space))
+        {
+            MathProblem m = GetRandProblem("Geometry");
+            m.PrintProblem();
+            if(m.GetProblem().IndexOf("_image") > 0)
+            {
+                Debug.Log(m.GetProblem().Substring(0, m.GetProblem().IndexOf("_image")) +" "+ images[0].name);
+                Debug.Log(m.GetProblem().Substring(0, m.GetProblem().IndexOf("_image")) == images[0].name);
+                testImage.sprite = images[0];
+            }
+        } */
+    }
+
+    public MathProblem GetRandProblem(string subject)
+    {
+        int count = 0;
+        int i = Random.Range(0, problems.Count);
+        while(true){
+            if (problems[i].GetSubject().Trim() == subject.Trim())
+                return problems[i];
+            i = Random.Range(0, problems.Count);
+            count++;
+            if (count > 999)
+                return null;
+        }
+    }
+
+    public Sprite GetProblemImage(MathProblem prob)
+    {
+        if(prob == null || prob.GetProblem().IndexOf("_image") < 0)
+        {
+            return null;
+        }
+        else
+        {
+            for (int i = 0; i < images.Count; i++)
+            {
+                if (prob.GetProblem().Substring(prob.GetProblem().LastIndexOf("\n") + 1, prob.GetProblem().IndexOf("_image") - prob.GetProblem().LastIndexOf("\n") - 1).Trim() == images[i].name.Trim())
+                    return images[i];
+            }
+        }
+        return null;
+    }
+
+    public string GetProblemWithoutImage(MathProblem prob)
+    {
+        return prob.GetProblem().Substring(0, prob.GetProblem().LastIndexOf("\n"));
+    }
+}

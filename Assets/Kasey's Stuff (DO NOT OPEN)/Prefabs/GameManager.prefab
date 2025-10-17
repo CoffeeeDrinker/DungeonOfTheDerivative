@@ -1,0 +1,86 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!1 &548322778693159819
+GameObject:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  serializedVersion: 6
+  m_Component:
+  - component: {fileID: 4100687895744062380}
+  - component: {fileID: 6318335149802630074}
+  - component: {fileID: 4846465195841903981}
+  - component: {fileID: 5805293233410309795}
+  m_Layer: 0
+  m_Name: GameManager
+  m_TagString: Untagged
+  m_Icon: {fileID: 0}
+  m_NavMeshLayer: 0
+  m_StaticEditorFlags: 0
+  m_IsActive: 1
+--- !u!4 &4100687895744062380
+Transform:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548322778693159819}
+  serializedVersion: 2
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
+  m_LocalPosition: {x: 4.1878066, y: 1.8803582, z: -0.021101752}
+  m_LocalScale: {x: 1, y: 1, z: 1}
+  m_ConstrainProportionsScale: 0
+  m_Children: []
+  m_Father: {fileID: 0}
+  m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &6318335149802630074
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548322778693159819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52cdb2f3d911da9419b29e6f58e786a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  NPCs:
+  - {fileID: 0}
+  allDialogueText: {fileID: 4900000, guid: 999034be586677149a6e25a53d01e46e, type: 3}
+--- !u!114 &4846465195841903981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548322778693159819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ba1884cd3f5135c49b53e2f22440c38f, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  mathProblemsFile: {fileID: 4900000, guid: 8e41dce351b1f624b964e6b1750cfb8b, type: 3}
+  images:
+  - {fileID: -3521443743514171454, guid: 1900f98d8e1be9f48874bda69c75e532, type: 3}
+  - {fileID: 9069327796922478372, guid: 1900f98d8e1be9f48874bda69c75e532, type: 3}
+  - {fileID: 2878246384253771419, guid: 1900f98d8e1be9f48874bda69c75e532, type: 3}
+--- !u!114 &5805293233410309795
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 548322778693159819}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c5059c2893f2dea41af484f23ac79b1b, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  player: {fileID: 0}
+  mathProblemGetterScript: {fileID: 4846465195841903981}
+  drawscreenStuff: {fileID: 0}
+  problemTextBox: {fileID: 0}
+  problemImage: {fileID: 0}
+  answerInput: {fileID: 0}

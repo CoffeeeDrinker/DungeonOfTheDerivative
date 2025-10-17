@@ -1,0 +1,33 @@
+﻿Algebra 1
+1+x=3, solve for x
+~
+2
+~~
+Algebra 1
+2+x=2, solve for x
+~
+0
+~~
+Algebra 1
+3+x=2, solve for x
+~
+-1
+~~
+Algebra 2
+3+x*x=2, solve for x
+~
+-1
+~~
+Geometry
+the answer is a
+down1_image
+~
+a
+~~
+Geometry
+the answer is b
+bla bla bla
+left1_image
+~
+b
+~~
