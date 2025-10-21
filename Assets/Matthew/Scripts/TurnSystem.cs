@@ -9,6 +9,7 @@ public class TurnSystem : MonoBehaviour
     public GameObject enemyField;
     public ICombatant player;
     public ICombatant enemy;
+    public ICombatant winner;
     public GameObject UIField; //serialized field containing attack button
     private UIController UI; //attack button stored as AttackHandler component
     public static int turnIndex; //Whoever is having their turn currently; 0 = player, 1 = enemy
@@ -17,6 +18,7 @@ public class TurnSystem : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
+        winner = null;
         isClicked = false;
         player = playerField.GetComponent<PlayerController>();
         enemy = enemyField.GetComponent<EnemyController>();
@@ -61,8 +63,17 @@ public class TurnSystem : MonoBehaviour
                 }
                 else { //if button pressed is an attack
                     //Attacks opponent, then makes it enemy's turn, then resets button
-                    if (player.DepleteStamina(input.staminaCost)) //subtracts 10 from player stamina, runs if still player stamina > 0
-                        enemy.TakeDamage(player.Turn(input));
+                        if (player.DepleteStamina(input.staminaCost)) //subtracts 10 from player stamina, runs if still player stamina > 0
+                    {
+                        while(FIXTHISKASEY() == null)
+                        {
+                            yield return null;
+                        }
+                        if (FIXTHISKASEY()) //checks if it hit
+                        {
+                            enemy.TakeDamage(player.Turn(input));
+                        }
+                    }   
                     turnIndex = 1;
                     UI.Unclick();
                 }
@@ -93,12 +104,23 @@ public class TurnSystem : MonoBehaviour
                     //If enemy dies, end combat
                     Debug.Log("You won!");
                     player.Win(enemy.getXP());
+                    winner = player;
                     break;
                     //add xp, leave encounter, break
                 }
             }
         } while (player.IsAlive()); //Run until one side is completely dead
         if (!player.IsAlive())
+        {
             enemy.Win(0);
+            winner = enemy;
+        }
+    }
+
+    //Dear Kasey:
+    //KILL THIS METHOD GRRRR
+    public bool FIXTHISKASEY()
+    {
+        return true;
     }
 }

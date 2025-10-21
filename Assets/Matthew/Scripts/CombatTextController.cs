@@ -8,7 +8,7 @@ public class CombatTextController : MonoBehaviour
 {
     [SerializeField] GameObject background;
     [SerializeField] GameObject textField;
-    [SerializeField] string textSpeed; //textSpeet must be set as a string key in textSpeedDict
+    [SerializeField] string textSpeed; //textSpeed must be set as a string key in textSpeedDict
     TextMeshProUGUI text;
     static Dictionary<string, float> textSpeedDict = new Dictionary<string, float>() {
         //Contains text speed settings and the corresponding coefficinets to be used in method TypeTextOverTime based on desired speed
@@ -37,12 +37,12 @@ public class CombatTextController : MonoBehaviour
         background.SetActive(!background.activeSelf);
     }
 
-    public void DisplayText(string displayText)
+    public void DisplayText(string displayText) //Changes current text displayed to displayText
     {
         text.text = displayText;
     }
 
-    //Types out displayText over time period duration
+    //Types out displayText over duration seconds
     public void DisplayText(string displayText, float duration)
     {
         if (textSpeedDict[textSpeed] == 0f)
@@ -56,6 +56,7 @@ public class CombatTextController : MonoBehaviour
         }
     }
 
+    //Coroutine for typing text, called in DisplayText (string displayText, float duration)
     private IEnumerator TypeTextOverTime(string endText, float duration)
     {
         char[] chars = endText.ToCharArray();

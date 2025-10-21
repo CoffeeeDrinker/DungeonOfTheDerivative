@@ -1,7 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-
+//Interface for player and enemy controllers
 public interface ICombatant
 {
     int Turn(Move move);

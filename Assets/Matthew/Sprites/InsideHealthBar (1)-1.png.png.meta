@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      InsideHealthBar (1)-1.png_0: -7854235704993829832
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
