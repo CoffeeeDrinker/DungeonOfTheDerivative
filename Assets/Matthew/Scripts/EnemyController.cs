@@ -124,7 +124,7 @@ public class EnemyController : MonoBehaviour, ICombatant
     bool ICombatant.TakeDamage(int damage)
     {
         health -= damage;
-        healthBar.transform.Translate(damage * (8F/maxHealth), 0, 0);
+        healthBar.transform.Translate(damage * (5.71F/maxHealth), 0, 0);
         if (health > 0)
         {
             return true;
@@ -145,6 +145,9 @@ public class EnemyController : MonoBehaviour, ICombatant
     {
         return stamina;
     }
+
+    //Reduces stamina by exhaustion, returns true if there is enough stamina to reduce by exhaustion, false otherwise
+    //If exhaustion is greater than stamina, stamina set to 0
     bool ICombatant.DepleteStamina(int exhaustion)
     {
         stamina -= exhaustion;

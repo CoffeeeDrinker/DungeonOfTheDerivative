@@ -11,7 +11,7 @@ public class PlayerController : MonoBehaviour, ICombatant
     public GameObject staminaBar;
     private int health;
     private int stamina;
-    private int playerLevel = 100;
+    private int playerLevel = 1;
     private int maxStamina;
     private int maxHealth;
     private int XP = 0;
@@ -39,8 +39,12 @@ public class PlayerController : MonoBehaviour, ICombatant
     {
             lastMove = move;
             //return damage
+            //SEND TO MATH PROBLEM
+            //IF RIGHT ANSWER:
             int damage = ((int)move.GetNewDamage()) * playerLevel;
-            return (int)move.GetNewDamage();
+            //ELSE:
+            //damage = 0;
+            return damage;
     }
 
     //Decreases health by damage, to a minimum of 0
@@ -48,7 +52,7 @@ public class PlayerController : MonoBehaviour, ICombatant
     //Postcondition: returns true if health is greater than 0, false otherwise
     public bool TakeDamage(int damage){
         health -= damage;
-        healthBar.transform.Translate(-damage*(8F/(float)maxHealth), 0, 0);
+        healthBar.transform.Translate(-damage*(5.71F/(float)maxHealth), 0, 0);
         if(health > 0){
             return true;
         } else{
@@ -79,7 +83,7 @@ public class PlayerController : MonoBehaviour, ICombatant
     bool ICombatant.DepleteStamina(int exhaustion)
     {
         stamina -= exhaustion;
-        staminaBar.transform.Translate(-exhaustion * (8F/maxStamina), 0, 0);
+        staminaBar.transform.Translate(-exhaustion * (5.71F/maxStamina), 0, 0);
         if (stamina > 0)
         {
             return true;
@@ -98,7 +102,7 @@ public class PlayerController : MonoBehaviour, ICombatant
             recharge = maxStamina-stamina;
         }
         stamina += recharge;
-        staminaBar.transform.Translate(recharge * (8F / maxStamina), 0, 0);
+        staminaBar.transform.Translate(recharge * (5.71F / maxStamina), 0, 0);
     }
 
     int ICombatant.getXP()

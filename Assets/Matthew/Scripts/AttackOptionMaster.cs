@@ -27,7 +27,7 @@ public class AttackOptionMaster : MonoBehaviour
         
     }
 
-    public Move GetMove()
+    public Move GetMove() //returns whichever move is clicked this frame, null if nothing clicked this frame
     {
         AttackOptionHandler selected = null;
         for (int i = 0; i < attackOptionList.Count; i++)

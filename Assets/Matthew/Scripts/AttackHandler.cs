@@ -32,9 +32,6 @@ public class AttackHandler : UIController
         return clicked;
     }
 
-    //Returns base damage of button pressed
-    //Returns null if nothing has been selected yet
-
     public void Unclick()
     {
         clicked = false;
