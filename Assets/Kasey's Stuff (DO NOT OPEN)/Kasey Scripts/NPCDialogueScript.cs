@@ -34,8 +34,9 @@ public class NPCDialogueScript : MonoBehaviour
     public float dialogueCooldownTime;
     private float startTime;
 
-    //Math Problem Manager
+    //Managers
     public MathProblemManager problemManager;
+    public CombatManager combatManager;
 
     void Update()
     {
@@ -60,14 +61,14 @@ public class NPCDialogueScript : MonoBehaviour
                 typewriterInstance.StopManualEffects();
 
                 //Check if combat should start (Finish this when Blond Guy 3 has combat fully implemented)
-                if(startCombatPostDialogue)
-                    problemManager.StartDraw();
+                if (startCombatPostDialogue)
+                    combatManager.StartCombat();
                 else
                     playerScript.enabled = true;
             }
             else
             {
-                if (!problemManager.drawscreenStuff.activeSelf)
+                if (!problemManager.drawscreenStuff.activeSelf && !combatManager.combatSystem.activeSelf)
                 {
                     //Activate dialogue box
                     typewriterInstance.Refresh();
