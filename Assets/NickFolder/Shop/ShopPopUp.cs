@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using TMPro;
@@ -43,6 +44,18 @@ public class ShopPopUp : MonoBehaviour
             return;
         }
 
+        int price = int.Parse(itemPrice.text);
 
+        if(PlayerManager.ducks < price)
+        {
+            return;
+        }
+
+        PlayerManager.ducks -= price;
+
+        Item item = gameObject.AddComponent<Item>();
+        item.SetName(currItem);
+        item.SetSprite(itemManager.GetSprite(item.GetName()));
+        grid.AddItem(item, 1);
     }
 }

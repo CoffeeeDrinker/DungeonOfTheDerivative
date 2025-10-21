@@ -36,6 +36,17 @@ public class SaveInventory : MonoBehaviour
     public void LoadGrid()
     {
         string[] lines = File.ReadAllLines(savePath);
-        inventory.LoadGrid(lines);
+        string[] grid = new string[15];
+
+        for(int i=0; i<15; i++)
+        {
+            grid[i] = lines[i];
+        }
+
+        inventory.LoadGrid(grid);
+
+        string[] ducks = lines[15].Split(' ');
+        Debug.Log(ducks[1]);
+        PlayerManager.SetDucks(int.Parse(ducks[1]));
     }
 }

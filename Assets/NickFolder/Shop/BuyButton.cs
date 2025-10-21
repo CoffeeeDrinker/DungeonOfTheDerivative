@@ -2,10 +2,9 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class PlayerManager : MonoBehaviour
+public class BuyButton : MonoBehaviour
 {
-    public static int ducks = 400;
-    
+    // Start is called before the first frame update
     void Start()
     {
         
@@ -17,8 +16,8 @@ public class PlayerManager : MonoBehaviour
         
     }
 
-    public static void SetDucks(int amount)
+    public void OnBuy()
     {
-        ducks = amount;
+        transform.GetComponentInParent<ShopPopUp>().BuyShownItem();
     }
 }
