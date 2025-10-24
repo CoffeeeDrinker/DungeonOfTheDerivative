@@ -3,9 +3,7 @@ You are going to fail AP Calculus 2.
 Then you are going to fail Linear Algebra.
 You are a failure.
 ~
-This is my second dialogue option.
-~
-This is my third dialogue option.
+Ok I guess you don't suck at math.
 ~~
 NPC2
 Hello!

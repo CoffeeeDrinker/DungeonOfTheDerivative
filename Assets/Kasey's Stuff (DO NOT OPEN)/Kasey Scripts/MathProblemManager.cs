@@ -16,10 +16,13 @@ public class MathProblemManager : MonoBehaviour
     public InputField answerInput;
 
     public MathProblem currentProb;
+    private bool answered;
 
     public void StartDraw()
     {
         drawscreenStuff.SetActive(true);
+        DeleteDrawings();
+        answerInput.text = "";
         drawscreenStuff.transform.position = player.position;
         currentProb = mathProblemGetterScript.GetRandProblem("Geometry");
         //Check if there is an image
@@ -55,19 +58,29 @@ public class MathProblemManager : MonoBehaviour
     }
 
     //CODE HERE IS TEMPORARY UNTIL THE BATTLE SYSTEM IS COMPLETE
-    public void CheckAnswer()
+    public int CheckAnswer() //0 = correct, 1 = incorrect, 2 = no answer yet
     {
-        if(currentProb.answer.Trim() == answerInput.text.Trim())
+        if (answered && currentProb.answer.Trim() == answerInput.text.Trim())
         {
-            Debug.Log("correct answer, do damage");
+            Debug.Log("correct answer");
+            drawscreenStuff.SetActive(false);
+            return 0;
         }
-        else
+        else if(answered && currentProb.answer.Trim() != answerInput.text.Trim())
         {
-            Debug.Log("incorrect answer, don't do damage");
+            drawscreenStuff.SetActive(false);
+            return 1;
         }
+        return 2;
+    }
 
-            answerInput.text = "";
-        drawscreenStuff.SetActive(false);
-        DeleteDrawings();
+    public void Answer()
+    {
+        answered = true;
+    }
+
+    public void UnAnswer()
+    {
+        answered = false;
     }
 }

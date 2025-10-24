@@ -38,10 +38,11 @@ public class NPCDialogueScript : MonoBehaviour
     public MathProblemManager problemManager;
     public CombatManager combatManager;
 
+    public bool talkNow = false;
+
     void Update()
     {
-        //Check if player is nearby, facing NPC, and clicks/presses E
-        if (playerIsHere && PlayerFacingNPC() && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0)))
+        if (talkNow)
         {
             //Disable Player Movement
             if (stopMovementWhenTalking)
@@ -60,9 +61,9 @@ public class NPCDialogueScript : MonoBehaviour
                 dialogueText.text = "";
                 typewriterInstance.StopManualEffects();
 
-                //Check if combat should start (Finish this when Blond Guy 3 has combat fully implemented)
+                //Check if combat should start
                 if (startCombatPostDialogue)
-                    combatManager.StartCombat();
+                    combatManager.StartCombat(gameObject.GetComponent<NPCDialogueScript>());
                 else
                     playerScript.enabled = true;
             }
@@ -101,6 +102,9 @@ public class NPCDialogueScript : MonoBehaviour
         {
             this.GetComponent<SpriteRenderer>().sortingOrder = player.GetComponent<SpriteRenderer>().sortingOrder - 1;
         }
+
+        //Check if player is nearby, facing NPC, and clicks/presses E
+        talkNow = playerIsHere && PlayerFacingNPC() && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0));
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -115,7 +119,7 @@ public class NPCDialogueScript : MonoBehaviour
         dialogueText.text = "";
         typewriterInstance.Refresh();
         currentDialogueLineI = 0;
-        currentDialogueI = 0;
+        //currentDialogueI = 0;
     }
 
     public void PrintAllDialogue()
@@ -156,5 +160,36 @@ public class NPCDialogueScript : MonoBehaviour
     public void SetTypewriterComplete()
     {
         typewriterEffectComplete = true;
+    }
+
+    public void SetDialogueI(int i)
+    {
+        currentDialogueI = i;
+    }
+
+    public void DefeatDialogue()
+    {
+        startCombatPostDialogue = false;
+        dialogueText.text = "";
+
+        /*
+        //Activate dialogue box
+        typewriterInstance.Refresh();
+        dialogueTextBox.SetActive(true);
+
+        //Set current dialogue object
+        currentDialogueI = 1;
+        currentDialogueLineI = 0;
+        dialogueText.text = NPCDialogue[currentDialogueI].GetLine(currentDialogueLineI);
+        typewriterInstance.Refresh();
+
+        typewriterEffectComplete = false;
+        startTime = Time.fixedTime;
+        typewriterInstance.StartManualEffects();
+        */
+        currentDialogueI = 1;
+        currentDialogueLineI = 0;
+
+        talkNow = true;
     }
 }

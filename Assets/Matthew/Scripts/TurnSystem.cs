@@ -15,6 +15,9 @@ public class TurnSystem : MonoBehaviour
     public static int turnIndex; //Whoever is having their turn currently; 0 = player, 1 = enemy
     private bool isClicked;
 
+    //Kasey was here
+    public GameObject gameManager;
+
     // Start is called before the first frame update
     void Start()
     {
@@ -62,16 +65,23 @@ public class TurnSystem : MonoBehaviour
                     UI.Unclick();
                 }
                 else { //if button pressed is an attack
+                    gameManager.GetComponent<MathProblemManager>().StartDraw();
                     //Attacks opponent, then makes it enemy's turn, then resets button
-                        if (player.DepleteStamina(input.staminaCost)) //subtracts 10 from player stamina, runs if still player stamina > 0
+                    if (player.DepleteStamina(input.staminaCost)) //subtracts 10 from player stamina, runs if still player stamina > 0
                     {
-                        while(FIXTHISKASEY() == null)
+                        while(FIXTHISKASEY() == 2)
                         {
                             yield return null;
                         }
-                        if (FIXTHISKASEY()) //checks if it hit
+                        if (FIXTHISKASEY() == 0) //checks if it hit
                         {
                             enemy.TakeDamage(player.Turn(input));
+                            gameManager.GetComponent<MathProblemManager>().UnAnswer();
+                        }
+                        else if(FIXTHISKASEY() == 1)
+                        {
+                            Debug.Log("incorrect, no damage :(");
+                            gameManager.GetComponent<MathProblemManager>().UnAnswer();
                         }
                     }   
                     turnIndex = 1;
@@ -105,7 +115,12 @@ public class TurnSystem : MonoBehaviour
                     Debug.Log("You won!");
                     player.Win(enemy.getXP());
                     winner = player;
+
+                    //Continue dialogue
+                    gameManager.GetComponent<CombatManager>().CloseCombatSystem();
+
                     break;
+
                     //add xp, leave encounter, break
                 }
             }
@@ -119,8 +134,8 @@ public class TurnSystem : MonoBehaviour
 
     //Dear Kasey:
     //KILL THIS METHOD GRRRR
-    public bool FIXTHISKASEY()
+    public int FIXTHISKASEY()
     {
-        return true;
+        return gameManager.GetComponent<MathProblemManager>().CheckAnswer();
     }
 }
