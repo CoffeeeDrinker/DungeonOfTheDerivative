@@ -57,9 +57,17 @@ public class MathProblemManager : MonoBehaviour
     //CODE HERE IS TEMPORARY UNTIL THE BATTLE SYSTEM IS COMPLETE
     public void CheckAnswer()
     {
-        answerInput.text = "";
+        if(currentProb.answer.Trim() == answerInput.text.Trim())
+        {
+            Debug.Log("correct answer, do damage");
+        }
+        else
+        {
+            Debug.Log("incorrect answer, don't do damage");
+        }
+
+            answerInput.text = "";
         drawscreenStuff.SetActive(false);
         DeleteDrawings();
-        player.GetComponent<PlayerMovement>().enabled = true;
     }
 }
