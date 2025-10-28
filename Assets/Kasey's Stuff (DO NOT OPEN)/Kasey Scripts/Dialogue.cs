@@ -10,7 +10,8 @@ public class Dialogue
 
     public void AddLine(string newLine)
     {
-        dialogueLines.Add(newLine.TrimStart('\n').TrimEnd('\n'));
+        if(newLine != "" && newLine != null)
+            dialogueLines.Add(newLine.TrimStart('\n').TrimEnd('\n'));
     }
 
     public string GetLine(int index)

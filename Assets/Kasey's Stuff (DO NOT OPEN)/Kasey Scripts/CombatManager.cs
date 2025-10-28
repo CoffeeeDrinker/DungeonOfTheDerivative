@@ -8,9 +8,20 @@ public class CombatManager : MonoBehaviour
     public GameObject player;
     public Vector3 combatSystemTransform;
 
-    public void StartCombat()
+    private NPCDialogueScript currentNPC;
+
+    public void StartCombat(NPCDialogueScript currentNPC)
     {
+        this.currentNPC = currentNPC;
         combatSystem.SetActive(true);
         combatSystem.transform.localPosition = player.transform.localPosition + combatSystemTransform;
+    }
+
+    public void CloseCombatSystem()
+    {
+        combatSystem.SetActive(false);
+        currentNPC.DefeatDialogue();
+
+        currentNPC = null;
     }
 }
