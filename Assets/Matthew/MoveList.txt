@@ -1,0 +1,12 @@
+**INSTRUCTIONS: List moves in following order: String name, int lowerDmgBound, int UpperDmgBound, int staminaCost**
+
+"Subtraction Slash" 10 20 10
+"Factorial Flurry" 
+"Exponent Explosion"
+"Sinewave Splash"
+"Cosine crush"
+"Tangent Tussle"
+"Integral Immolation"
+"Z-score zap"
+"Matrix Meteor"
+"Harmonic Harm"
