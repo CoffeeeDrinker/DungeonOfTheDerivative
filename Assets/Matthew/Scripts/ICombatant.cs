@@ -4,7 +4,7 @@ using UnityEngine;
 //Interface for player and enemy controllers
 public interface ICombatant
 {
-    int Turn(Move move);
+    int Attack(int baseDmg);
     bool IsAlive();
     public bool TakeDamage(int damage);
 
@@ -21,4 +21,6 @@ public interface ICombatant
     public int GetStamina();
 
     Move GetLastMove();
+
+    void MakeNewMove(ICombatant x);
 }

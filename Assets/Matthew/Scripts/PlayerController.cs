@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.GraphicsBuffer;
 
 public class PlayerController : MonoBehaviour, ICombatant
 {
@@ -16,6 +17,7 @@ public class PlayerController : MonoBehaviour, ICombatant
     private int maxHealth;
     private int XP = 0;
     private Move lastMove;
+    public List<Move> moveList;
     // Start is called before the first frame update
     // Start is called before the first frame update
     void Start()
@@ -25,6 +27,78 @@ public class PlayerController : MonoBehaviour, ICombatant
         health = maxHealth;
         stamina = maxStamina;
         attackButton = attackButtonField.GetComponent<AttackHandler>();
+        moveList = new List<Move>() //initializes list of moves
+        {
+            new Move(
+                "Attack1",
+                true, //is an attack
+                (origin, direction) =>
+                {
+                    int dmg = Random.Range(9, 11); //randomly generates base damage within pre-defined bounds
+                    if (dmg > 0)
+                    {
+                        direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
+                        origin.DepleteStamina(15);
+                    }
+                }),
+            new Move(
+                "Attack2",
+                true, //is an attack
+                (origin, direction) =>
+                {
+                    int dmg = Random.Range(1, 20); //randomly generates base damage within pre-defined bounds
+                    if (dmg > 0)
+                    {
+                        direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
+                        origin.DepleteStamina(15);
+                    }
+                }),
+            new Move(
+                "Attack3",
+                true, //is an attack
+                (origin, direction) =>
+                {
+                    int dmg = Random.Range(5, 15); //randomly generates base damage within pre-defined bounds
+                    if (dmg > 0)
+                    {
+                        direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
+                        origin.DepleteStamina(15);
+                    }
+                }),
+            new Move(
+                "Attack4",
+                true, //is an attack
+                (origin, direction) =>
+                {
+                    int dmg = Random.Range(25, 75); //randomly generates base damage within pre-defined bounds
+                    if (dmg > 0)
+                    {
+                        direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
+                        origin.DepleteStamina(15);
+                    }
+                }),
+            new Move(
+                "Rest", //name of move
+                false, //is not an attack
+                (origin, direction) => //implementation of move
+                {
+                    origin.Rest(30);
+                }),
+            new Move(
+                "Run", //name of move
+                false, //is not an attack
+                (origin, direction) => //implementation of move
+                {
+                    //running does nothing :((((((
+                }),
+            new Move(
+                "OpenInventory", //name of move
+                false, //is not an attack
+                (origin, direction) => //implementation of move
+                {
+                    //nuh uh
+                })
+        };
     }
 
     // Update is called once per frame
@@ -35,15 +109,12 @@ public class PlayerController : MonoBehaviour, ICombatant
 
     //Calculates damage
     //Postcondition: returns damage dealt as a integer, 0 if attack missed
-    int ICombatant.Turn(Move move)
+    int ICombatant.Attack(int baseDmg)
     {
-            lastMove = move;
-            //return damage
-            //SEND TO MATH PROBLEM
-            //IF RIGHT ANSWER:
-            int damage = ((int)move.GetNewDamage()) * playerLevel;
-            //ELSE:
-            //damage = 0;
+            //lastMove = move;
+
+            //return damage after modifiers
+            int damage = baseDmg * playerLevel;
             return damage;
     }
 
@@ -129,5 +200,15 @@ public class PlayerController : MonoBehaviour, ICombatant
     Move ICombatant.GetLastMove()
     {
         return lastMove;
+    }
+
+    void ICombatant.MakeNewMove(ICombatant x)
+    {
+        throw new System.NotImplementedException();
+    }
+
+    public List<Move> GetMoveList()
+    {
+        return moveList;
     }
 }

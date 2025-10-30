@@ -1,7 +1,9 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.Net.NetworkInformation;
 using System.Runtime.InteropServices.WindowsRuntime;
 using Unity.VisualScripting.ReorderableList;
+using UnityEditor.Experimental.GraphView;
 using UnityEngine;
 [DefaultExecutionOrder(-1)]
 public class UIController : MonoBehaviour
@@ -18,6 +20,30 @@ public class UIController : MonoBehaviour
     protected static RestHandler restHandler;
     protected static RunHandler runHandler;
     protected static CombatTextController combatTextController;
+
+    //Defining certain moves statically here, will probably need to change later when we have a central place to store moves
+    Move rest = new Move(
+        "Rest",
+        false,
+        (origin, direction) => //implementation of move
+        {
+            origin.Rest(30);
+        });
+    Move inventory = new Move(
+        "Inventory",
+        false,
+        (origin, direction) => //implementation of move
+        {
+            //doesn't do anything loser
+        });
+    Move run = new Move(
+        "Inventory",
+        false,
+        (origin, direction) => //implementation of move
+        {
+            //doesn't do anything loser
+        });
+
     // Start is called before the first frame update
     void Start()
     {
@@ -43,30 +69,30 @@ public class UIController : MonoBehaviour
             HideButtons();
             attackController.ToggleAttackOptions(true);
             Move result = attackController.GetMove();
-            while (result == null)
+            while(result == null)
             {
-                return new Move("Pass Frame");
+                return null;
             }
-            attackController.ToggleAttackOptions(false);
             ShowButtons();
+            attackController.ToggleAttackOptions(false);
             return result;
         }
         else if (inventoryHandler.IsClicked())
         {
             Debug.Log("Inventory");
-            return new Move("Inventory");
+            return inventory;
         } else if (restHandler.IsClicked())
         {
             Debug.Log("Rest");
-            return new Move("Rest", 20);
+            return rest;
         } else if (runHandler.IsClicked())
         {
             Debug.Log("Run");
-            return new Move("Run");
+            return run;
         }
         else
         {
-            return new Move("Pass Frame");
+            return null;
         }
     }
 

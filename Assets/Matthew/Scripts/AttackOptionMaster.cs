@@ -19,6 +19,7 @@ public class AttackOptionMaster : MonoBehaviour
             attackOption3Field.GetComponent<AttackOptionHandler>(),
             attackOption4Field.GetComponent<AttackOptionHandler>()
         };
+        ToggleAttackOptions(false);
     }
 
     // Update is called once per frame
@@ -41,6 +42,7 @@ public class AttackOptionMaster : MonoBehaviour
         }
         if (selected != null)
         {
+            Debug.Log(selected.GetMove().name);
             return selected.GetMove();
         }
         else
