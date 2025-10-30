@@ -17786,6 +17786,14 @@ PrefabInstance:
       propertyPath: TransitionAnims
       value: 
       objectReference: {fileID: 38452416}
+    - target: {fileID: 9131539008088698134, guid: e8b3ac917e520a44ea54e73ba2283950, type: 3}
+      propertyPath: lastInTransition
+      value: 
+      objectReference: {fileID: 1905589922, guid: d8060646cdaada140b90e03b985f21fe, type: 3}
+    - target: {fileID: 9131539008088698134, guid: e8b3ac917e520a44ea54e73ba2283950, type: 3}
+      propertyPath: transitionSprite
+      value: 
+      objectReference: {fileID: 38452412}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []

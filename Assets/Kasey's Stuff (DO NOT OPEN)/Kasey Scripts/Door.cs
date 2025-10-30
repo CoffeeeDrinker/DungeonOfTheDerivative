@@ -33,7 +33,6 @@ public class Door : MonoBehaviour
         //Transport player to new location
         if (transitionSprite.GetComponent<SpriteRenderer>().sprite == lastInTransition)
         {
-            Debug.Log("testing");
             player.position = newLocation;
             playerIsHere = false;
             TransitionAnims.ResetTrigger("openTransition");
