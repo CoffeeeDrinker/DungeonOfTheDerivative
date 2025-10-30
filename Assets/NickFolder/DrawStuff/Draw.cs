@@ -10,13 +10,12 @@ public class Draw : MonoBehaviour
     [SerializeField] double defaultSize;
     [SerializeField] double defaultEraserSize;
     [SerializeField] GameObject holder;
-    private int currOrder;
+    [SerializeField] int currOrder;
     private bool drawing;
 
     // Start is called before the first frame update
     void Start()
     {
-        currOrder = 0;
         drawThing.transform.localScale = new Vector2((float)defaultSize, (float)defaultSize);
         eraseThing.transform.localScale = new Vector2((float)defaultEraserSize, (float)defaultEraserSize);
         ChangeColor(defaultColor);
