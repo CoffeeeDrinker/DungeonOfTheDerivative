@@ -10,6 +10,10 @@ public class Door : MonoBehaviour
     public string newScene;
     private bool playerIsHere = false;
 
+    public Animator TransitionAnims;
+    public GameObject transitionSprite;
+    public Sprite lastInTransition;
+
     void Update()
     {
         //If player is nearby and the player clicks a button teleport them to new area
@@ -21,9 +25,20 @@ public class Door : MonoBehaviour
                 SceneManager.LoadScene(newScene);
             }
 
-            //Transport player to new location
+            //Play Transition Animation
+            TransitionAnims.ResetTrigger("closeTransition");
+            TransitionAnims.SetTrigger("openTransition");
+        }
+
+        //Transport player to new location
+        if (transitionSprite.GetComponent<SpriteRenderer>().sprite == lastInTransition)
+        {
+            Debug.Log("testing");
             player.position = newLocation;
             playerIsHere = false;
+            TransitionAnims.ResetTrigger("openTransition");
+            TransitionAnims.SetTrigger("closeTransition");
+            transitionSprite.GetComponent<SpriteRenderer>().sprite = null;
         }
     }
 
