@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor;
 using UnityEditor.UIElements;
 using UnityEngine;
 [DefaultExecutionOrder(100)] //This class's Start() method will be called last
@@ -52,9 +53,15 @@ public class TurnSystem : MonoBehaviour
                 }
                 else if(input.isAttack == false) //if it is something other than an attack
                 {
-                    input.move(player, enemy);
-                    turnIndex++;
-                    UI.Unclick();
+                    if (input.name == "Inventory" && !IfInventoryUnUnClicked())
+                    {
+                        yield return null; //If nothing in inventory has been clicked, wait a frame
+                    }
+                    else {
+                        input.move(player, enemy);
+                        turnIndex++;
+                        UI.Unclick();
+                    }
                 }
                 else { //if button pressed is an attack
                     gameManager.GetComponent<MathProblemManager>().StartDraw();
@@ -125,7 +132,12 @@ public class TurnSystem : MonoBehaviour
     //KILL THIS METHOD GRRRR
     public int IfAttackHit()
     {
-        //return gameManager.GetComponent<MathProblemManager>().CheckAnswer();
-        return 0;
+        return gameManager.GetComponent<MathProblemManager>().CheckAnswer();
+    }
+
+    public bool IfInventoryUnUnClicked()
+    {
+        return true;
+        //return true if smth was clicked
     }
 }

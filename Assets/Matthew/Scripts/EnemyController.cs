@@ -214,7 +214,7 @@ public class EnemyController : MonoBehaviour, ICombatant
 
     void ICombatant.Rest(int baseRecharge)
     {
-        int recharge = -baseRecharge;
+        int recharge = baseRecharge;
         stamina += recharge;
     }
 

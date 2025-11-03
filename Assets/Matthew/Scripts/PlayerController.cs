@@ -76,27 +76,6 @@ public class PlayerController : MonoBehaviour, ICombatant
                         direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
                         origin.DepleteStamina(15);
                     }
-                }),
-            new Move(
-                "Rest", //name of move
-                false, //is not an attack
-                (origin, direction) => //implementation of move
-                {
-                    origin.Rest(30);
-                }),
-            new Move(
-                "Run", //name of move
-                false, //is not an attack
-                (origin, direction) => //implementation of move
-                {
-                    //running does nothing :((((((
-                }),
-            new Move(
-                "OpenInventory", //name of move
-                false, //is not an attack
-                (origin, direction) => //implementation of move
-                {
-                    //nuh uh
                 })
         };
     }
@@ -167,7 +146,7 @@ public class PlayerController : MonoBehaviour, ICombatant
 
     void ICombatant.Rest(int baseRecharge)
     {
-        int recharge = -1*baseRecharge; //make negative recharge positive
+        int recharge = baseRecharge; //make negative recharge positive
         if (stamina+recharge >= maxStamina)
         {
             recharge = maxStamina-stamina;

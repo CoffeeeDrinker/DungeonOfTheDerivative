@@ -34,14 +34,17 @@ public class UIController : MonoBehaviour
         false,
         (origin, direction) => //implementation of move
         {
-            //doesn't do anything loser
+            
+            //ATTENTION NICHOLAS
+            //THIS IS WHERE YOU NEED TO CALL THE INVENTORY CODE
+            //Then have the items do whatever they do to either the player (origin) or enemy (direction)
         });
     Move run = new Move(
         "Inventory",
         false,
         (origin, direction) => //implementation of move
         {
-            //doesn't do anything loser
+            //no escape
         });
 
     // Start is called before the first frame update
