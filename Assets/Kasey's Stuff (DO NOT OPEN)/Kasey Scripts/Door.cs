@@ -24,6 +24,7 @@ public class Door : MonoBehaviour
             {
                 SceneManager.LoadScene(newScene);
             }
+            player.gameObject.GetComponent<PlayerMovement>().enabled = false;
 
             //Play Transition Animation
             TransitionAnims.ResetTrigger("closeTransition");
@@ -33,6 +34,7 @@ public class Door : MonoBehaviour
         //Transport player to new location
         if (transitionSprite.GetComponent<SpriteRenderer>().sprite == lastInTransition)
         {
+            player.gameObject.GetComponent<PlayerMovement>().enabled = true;
             player.position = newLocation;
             playerIsHere = false;
             TransitionAnims.ResetTrigger("openTransition");
