@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 public class AttackOptionHandler : MonoBehaviour
 {
+
     bool clicked;
     [SerializeField] GameObject player;
     [SerializeField] int order;
@@ -15,6 +16,8 @@ public class AttackOptionHandler : MonoBehaviour
         clicked = false;
         playerController = player.GetComponent<PlayerController>();
         move = playerController.GetMoveList()[order];
+
+
     }
 
     // Update is called once per frame
