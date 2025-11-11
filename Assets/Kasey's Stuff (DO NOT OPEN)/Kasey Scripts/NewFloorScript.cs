@@ -43,17 +43,19 @@ public class NewFloorScript : MonoBehaviour
             {
                 upButton.GetComponent<Image>().sprite = grayUpArrow;
                 upButton.GetComponent<Button>().enabled = false;
+                downButton.GetComponent<Button>().enabled = true;
             } else if(currentFloor == 0) //Ife we are on the botton floor, disable down button
             {
                 downButton.GetComponent<Image>().sprite = grayDownArrow;
                 downButton.GetComponent<Button>().enabled = false;
+                upButton.GetComponent <Button>().enabled = true;
             }
             else //Make sure both buttons are enabled
             {
                 upButton.GetComponent<Image>().sprite = redUpArrow;
                 downButton.GetComponent<Image>().sprite = redDownArrow;
-                upButton.SetActive(true);
-                downButton.SetActive(true);
+                downButton.GetComponent<Button>().enabled = true;
+                upButton.GetComponent<Button>().enabled = true;
             }
         }
 

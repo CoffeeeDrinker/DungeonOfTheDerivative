@@ -38,7 +38,6 @@ public class NoClickDoor : MonoBehaviour
         {
             NewHall();
         }
-        Debug.Log(oldTiles[0].activeSelf);
     }
 
     void OnTriggerEnter2D(Collider2D col)
