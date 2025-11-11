@@ -7,9 +7,11 @@ public class SaveInventory : MonoBehaviour
 {
     [SerializeField] string savePath;
     [SerializeField] Grid inventory;
+
     void Start()
     {
-        savePath = Application.dataPath + savePath;
+        savePath = CurrentSave.currSave;
+        LoadGrid();
     }
 
     public void Save()
@@ -48,5 +50,8 @@ public class SaveInventory : MonoBehaviour
         string[] ducks = lines[15].Split(' ');
         Debug.Log(ducks[1]);
         PlayerManager.SetDucks(int.Parse(ducks[1]));
+
+        string[] volume = lines[16].Split(' ');
+        SoundManager.Instance.SetVolumeSFX(int.Parse(volume[1]));
     }
 }

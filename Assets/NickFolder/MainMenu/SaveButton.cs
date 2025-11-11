@@ -1,10 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEngine.SceneManagement;
 
 public class SaveButton : MonoBehaviour
 {
-    // Start is called before the first frame update
+    [SerializeField] int save;
+
     void Start()
     {
         
@@ -14,5 +16,23 @@ public class SaveButton : MonoBehaviour
     void Update()
     {
         
+    }
+
+    public void ChooseSave()
+    {
+        switch(save)
+        {
+            case 1:
+                CurrentSave.SetSaveOne();
+                break;
+            case 2:
+                CurrentSave.SetSaveTwo();
+                break;
+            case 3:
+                CurrentSave.SetSaveThree();
+                break;
+        }
+
+        SceneManager.LoadScene("CombinedScene");
     }
 }
