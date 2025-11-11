@@ -12,7 +12,6 @@ public class NoClickDoor : MonoBehaviour
 
     public Animator TransitionAnims;
     public GameObject transitionSprite;
-    public Sprite lastInTransition;
 
     public List<GameObject> newTiles;
     public List<GameObject> oldTiles;
@@ -35,16 +34,11 @@ public class NoClickDoor : MonoBehaviour
         }
 
         //Transport player to new location
-        if (transitionSprite.GetComponent<SpriteRenderer>().sprite == lastInTransition)
+        if (playerIsHere && TransitionAnims.GetCurrentAnimatorStateInfo(0).IsName("Transition") && TransitionAnims.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.95f)
         {
-            EnableNewLocation();
-            player.gameObject.GetComponent<PlayerMovement>().enabled = true;
-            player.position = newLocation;
-            playerIsHere = false;
-            TransitionAnims.ResetTrigger("openTransition");
-            TransitionAnims.SetTrigger("closeTransition");
-            transitionSprite.GetComponent<SpriteRenderer>().sprite = null;
+            NewHall();
         }
+        Debug.Log(oldTiles[0].activeSelf);
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -67,6 +61,21 @@ public class NoClickDoor : MonoBehaviour
         for (int i = 0; i < newTiles.Count; i++)
         {
             newTiles[i].SetActive(true);
+        }
+    }
+
+    public void NewHall()
+    {
+        if (playerIsHere)
+        {
+            player.position = newLocation;
+
+            TransitionAnims.ResetTrigger("openTransition");
+            TransitionAnims.SetTrigger("closeTransition");
+            transitionSprite.GetComponent<SpriteRenderer>().sprite = null;
+
+            player.gameObject.GetComponent<PlayerMovement>().enabled = true;
+            EnableNewLocation();
         }
     }
 }

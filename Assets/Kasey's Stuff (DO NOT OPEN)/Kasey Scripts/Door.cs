@@ -32,7 +32,7 @@ public class Door : MonoBehaviour
         }
 
         //Transport player to new location
-        if (transitionSprite.GetComponent<SpriteRenderer>().sprite == lastInTransition)
+        if (playerIsHere && TransitionAnims.GetCurrentAnimatorStateInfo(0).IsName("Transition") && TransitionAnims.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.95f)
         {
             player.gameObject.GetComponent<PlayerMovement>().enabled = true;
             player.position = newLocation;

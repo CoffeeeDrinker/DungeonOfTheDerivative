@@ -16,7 +16,6 @@ public class NewFloorScript : MonoBehaviour
 
     public Animator TransitionAnims;
     public GameObject transitionSprite;
-    public Sprite lastInTransition;
 
     public int currentFloor = 1;
     public int nextFloor;
@@ -59,7 +58,7 @@ public class NewFloorScript : MonoBehaviour
         }
 
         //Transport player to new location when transition animation ends
-        if (transitionSprite.GetComponent<SpriteRenderer>().sprite == lastInTransition)
+        if (playerIsHere && TransitionAnims.GetCurrentAnimatorStateInfo(0).IsName("Transition") && TransitionAnims.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.95f)
         {
             //End Transition
             TransitionAnims.ResetTrigger("openTransition");
