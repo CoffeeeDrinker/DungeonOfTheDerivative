@@ -23,7 +23,8 @@ public class MathProblemGetter : MonoBehaviour
     void Start()
     {
         text = mathProblemsFile.text;
-        string subj, prob, answ;
+        string subj, prob, answ, ansInputText;
+        GameObject answerInput = null;
 
         while (text.Length > 1)
         {
@@ -36,7 +37,20 @@ public class MathProblemGetter : MonoBehaviour
             answ = text.Substring(0, text.IndexOf("~~")-1);
             text = text.Substring(text.IndexOf("~~")+4);
 
-            problems.Add(new MathProblem(subj, prob, answ));
+            ansInputText = text.Substring(0, text.IndexOf("~~~")-2);
+            text = text.Substring(text.IndexOf("~~~") + 5);
+
+            switch (ansInputText)
+            {
+                case "Matrix":
+                    answerInput = AnswerInputManager.Instance.GetAnswerInput(E_AnswerInputs.matrix);
+                    break;
+                case "Number":
+                    answerInput = AnswerInputManager.Instance.GetAnswerInput(E_AnswerInputs.number);
+                    break;
+            }
+
+            problems.Add(new MathProblem(subj, prob, answ, answerInput));
         }
     }
 
@@ -90,5 +104,10 @@ public class MathProblemGetter : MonoBehaviour
     public string GetProblemWithoutImage(MathProblem prob)
     {
         return prob.GetProblem().Substring(0, prob.GetProblem().LastIndexOf("\n"));
+    }
+
+    public GameObject GetProblemAnswerInput(MathProblem prob)
+    {
+        return prob.GetAnswerInput();
     }
 }

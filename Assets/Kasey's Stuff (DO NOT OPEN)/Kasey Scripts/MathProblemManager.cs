@@ -13,7 +13,8 @@ public class MathProblemManager : MonoBehaviour
     public GameObject drawscreenStuff;
     public Text problemTextBox;
     public Image problemImage;
-    public InputField answerInput;
+    public GameObject answerInputGameObject;
+    public AnswerInput answerInput;
 
     public MathProblem currentProb;
 
@@ -21,7 +22,7 @@ public class MathProblemManager : MonoBehaviour
     {
         drawscreenStuff.SetActive(true);
         drawscreenStuff.transform.position = player.position;
-        currentProb = mathProblemGetterScript.GetRandProblem("Geometry");
+        currentProb = mathProblemGetterScript.GetRandProblem("Algebra 1");
         //Check if there is an image
         if (mathProblemGetterScript.GetProblemImage(currentProb) == null)
         {
@@ -34,6 +35,11 @@ public class MathProblemManager : MonoBehaviour
             problemImage.sprite = mathProblemGetterScript.GetProblemImage(currentProb);
             problemTextBox.text = mathProblemGetterScript.GetProblemWithoutImage(currentProb);
         }
+
+
+        answerInputGameObject = currentProb.GetAnswerInput();
+        answerInputGameObject.SetActive(true);
+        answerInput = answerInputGameObject.GetComponent<AnswerInput>();
     }
 
     public void DeleteDrawings()
@@ -57,7 +63,18 @@ public class MathProblemManager : MonoBehaviour
     //CODE HERE IS TEMPORARY UNTIL THE BATTLE SYSTEM IS COMPLETE
     public void CheckAnswer()
     {
-        answerInput.text = "";
+        string input = answerInput.GetInput();
+        bool correct = input == currentProb.GetAnswer();
+        if(correct)
+        {
+            Debug.Log("Right answer!");
+        } else
+        {
+            Debug.Log("Wrong answer, Mr. Huff hates you");
+        }
+
+        answerInput.ResetField();
+        answerInput.GetGameObject().SetActive(false);
         drawscreenStuff.SetActive(false);
         DeleteDrawings();
         player.GetComponent<PlayerMovement>().enabled = true;
