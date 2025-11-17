@@ -70,4 +70,15 @@ public class DialogueAssigner : MonoBehaviour
         }
         return -1;
     }
+
+    public void SetTypewriterCompleteForActive()
+    {
+        for (int i = 0; i < NPCs.Count; i++)
+        {
+            if (NPCs[i].GetComponent<NPCDialogueScript>().playerIsHere == true)
+            {
+                NPCs[i].GetComponent<NPCDialogueScript>().SetTypewriterComplete();
+            }
+        }
+    }
 }

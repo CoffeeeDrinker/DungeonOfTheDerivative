@@ -16262,6 +16262,17 @@ MonoBehaviour:
   combatSystem: {fileID: 1212281120}
   player: {fileID: 742102479}
   combatSystemTransform: {x: -1.553298, y: -0.006309811, z: 0.03595376}
+--- !u!114 &1957497737 stripped
+MonoBehaviour:
+  m_CorrespondingSourceObject: {fileID: 6318335149802630074, guid: b89c8ae6828eec5479277b86020f3c9e, type: 3}
+  m_PrefabInstance: {fileID: 4873098825571871887}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 782177589}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 52cdb2f3d911da9419b29e6f58e786a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
 --- !u!1 &1992321415
 GameObject:
   m_ObjectHideFlags: 0
@@ -17592,10 +17603,18 @@ PrefabInstance:
     - target: {fileID: 3751072669118148135, guid: 85c135da30c612741908618ca71d488b, type: 3}
       propertyPath: globalEffects.Array.data[0].onEffectCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_Target
       value: 
-      objectReference: {fileID: 7869986134153480937}
+      objectReference: {fileID: 1957497737}
     - target: {fileID: 3751072669118148135, guid: 85c135da30c612741908618ca71d488b, type: 3}
       propertyPath: globalEffects.Array.data[0].onEffectCompleted.m_PersistentCalls.m_Calls.Array.data[1].m_CallState
       value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751072669118148135, guid: 85c135da30c612741908618ca71d488b, type: 3}
+      propertyPath: globalEffects.Array.data[0].onEffectCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
+      value: SetTypewriterCompleteForActive
+      objectReference: {fileID: 0}
+    - target: {fileID: 3751072669118148135, guid: 85c135da30c612741908618ca71d488b, type: 3}
+      propertyPath: globalEffects.Array.data[0].onEffectCompleted.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
+      value: DialogueAssigner, Assembly-CSharp
       objectReference: {fileID: 0}
     - target: {fileID: 3751072669118148135, guid: 85c135da30c612741908618ca71d488b, type: 3}
       propertyPath: globalEffects.Array.data[0].onEffectCompleted.m_PersistentCalls.m_Calls.Array.data[1].m_TargetAssemblyTypeName
@@ -19595,17 +19614,6 @@ CircleCollider2D:
   m_CompositeOrder: 0
   m_Offset: {x: 0.00000023841858, y: -0.00000047683716}
   m_Radius: 0.50000006
---- !u!114 &7869986134153480937 stripped
-MonoBehaviour:
-  m_CorrespondingSourceObject: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
-  m_PrefabInstance: {fileID: 7086975402708528065}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 136048499551777914}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 35349d94944be594e9b7570d8d56c43e, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!4 &7869986134153480942 stripped
 Transform:
   m_CorrespondingSourceObject: {fileID: 4626925286789635756, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
