@@ -14,6 +14,9 @@ public class Door : MonoBehaviour
     public GameObject transitionSprite;
     public Sprite lastInTransition;
 
+    public List<GameObject> newTiles;
+    public List<GameObject> oldTiles;
+
     void Update()
     {
         //If player is nearby and the player clicks a button teleport them to new area
@@ -34,12 +37,7 @@ public class Door : MonoBehaviour
         //Transport player to new location
         if (playerIsHere && TransitionAnims.GetCurrentAnimatorStateInfo(0).IsName("Transition") && TransitionAnims.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.95f)
         {
-            player.gameObject.GetComponent<PlayerMovement>().enabled = true;
-            player.position = newLocation;
-            playerIsHere = false;
-            TransitionAnims.ResetTrigger("openTransition");
-            TransitionAnims.SetTrigger("closeTransition");
-            transitionSprite.GetComponent<SpriteRenderer>().sprite = null;
+            NewHall();
         }
     }
 
@@ -51,5 +49,33 @@ public class Door : MonoBehaviour
     void OnTriggerExit2D(Collider2D col)
     {
         playerIsHere = false;
+    }
+
+    public void EnableNewLocation()
+    {
+        for (int i = 0; i < oldTiles.Count; i++)
+        {
+            oldTiles[i].SetActive(false);
+        }
+
+        for (int i = 0; i < newTiles.Count; i++)
+        {
+            newTiles[i].SetActive(true);
+        }
+    }
+
+    public void NewHall()
+    {
+        if (playerIsHere)
+        {
+            player.position = newLocation;
+
+            TransitionAnims.ResetTrigger("openTransition");
+            TransitionAnims.SetTrigger("closeTransition");
+            transitionSprite.GetComponent<SpriteRenderer>().sprite = null;
+
+            player.gameObject.GetComponent<PlayerMovement>().enabled = true;
+            EnableNewLocation();
+        }
     }
 }

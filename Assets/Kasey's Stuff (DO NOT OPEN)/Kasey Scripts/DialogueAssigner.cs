@@ -20,7 +20,17 @@ public class DialogueAssigner : MonoBehaviour
             //Check if NPC name is correct
             if(i>0)
                 file = file.Substring(file.IndexOf("\n")+1);
-            if (NPCs[i].name.Trim() == file.Substring(0, file.IndexOf("\n")).Trim())
+
+            int NPCIndex = FindNPC(file.Substring(0, file.IndexOf("\n")).Trim());
+            if (NPCIndex > -1){
+                file = file.Substring(file.IndexOf(NPCs[NPCIndex].name.Trim()));
+            }
+            else
+            {
+                break;
+            }
+
+            if (NPCs[NPCIndex].name.Trim() == file.Substring(0, file.IndexOf("\n")).Trim())
             {
                 //Delete the name from the file
                 file = file.Substring(file.IndexOf("\n") + 1);
@@ -35,7 +45,7 @@ public class DialogueAssigner : MonoBehaviour
                         newDialogue.AddLine(file.Substring(0, file.IndexOf("\n")).Trim());
                         file = file.Substring(file.IndexOf("\n") + 1);
                     }
-                    NPCs[i].GetComponent<NPCDialogueScript>().NPCDialogue.Add(newDialogue);
+                    NPCs[NPCIndex].GetComponent<NPCDialogueScript>().NPCDialogue.Add(newDialogue);
                     file = file.Substring(file.IndexOf("~") + 1);
                 }
                 file = file.Substring(file.IndexOf("~") + 1);
@@ -47,5 +57,17 @@ public class DialogueAssigner : MonoBehaviour
             i++;
         }
               
+    }
+
+    public int FindNPC(string name)
+    {
+        for (int i = 0; i < NPCs.Count; i++)
+        {
+            if (name == NPCs[i].name.Trim())
+            {
+                return i;
+            }
+        }
+        return -1;
     }
 }

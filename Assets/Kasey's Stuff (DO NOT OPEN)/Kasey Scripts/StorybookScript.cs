@@ -47,7 +47,7 @@ public class StorybookScript : MonoBehaviour
     //Pedro
     public Image Pedro;
     public float PedroSpeed;
-    private Vector3 PedroLocation;
+    public Vector3 PedroLocation;
 
     void Start()
     {
@@ -60,7 +60,7 @@ public class StorybookScript : MonoBehaviour
         }
 
         //Set Pedro Location
-        PedroLocation = new Vector3(Pedro.transform.localPosition.x, -30f, 0f);
+        //PedroLocation = new Vector3(Pedro.transform.localPosition.x, -30f, 0f);
     }
 
     void Update()
