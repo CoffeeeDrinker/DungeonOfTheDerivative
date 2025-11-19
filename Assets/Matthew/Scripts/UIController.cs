@@ -56,6 +56,10 @@ public class UIController : MonoBehaviour
         runHandler = runButtonField.GetComponent<RunHandler>();
         attackController = attackOptionMasterField.GetComponent<AttackOptionMaster>();
         combatTextController = combatTextMasterField.GetComponent<CombatTextController>();
+
+        Question q = new Algebra1Question().GenerateQuestion("Algebra 1");
+        Debug.Log(q.GetQuestion());
+        Debug.Log("Answer: " + q.GetAnswer());
     }
 
     // Update is called once per frame

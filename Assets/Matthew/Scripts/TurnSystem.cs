@@ -46,42 +46,51 @@ public class TurnSystem : MonoBehaviour
         {
             if (turnIndex == 0) //if it's player's turn
             {
-                Move input = UI.GotInput();
-                if (input == null) //if no input has been recieved
+                if (!player.TurnStart()) //only takes input if turn was not skipped
                 {
-                    yield return null; //if no input recieved, wait a frame
-                }
-                else if(input.isAttack == false) //if it is something other than an attack
-                {
-                    if (input.name == "Inventory" && !IfInventoryUnUnClicked())
+                    Move input = UI.GotInput();
+                    if (input == null) //if no input has been recieved
                     {
-                        yield return null; //If nothing in inventory has been clicked, wait a frame
+                        yield return null; //if no input recieved, wait a frame
                     }
-                    else {
-                        input.move(player, enemy);
-                        turnIndex++;
+                    else if (input.isAttack == false) //if it is something other than an attack
+                    {
+                        if (input.name == "Inventory" && !IfInventoryUnUnClicked())
+                        {
+                            yield return null; //If nothing in inventory has been clicked, wait a frame
+                        }
+                        else
+                        {
+                            input.move(player, enemy);
+                            turnIndex++;
+                            UI.Unclick();
+                        }
+                    }
+                    else
+                    { //if button pressed is an attack
+                        gameManager.GetComponent<MathProblemManager>().StartDraw();
+                        //Attacks opponent, then makes it enemy's turn, then resets button
+                        while (IfAttackHit() == 2)
+                        {
+                            yield return null;
+                        }
+                        if (IfAttackHit() == 0) //checks if it hit
+                        {
+                            input.move(player, enemy);
+                            gameManager.GetComponent<MathProblemManager>().UnAnswer();
+                        }
+                        else if (IfAttackHit() == 1)
+                        {
+                            Debug.Log("incorrect, no damage :(");
+                            gameManager.GetComponent<MathProblemManager>().UnAnswer();
+                        }
+                        turnIndex = 1;
                         UI.Unclick();
                     }
                 }
-                else { //if button pressed is an attack
-                    gameManager.GetComponent<MathProblemManager>().StartDraw();
-                    //Attacks opponent, then makes it enemy's turn, then resets button
-                    while (IfAttackHit() == 2)
-                    {
-                        yield return null;
-                    }
-                    if (IfAttackHit() == 0) //checks if it hit
-                    {
-                        input.move(player, enemy);
-                        gameManager.GetComponent<MathProblemManager>().UnAnswer();
-                    }
-                    else if(IfAttackHit() == 1)
-                    {
-                        Debug.Log("incorrect, no damage :(");
-                        gameManager.GetComponent<MathProblemManager>().UnAnswer();
-                    } 
-                    turnIndex = 1;
-                    UI.Unclick();
+                else
+                {
+                    turnIndex = 1; //skips turn if turn was skipped
                 }
             }
             else // if it's enemy's turn
@@ -89,19 +98,22 @@ public class TurnSystem : MonoBehaviour
                 if (enemy.IsAlive())
                 {
                     //Deals damage to player with base dmg 10
-                    enemy.MakeNewMove(player);
-                    UI.DisplayText("Enemy is using: " + enemy.GetLastMove().name, 2f);
-                    float startTime = Time.time; //gets starting time for waiting
-                    while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+                    if (!enemy.TurnStart()) //only makes move if enemy doesn't have turn skipped
                     {
-                        if(Time.time - startTime >= 2)
+                        enemy.MakeNewMove(player);
+                        UI.DisplayText("Enemy is using: " + enemy.GetLastMove().name, 2f);
+                        float startTime = Time.time; //gets starting time for waiting
+                        while (!isClicked) //checks if player is trying to skip by pressing left mouse button
                         {
-                            break;
+                            if (Time.time - startTime >= 2)
+                            {
+                                break;
+                            }
+                            yield return null;
                         }
-                        yield return null;
+                        isClicked = false;
+                        UI.HideText();
                     }
-                    isClicked = false;
-                    UI.HideText();
                     turnIndex = 0;
                     Debug.Log("Player health: " + player.GetHealth() + "\nPlayer stamina: " + player.GetStamina() + "\nEnemy health: " + enemy.GetHealth() + "\nEnemy stamina: " + enemy.GetStamina());
                 }

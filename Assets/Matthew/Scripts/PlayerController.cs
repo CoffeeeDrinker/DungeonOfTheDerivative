@@ -10,12 +10,14 @@ public class PlayerController : MonoBehaviour, ICombatant
     AttackHandler attackButton; //attack button stored as AttackHandler component
     public GameObject healthBar;
     public GameObject staminaBar;
+    private StatusEffect status = null;
     private int health;
     private int stamina;
     private int playerLevel = 1;
     private int maxStamina;
     private int maxHealth;
     private int XP = 0;
+
     private Move lastMove;
     public List<Move> moveList;
     // Start is called before the first frame update
@@ -181,9 +183,25 @@ public class PlayerController : MonoBehaviour, ICombatant
         return lastMove;
     }
 
+    bool ICombatant.TurnStart()
+    {
+        bool skip = false;
+        if(status != null)
+        {
+            skip = status.statusEffect(this); //status effect does its thing on the player, if it skips turn sets skip to true, false otherwise
+        }
+        return skip;
+    }
+
     void ICombatant.MakeNewMove(ICombatant x)
     {
         throw new System.NotImplementedException();
+    }
+
+    void ICombatant.AddStatusEffect(StatusEffect s)
+    {
+        if(status == null) //only sets status if not already set
+            status = s;
     }
 
     public List<Move> GetMoveList()

@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -23,4 +24,8 @@ public interface ICombatant
     Move GetLastMove();
 
     void MakeNewMove(ICombatant x);
+
+    bool TurnStart();
+
+    void AddStatusEffect(StatusEffect status);
 }

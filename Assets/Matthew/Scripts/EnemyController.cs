@@ -17,6 +17,7 @@ public class EnemyController : MonoBehaviour, ICombatant
     private List<Move> moveList;
     private Move lastMove;
     public Dictionary<Move, float> priorities;
+    private StatusEffect status;
     // Start is called before the first frame update
     void Start()
     {
@@ -230,6 +231,22 @@ public class EnemyController : MonoBehaviour, ICombatant
     Move ICombatant.GetLastMove()
     {
         return lastMove;
+    }
+
+    bool ICombatant.TurnStart()
+    {
+        bool skip = false;
+        if (status != null)
+        {
+            skip = status.statusEffect(this);
+        }
+        return skip;
+    }
+
+    void ICombatant.AddStatusEffect(StatusEffect s)
+    {
+        if(status == null)
+            this.status = s;
     }
 
     //Debug method to test selection algorithm and determine distribution of move picks
