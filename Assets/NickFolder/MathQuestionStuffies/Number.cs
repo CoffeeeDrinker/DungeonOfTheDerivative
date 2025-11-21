@@ -18,6 +18,6 @@ public class Number : MonoBehaviour, AnswerInput
 
     public void ResetField()
     {
-        input.text = "";
+        input.text = "?";
     }
 }

@@ -20,6 +20,6 @@ public class SubmitButton : MonoBehaviour
 
     public void Clicked()
     {
-        problemManager.CheckAnswer();
+        problemManager.OnSubmit();
     }
 }
