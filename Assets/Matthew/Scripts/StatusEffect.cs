@@ -1,4 +1,5 @@
 using System;
+using System.Diagnostics;
 
 public sealed class StatusEffect
 {
@@ -18,7 +19,7 @@ public static class StatusEffects
             affected.TakeDamage((int)(affected.GetHealth() / 5f));
             if (UnityEngine.Random.Range(0, 10) <= 2)
             {
-                //affected.ClearStatusEffects()
+                affected.ClearStatusEffects();
             }
             return false; //never skips turn
         }
@@ -34,7 +35,7 @@ public static class StatusEffects
             if (UnityEngine.Random.Range(0, 10) <= 2)
             {
                 //affected.SetDmgCoefficient(1);
-                //affected.ClearStatusEffects()
+                affected.ClearStatusEffects();
             }
             return false; //never skips turn
         }
@@ -44,10 +45,10 @@ public static class StatusEffects
         (affected) =>
         {
             //Asleep makes you skip every turn until you wake up
-            //40% chance of waking up each turn
-            if (UnityEngine.Random.Range(0, 10) <= 4)
+            //Chance of waking up each turn
+            if (UnityEngine.Random.Range(0, 10) <= 2)
             {
-                //affected.ClearStatusEffects()
+                affected.ClearStatusEffects();
                 return false;
             }
             else
@@ -65,7 +66,7 @@ public static class StatusEffects
             affected.DepleteStamina(10);
             if (UnityEngine.Random.Range(0, 10) <= 1)
             {
-                //affected.ClearStatusEffects()
+                affected.ClearStatusEffects();
             }
             return false; //never skips turn
         }
@@ -83,7 +84,7 @@ public static class StatusEffects
             }
             if (UnityEngine.Random.Range(0, 10) <= 3)
             {
-                //affected.ClearStatusEffects()
+                affected.ClearStatusEffects();
                 return false;
             }
             return false;
@@ -100,7 +101,7 @@ public static class StatusEffects
             affected.Rest(20);
             if (UnityEngine.Random.Range(0, 10) <= 3)
             {
-                //affected.ClearStatusEffects()
+                affected.ClearStatusEffects();
             }
             //affected.SetStatusEffect(caffeineCrash);
             return false; //never skips turn
@@ -115,7 +116,7 @@ public static class StatusEffects
             //20% chance of wearing off each turn
             if (UnityEngine.Random.Range(0, 10) <= 3)
             {
-                //affected.ClearStatusEffects()
+                affected.ClearStatusEffects();
                 return false;
             }
             if (UnityEngine.Random.Range(0, 10) <= 5)
@@ -135,7 +136,7 @@ public static class StatusEffects
             //affected.SetDmgCoefficient(0.5);
             if (UnityEngine.Random.Range(0, 10) <= 3)
             {
-                //affected.ClearStatusEffects();
+                 affected.ClearStatusEffects();
                 //affected.SetDmgCoefficient(1)
             }
             return false; //never skips turn

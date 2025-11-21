@@ -28,4 +28,8 @@ public interface ICombatant
     bool TurnStart();
 
     void AddStatusEffect(StatusEffect status);
+
+    StatusEffect GetStatus();
+
+    void ClearStatusEffects();
 }

@@ -113,8 +113,28 @@ public class TurnSystem : MonoBehaviour
                         }
                         isClicked = false;
                         UI.HideText();
+                    } else
+                    {
+                        if(enemy.GetStatus() == StatusEffects.ASLEEP)
+                        {
+                            UI.DisplayText("Enemy is asleep!", 2f);
+                        } else if (enemy.GetStatus() == StatusEffects.PARALYZED)
+                        {
+                            UI.DisplayText("Enemy is frozen in paralysis!", 2f);
+                        }
+                        float startTime = Time.time; //gets starting time for waiting
+                        while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+                        {
+                            if (Time.time - startTime >= 2)
+                            {
+                                break;
+                            }
+                            yield return null;
+                        }
+                        isClicked = false;
+                        UI.HideText();
                     }
-                    turnIndex = 0;
+                        turnIndex = 0;
                     Debug.Log("Player health: " + player.GetHealth() + "\nPlayer stamina: " + player.GetStamina() + "\nEnemy health: " + enemy.GetHealth() + "\nEnemy stamina: " + enemy.GetStamina());
                 }
                 else
@@ -145,8 +165,9 @@ public class TurnSystem : MonoBehaviour
     public int IfAttackHit()
     {
         return gameManager.GetComponent<MathProblemManager>().CheckAnswer();
+        //return 0; //debug to make always hit
     }
-
+     
     public bool IfInventoryUnUnClicked()
     {
         return true;

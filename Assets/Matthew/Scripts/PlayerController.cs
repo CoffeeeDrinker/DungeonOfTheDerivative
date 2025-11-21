@@ -13,7 +13,7 @@ public class PlayerController : MonoBehaviour, ICombatant
     private StatusEffect status = null;
     private int health;
     private int stamina;
-    private int playerLevel = 1;
+    [SerializeField] int playerLevel;
     private int maxStamina;
     private int maxHealth;
     private int XP = 0;
@@ -37,7 +37,7 @@ public class PlayerController : MonoBehaviour, ICombatant
                 (origin, direction) =>
                 {
                     int dmg = Random.Range(9, 11); //randomly generates base damage within pre-defined bounds
-                    if (dmg > 0)
+                    if (dmg > 0 && origin.GetStamina() >= 15)
                     {
                         direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
                         origin.DepleteStamina(15);
@@ -49,7 +49,7 @@ public class PlayerController : MonoBehaviour, ICombatant
                 (origin, direction) =>
                 {
                     int dmg = Random.Range(1, 20); //randomly generates base damage within pre-defined bounds
-                    if (dmg > 0)
+                    if (dmg > 0 && origin.GetStamina() >= 15)
                     {
                         direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
                         origin.DepleteStamina(15);
@@ -61,7 +61,7 @@ public class PlayerController : MonoBehaviour, ICombatant
                 (origin, direction) =>
                 {
                     int dmg = Random.Range(5, 15); //randomly generates base damage within pre-defined bounds
-                    if (dmg > 0)
+                    if (dmg > 0 && origin.GetStamina() >= 15)
                     {
                         direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
                         origin.DepleteStamina(15);
@@ -73,7 +73,7 @@ public class PlayerController : MonoBehaviour, ICombatant
                 (origin, direction) =>
                 {
                     int dmg = Random.Range(25, 75); //randomly generates base damage within pre-defined bounds
-                    if (dmg > 0)
+                    if (dmg > 0 && origin.GetStamina() >= 15)
                     {
                         direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
                         origin.DepleteStamina(15);
@@ -204,8 +204,19 @@ public class PlayerController : MonoBehaviour, ICombatant
             status = s;
     }
 
+    StatusEffect ICombatant.GetStatus()
+    {
+        return status;
+    }
+
     public List<Move> GetMoveList()
     {
         return moveList;
     }
+
+    void ICombatant.ClearStatusEffects()
+    {
+        status = null;
+    }
+
 }

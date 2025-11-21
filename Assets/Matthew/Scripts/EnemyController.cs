@@ -84,10 +84,6 @@ public class EnemyController : MonoBehaviour, ICombatant
         stamina = maxStamina;
         health = maxHealth;
         priorities = AssignPriority(moveList);
-        for(int i = 0; i < priorities.Count; i++)
-        {
-            Debug.Log("Move " + i + " prioritiy: " + priorities[moveList[i]]);
-        }
 
         
     }
@@ -109,10 +105,11 @@ public class EnemyController : MonoBehaviour, ICombatant
     {
         //Update rest priority
         priorities[moveList[0]] = 1;// 0.01f * (maxStamina - stamina);
+        /*
         for (int i = 0; i < priorities.Count; i++)
         {
             Debug.Log("Move " + i + " prioritiy: " + priorities[moveList[i]]);
-        }
+        } */
         //select which move to use
         float selectionRange = 0;
         for (int i = 0; i < moveList.Count; i++)
@@ -249,54 +246,65 @@ public class EnemyController : MonoBehaviour, ICombatant
             this.status = s;
     }
 
-    //Debug method to test selection algorithm and determine distribution of move picks
-  /*  private void testMoveProbability()
+    StatusEffect ICombatant.GetStatus()
     {
-        int numMove1 = 0;
-        int numMove2 = 0;
-        int numMove3 = 0;
-        int numMove4 = 0;
-        int numMove5 = 0;
-        for (int j = 0; j < 100000; j++)
-        {
-            float selectionRange = 0;
-            for (int i = 0; i < moves.Count; i++)
-            {
-                selectionRange += priorities[moves[i]];
-            }
-            float random = UnityEngine.Random.Range(0f, selectionRange);
-            for (int i = 0; i < moves.Count; i++)
-            {
-                if (random <= priorities[moves[i]])
-                {
-                    if (i == 0)
-                    {
-                        numMove1++;
-                    }
-                    else if (i == 1)
-                    {
-                        numMove2++;
-                    }
-                    else if (i == 2)
-                    {
-                        numMove3++;
-                    }
-                    else if (i == 3)
-                    {
-                        numMove4++;
-                    }
-                    else if (i == 4)
-                    {
-                        numMove5++;
-                    }
-                    break;
-                }
-                else
-                {
-                    random -= priorities[moves[i]];
-                }
-            }
-        }
-        Debug.Log("Move 1 test: " + numMove1 + "\nMove 2 test: " + numMove2 + "\nMove 3 test: " + numMove3 + "\nMove 4 test:" + numMove4 + "\nMove 5 test: " + numMove5);
-    }*/
+        return status;
+    }
+
+    void ICombatant.ClearStatusEffects()
+    {
+        Debug.Log("Enemy woke up!");
+        status = null;
+    }
+
+    //Debug method to test selection algorithm and determine distribution of move picks
+    /*  private void testMoveProbability()
+      {
+          int numMove1 = 0;
+          int numMove2 = 0;
+          int numMove3 = 0;
+          int numMove4 = 0;
+          int numMove5 = 0;
+          for (int j = 0; j < 100000; j++)
+          {
+              float selectionRange = 0;
+              for (int i = 0; i < moves.Count; i++)
+              {
+                  selectionRange += priorities[moves[i]];
+              }
+              float random = UnityEngine.Random.Range(0f, selectionRange);
+              for (int i = 0; i < moves.Count; i++)
+              {
+                  if (random <= priorities[moves[i]])
+                  {
+                      if (i == 0)
+                      {
+                          numMove1++;
+                      }
+                      else if (i == 1)
+                      {
+                          numMove2++;
+                      }
+                      else if (i == 2)
+                      {
+                          numMove3++;
+                      }
+                      else if (i == 3)
+                      {
+                          numMove4++;
+                      }
+                      else if (i == 4)
+                      {
+                          numMove5++;
+                      }
+                      break;
+                  }
+                  else
+                  {
+                      random -= priorities[moves[i]];
+                  }
+              }
+          }
+          Debug.Log("Move 1 test: " + numMove1 + "\nMove 2 test: " + numMove2 + "\nMove 3 test: " + numMove3 + "\nMove 4 test:" + numMove4 + "\nMove 5 test: " + numMove5);
+      }*/
 }
