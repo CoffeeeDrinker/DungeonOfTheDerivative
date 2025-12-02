@@ -876,6 +876,7 @@ MonoBehaviour:
   attackButtonField: {fileID: 1722783994}
   healthBar: {fileID: 828294096}
   staminaBar: {fileID: 1544127616}
+  playerLevel: 1
 --- !u!114 &562143663
 MonoBehaviour:
   m_ObjectHideFlags: 0
