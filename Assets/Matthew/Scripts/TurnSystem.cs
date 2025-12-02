@@ -164,8 +164,8 @@ public class TurnSystem : MonoBehaviour
     //KILL THIS METHOD GRRRR
     public int IfAttackHit()
     {
-        return gameManager.GetComponent<MathProblemManager>().CheckAnswer();
-        //return 0; //debug to make always hit
+        //return gameManager.GetComponent<MathProblemManager>().CheckAnswer();
+        return 0; //debug to make always hit
     }
      
     public bool IfInventoryUnUnClicked()

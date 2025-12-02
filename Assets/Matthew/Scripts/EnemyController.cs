@@ -18,9 +18,11 @@ public class EnemyController : MonoBehaviour, ICombatant
     private Move lastMove;
     public Dictionary<Move, float> priorities;
     private StatusEffect status;
+    [SerializeField] GameObject statusMarker;
     // Start is called before the first frame update
     void Start()
     {
+        statusMarker.SetActive(false);
         moveList = new List<Move>() //initializes list of moves
         {
             new Move(
@@ -31,7 +33,7 @@ public class EnemyController : MonoBehaviour, ICombatant
                     origin.Rest(30);
                 }),
             new Move(
-                "Attack1",
+                "Punch",
                 true, //is an attack
                 (origin, direction) =>
                 {
@@ -43,31 +45,33 @@ public class EnemyController : MonoBehaviour, ICombatant
                     }
                 }),
             new Move(
-                "Attack2",
+                "Lulaby",
                 true, //is an attack
                 (origin, direction) =>
                 {
-                    int dmg = UnityEngine.Random.Range(1, 20); //randomly generates base damage within pre-defined bounds
                     if (origin.GetStamina() > 15)
                     {
-                        direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
+                        direction.AddStatusEffect(StatusEffects.ASLEEP);
                         origin.DepleteStamina(15);
                     }
                 }),
             new Move(
-                "Attack3",
+                "Iron Stare",
                 true, //is an attack
                 (origin, direction) =>
                 {
-                    int dmg = UnityEngine.Random.Range(5, 15); //randomly generates base damage within pre-defined bounds
+                    int dmg = UnityEngine.Random.Range(5, 10); //randomly generates base damage within pre-defined bounds
                     if (origin.GetStamina() > 15)
                     {
-                        direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
+                        if(UnityEngine.Random.Range(0f, 10f) > 5)
+                        {
+                            direction.AddStatusEffect(StatusEffects.PARALYZED);
+                        }
                         origin.DepleteStamina(15);
                     }
                 }),
             new Move(
-                "Attack4",
+                "Evan Smash",
                 true, //is an attack
                 (origin, direction) =>
                 {
@@ -80,7 +84,7 @@ public class EnemyController : MonoBehaviour, ICombatant
                 }),
         };
         maxStamina = (int)(100 + 100 * ((level - 1.0) * 0.1));
-        maxHealth = (int)(100 + 100 * ((level - 1.0) * 0.1));
+        maxHealth = 100000+(int)(100 + 100 * ((level - 1.0) * 0.1));
         stamina = maxStamina;
         health = maxHealth;
         priorities = AssignPriority(moveList);
@@ -244,6 +248,7 @@ public class EnemyController : MonoBehaviour, ICombatant
     {
         if(status == null)
             this.status = s;
+        statusMarker.SetActive(true);
     }
 
     StatusEffect ICombatant.GetStatus()
@@ -253,8 +258,13 @@ public class EnemyController : MonoBehaviour, ICombatant
 
     void ICombatant.ClearStatusEffects()
     {
-        Debug.Log("Enemy woke up!");
         status = null;
+        statusMarker.SetActive(false);
+    }
+
+    void ICombatant.Heal(int health)
+    {
+        this.health += health;
     }
 
     //Debug method to test selection algorithm and determine distribution of move picks

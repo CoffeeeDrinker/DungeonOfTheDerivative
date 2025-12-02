@@ -32,4 +32,6 @@ public interface ICombatant
     StatusEffect GetStatus();
 
     void ClearStatusEffects();
+
+    void Heal(int health);
 }

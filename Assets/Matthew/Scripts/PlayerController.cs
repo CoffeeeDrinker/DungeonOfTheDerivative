@@ -10,6 +10,7 @@ public class PlayerController : MonoBehaviour, ICombatant
     AttackHandler attackButton; //attack button stored as AttackHandler component
     public GameObject healthBar;
     public GameObject staminaBar;
+    [SerializeField] GameObject statusMarker;
     private StatusEffect status = null;
     private int health;
     private int stamina;
@@ -24,7 +25,8 @@ public class PlayerController : MonoBehaviour, ICombatant
     // Start is called before the first frame update
     void Start()
     {
-        maxHealth = (int)(100 + 100*((playerLevel - 1.0) * 0.1));
+        statusMarker.SetActive(false);
+        maxHealth = 100000+(int)(100 + 100*((playerLevel - 1.0) * 0.1));
         maxStamina = (int)(100 + 100 * ((playerLevel - 1.0) * 0.1));
         health = maxHealth;
         stamina = maxStamina;
@@ -32,53 +34,55 @@ public class PlayerController : MonoBehaviour, ICombatant
         moveList = new List<Move>() //initializes list of moves
         {
             new Move(
-                "Attack1",
+                "Punch",
                 true, //is an attack
                 (origin, direction) =>
                 {
-                    int dmg = Random.Range(9, 11); //randomly generates base damage within pre-defined bounds
-                    if (dmg > 0 && origin.GetStamina() >= 15)
+                    int dmg = UnityEngine.Random.Range(9, 11); //randomly generates base damage within pre-defined bounds
+                    if (origin.GetStamina() > 15)
                     {
                         direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
                         origin.DepleteStamina(15);
                     }
                 }),
             new Move(
-                "Attack2",
+                "Lulaby",
                 true, //is an attack
                 (origin, direction) =>
                 {
-                    int dmg = Random.Range(1, 20); //randomly generates base damage within pre-defined bounds
-                    if (dmg > 0 && origin.GetStamina() >= 15)
+                    if (origin.GetStamina() > 15)
+                    {
+                        direction.AddStatusEffect(StatusEffects.ASLEEP);
+                        origin.DepleteStamina(15);
+                    }
+                }),
+            new Move(
+                "Iron Stare",
+                true, //is an attack
+                (origin, direction) =>
+                {
+                    int dmg = UnityEngine.Random.Range(5, 10); //randomly generates base damage within pre-defined bounds
+                    if (origin.GetStamina() > 15)
+                    {
+                        if(UnityEngine.Random.Range(0f, 10f) > 5)
+                        {
+                            direction.AddStatusEffect(StatusEffects.PARALYZED);
+                        }
+                        origin.DepleteStamina(15);
+                    }
+                }),
+            new Move(
+                "Evan Smash",
+                true, //is an attack
+                (origin, direction) =>
+                {
+                    int dmg = UnityEngine.Random.Range(25, 75); //randomly generates base damage within pre-defined bounds
+                    if (origin.GetStamina() > 15)
                     {
                         direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
                         origin.DepleteStamina(15);
                     }
                 }),
-            new Move(
-                "Attack3",
-                true, //is an attack
-                (origin, direction) =>
-                {
-                    int dmg = Random.Range(5, 15); //randomly generates base damage within pre-defined bounds
-                    if (dmg > 0 && origin.GetStamina() >= 15)
-                    {
-                        direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
-                        origin.DepleteStamina(15);
-                    }
-                }),
-            new Move(
-                "Attack4",
-                true, //is an attack
-                (origin, direction) =>
-                {
-                    int dmg = Random.Range(25, 75); //randomly generates base damage within pre-defined bounds
-                    if (dmg > 0 && origin.GetStamina() >= 15)
-                    {
-                        direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
-                        origin.DepleteStamina(15);
-                    }
-                })
         };
     }
 
@@ -202,6 +206,7 @@ public class PlayerController : MonoBehaviour, ICombatant
     {
         if(status == null) //only sets status if not already set
             status = s;
+        statusMarker.SetActive(true);
     }
 
     StatusEffect ICombatant.GetStatus()
@@ -217,6 +222,12 @@ public class PlayerController : MonoBehaviour, ICombatant
     void ICombatant.ClearStatusEffects()
     {
         status = null;
+        statusMarker.SetActive(false);
+    }
+
+    void ICombatant.Heal(int health)
+    {
+        this.health += health;
     }
 
 }
