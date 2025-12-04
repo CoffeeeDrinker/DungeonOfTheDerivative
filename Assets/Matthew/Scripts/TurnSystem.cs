@@ -68,7 +68,7 @@ public class TurnSystem : MonoBehaviour
                     }
                     else
                     { //if button pressed is an attack
-                        gameManager.GetComponent<MathProblemManager>().StartDraw();
+                        //gameManager.GetComponent<MathProblemManager>().StartDraw();
                         //Attacks opponent, then makes it enemy's turn, then resets button
                         while (IfAttackHit() == 2)
                         {
@@ -77,12 +77,12 @@ public class TurnSystem : MonoBehaviour
                         if (IfAttackHit() == 0) //checks if it hit
                         {
                             input.move(player, enemy);
-                            gameManager.GetComponent<MathProblemManager>().UnAnswer();
+                            //gameManager.GetComponent<MathProblemManager>().UnAnswer();
                         }
                         else if (IfAttackHit() == 1)
                         {
                             Debug.Log("incorrect, no damage :(");
-                            gameManager.GetComponent<MathProblemManager>().UnAnswer();
+                            //gameManager.GetComponent<MathProblemManager>().UnAnswer();
                         }
                         turnIndex = 1;
                         UI.Unclick();
@@ -97,12 +97,29 @@ public class TurnSystem : MonoBehaviour
             {
                 if (enemy.IsAlive())
                 {
-                    //Deals damage to player with base dmg 10
+                    StatusEffect oldStatus = enemy.GetStatus();
                     if (!enemy.TurnStart()) //only makes move if enemy doesn't have turn skipped
                     {
+                        float startTime;
+                        if(enemy.GetStatus() != oldStatus)
+                        {
+                            UI.DisplayText("Enemy" + StatusEffects.recoveryMap[oldStatus], 2f);
+                            startTime = Time.time;
+                            while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+                            {
+                                if (Time.time - startTime >= 2)
+                                {
+                                    break;
+                                }
+                                yield return null;
+                            }
+                            Debug.Log("Quail?");
+                            isClicked = false;
+                            UI.HideText();
+                        }
                         enemy.MakeNewMove(player);
                         UI.DisplayText("Enemy is using: " + enemy.GetLastMove().name, 2f);
-                        float startTime = Time.time; //gets starting time for waiting
+                        startTime = Time.time; //gets starting time for waiting
                         while (!isClicked) //checks if player is trying to skip by pressing left mouse button
                         {
                             if (Time.time - startTime >= 2)
@@ -145,7 +162,7 @@ public class TurnSystem : MonoBehaviour
                     winner = player;
 
                     //Continue dialogue
-                    gameManager.GetComponent<CombatManager>().CloseCombatSystem();
+                    //gameManager.GetComponent<CombatManager>().CloseCombatSystem();
 
                     break;
 

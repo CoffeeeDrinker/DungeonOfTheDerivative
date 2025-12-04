@@ -1,5 +1,9 @@
 using System;
+using System.Data;
 using System.Diagnostics;
+using UnityEditorInternal;
+using System.Collections.Generic;
+using Unity.VisualScripting;
 
 public sealed class StatusEffect
 {
@@ -142,4 +146,18 @@ public static class StatusEffects
             return false; //never skips turn
         }
      );
+
+    public readonly static Dictionary<StatusEffect, string> recoveryMap = new Dictionary<StatusEffect, string>()
+    {
+        //keys should include a certain status effect defined in this class
+        //values should include text to display when opponent recovers from status effect in key. Start strings with a space and write them as though the first word in the sentence is "enemy"
+        {POISONED, " has recovered from poisoning!" },
+        {BURNING, " has stopped burning!" },
+        {ASLEEP, " woke up!" },
+        {CAFFEINECRASH, " has ended its caffeine crash!" },
+        {CONFUSED, " is no longer confused!" },
+        {CAFFEINATED, " has crashed on caffeine!" },
+        {PARALYZED, " has recovered from paralysis!"},
+        {FROSTBITE, " has warmed up!" }
+    };
 }
