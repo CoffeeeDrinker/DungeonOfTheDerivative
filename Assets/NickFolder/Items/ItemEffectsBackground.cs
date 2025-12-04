@@ -22,11 +22,25 @@ public class ItemEffectsBackground : MonoBehaviour
 
     public void LoadItemBackground(ItemNameEnum itemName)
     {
-        List<ItemEffectEnums> effects = itemManager.GetItemWorldEffects(itemName);
-
-        foreach(ItemEffectEnums effect in effects)
+        List<ItemEffectEnums> effects;
+        Debug.Log("In Combat: " + itemManager.InCombat());
+        if(itemManager.InCombat())
         {
-            Instantiate(itemEffectsManager.GetWorldButton(effect), transform);
+            effects = itemManager.GetItemCombatEffects(itemName);
+        } else
+        {
+            effects = itemManager.GetItemWorldEffects(itemName);
+        }
+
+        foreach (ItemEffectEnums effect in effects)
+        {
+            if(itemManager.InCombat())
+            {
+                Instantiate(itemEffectsManager.GetCombatButton(effect), transform);
+            } else
+            {
+                Instantiate(itemEffectsManager.GetWorldButton(effect), transform);
+            }
         }
     }
 

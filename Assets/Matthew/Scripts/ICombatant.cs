@@ -23,4 +23,6 @@ public interface ICombatant
     Move GetLastMove();
 
     void MakeNewMove(ICombatant x);
+
+    //void Heal(int x);
 }

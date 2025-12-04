@@ -12,9 +12,12 @@ public class TurnSystem : MonoBehaviour
     public ICombatant enemy;
     public ICombatant winner;
     public GameObject UIField; //serialized field containing attack button
+    [SerializeField] ItemManager itemManager;
+    [SerializeField] Inventory inventory;
     private UIController UI; //attack button stored as AttackHandler component
     public static int turnIndex; //Whoever is having their turn currently; 0 = player, 1 = enemy
     private bool isClicked;
+    public static bool inInventory = false;
 
     //Kasey was here
     public GameObject gameManager;
@@ -28,6 +31,7 @@ public class TurnSystem : MonoBehaviour
         enemy = enemyField.GetComponent<EnemyController>();
         UI = UIField.GetComponent<UIController>();
         turnIndex = 0;
+        itemManager.EnterCombat();
         StartCoroutine(ManageTurns());
     }
 
@@ -53,9 +57,17 @@ public class TurnSystem : MonoBehaviour
                 }
                 else if(input.isAttack == false) //if it is something other than an attack
                 {
-                    if (input.name == "Inventory" && !IfInventoryUnUnClicked())
+                    if (input.name == "Inventory")
                     {
-                        yield return null; //If nothing in inventory has been clicked, wait a frame
+                        inInventory = true;
+                        while (inInventory)
+                        {
+                            yield return null; //If nothing in inventory has been clicked, wait a frame
+                        }
+                        //do the item thing
+                        inventory.ToggleInventory();
+                        turnIndex++;
+                        UI.Unclick();
                     }
                     else {
                         input.move(player, enemy);
@@ -114,6 +126,7 @@ public class TurnSystem : MonoBehaviour
 
                     //Continue dialogue
                     gameManager.GetComponent<CombatManager>().CloseCombatSystem();
+                    itemManager.ExitCombat();
 
                     break;
 
@@ -135,9 +148,5 @@ public class TurnSystem : MonoBehaviour
         return gameManager.GetComponent<MathProblemManager>().CheckAnswer();
     }
 
-    public bool IfInventoryUnUnClicked()
-    {
-        return true;
-        //return true if smth was clicked
-    }
+
 }

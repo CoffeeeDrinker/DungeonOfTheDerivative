@@ -21,6 +21,12 @@ public class Inventory : MonoBehaviour
         canvas.GetComponent<Canvas>().enabled = false;
     }
 
+    public void ToggleInventory()
+    {
+        canvas.GetComponent<Canvas>().enabled = !inventoryOpen;
+        inventoryOpen = !inventoryOpen;
+    }
+
     // Update is called once per frame
     void Update()
     {

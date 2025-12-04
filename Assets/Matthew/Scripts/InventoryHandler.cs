@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class InventoryHandler : UIController
 {
+    [SerializeField] Inventory inventory;
     bool clicked;
     // Start is called before the first frame update
     void Start()
@@ -20,6 +21,7 @@ public class InventoryHandler : UIController
     public void OnButtonClicked()
     {
         clicked = true;
+        inventory.ToggleInventory();
         //Open the inventory
     }
 
