@@ -8,6 +8,7 @@ public class Grid : MonoBehaviour
 {
     [SerializeField] List<GridSlot> gridSlots;
     [SerializeField] ItemManager itemManager;
+    public bool hasFred;
 
     // Start is called before the first frame update
     void Start()

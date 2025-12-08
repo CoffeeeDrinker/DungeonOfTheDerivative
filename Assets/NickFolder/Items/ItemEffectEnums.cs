@@ -6,11 +6,15 @@ public enum ItemEffectEnums
 {
     heal,
     stamina,
+    superStamina,
     blowUp,
     discard,
     pet,
     kill,
     drinkCoffee,
+    randomizeStamina,
+    randomizeHealth,
+    fireball,
     nothing,
     
 }

@@ -8,6 +8,7 @@ public class MathProblem
     public string subject;
     public string problem;
     public Sprite image = null;
+    public GameObject answerInput;
     public string answer;
 
     public MathProblem()
@@ -15,11 +16,12 @@ public class MathProblem
 
     }
 
-    public MathProblem(string subject, string problem, string answer)
+    public MathProblem(string subject, string problem, string answer, GameObject answerInput)
     {
         this.subject = subject.Trim();
         this.problem = problem.Trim();
         this.answer = answer.Trim();
+        this.answerInput = answerInput;
     }
 
     public string GetSubject()
@@ -40,6 +42,11 @@ public class MathProblem
     public void PrintProblem()
     {
         Debug.Log("Subject: "+subject+"\nProblem: "+problem+ "\nAnswer: " + answer);
+    }
+
+    public GameObject GetAnswerInput()
+    {
+        return answerInput;
     }
 }
 

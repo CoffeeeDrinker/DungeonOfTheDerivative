@@ -10,10 +10,12 @@ public class ItemManager : MonoBehaviour
     [SerializeField] List<int> itemPrices;
     [SerializeField] List<string> itemDescriptions;
 
+    bool inCombat;
     Dictionary<ItemNameEnum, int> itemPriceMap;
     Dictionary<ItemNameEnum, string> itemDescriptionsMap;
     Dictionary<ItemNameEnum, Sprite> itemSpriteMap;
     Dictionary<ItemNameEnum, List<ItemEffectEnums>> itemEffectWorldMap;
+    Dictionary<ItemNameEnum, List<ItemEffectEnums>> itemEffectCombatMap;
 
     void Start()
     {
@@ -29,6 +31,7 @@ public class ItemManager : MonoBehaviour
         }
 
         LoadItemEffectWorldMap();
+        LoadItemEffectBattleMap();
     }
 
     public Sprite GetSprite(ItemNameEnum name)
@@ -49,6 +52,11 @@ public class ItemManager : MonoBehaviour
     public List<ItemEffectEnums> GetItemWorldEffects(ItemNameEnum name)
     {
         return itemEffectWorldMap[name];
+    }
+
+    public List<ItemEffectEnums> GetItemCombatEffects(ItemNameEnum name)
+    {
+        return itemEffectCombatMap[name];
     }
 
     void LoadItemEffectWorldMap()
@@ -103,5 +111,70 @@ public class ItemManager : MonoBehaviour
         itemEffects.Add(ItemEffectEnums.drinkCoffee);
         itemEffects.Add(ItemEffectEnums.discard);
         itemEffectWorldMap[ItemNameEnum.coffee] = itemEffects;
+    }
+
+    void LoadItemEffectBattleMap()
+    {
+        itemEffectCombatMap = new Dictionary<ItemNameEnum, List<ItemEffectEnums>>();
+
+        //Health Potion
+        List<ItemEffectEnums> itemEffects = new List<ItemEffectEnums>();
+        itemEffects.Add(ItemEffectEnums.heal);
+        itemEffectCombatMap[ItemNameEnum.healthPotion] = itemEffects;
+
+        //Bomb
+        itemEffects = new List<ItemEffectEnums>();
+        itemEffects.Add(ItemEffectEnums.blowUp);
+        itemEffectCombatMap[ItemNameEnum.bomb] = itemEffects;
+
+        //Blue Cards
+        itemEffects = new List<ItemEffectEnums>();
+        itemEffects.Add(ItemEffectEnums.randomizeStamina);
+        itemEffectCombatMap[ItemNameEnum.blueCards] = itemEffects;
+
+        //Fred
+        itemEffects = new List<ItemEffectEnums>();
+        itemEffectCombatMap[ItemNameEnum.fred] = itemEffects;
+
+        //Red Cards
+        itemEffects = new List<ItemEffectEnums>();
+        itemEffects.Add(ItemEffectEnums.randomizeStamina);
+        itemEffectCombatMap[ItemNameEnum.redCards] = itemEffects;
+
+        //Stamina Potion
+        itemEffects = new List<ItemEffectEnums>();
+        itemEffects.Add(ItemEffectEnums.stamina);
+        itemEffectCombatMap[ItemNameEnum.staminaPotion] = itemEffects;
+
+        //Super Stamina Potion
+        itemEffects = new List<ItemEffectEnums>();
+        itemEffects.Add(ItemEffectEnums.superStamina);
+        itemEffectCombatMap[ItemNameEnum.superStaminaPotion] = itemEffects;
+
+        //Fireball
+        itemEffects = new List<ItemEffectEnums>();
+        itemEffects.Add(ItemEffectEnums.fireball);
+        itemEffectCombatMap[ItemNameEnum.fireball] = itemEffects;
+
+        //Coffee
+        itemEffects = new List<ItemEffectEnums>();
+        itemEffects.Add(ItemEffectEnums.drinkCoffee);
+        itemEffectCombatMap[ItemNameEnum.coffee] = itemEffects;
+        
+    }
+
+    public void EnterCombat()
+    {
+        inCombat = true;
+    }
+
+    public void ExitCombat()
+    {
+        inCombat = false;
+    }
+
+    public bool InCombat()
+    {
+        return inCombat;
     }
 }

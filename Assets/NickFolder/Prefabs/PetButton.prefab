@@ -13,7 +13,6 @@ GameObject:
   - component: {fileID: 4779391047592692483}
   - component: {fileID: 3870738324601233757}
   - component: {fileID: 1729127766418400078}
-  - component: {fileID: -8301857645879095506}
   m_Layer: 5
   m_Name: PetButton
   m_TagString: Untagged
@@ -134,18 +133,6 @@ MonoBehaviour:
           m_StringArgument: 
           m_BoolArgument: 0
         m_CallState: 2
-      - m_Target: {fileID: -8301857645879095506}
-        m_TargetAssemblyTypeName: ItemUse, Assembly-CSharp
-        m_MethodName: UseItem
-        m_Mode: 1
-        m_Arguments:
-          m_ObjectArgument: {fileID: 0}
-          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
-          m_IntArgument: 0
-          m_FloatArgument: 0
-          m_StringArgument: 
-          m_BoolArgument: 0
-        m_CallState: 2
 --- !u!114 &1729127766418400078
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -156,17 +143,5 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 5eca3a1a8edb1de45a88a6aa466b91b9, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
---- !u!114 &-8301857645879095506
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 696733601738147440}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: 5c740e9b99484f04a8bc4a48fbd4ca16, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 

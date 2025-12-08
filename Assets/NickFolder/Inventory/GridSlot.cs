@@ -62,6 +62,7 @@ public class GridSlot : MonoBehaviour
         if(item.GetName() == ItemNameEnum.fred)
         {
             soundManager.PlaySound(SoundEnums.fredIdle);
+            transform.GetComponentInParent<Grid>().hasFred = true;
         }
 
         if(currItem != null && currItem.GetName() == item.GetName())
@@ -103,6 +104,7 @@ public class GridSlot : MonoBehaviour
         if(currItem != null && currItem.GetName() == ItemNameEnum.fred)
         {
             soundManager.StopSound(SoundEnums.fredIdle);
+            transform.GetComponentInParent<Grid>().hasFred = false;
         }
 
         currItem = null;

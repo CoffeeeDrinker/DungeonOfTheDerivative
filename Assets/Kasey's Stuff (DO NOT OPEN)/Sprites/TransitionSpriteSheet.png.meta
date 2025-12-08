@@ -1,0 +1,984 @@
+fileFormatVersion: 2
+guid: d8060646cdaada140b90e03b985f21fe
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 1262610972926583457
+    second: TransitionSpriteSheet_0
+  - first:
+      213: 1256589923467978428
+    second: TransitionSpriteSheet_1
+  - first:
+      213: 4016852968739631176
+    second: TransitionSpriteSheet_2
+  - first:
+      213: -4905616600572906539
+    second: TransitionSpriteSheet_3
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 938
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1a2acc28df1b58110800000000000000
+      internalID: 1262610972926583457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 938
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cb6e4a0b0ed407110800000000000000
+      internalID: 1256589923467978428
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 938
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 840f2bc2e7abeb730800000000000000
+      internalID: 4016852968739631176
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 938
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d3b79e51bfbbebb0800000000000000
+      internalID: -4905616600572906539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 938
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df0a6927f4289c4888e3ac7800f56a4
+      internalID: 1138754588
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 804
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0b5bf73fc37672b479f6cd0f56b96beb
+      internalID: 2039292074
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 804
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f3e50bc593b86340850e981c8cff11e
+      internalID: -332565444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 804
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a1680c4dd657c7241b1c75202fac90f8
+      internalID: 1215034088
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 804
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7a42f2c252445942ac38ac9ed354cf1
+      internalID: 1925801885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 804
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b313b80fd6669c84a9df85bf7b276bad
+      internalID: -340243705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 670
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 575a0072e28635246b9d05714ceb6ad5
+      internalID: 334511589
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 670
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0dbaa2706f651bc4f8c1455badfd4386
+      internalID: -675912329
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 670
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf709fb4972de8b498731817a27c07fe
+      internalID: -698037774
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 670
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d8bde2f3363d0348b1d8cfb6370e631
+      internalID: 338337477
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 670
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afb6e406796b15d4e9fdaad1cadae824
+      internalID: -1427605281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 536
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff930de9cfab935469dbc68661d24d4f
+      internalID: 344723655
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 536
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 584b573b21d384d458414952b21077fe
+      internalID: 1921808801
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 536
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de9c12de417f980498aaf8d4042d1fa6
+      internalID: -1037425040
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 536
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ba04b66b827206540b1b33ceb71e8616
+      internalID: 638444436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 536
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9ad8ac8ee1aa2f42918d716130bfadc
+      internalID: -41750658
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 402
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ff31e55e71dc17b4aa4010aea860f162
+      internalID: 1006435884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 402
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6994d4ecfa666954097b61348c461890
+      internalID: 1103800001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 402
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be144390d3554b34f815c9aa09db8c9f
+      internalID: 1726815345
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 402
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1586a4bd0781702499f4d4530a4c6cc2
+      internalID: 1409947504
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 402
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e91c2774a68bb3d4c95d2d5c04d6e910
+      internalID: -1617749472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 268
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c7ffcf5c6c8642142940f7377956d02f
+      internalID: 334100935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 268
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3690415e2e054594a8d70dfb7c21822b
+      internalID: -1080244376
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 268
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4fe55a131d75d334f86a21b6f69a2691
+      internalID: -644962231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 268
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cef203378e9446041868796e8cc2de39
+      internalID: -549788535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 268
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b55678f047e785745a536a3657807373
+      internalID: -2121270601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 134
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 888479aaac67ce947b016f7c1c1db8a0
+      internalID: -2020407832
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 134
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cbd2d05c6fb6bee48bcf191d4f604c29
+      internalID: -1396085514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 134
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b7b4c5262d6017f4aa20ec34cfc18273
+      internalID: 535589435
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 134
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5511d18fcf339f64a82550320ec9c73c
+      internalID: -134274809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 800
+        y: 134
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 343a346fd25fe2f4994c1a31bed810b3
+      internalID: 980824692
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8354328af217e0e46ae21f3a936f5ae8
+      internalID: 107480432
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 200
+        y: 0
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f61aa4c3d02616408c2f4dd1e52af0e
+      internalID: -868711673
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 0
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e6a6c2356a1f2e4f8abd50ee719bf2b
+      internalID: 2134097288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: TransitionSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 600
+        y: 0
+        width: 200
+        height: 134
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b6f6b1dfffa290488ba49598487d16f
+      internalID: 1905589922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: d90e81aab7c1fc24297237949dc3f9bc
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      TransitionSpriteSheet_0: 1262610972926583457
+      TransitionSpriteSheet_1: 1256589923467978428
+      TransitionSpriteSheet_10: 334511589
+      TransitionSpriteSheet_11: -675912329
+      TransitionSpriteSheet_12: -698037774
+      TransitionSpriteSheet_13: 338337477
+      TransitionSpriteSheet_14: -1427605281
+      TransitionSpriteSheet_15: 344723655
+      TransitionSpriteSheet_16: 1921808801
+      TransitionSpriteSheet_17: -1037425040
+      TransitionSpriteSheet_18: 638444436
+      TransitionSpriteSheet_19: -41750658
+      TransitionSpriteSheet_2: 4016852968739631176
+      TransitionSpriteSheet_20: 1006435884
+      TransitionSpriteSheet_21: 1103800001
+      TransitionSpriteSheet_22: 1726815345
+      TransitionSpriteSheet_23: 1409947504
+      TransitionSpriteSheet_24: -1617749472
+      TransitionSpriteSheet_25: 334100935
+      TransitionSpriteSheet_26: -1080244376
+      TransitionSpriteSheet_27: -644962231
+      TransitionSpriteSheet_28: -549788535
+      TransitionSpriteSheet_29: -2121270601
+      TransitionSpriteSheet_3: -4905616600572906539
+      TransitionSpriteSheet_30: -2020407832
+      TransitionSpriteSheet_31: -1396085514
+      TransitionSpriteSheet_32: 535589435
+      TransitionSpriteSheet_33: -134274809
+      TransitionSpriteSheet_34: 980824692
+      TransitionSpriteSheet_35: 107480432
+      TransitionSpriteSheet_36: -868711673
+      TransitionSpriteSheet_37: 2134097288
+      TransitionSpriteSheet_38: 1905589922
+      TransitionSpriteSheet_4: 1138754588
+      TransitionSpriteSheet_5: 2039292074
+      TransitionSpriteSheet_6: -332565444
+      TransitionSpriteSheet_7: 1215034088
+      TransitionSpriteSheet_8: 1925801885
+      TransitionSpriteSheet_9: -340243705
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

@@ -10,7 +10,7 @@ public class StorybookScript : MonoBehaviour
 {
     //Story Stuff
     public List<string> storyLines = new List<string>();
-    public List<Sprite> storySprites = new List<Sprite>();
+    public List<Texture> storySprites = new List<Texture>();
     public TextAsset storyTextAsset;
     private string file;
     private int storyLineI = 0;
@@ -19,7 +19,7 @@ public class StorybookScript : MonoBehaviour
     public GameObject storyBookStuff;
     public TextEffect typewriterInstance;
     public TextMeshProUGUI storyTextBox;
-    public Image storyImageBox;
+    public RawImage storyImageBox;
 
     //Typewriter Stuff
     public Effect_Color typewriterEffect;
@@ -28,6 +28,7 @@ public class StorybookScript : MonoBehaviour
     //Holy Grail Stuff
     public Canvas canvas;
     public List<GameObject> holyGrailPrefabs;
+    private int summonNum = 0;
 
     public Transform holyGrailHolder;
     public List<GameObject> holyGrails;
@@ -46,7 +47,7 @@ public class StorybookScript : MonoBehaviour
     //Pedro
     public Image Pedro;
     public float PedroSpeed;
-    private Vector3 PedroLocation;
+    public Vector3 PedroLocation;
 
     void Start()
     {
@@ -59,7 +60,7 @@ public class StorybookScript : MonoBehaviour
         }
 
         //Set Pedro Location
-        PedroLocation = new Vector3(Pedro.transform.localPosition.x, -30f, 0f);
+        //PedroLocation = new Vector3(Pedro.transform.localPosition.x, -30f, 0f);
     }
 
     void Update()
@@ -72,8 +73,11 @@ public class StorybookScript : MonoBehaviour
             Pedro.transform.localPosition = Vector3.MoveTowards(Pedro.transform.localPosition, PedroLocation, PedroSpeed * Time.deltaTime);
 
             //SUMMON THE HOLY GRAILS
-            if (Pedro.transform.localPosition == PedroLocation)
+            if (Pedro.transform.localPosition == PedroLocation && summonNum%2 == 0)
+            {
                 SummonHolyGrail();
+            }
+            summonNum++;
         } else if (holyGrailHolder.childCount > 0)
         {
             for (int i = 0; i < holyGrails.Count; i++)
@@ -121,7 +125,7 @@ public class StorybookScript : MonoBehaviour
                 storyTextBox.text = storyLines[++storyLineI];
                 typewriterInstance.Refresh();
                 typewriterInstance.StartManualEffects();
-                storyImageBox.sprite = storySprites[storyLineI];
+                storyImageBox.texture = storySprites[storyLineI];
             }
             else
             {
@@ -139,7 +143,7 @@ public class StorybookScript : MonoBehaviour
         if(storyLineI > 0)
         {
             storyTextBox.text = storyLines[--storyLineI];
-            storyImageBox.sprite = storySprites[storyLineI];
+            storyImageBox.texture = storySprites[storyLineI];
         }
         typewriterInstance.Refresh();
         typewriterInstance.StartManualEffects();

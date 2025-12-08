@@ -12,9 +12,12 @@ public class TurnSystem : MonoBehaviour
     public ICombatant enemy;
     public ICombatant winner;
     public GameObject UIField; //serialized field containing attack button
+    [SerializeField] ItemManager itemManager;
+    [SerializeField] Inventory inventory;
     private UIController UI; //attack button stored as AttackHandler component
     public static int turnIndex; //Whoever is having their turn currently; 0 = player, 1 = enemy
     private bool isClicked;
+    public static bool inInventory = false;
 
     //Kasey was here
     public GameObject gameManager;
@@ -28,6 +31,7 @@ public class TurnSystem : MonoBehaviour
         enemy = enemyField.GetComponent<EnemyController>();
         UI = UIField.GetComponent<UIController>();
         turnIndex = 0;
+        itemManager.EnterCombat();
         StartCoroutine(ManageTurns());
     }
 
@@ -162,7 +166,8 @@ public class TurnSystem : MonoBehaviour
                     winner = player;
 
                     //Continue dialogue
-                    //gameManager.GetComponent<CombatManager>().CloseCombatSystem();
+                    gameManager.GetComponent<CombatManager>().CloseCombatSystem();
+                    itemManager.ExitCombat();
 
                     break;
 
@@ -184,7 +189,7 @@ public class TurnSystem : MonoBehaviour
         //return gameManager.GetComponent<MathProblemManager>().CheckAnswer();
         return 0; //debug to make always hit
     }
-     
+
     public bool IfInventoryUnUnClicked()
     {
         return true;

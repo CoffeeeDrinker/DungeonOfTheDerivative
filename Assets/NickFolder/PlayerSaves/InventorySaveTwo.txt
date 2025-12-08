@@ -1,0 +1,17 @@
+healthPotion 1
+fred 1
+bomb 4
+staminaPotion 1
+redCards 9
+blueCards 5
+bomb 1
+superStaminaPotion 1
+superStaminaPotion 1
+coffee 2
+ERROR 0
+ERROR 0
+ERROR 0
+healthPotion 1
+ERROR 0
+Ducks 400
+SFX 20

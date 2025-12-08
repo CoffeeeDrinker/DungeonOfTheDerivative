@@ -13,3 +13,5 @@ ERROR 0
 ERROR 0
 healthPotion 1
 ERROR 0
+Ducks 450
+SFX 50

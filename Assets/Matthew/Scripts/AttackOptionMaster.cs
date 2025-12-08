@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class AttackOptionMaster : MonoBehaviour
 {
+    Animator anim;
+
     [SerializeField] GameObject attackOption1Field;
     [SerializeField] GameObject attackOption2Field;
     [SerializeField] GameObject attackOption3Field;
@@ -20,6 +22,8 @@ public class AttackOptionMaster : MonoBehaviour
             attackOption4Field.GetComponent<AttackOptionHandler>()
         };
         ToggleAttackOptions(false);
+
+        anim = GameObject.FindWithTag("Player").GetComponent<Animator>();
     }
 
     // Update is called once per frame
@@ -35,8 +39,10 @@ public class AttackOptionMaster : MonoBehaviour
         {
             if (attackOptionList[i].IsClicked())
             {
+                anim.SetBool("swing1", true);
                 selected = attackOptionList[i];
                 attackOptionList[i].Unclick();
+                
                 break;
             }
         }

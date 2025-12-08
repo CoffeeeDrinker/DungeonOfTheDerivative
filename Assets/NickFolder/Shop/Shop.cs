@@ -8,6 +8,10 @@ public class Shop : MonoBehaviour
     [SerializeField] List<ItemSlot> itemSlots;
     [SerializeField] List<ItemNameEnum> possibleItems;
     [SerializeField] ItemManager itemManager;
+    [SerializeField] GameObject canvas;
+    [SerializeField] PlayerMovement playerMovement;
+    float moveSpeed = 2000;
+    bool shopOpen;
     int shopPriceMultiplier;
 
     // Start is called before the first frame update
@@ -15,12 +19,27 @@ public class Shop : MonoBehaviour
     {
         shopPriceMultiplier = 1;
         LoadShop();
+        canvas.GetComponent<Canvas>().enabled = false;
+        shopOpen = false;
     }
 
     // Update is called once per frame
     void Update()
     {
-        
+        if(Input.GetKeyDown(KeyCode.Q))
+        {
+            if(!shopOpen)
+            {
+                moveSpeed = playerMovement.speed;
+                playerMovement.speed = 0;
+            } else
+            {
+                playerMovement.speed = moveSpeed;
+            }
+
+            canvas.GetComponent<Canvas>().enabled = !shopOpen;
+            shopOpen = !shopOpen;
+        }
     }
 
     public void LoadShop()
