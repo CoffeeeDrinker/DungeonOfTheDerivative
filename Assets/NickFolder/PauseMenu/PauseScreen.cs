@@ -7,6 +7,7 @@ public class PauseScreen : MonoBehaviour
     bool screenPaused;
     [SerializeField] PlayerMovement playerMovement;
     [SerializeField] Canvas canvas;
+    [SerializeField] Inventory inventory;
     float playerSpeed;
 
     void Start()
@@ -19,6 +20,12 @@ public class PauseScreen : MonoBehaviour
     {
         if(Input.GetKeyDown(KeyCode.Escape))
         {
+            if(inventory.InventoryOpen())
+            {
+                inventory.ToggleInventory();
+                return;
+            }
+
             TogglePause();
         }
     }
