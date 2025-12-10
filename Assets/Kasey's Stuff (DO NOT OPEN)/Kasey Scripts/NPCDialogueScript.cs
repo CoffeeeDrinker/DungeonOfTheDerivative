@@ -18,7 +18,7 @@ public class NPCDialogueScript : MonoBehaviour
 
     //NPC and NPC Dialogue Stuff
     public List<Dialogue> NPCDialogue = new List<Dialogue>();
-    private bool playerIsHere = false;
+    public bool playerIsHere = false;
 
     private int currentDialogueI = 0;
     private int currentDialogueLineI = 0;

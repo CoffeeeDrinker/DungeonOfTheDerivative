@@ -6,11 +6,11 @@ using UnityEngine;
 public class AttackHandler : UIController
 {
     bool clicked = false;
-   
 
     // Start is called before the first frame update
     void Start()
     {
+
     }
 
     // Update is called once per frame
@@ -24,6 +24,7 @@ public class AttackHandler : UIController
         if (TurnSystem.turnIndex == 0)
         {//only accepts clicks if it's player's turn
             clicked = true;
+            
         }
     }
 

@@ -8,6 +8,8 @@ public class Inventory : MonoBehaviour
     [SerializeField] Grid grid;
     [SerializeField] GameObject canvas;
     [SerializeField] HeldItemManager heldItemManager;
+    [SerializeField] PlayerMovement playerMovement;
+    float playerSpeed = 2000;
     bool inventoryOpen;
     List<Item> currItems;
 
@@ -19,12 +21,28 @@ public class Inventory : MonoBehaviour
         canvas.GetComponent<Canvas>().enabled = false;
     }
 
+    public void ToggleInventory()
+    {
+        canvas.GetComponent<Canvas>().enabled = !inventoryOpen;
+        inventoryOpen = !inventoryOpen;
+    }
+
     // Update is called once per frame
     void Update()
     {
         if(Input.GetKeyDown(KeyCode.E))
         {
-            if(inventoryOpen && heldItemManager.HoldingItem())
+            if(!inventoryOpen)
+            {
+                playerSpeed = playerMovement.speed;
+                playerMovement.speed = 0;
+            } else
+            {
+                playerMovement.speed = playerSpeed;
+                playerMovement.enabled = true;
+            }
+
+            if (inventoryOpen && heldItemManager.HoldingItem())
             {
                 grid.AddItem(heldItemManager.GetItem(), heldItemManager.GetItemAmount());
                 heldItemManager.RemoveItem();

@@ -3,27 +3,37 @@
 ~
 2
 ~~
+Number
+~~~
 Algebra 1
 2+x=2, solve for x
 ~
 0
 ~~
+Number
+~~~
 Algebra 1
 3+x=2, solve for x
 ~
 -1
 ~~
+Number
+~~~
 Algebra 2
 3+x*x=2, solve for x
 ~
--1
+i
 ~~
+Number
+~~~
 Geometry
 the answer is a
 down1_image
 ~
 a
 ~~
+Number
+~~~
 Geometry
 the answer is b
 bla bla bla
@@ -31,3 +41,5 @@ left1_image
 ~
 b
 ~~
+Matrix
+~~~
