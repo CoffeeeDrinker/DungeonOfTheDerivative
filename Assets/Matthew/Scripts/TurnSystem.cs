@@ -59,9 +59,14 @@ public class TurnSystem : MonoBehaviour
                     }
                     else if (input.isAttack == false) //if it is something other than an attack
                     {
-                        if (input.name == "Inventory" && !IfInventoryUnUnClicked())
+                        if (input.name == "Inventory")
                         {
-                            yield return null; //If nothing in inventory has been clicked, wait a frame
+                            inInventory = true;
+                            while(inInventory)
+                                yield return null; //If nothing in inventory has been clicked, wait a frame
+                            inventory.ToggleInventory();
+                            turnIndex++;
+                            UI.Unclick();
                         }
                         else
                         {
@@ -72,7 +77,7 @@ public class TurnSystem : MonoBehaviour
                     }
                     else
                     { //if button pressed is an attack
-                        //gameManager.GetComponent<MathProblemManager>().StartDraw();
+                        gameManager.GetComponent<MathProblemManager>().StartDraw();
                         //Attacks opponent, then makes it enemy's turn, then resets button
                         while (IfAttackHit() == 2)
                         {
@@ -81,12 +86,12 @@ public class TurnSystem : MonoBehaviour
                         if (IfAttackHit() == 0) //checks if it hit
                         {
                             input.move(player, enemy);
-                            //gameManager.GetComponent<MathProblemManager>().UnAnswer();
+                            gameManager.GetComponent<MathProblemManager>().UnAnswer();
                         }
                         else if (IfAttackHit() == 1)
                         {
                             Debug.Log("incorrect, no damage :(");
-                            //gameManager.GetComponent<MathProblemManager>().UnAnswer();
+                            gameManager.GetComponent<MathProblemManager>().UnAnswer();
                         }
                         turnIndex = 1;
                         UI.Unclick();
@@ -186,8 +191,8 @@ public class TurnSystem : MonoBehaviour
     //KILL THIS METHOD GRRRR
     public int IfAttackHit()
     {
-        //return gameManager.GetComponent<MathProblemManager>().CheckAnswer();
-        return 0; //debug to make always hit
+        return gameManager.GetComponent<MathProblemManager>().CheckAnswer();
+        //return 0; //debug to make always hit
     }
 
 
