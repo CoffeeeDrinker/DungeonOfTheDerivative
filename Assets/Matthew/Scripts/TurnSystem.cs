@@ -62,8 +62,10 @@ public class TurnSystem : MonoBehaviour
                         if (input.name == "Inventory")
                         {
                             inInventory = true;
-                            while(inInventory)
+                            while (inInventory)
+                            {
                                 yield return null; //If nothing in inventory has been clicked, wait a frame
+                            }
                             inventory.ToggleInventory();
                             turnIndex++;
                             UI.Unclick();
