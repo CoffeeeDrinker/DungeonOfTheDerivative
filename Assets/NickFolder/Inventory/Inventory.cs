@@ -25,6 +25,10 @@ public class Inventory : MonoBehaviour
     {
         canvas.GetComponent<Canvas>().enabled = !inventoryOpen;
         inventoryOpen = !inventoryOpen;
+        if (!inventoryOpen)
+        {
+            TurnSystem.inInventory = false;
+        }
     }
 
     // Update is called once per frame
@@ -40,6 +44,7 @@ public class Inventory : MonoBehaviour
             {
                 playerMovement.speed = playerSpeed;
                 playerMovement.enabled = true;
+                TurnSystem.inInventory = false;
             }
 
             if (inventoryOpen && heldItemManager.HoldingItem())
