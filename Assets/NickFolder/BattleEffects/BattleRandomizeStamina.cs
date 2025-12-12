@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class BattleRandomizeStamina : MonoBehaviour
 {
-
+    [SerializeField] GameObject player;
+    ICombatant user;
     // Start is called before the first frame update
     void Start()
     {
-        
+        user = player.GetComponent<ICombatant>();
     }
 
     // Update is called once per frame
@@ -20,6 +21,8 @@ public class BattleRandomizeStamina : MonoBehaviour
     public void OnClick()
     {
         //Randomize Stamina
+        user.DepleteStamina(user.GetMaxStamina());
+        user.Rest(UnityEngine.Random.Range(0, user.GetMaxStamina()));
         TurnSystem.inInventory = false;
     }
 }

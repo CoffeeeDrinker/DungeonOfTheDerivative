@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class BattleHeal : MonoBehaviour
 {
-    ICombatant persondoingthing;
+    [SerializeField] GameObject player;
+    ICombatant user;
     // Start is called before the first frame update
     void Start()
     {
-        
+        user = player.GetComponent<ICombatant>();
     }
 
     // Update is called once per frame
@@ -20,6 +21,7 @@ public class BattleHeal : MonoBehaviour
     public void OnClick()
     {
         //Heal stuff AAAAAAAAAA
+        user.Heal(40 * user.GetLevel());
         TurnSystem.inInventory = false;
     }
 }

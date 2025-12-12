@@ -11,6 +11,8 @@ public interface ICombatant
 
     public int GetHealth();
 
+    public int GetMaxHealth();
+
     public bool DepleteStamina(int exhaustion);
 
     public void Rest(int baseRecharge);
@@ -20,6 +22,9 @@ public interface ICombatant
     public int getXP();
 
     public int GetStamina();
+
+    public int GetMaxStamina();
+
 
     Move GetLastMove();
 
@@ -34,4 +39,6 @@ public interface ICombatant
     void ClearStatusEffects();
 
     void Heal(int health);
+
+    int GetLevel();
 }
