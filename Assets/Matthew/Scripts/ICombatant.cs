@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -24,5 +25,13 @@ public interface ICombatant
 
     void MakeNewMove(ICombatant x);
 
-    //void Heal(int x);
+    bool TurnStart();
+
+    void AddStatusEffect(StatusEffect status);
+
+    StatusEffect GetStatus();
+
+    void ClearStatusEffects();
+
+    void Heal(int health);
 }

@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using TMPro;
 using UnityEngine;
 public class AttackOptionHandler : MonoBehaviour
 {
@@ -7,6 +8,8 @@ public class AttackOptionHandler : MonoBehaviour
     bool clicked;
     [SerializeField] GameObject player;
     [SerializeField] int order;
+    [SerializeField] GameObject textField;
+    TextMeshProUGUI text;
     PlayerController playerController;
     public GameObject attackOption;
     Move move;
@@ -14,10 +17,10 @@ public class AttackOptionHandler : MonoBehaviour
     void Start()
     {
         clicked = false;
+        text = textField.GetComponent<TextMeshProUGUI>();
         playerController = player.GetComponent<PlayerController>();
         move = playerController.GetMoveList()[order];
-
-
+        text.SetText(move.name);
     }
 
     // Update is called once per frame

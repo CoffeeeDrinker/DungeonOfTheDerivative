@@ -17,9 +17,12 @@ public class EnemyController : MonoBehaviour, ICombatant
     private List<Move> moveList;
     private Move lastMove;
     public Dictionary<Move, float> priorities;
+    private StatusEffect status;
+    [SerializeField] GameObject statusMarker;
     // Start is called before the first frame update
     void Start()
     {
+        statusMarker.SetActive(false);
         moveList = new List<Move>() //initializes list of moves
         {
             new Move(
@@ -30,7 +33,7 @@ public class EnemyController : MonoBehaviour, ICombatant
                     origin.Rest(30);
                 }),
             new Move(
-                "Attack1",
+                "Punch",
                 true, //is an attack
                 (origin, direction) =>
                 {
@@ -42,31 +45,33 @@ public class EnemyController : MonoBehaviour, ICombatant
                     }
                 }),
             new Move(
-                "Attack2",
+                "Lulaby",
                 true, //is an attack
                 (origin, direction) =>
                 {
-                    int dmg = UnityEngine.Random.Range(1, 20); //randomly generates base damage within pre-defined bounds
                     if (origin.GetStamina() > 15)
                     {
-                        direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
+                        direction.AddStatusEffect(StatusEffects.ASLEEP);
                         origin.DepleteStamina(15);
                     }
                 }),
             new Move(
-                "Attack3",
+                "Iron Stare",
                 true, //is an attack
                 (origin, direction) =>
                 {
-                    int dmg = UnityEngine.Random.Range(5, 15); //randomly generates base damage within pre-defined bounds
+                    int dmg = UnityEngine.Random.Range(5, 10); //randomly generates base damage within pre-defined bounds
                     if (origin.GetStamina() > 15)
                     {
-                        direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
+                        if(UnityEngine.Random.Range(0f, 10f) > 5)
+                        {
+                            direction.AddStatusEffect(StatusEffects.PARALYZED);
+                        }
                         origin.DepleteStamina(15);
                     }
                 }),
             new Move(
-                "Attack4",
+                "Evan Smash",
                 true, //is an attack
                 (origin, direction) =>
                 {
@@ -83,10 +88,6 @@ public class EnemyController : MonoBehaviour, ICombatant
         stamina = maxStamina;
         health = maxHealth;
         priorities = AssignPriority(moveList);
-        for(int i = 0; i < priorities.Count; i++)
-        {
-            Debug.Log("Move " + i + " prioritiy: " + priorities[moveList[i]]);
-        }
 
         
     }
@@ -108,10 +109,11 @@ public class EnemyController : MonoBehaviour, ICombatant
     {
         //Update rest priority
         priorities[moveList[0]] = 1;// 0.01f * (maxStamina - stamina);
+        /*
         for (int i = 0; i < priorities.Count; i++)
         {
             Debug.Log("Move " + i + " prioritiy: " + priorities[moveList[i]]);
-        }
+        } */
         //select which move to use
         float selectionRange = 0;
         for (int i = 0; i < moveList.Count; i++)
@@ -232,54 +234,87 @@ public class EnemyController : MonoBehaviour, ICombatant
         return lastMove;
     }
 
-    //Debug method to test selection algorithm and determine distribution of move picks
-  /*  private void testMoveProbability()
+    bool ICombatant.TurnStart()
     {
-        int numMove1 = 0;
-        int numMove2 = 0;
-        int numMove3 = 0;
-        int numMove4 = 0;
-        int numMove5 = 0;
-        for (int j = 0; j < 100000; j++)
+        bool skip = false;
+        if (status != null)
         {
-            float selectionRange = 0;
-            for (int i = 0; i < moves.Count; i++)
-            {
-                selectionRange += priorities[moves[i]];
-            }
-            float random = UnityEngine.Random.Range(0f, selectionRange);
-            for (int i = 0; i < moves.Count; i++)
-            {
-                if (random <= priorities[moves[i]])
-                {
-                    if (i == 0)
-                    {
-                        numMove1++;
-                    }
-                    else if (i == 1)
-                    {
-                        numMove2++;
-                    }
-                    else if (i == 2)
-                    {
-                        numMove3++;
-                    }
-                    else if (i == 3)
-                    {
-                        numMove4++;
-                    }
-                    else if (i == 4)
-                    {
-                        numMove5++;
-                    }
-                    break;
-                }
-                else
-                {
-                    random -= priorities[moves[i]];
-                }
-            }
+            skip = status.statusEffect(this);
         }
-        Debug.Log("Move 1 test: " + numMove1 + "\nMove 2 test: " + numMove2 + "\nMove 3 test: " + numMove3 + "\nMove 4 test:" + numMove4 + "\nMove 5 test: " + numMove5);
-    }*/
+        return skip;
+    }
+
+    void ICombatant.AddStatusEffect(StatusEffect s)
+    {
+        if(status == null)
+            this.status = s;
+        statusMarker.SetActive(true);
+    }
+
+    StatusEffect ICombatant.GetStatus()
+    {
+        return status;
+    }
+
+    void ICombatant.ClearStatusEffects()
+    {
+        status = null;
+        statusMarker.SetActive(false);
+    }
+
+    void ICombatant.Heal(int health)
+    {
+        this.health += health;
+    }
+
+    //Debug method to test selection algorithm and determine distribution of move picks
+    /*  private void testMoveProbability()
+      {
+          int numMove1 = 0;
+          int numMove2 = 0;
+          int numMove3 = 0;
+          int numMove4 = 0;
+          int numMove5 = 0;
+          for (int j = 0; j < 100000; j++)
+          {
+              float selectionRange = 0;
+              for (int i = 0; i < moves.Count; i++)
+              {
+                  selectionRange += priorities[moves[i]];
+              }
+              float random = UnityEngine.Random.Range(0f, selectionRange);
+              for (int i = 0; i < moves.Count; i++)
+              {
+                  if (random <= priorities[moves[i]])
+                  {
+                      if (i == 0)
+                      {
+                          numMove1++;
+                      }
+                      else if (i == 1)
+                      {
+                          numMove2++;
+                      }
+                      else if (i == 2)
+                      {
+                          numMove3++;
+                      }
+                      else if (i == 3)
+                      {
+                          numMove4++;
+                      }
+                      else if (i == 4)
+                      {
+                          numMove5++;
+                      }
+                      break;
+                  }
+                  else
+                  {
+                      random -= priorities[moves[i]];
+                  }
+              }
+          }
+          Debug.Log("Move 1 test: " + numMove1 + "\nMove 2 test: " + numMove2 + "\nMove 3 test: " + numMove3 + "\nMove 4 test:" + numMove4 + "\nMove 5 test: " + numMove5);
+      }*/
 }
