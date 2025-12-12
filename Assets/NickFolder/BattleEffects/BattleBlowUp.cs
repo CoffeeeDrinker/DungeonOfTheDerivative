@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class BattleBlowUp : MonoBehaviour
 {
+    ICombatant user;
     // Start is called before the first frame update
     void Start()
     {
@@ -19,6 +20,7 @@ public class BattleBlowUp : MonoBehaviour
     public void OnClick()
     {
         //Blow up D:
+        user.TakeDamage(user.GetMaxHealth());
         TurnSystem.inInventory = false;
     }
 }

@@ -79,6 +79,7 @@ public class TurnSystem : MonoBehaviour
                     }
                     else
                     { //if button pressed is an attack
+                        UI.HideButtons();
                         gameManager.GetComponent<MathProblemManager>().StartDraw();
                         //Attacks opponent, then makes it enemy's turn, then resets button
                         while (IfAttackHit() == 2)
@@ -95,6 +96,7 @@ public class TurnSystem : MonoBehaviour
                             Debug.Log("incorrect, no damage :(");
                             gameManager.GetComponent<MathProblemManager>().UnAnswer();
                         }
+                        UI.ShowButtons();
                         turnIndex = 1;
                         UI.Unclick();
                     }

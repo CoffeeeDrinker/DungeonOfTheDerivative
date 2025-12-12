@@ -209,9 +209,23 @@ public class PlayerController : MonoBehaviour, ICombatant
         statusMarker.SetActive(true);
     }
 
+    int ICombatant.GetLevel()
+    {
+        return playerLevel;
+    }
     StatusEffect ICombatant.GetStatus()
     {
         return status;
+    }
+
+    int ICombatant.GetMaxStamina()
+    {
+        return maxStamina;
+    }
+
+    int ICombatant.GetMaxHealth()
+    {
+        return maxHealth;
     }
 
     public List<Move> GetMoveList()

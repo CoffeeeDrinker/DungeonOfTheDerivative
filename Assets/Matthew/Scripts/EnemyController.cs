@@ -267,6 +267,21 @@ public class EnemyController : MonoBehaviour, ICombatant
         this.health += health;
     }
 
+    int ICombatant.GetMaxStamina()
+    {
+        return maxStamina;
+    }
+
+    int ICombatant.GetMaxHealth()
+    {
+        return maxHealth;
+    }
+
+    int ICombatant.GetLevel()
+    {
+        return level;
+    }
+
     //Debug method to test selection algorithm and determine distribution of move picks
     /*  private void testMoveProbability()
       {
