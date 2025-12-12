@@ -84,7 +84,7 @@ public class EnemyController : MonoBehaviour, ICombatant
                 }),
         };
         maxStamina = (int)(100 + 100 * ((level - 1.0) * 0.1));
-        maxHealth = 100000+(int)(100 + 100 * ((level - 1.0) * 0.1));
+        maxHealth = (int)(100 + 100 * ((level - 1.0) * 0.1));
         stamina = maxStamina;
         health = maxHealth;
         priorities = AssignPriority(moveList);
