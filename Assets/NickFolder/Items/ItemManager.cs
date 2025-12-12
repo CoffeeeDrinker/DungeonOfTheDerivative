@@ -10,7 +10,7 @@ public class ItemManager : MonoBehaviour
     [SerializeField] List<int> itemPrices;
     [SerializeField] List<string> itemDescriptions;
 
-    bool inCombat;
+    public bool inCombat;
     Dictionary<ItemNameEnum, int> itemPriceMap;
     Dictionary<ItemNameEnum, string> itemDescriptionsMap;
     Dictionary<ItemNameEnum, Sprite> itemSpriteMap;

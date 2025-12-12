@@ -49,6 +49,11 @@ public class Inventory : MonoBehaviour
                 return;
             }
 
+            if(itemManager.inCombat)
+            {
+                return;
+            }
+
             if (inventoryOpen && heldItemManager.HoldingItem())
             {
                 grid.AddItem(heldItemManager.GetItem(), heldItemManager.GetItemAmount());
