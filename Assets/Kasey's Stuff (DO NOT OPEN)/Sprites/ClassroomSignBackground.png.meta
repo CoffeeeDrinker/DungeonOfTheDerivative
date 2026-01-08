@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 03cbd14ebee6b224caf6655accc1e886
+guid: 99f56fe34e68f304d88d17139858d3d5
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -8999585507546165876
-    second: ClassroomSign_0
+      213: 6181865808799662925
+    second: ClassroomSignBackground_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -48,10 +48,10 @@ TextureImporter:
   compressionQuality: 50
   spriteMode: 1
   spriteExtrude: 1
-  spriteMeshType: 0
-  alignment: 7
-  spritePivot: {x: 0.5, y: 0}
-  spritePixelsToUnits: 25
+  spriteMeshType: 1
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 100
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -100,22 +100,22 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: ClassroomSign_0
+      name: ClassroomSignBackground_0
       rect:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 40
-        height: 24
+        width: 66
+        height: 40
       alignment: 0
-      pivot: {x: 0.5, y: 0.5}
+      pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: c8d05f8a9ac0b1380800000000000000
-      internalID: -8999585507546165876
+      spriteID: d4303ae33366ac550800000000000000
+      internalID: 6181865808799662925
       vertices: []
       indices: 
       edges: []
@@ -124,14 +124,14 @@ TextureImporter:
     physicsShape: []
     bones: []
     spriteID: 5e97eb03825dee720800000000000000
-    internalID: 1537655665
+    internalID: 0
     vertices: []
     indices: 
     edges: []
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      ClassroomSign_0: -8999585507546165876
+      ClassroomSignBackground_0: 6181865808799662925
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
