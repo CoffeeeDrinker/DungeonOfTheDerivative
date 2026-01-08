@@ -4,13 +4,15 @@ using UnityEngine;
 
 public class BattleFireball : MonoBehaviour
 {
-    [SerializeField] GameObject player;
-    [SerializeField] GameObject enemy;
+    GameObject player;
+    GameObject enemy;
     ICombatant user;
     ICombatant target;
     // Start is called before the first frame update
     void Start()
     {
+        player = PlayerEnemyHolder.instance.player;
+        enemy = PlayerEnemyHolder.instance.enemy;
         user = player.GetComponent<ICombatant>();
         target = enemy.GetComponent<ICombatant>();
     }

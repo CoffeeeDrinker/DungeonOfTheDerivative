@@ -4,11 +4,12 @@ using UnityEngine;
 
 public class BattleRandomizeHealth : MonoBehaviour
 {
-    [SerializeField] GameObject player;
+    GameObject player;
     ICombatant user;
     // Start is called before the first frame update
     void Start()
     {
+        player = PlayerEnemyHolder.instance.player;
         user = player.GetComponent<ICombatant>();
     }
 
