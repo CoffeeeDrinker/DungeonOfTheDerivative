@@ -39,6 +39,7 @@ public class SaveInventory : MonoBehaviour
     {
         string[] lines = File.ReadAllLines(savePath);
         string[] grid = new string[15];
+        string name;
 
         for(int i=0; i<15; i++)
         {
@@ -53,5 +54,8 @@ public class SaveInventory : MonoBehaviour
 
         string[] volume = lines[16].Split(' ');
         SoundManager.Instance.SetVolumeSFX(int.Parse(volume[1]));
+
+        name = lines[17];
+        PlayerManager.SetName(name);
     }
 }

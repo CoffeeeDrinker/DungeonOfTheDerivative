@@ -15,3 +15,5 @@ healthPotion 1
 bomb 1
 Ducks 250
 SFX 95
+Name
+Started false

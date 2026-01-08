@@ -16,7 +16,7 @@ public class PlayerMovement : MonoBehaviour
     public string currentFacing = "down";
 
     //Player name (this isn't being used in this script but I'm just holding it here)
-    public string playerName;
+    public string playerName = PlayerManager.playerName;
 
     void Update()
     {

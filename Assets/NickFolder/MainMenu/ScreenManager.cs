@@ -8,12 +8,14 @@ public class ScreenManager : MonoBehaviour
     [SerializeField] GameObject optionsScreen;
     [SerializeField] GameObject creditScreen;
     [SerializeField] GameObject saveScreen;
+    [SerializeField] GameObject newSaveScreen;
     public void SwitchToOptions()
     {
         mainScreen.SetActive(false);
         creditScreen.SetActive(false);
         optionsScreen.SetActive(true);
         saveScreen.SetActive(false);
+        newSaveScreen.SetActive(false);
     }
 
     public void SwitchToCredits()
@@ -22,6 +24,7 @@ public class ScreenManager : MonoBehaviour
         creditScreen.SetActive(true);
         optionsScreen.SetActive(false);
         saveScreen.SetActive(false);
+        newSaveScreen.SetActive(false);
     }
 
     public void SwitchToMain()
@@ -30,6 +33,7 @@ public class ScreenManager : MonoBehaviour
         creditScreen.SetActive(false);
         optionsScreen.SetActive(false);
         saveScreen.SetActive(false);
+        newSaveScreen.SetActive(false);
     }
 
     public void SwitchToSaves()
@@ -38,5 +42,15 @@ public class ScreenManager : MonoBehaviour
         creditScreen.SetActive(false);
         optionsScreen.SetActive(false);
         saveScreen.SetActive(true);
+        newSaveScreen.SetActive(false);
+    }
+
+    public void SwitchToNewSave()
+    {
+        mainScreen.SetActive(false);
+        creditScreen.SetActive(false);
+        optionsScreen.SetActive(false);
+        saveScreen.SetActive(false);
+        newSaveScreen.SetActive(true);
     }
 }

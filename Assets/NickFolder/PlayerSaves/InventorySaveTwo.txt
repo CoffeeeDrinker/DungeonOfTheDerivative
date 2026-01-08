@@ -15,3 +15,5 @@ healthPotion 1
 ERROR 0
 Ducks 400
 SFX 20
+Name
+Started true
