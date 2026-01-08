@@ -37,6 +37,10 @@ public class Inventory : MonoBehaviour
 
         canvas.GetComponent<Canvas>().enabled = !inventoryOpen;
         inventoryOpen = !inventoryOpen;
+        if (!inventoryOpen)
+        {
+            TurnSystem.inInventory = false;
+        }
     }
 
     // Update is called once per frame

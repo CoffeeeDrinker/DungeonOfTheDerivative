@@ -5,7 +5,7 @@ using UnityEngine;
 using UnityEngine.SceneManagement;
 using UnityEngine.UI;
 
-public class NewFloorScript : MonoBehaviour
+public class StairCaseScript : MonoBehaviour
 {
     public GameObject chooseFloorScreen;
     public Image background;
