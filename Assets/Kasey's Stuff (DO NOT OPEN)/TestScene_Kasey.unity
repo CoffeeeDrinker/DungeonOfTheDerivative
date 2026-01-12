@@ -479,7 +479,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &76012522
 Transform:
   m_ObjectHideFlags: 0
@@ -796,7 +796,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 0
+  m_IsActive: 1
 --- !u!4 &299099700
 Transform:
   m_ObjectHideFlags: 0
@@ -18666,12 +18666,16 @@ PrefabInstance:
       value: -10
       objectReference: {fileID: 0}
     - target: {fileID: 5607282332696020081, guid: 85c135da30c612741908618ca71d488b, type: 3}
+      propertyPath: m_fontColor32.rgba
+      value: 4279769112
+      objectReference: {fileID: 0}
+    - target: {fileID: 5607282332696020081, guid: 85c135da30c612741908618ca71d488b, type: 3}
       propertyPath: m_TextStyleHashCode
       value: -1183493901
       objectReference: {fileID: 0}
     - target: {fileID: 5607282332696020081, guid: 85c135da30c612741908618ca71d488b, type: 3}
       propertyPath: m_hasFontAssetChanged
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 7328472190779707826, guid: 85c135da30c612741908618ca71d488b, type: 3}
       propertyPath: m_Pivot.x
@@ -19131,11 +19135,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 520150794555468486, guid: 44b4f4c3bca431d4d87f6f1b94952ff7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -10.36
+      value: 2.85
       objectReference: {fileID: 0}
     - target: {fileID: 520150794555468486, guid: 44b4f4c3bca431d4d87f6f1b94952ff7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -0.83
+      value: -1.57
       objectReference: {fileID: 0}
     - target: {fileID: 520150794555468486, guid: 44b4f4c3bca431d4d87f6f1b94952ff7, type: 3}
       propertyPath: m_LocalPosition.z

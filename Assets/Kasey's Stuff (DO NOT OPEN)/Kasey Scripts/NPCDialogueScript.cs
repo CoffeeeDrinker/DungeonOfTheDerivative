@@ -78,7 +78,8 @@ public class NPCDialogueScript : MonoBehaviour
                     {
                         typewriterInstance.StopManualEffects();
                         startTime = Time.fixedTime;
-                        dialogueText.text = NPCDialogue[currentDialogueI].GetLine(currentDialogueLineI);
+                        AddDialogueToTextBox();
+                        //dialogueText.text = NPCDialogue[currentDialogueI].GetLine(currentDialogueLineI);
                         typewriterInstance.Refresh();
 
                         typewriterInstance.StartManualEffects();
@@ -192,4 +193,41 @@ public class NPCDialogueScript : MonoBehaviour
 
         talkNow = true;
     }
+
+    public void AddDialogueToTextBox()
+    {
+        //Get the line
+        string line = NPCDialogue[currentDialogueI].GetLine(currentDialogueLineI);
+
+        //Replace <player_name> with player name if needed
+        if (line.IndexOf("<player_name>") > -1 && playerScript.playerName.Length > 0)
+        {
+            line = line.Substring(0, line.IndexOf("<player_name>")) + playerScript.playerName + line.Substring(line.IndexOf(">")+1);
+        }
+
+        //If pedro is saying this, then make the text red
+        if (line.IndexOf("<pedro_is_speaking>") > -1)
+        {
+            line = line.Substring(line.IndexOf(">")+1);
+            dialogueText.color = Color.red;
+        }
+        else
+        {
+            dialogueText.color = Color.black;
+        }
+
+        //Actually put the dialogue in the text box thingy
+        dialogueText.text = line;
+    }
 }
+
+
+/*
+Kasey
+I regret my life decisions. For some stupid reason I decided to take 3 math classes this year and I am suffering. Help me.
+does this work?
+Hi there <player_name>. bla bla bla
+~
+That didn't help. :(
+~~
+*/
