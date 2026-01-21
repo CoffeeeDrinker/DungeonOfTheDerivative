@@ -126,7 +126,6 @@ public class TurnSystem : MonoBehaviour
                                 }
                                 yield return null;
                             }
-                            Debug.Log("Quail?");
                             isClicked = false;
                             UI.HideText();
                         }

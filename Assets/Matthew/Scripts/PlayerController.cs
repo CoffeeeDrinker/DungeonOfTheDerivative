@@ -3,6 +3,7 @@ using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
 
+
 public class PlayerController : MonoBehaviour, ICombatant
 {
     public GameObject player; //player character
@@ -11,6 +12,8 @@ public class PlayerController : MonoBehaviour, ICombatant
     public GameObject healthBar;
     public GameObject staminaBar;
     [SerializeField] GameObject statusMarker;
+    [SerializeField] GameObject healthBarEmptySpace;
+    [SerializeField] GameObject staminaBarEmptySpace;
     private StatusEffect status = null;
     private int health;
     private int stamina;
@@ -25,11 +28,16 @@ public class PlayerController : MonoBehaviour, ICombatant
     // Start is called before the first frame update
     void Start()
     {
+
         statusMarker.SetActive(false);
+        healthBarEmptySpace.SetActive(true);
+        staminaBarEmptySpace.SetActive(true);
         maxHealth = (int)(100 + 100*((playerLevel - 1.0) * 0.1));
         maxStamina = (int)(100 + 100 * ((playerLevel - 1.0) * 0.1));
         health = maxHealth;
         stamina = maxStamina;
+        healthBarEmptySpace.transform.localScale = new Vector3(((float)(maxHealth - health) / (float)maxHealth), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
+        staminaBarEmptySpace.transform.localScale = new Vector3(((float)(maxStamina - stamina) / (float)maxStamina), staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
         attackButton = attackButtonField.GetComponent<AttackHandler>();
         moveList = new List<Move>() //initializes list of moves
         {
@@ -108,11 +116,18 @@ public class PlayerController : MonoBehaviour, ICombatant
     //Postcondition: returns true if health is greater than 0, false otherwise
     public bool TakeDamage(int damage){
         health -= damage;
-        healthBar.transform.Translate(-damage*(5.71F/(float)maxHealth), 0, 0);
-        if(health > 0){
+        if(health < 0)
+        {
+            health = 0;
+        }
+        float xInit = healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+        healthBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxHealth - health) / (float)maxHealth)), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
+        float xDiff = xInit - healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+        healthBarEmptySpace.transform.Translate(0.5f*xDiff, 0, 0);
+        //healthBar.transform.Translate(-damage*(5.71F/(float)maxHealth), 0, 0);
+        if (health > 0){
             return true;
         } else{
-            health = 0;
             return false;
         }
     }
@@ -139,13 +154,20 @@ public class PlayerController : MonoBehaviour, ICombatant
     bool ICombatant.DepleteStamina(int exhaustion)
     {
         stamina -= exhaustion;
-        staminaBar.transform.Translate(-exhaustion * (5.71F/maxStamina), 0, 0);
+        if(stamina < 0)
+        {
+            stamina = 0;
+        }
+        float xInit = staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+        staminaBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxStamina - stamina) / (float)maxStamina)), staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
+        float xDiff = xInit - staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+        staminaBarEmptySpace.transform.Translate(0.5f * xDiff, 0, 0);
+        //staminaBar.transform.Translate(-exhaustion * (5.71F/maxStamina), 0, 0);
         if (stamina > 0)
         {
             return true;
         }
         else {
-            stamina = 0;
             return false;
         }
     }
@@ -157,8 +179,12 @@ public class PlayerController : MonoBehaviour, ICombatant
         {
             recharge = maxStamina-stamina;
         }
+        float xInit = staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
         stamina += recharge;
-        staminaBar.transform.Translate(recharge * (5.71F / maxStamina), 0, 0);
+        staminaBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxStamina - stamina) / (float)maxStamina)), staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
+        float xDiff = staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x - xInit;
+        staminaBarEmptySpace.transform.Translate(-0.5f * xDiff, 0, 0);
+        //staminaBar.transform.Translate(recharge * (5.71F / maxStamina), 0, 0);
     }
 
     int ICombatant.getXP()

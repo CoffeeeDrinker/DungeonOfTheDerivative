@@ -19,9 +19,12 @@ public class EnemyController : MonoBehaviour, ICombatant
     public Dictionary<Move, float> priorities;
     private StatusEffect status;
     [SerializeField] GameObject statusMarker;
+    [SerializeField] GameObject healthBarEmptySpace;
     // Start is called before the first frame update
     void Start()
     {
+        healthBarEmptySpace.SetActive(true);
+
         statusMarker.SetActive(false);
         moveList = new List<Move>() //initializes list of moves
         {
@@ -75,7 +78,7 @@ public class EnemyController : MonoBehaviour, ICombatant
                 true, //is an attack
                 (origin, direction) =>
                 {
-                    int dmg = UnityEngine.Random.Range(25, 75); //randomly generates base damage within pre-defined bounds
+                    int dmg = UnityEngine.Random.Range(25, 30); //randomly generates base damage within pre-defined bounds
                     if (origin.GetStamina() > 15)
                     {
                         direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
@@ -88,8 +91,9 @@ public class EnemyController : MonoBehaviour, ICombatant
         stamina = maxStamina;
         health = maxHealth;
         priorities = AssignPriority(moveList);
+        healthBarEmptySpace.transform.localScale = new Vector3(((float)(maxHealth - health) / (float)maxHealth), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
 
-        
+
     }
 
     // Update is called once per frame
@@ -177,14 +181,21 @@ public class EnemyController : MonoBehaviour, ICombatant
     bool ICombatant.TakeDamage(int damage)
     {
         health -= damage;
-        healthBar.transform.Translate(damage * (5.71F/maxHealth), 0, 0);
+        if (health < 0)
+        {
+            health = 0;
+        }
+        float xInit = healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+        healthBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxHealth - health) / (float)maxHealth)), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
+        float xDiff = xInit - healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+        healthBarEmptySpace.transform.Translate(0.5f * xDiff, 0, 0);
+        //healthBar.transform.Translate(damage * (5.71F/maxHealth), 0, 0);
         if (health > 0)
         {
             return true;
         }
         else
         {
-            health = 0;
             return false;
         }
     }
