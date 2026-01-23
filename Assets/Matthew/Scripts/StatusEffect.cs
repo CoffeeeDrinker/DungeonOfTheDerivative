@@ -1,21 +1,43 @@
 using System;
+using System.Collections.Generic;
 using System.Data;
 using System.Diagnostics;
-using UnityEditorInternal;
-using System.Collections.Generic;
 using Unity.VisualScripting;
+using UnityEditorInternal;
+using UnityEngine;
 
 public sealed class StatusEffect
 {
     public readonly string name;
+    public readonly Sprite sprite;
     public readonly Func<ICombatant, bool> statusEffect; //takes ICombatant affected and does status efffect things to them, returns true if skips turn, false otherwise
-    public StatusEffect(string name, Func<ICombatant, bool> statusEffect) { this.name = name; this.statusEffect = statusEffect; }
+    public StatusEffect(string name, Sprite sprite, Func<ICombatant, bool> statusEffect) { this.name = name; this.sprite = sprite; this.statusEffect = statusEffect; }
 }
 
 public static class StatusEffects
 {
+    public readonly static List<Sprite> statusSpriteList = new List<Sprite>()
+    {
+        //poisoned
+        null,
+        //buring
+        null,
+        //asleep
+        null,
+        //caffeine crash
+        null,
+        //confused
+        null,
+        //caffeinated
+        null,
+        //paralyzed,
+        null,
+        //frostbite,
+        null
+    };
     public readonly static StatusEffect POISONED = new StatusEffect(
         "Poisoned",
+        statusSpriteList[0],
         (affected) =>
         {
             //Poisoned deals 1/5 of current health as damage each turn
@@ -30,6 +52,7 @@ public static class StatusEffects
      );
     public readonly static StatusEffect BURNING = new StatusEffect(
         "Burning",
+        statusSpriteList[1],
         (affected) =>
         {
             //Poisoned deals fixed 10 damage each turn and makes your attacks deal 0.75x damage
@@ -46,6 +69,7 @@ public static class StatusEffects
      );
     public readonly static StatusEffect ASLEEP = new StatusEffect(
         "Asleep",
+        statusSpriteList[2],
         (affected) =>
         {
             //Asleep makes you skip every turn until you wake up
@@ -63,6 +87,7 @@ public static class StatusEffects
      );
     public readonly static StatusEffect CAFFEINECRASH = new StatusEffect(
         "Caffeine Crash",
+        statusSpriteList[3],
         (affected) =>
         {
             //Caffeine Crash depletes stamina by a fixed 10 every turn
@@ -77,6 +102,7 @@ public static class StatusEffects
      );
     public readonly static StatusEffect CONFUSED = new StatusEffect(
         "Confused",
+        statusSpriteList[4],
         (affected) =>
         {
             //Confused makes affected have a 50% chance of attacking themselves with fixed damage 20 and losing turn
@@ -97,6 +123,7 @@ public static class StatusEffects
 
     public readonly static StatusEffect CAFFEINATED = new StatusEffect(
         "Caffeinated",
+        statusSpriteList[5],
         (affected) =>
         {
             //Caffinated makes you gain fixed 20 stamina every turn
@@ -114,6 +141,7 @@ public static class StatusEffects
 
     public readonly static StatusEffect PARALYZED = new StatusEffect(
         "Paralyzed",
+        statusSpriteList[6],
         (affected) =>
         {
             //Paralyzed gives you a 50% chance of losing your turn each turn
@@ -133,6 +161,7 @@ public static class StatusEffects
 
     public readonly static StatusEffect FROSTBITE = new StatusEffect(
         "Frostbite",
+        statusSpriteList[7],
         (affected) =>
         {
             //Frostbite halves the strength of your attacks

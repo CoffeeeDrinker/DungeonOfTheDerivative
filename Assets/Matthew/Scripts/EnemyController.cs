@@ -24,9 +24,12 @@ public class EnemyController : MonoBehaviour, ICombatant
     void Start()
     {
         healthBarEmptySpace.SetActive(true);
-
         statusMarker.SetActive(false);
-        moveList = new List<Move>() //initializes list of moves
+        maxStamina = (int)(100 + 100 * ((level - 1.0) * 0.1));
+        maxHealth = (int)(100 + 100 * ((level - 1.0) * 0.1));
+        stamina = maxStamina;
+        health = maxHealth;
+        priorities = AssignPriority(new List<Move>() //initializes list of moves
         {
             new Move(
                 "Rest", //name of move
@@ -85,15 +88,12 @@ public class EnemyController : MonoBehaviour, ICombatant
                         origin.DepleteStamina(15);
                     }
                 }),
+        });
+        moveList = new List<Move>();
+        foreach (Move m in priorities.Keys) {
+            moveList.Add(m);
         };
-        maxStamina = (int)(100 + 100 * ((level - 1.0) * 0.1));
-        maxHealth = (int)(100 + 100 * ((level - 1.0) * 0.1));
-        stamina = maxStamina;
-        health = maxHealth;
-        priorities = AssignPriority(moveList);
         healthBarEmptySpace.transform.localScale = new Vector3(((float)(maxHealth - health) / (float)maxHealth), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
-
-
     }
 
     // Update is called once per frame
@@ -112,7 +112,7 @@ public class EnemyController : MonoBehaviour, ICombatant
     public void MakeNewMove(ICombatant target)
     {
         //Update rest priority
-        priorities[moveList[0]] = 1;// 0.01f * (maxStamina - stamina);
+        priorities[moveList[0]] = 0.01f * (maxStamina - stamina);
         /*
         for (int i = 0; i < priorities.Count; i++)
         {
@@ -131,6 +131,7 @@ public class EnemyController : MonoBehaviour, ICombatant
                 if (random <= priorities[moveList[i]])
                 {
                     Debug.Log("Enemy is using: move " + i);
+                    Debug.Log("Enemy health: " + health + "\nEnemy stamina: " + stamina);
                     lastMove = moveList[i];
                     lastMove.move(this, target);
                     break;
@@ -148,18 +149,19 @@ public class EnemyController : MonoBehaviour, ICombatant
     private Dictionary<Move, float> AssignPriority(List<Move> moves)
     {
         Dictionary<Move, float> priorityMap = new Dictionary<Move, float>();
-        //for(int i = 1; i < 5; i++)
-        //{
-        // float priority = 2f;//moves[i].baseDmg / moves[i].staminaCost;
-        //priorityMap.Add(moves[i], priority);
-        //}
+        /*for(int i = 1; i < 5; i++)
+        {
+        float priority = moves[i].baseDmg / moves[i].staminaCost;
+        priorityMap.Add(moves[i], priority);
+        }
+        return priorityMap;*/
 
         //NOTE: Priority values are harcoded for now. Need to make it so enemy move priorities are assigned at the same time as their moves
-        priorityMap.Add(moves[0], 0.01f * (maxStamina - stamina)); //assigns priority for rest option
-        priorityMap.Add(moves[1], 2);
-        priorityMap.Add(moves[2], 0.5f);
-        priorityMap.Add(moves[3], 0.75f);
-        priorityMap.Add(moves[4], 1f);
+        priorityMap.Add(moves[0], 0.01f * -1 *(stamina - maxStamina)); //assigns priority for rest option
+        priorityMap.Add(moves[1], 1f);
+        priorityMap.Add(moves[2], 5f);
+        priorityMap.Add(moves[3], 5f);
+        priorityMap.Add(moves[4], 2f);
         return priorityMap;
     }
 
@@ -260,6 +262,7 @@ public class EnemyController : MonoBehaviour, ICombatant
         if(status == null)
             this.status = s;
         statusMarker.SetActive(true);
+        //statusMarker.GetComponent<SpriteRenderer>().sprite = s.sprite;
     }
 
     StatusEffect ICombatant.GetStatus()

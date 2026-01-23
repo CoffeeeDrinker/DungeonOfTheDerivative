@@ -20,8 +20,6 @@ public class AttackOptionHandler : MonoBehaviour
         clicked = false;
         text = textField.GetComponent<TextMeshProUGUI>();
         playerController = player.GetComponent<PlayerController>();
-        Debug.Log("is this real: " + playerController.name);
-        Debug.Log("Ts not real: " + playerController.GetMoveList()[0].name);
         move = playerController.GetMoveList()[order];
         text.SetText(move.name);
     }

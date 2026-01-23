@@ -50,8 +50,24 @@ public class TurnSystem : MonoBehaviour
         {
             if (turnIndex == 0) //if it's player's turn
             {
+                StatusEffect currentStatus = player.GetStatus();
                 if (!player.TurnStart()) //only takes input if turn was not skipped
                 {
+                    if (player.GetStatus() != currentStatus){ //if player just recovered from a status effect
+                        UI.DisplayText("You " + StatusEffects.recoveryMap[currentStatus] + "!", 2f);
+                        isClicked = false;
+                        float startTime = Time.time;
+                        while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+                        {
+                            if (Time.time - startTime >= 2)
+                            {
+                                break;
+                            }
+                            yield return null;
+                        }
+                        isClicked = false;
+                        UI.HideText();
+                    }
                     Move input = UI.GotInput();
                     if (input == null) //if no input has been recieved
                     {
