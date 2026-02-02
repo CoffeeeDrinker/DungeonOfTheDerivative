@@ -24,14 +24,14 @@ public class UIController : MonoBehaviour
     //Defining certain moves statically here, will probably need to change later when we have a central place to store moves
     Move rest = new Move(
         "Rest",
-        false,
+        Move.REST,
         (origin, direction) => //implementation of move
         {
             origin.Rest(30);
         });
     Move inventory = new Move(
         "Inventory",
-        false,
+        Move.INVENTORY,
         (origin, direction) => //implementation of move
         {
             
@@ -40,8 +40,8 @@ public class UIController : MonoBehaviour
             //Then have the items do whatever they do to either the player (origin) or enemy (direction)
         });
     Move run = new Move(
-        "Inventory",
-        false,
+        "Run",
+        Move.RUN,
         (origin, direction) => //implementation of move
         {
             //no escape
@@ -139,6 +139,11 @@ public class UIController : MonoBehaviour
         combatTextMasterField.SetActive(true);
         combatTextController.Toggle();
         combatTextController.DisplayText(text, duration);
+    }
+
+    public string GetText()
+    {
+        return combatTextController.text.text;
     }
 
     public void HideText()

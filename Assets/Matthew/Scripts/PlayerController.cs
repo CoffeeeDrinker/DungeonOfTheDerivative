@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour, ICombatant
         {
             new Move(
                 "Punch",
-                true, //is an attack
+                Move.DAMAGE, //is an attack
                 (origin, direction) =>
                 {
                     int dmg = UnityEngine.Random.Range(9, 11); //randomly generates base damage within pre-defined bounds
@@ -55,7 +55,7 @@ public class PlayerController : MonoBehaviour, ICombatant
                 }),
             new Move(
                 "Lulaby",
-                true, //is an attack
+                Move.STATUS, //is an attack
                 (origin, direction) =>
                 {
                     if (origin.GetStamina() > 15)
@@ -66,7 +66,7 @@ public class PlayerController : MonoBehaviour, ICombatant
                 }),
             new Move(
                 "Iron Stare",
-                true, //is an attack
+                Move.STATUS, //is an attack
                 (origin, direction) =>
                 {
                     int dmg = UnityEngine.Random.Range(5, 10); //randomly generates base damage within pre-defined bounds
@@ -81,7 +81,7 @@ public class PlayerController : MonoBehaviour, ICombatant
                 }),
             new Move(
                 "Evan Smash",
-                true, //is an attack
+                Move.DAMAGE, //is an attack
                 (origin, direction) =>
                 {
                     int dmg = UnityEngine.Random.Range(25, 75); //randomly generates base damage within pre-defined bounds

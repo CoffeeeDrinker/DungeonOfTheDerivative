@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
+using UnityEditor.ShaderGraph.Serialization;
 using UnityEditor.UIElements;
 using UnityEngine;
 [DefaultExecutionOrder(100)] //This class's Start() method will be called last
@@ -38,7 +39,7 @@ public class TurnSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && turnIndex != 0)
+        if (Input.GetMouseButtonDown(0))
         {
             isClicked = !isClicked;
         }
@@ -54,8 +55,7 @@ public class TurnSystem : MonoBehaviour
                 if (!player.TurnStart()) //only takes input if turn was not skipped
                 {
                     if (player.GetStatus() != currentStatus){ //if player just recovered from a status effect
-                        UI.DisplayText("You " + StatusEffects.recoveryMap[currentStatus] + "!", 2f);
-                        isClicked = false;
+                        UI.DisplayText("You " + StatusEffects.recoveryMap[currentStatus], 2f);
                         float startTime = Time.time;
                         while (!isClicked) //checks if player is trying to skip by pressing left mouse button
                         {
@@ -73,7 +73,7 @@ public class TurnSystem : MonoBehaviour
                     {
                         yield return null; //if no input recieved, wait a frame
                     }
-                    else if (input.isAttack == false) //if it is something other than an attack
+                    else if (input.type == Move.INVENTORY || input.type == Move.REST) //if it is something other than an attack
                     {
                         if (input.name == "Inventory")
                         {
@@ -124,6 +124,8 @@ public class TurnSystem : MonoBehaviour
             }
             else // if it's enemy's turn
             {
+                isClicked = false;
+                
                 if (enemy.IsAlive())
                 {
                     StatusEffect oldStatus = enemy.GetStatus();
@@ -146,11 +148,12 @@ public class TurnSystem : MonoBehaviour
                             UI.HideText();
                         }
                         enemy.MakeNewMove(player);
-                        UI.DisplayText("Enemy is using: " + enemy.GetLastMove().name, 2f);
+                        string displayText = "Enemy is using: " + enemy.GetLastMove().name;
+                        UI.DisplayText(displayText, 2f);
                         startTime = Time.time; //gets starting time for waiting
                         while (!isClicked) //checks if player is trying to skip by pressing left mouse button
                         {
-                            if (Time.time - startTime >= 2)
+                            if (Time.time - startTime >= 2f)
                             {
                                 break;
                             }
@@ -179,7 +182,7 @@ public class TurnSystem : MonoBehaviour
                         isClicked = false;
                         UI.HideText();
                     }
-                        turnIndex = 0;
+                    turnIndex = 0;
                     Debug.Log("Player health: " + player.GetHealth() + "\nPlayer stamina: " + player.GetStamina() + "\nEnemy health: " + enemy.GetHealth() + "\nEnemy stamina: " + enemy.GetStamina());
                 }
                 else

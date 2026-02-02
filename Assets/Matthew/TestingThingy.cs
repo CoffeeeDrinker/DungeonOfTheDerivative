@@ -140,28 +140,28 @@ public static class Moves
 {
     public static readonly Move REST = new Move(
         "Rest",
-        false, //is not an attack
+        Move.REST, //is not an attack
         (origin, direction) =>
         {
             origin.Rest(20);
         });
     public static readonly Move OPENINVENTORY = new Move(
         "Open Inventory",
-        false,
+        Move.INVENTORY,
         (origin, direction) =>
         {
             //Open inventory
         });
     public static readonly Move TAYLOREXPANSION = new Move(
         "Taylor Expansion",
-        false,
+        Move.BUFF,
         (origin, direction) =>
         {
              //origin.SetDefense(origin.GetDefense()*1.1);
         });
     public static readonly Move EMPIRICALRECOVERY = new Move(
         "Empirical Recovery",
-        false,
+        Move.HEAL,
         (origin, direction) =>
         {
             //heals 10*level 68% of the time, 20*level 27% of the time, 40*level 4.7% of the time, and 80*level 0.3% of the time, just like the empirical rule!
@@ -183,7 +183,7 @@ public static class Moves
         });
     public static readonly Move LINEARLYDEPEND = new Move(
         "Linearly Depend",
-        false, //is not an attack
+        Move.BUFF, //is not an attack
         (origin, direction) =>
         {
             //If origin has less attack or defense than direction, buff origin
@@ -204,7 +204,7 @@ public static class Moves
         });
     public static readonly Move AUGMENT = new Move(
         "Augment",
-        false, //is not an attack
+        Move.BUFF, //is not an attack
         (origin, direction) =>
         {
             //Increases origin's rank (get it? you add another vector and it increases your rank? I'm so clever)
@@ -215,7 +215,7 @@ public static class Moves
         });
     public static readonly Move DOPPONENTDLEVEL = new Move(
         "dOpponent/dLevel",
-        false, //is not an attack
+        Move.DEBUFF, //is not an attack
         (origin, direction) =>
         {
             //Decreases direction's order (get it? you differentiate and it reduces order? I'm so clever)
@@ -226,7 +226,7 @@ public static class Moves
         });
     public static readonly Move SERIESSTUN = new Move(
         "Series Stun",
-        true, //is an attack (note: this one doesn't deal damage but you still need to solve a math problem to hit)
+        Move.DEBUFF, //is an attack (note: this one doesn't deal damage but you still need to solve a math problem to hit)
         (origin, direction) =>
         {
             //Stuns the opponent, making them lose their turn
@@ -234,7 +234,7 @@ public static class Moves
         });
     public static readonly Move SUBTRACTIONSLASH = new Move(
         "Subtraction Slash",
-        true, //is an attack
+        Move.DAMAGE, //is an attack
         (origin, direction) =>
         {
             float dmg = UnityEngine.Random.Range(10, 20);
@@ -242,7 +242,7 @@ public static class Moves
         });
     public static readonly Move CONSTANTCRUSH = new Move(
         "Constant Crush",
-        true, //is an attack
+        Move.DAMAGE, //is an attack
         (origin, direction) =>
         {
             float dmg = 15;
@@ -250,7 +250,7 @@ public static class Moves
         });
     public static readonly Move EXPONENTEXPLOSION = new Move(
         "Exponent Explosion",
-        true, //is an attack
+        Move.DAMAGE, //is an attack
         (origin, direction) =>
         {
             int dmg = origin.Attack(UnityEngine.Random.Range(20, 35));
@@ -259,7 +259,7 @@ public static class Moves
         });
     public static readonly Move COLUMNSPACECASCADE = new Move(
         "Columnspace Cascade",
-        true, //is an attack
+        Move.DAMAGE, //is an attack
         (origin, direction) =>
         {
             direction.TakeDamage(origin.Attack(UnityEngine.Random.Range(0, 5)));

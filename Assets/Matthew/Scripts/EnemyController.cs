@@ -1,11 +1,14 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
+using Unity.VisualScripting;
 using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour, ICombatant
 {
+    AttackAI personality;
     public GameObject m_enemy;
     public GameObject healthBar;
     [SerializeField] int level;
@@ -29,18 +32,18 @@ public class EnemyController : MonoBehaviour, ICombatant
         maxHealth = (int)(100 + 100 * ((level - 1.0) * 0.1));
         stamina = maxStamina;
         health = maxHealth;
-        priorities = AssignPriority(new List<Move>() //initializes list of moves
+        moveList = new List<Move>() //initializes list of moves
         {
             new Move(
                 "Rest", //name of move
-                false, //is not an attack
+                Move.REST, //is not an attack
                 (origin, direction) => //implementation of move
                 {
                     origin.Rest(30);
                 }),
             new Move(
                 "Punch",
-                true, //is an attack
+                Move.DAMAGE, //is an attack
                 (origin, direction) =>
                 {
                     int dmg = UnityEngine.Random.Range(9, 11); //randomly generates base damage within pre-defined bounds
@@ -52,7 +55,7 @@ public class EnemyController : MonoBehaviour, ICombatant
                 }),
             new Move(
                 "Lulaby",
-                true, //is an attack
+                Move.STATUS, //is an attack
                 (origin, direction) =>
                 {
                     if (origin.GetStamina() > 15)
@@ -63,7 +66,7 @@ public class EnemyController : MonoBehaviour, ICombatant
                 }),
             new Move(
                 "Iron Stare",
-                true, //is an attack
+                Move.STATUS, //is an attack
                 (origin, direction) =>
                 {
                     int dmg = UnityEngine.Random.Range(5, 10); //randomly generates base damage within pre-defined bounds
@@ -78,7 +81,7 @@ public class EnemyController : MonoBehaviour, ICombatant
                 }),
             new Move(
                 "Evan Smash",
-                true, //is an attack
+                Move.DAMAGE, //is an attack
                 (origin, direction) =>
                 {
                     int dmg = UnityEngine.Random.Range(25, 30); //randomly generates base damage within pre-defined bounds
@@ -88,8 +91,9 @@ public class EnemyController : MonoBehaviour, ICombatant
                         origin.DepleteStamina(15);
                     }
                 }),
-        });
-        moveList = new List<Move>();
+        };
+        personality = new AttackAI(moveList[0], moveList[1], moveList[2], moveList[3], AttackAI.AGGRESSIVE);
+        priorities = personality.getPriorities();
         foreach (Move m in priorities.Keys) {
             moveList.Add(m);
         };
@@ -142,27 +146,6 @@ public class EnemyController : MonoBehaviour, ICombatant
                 }
         }
         
-    }
-
-    //Takes moves available to and assigns each one a priority level
-    //Postcondition: returns a dictionary mapping each move to its calculated priority level
-    private Dictionary<Move, float> AssignPriority(List<Move> moves)
-    {
-        Dictionary<Move, float> priorityMap = new Dictionary<Move, float>();
-        /*for(int i = 1; i < 5; i++)
-        {
-        float priority = moves[i].baseDmg / moves[i].staminaCost;
-        priorityMap.Add(moves[i], priority);
-        }
-        return priorityMap;*/
-
-        //NOTE: Priority values are harcoded for now. Need to make it so enemy move priorities are assigned at the same time as their moves
-        priorityMap.Add(moves[0], 0.01f * -1 *(stamina - maxStamina)); //assigns priority for rest option
-        priorityMap.Add(moves[1], 1f);
-        priorityMap.Add(moves[2], 5f);
-        priorityMap.Add(moves[3], 5f);
-        priorityMap.Add(moves[4], 2f);
-        return priorityMap;
     }
 
     bool ICombatant.IsAlive()
@@ -346,4 +329,98 @@ public class EnemyController : MonoBehaviour, ICombatant
           }
           Debug.Log("Move 1 test: " + numMove1 + "\nMove 2 test: " + numMove2 + "\nMove 3 test: " + numMove3 + "\nMove 4 test:" + numMove4 + "\nMove 5 test: " + numMove5);
       }*/
+}
+
+struct AttackAI
+{
+    public static Algorithm AGGRESSIVE = new Algorithm("Aggressive", (moves) =>
+    {
+        Dictionary<Move, float> priorityDict = new Dictionary<Move, float>();
+        for(int i = 0; i < moves.Count; i++)
+        {
+            priorityDict[moves[i]] = 1.0f;
+            if (moves[i].type == Move.DAMAGE)
+            {
+                priorityDict[moves[i]] += 0.2f;
+            }
+            else
+            {
+                priorityDict[moves[i]] -= 0.1f;
+            }
+        }
+        return priorityDict;
+    });
+    public static Algorithm MODERATE = new Algorithm("Moderate", (moves) =>
+    {
+        Dictionary<Move, float> priorityDict = new Dictionary<Move, float>();
+        for (int i = 0; i < moves.Count; i++)
+        {
+            priorityDict[moves[i]] = 1.0f;
+            if (moves[i].type == Move.DAMAGE)
+            {
+                priorityDict[moves[i]] += 0.1f;
+            }
+        }
+        return priorityDict;
+    });
+    public static Algorithm CAUTIOUS = new Algorithm("Cautious", (moves) =>
+    {
+        Dictionary<Move, float> priorityDict = new Dictionary<Move, float>();
+        for (int i = 0; i < moves.Count; i++)
+        {
+            priorityDict[moves[i]] = 1.0f;
+            if (moves[i].type == Move.BUFF)
+            {
+                priorityDict[moves[i]] += 0.2f;
+            }
+            else
+            {
+                priorityDict[moves[i]] -= 0.1f;
+            }
+        }
+        return priorityDict;
+    });
+    public static Algorithm TRICKY = new Algorithm("Tricky", (moves) =>
+    {
+        Dictionary<Move, float> priorityDict = new Dictionary<Move, float>();
+        for (int i = 0; i < moves.Count; i++)
+        {
+            priorityDict[moves[i]] = 1.0f;
+            if (moves[i].type == Move.STATUS)
+            {
+                priorityDict[moves[i]] += 0.2f;
+            }
+            else
+            {
+                priorityDict[moves[i]] -= 0.1f;
+            }
+        }
+        return priorityDict;
+    });
+    Algorithm algorithm;
+    List<Move> moveList;
+    Dictionary<Move, float> priorityDict;
+    public Dictionary<Move, float> getPriorities()
+    {
+        return priorityDict;
+    }
+    public AttackAI(Move Move1, Move Move2, Move Move3, Move Move4, Algorithm alg){
+        moveList = new List<Move>()
+        {
+            Move1, Move2, Move3, Move4
+        };
+        algorithm = alg;
+        priorityDict = algorithm.AssignPriorities(moveList);
+    }
+}
+
+struct Algorithm
+{
+    String name;
+    public Func<List<Move>, Dictionary<Move, float>> AssignPriorities;
+    public Algorithm(String name, Func<List<Move>, Dictionary<Move, float>> f)
+    {
+        this.name = name;
+        this.AssignPriorities = f;
+    }
 }
