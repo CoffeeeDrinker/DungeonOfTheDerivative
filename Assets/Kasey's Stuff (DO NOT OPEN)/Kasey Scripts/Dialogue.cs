@@ -11,6 +11,7 @@ public class Dialogue
     public void AddLine(string newLine)
     {
         if(newLine != "" && newLine != null)
+            
             dialogueLines.Add(newLine.TrimStart('\n').TrimEnd('\n'));
     }
 
