@@ -47,9 +47,7 @@ public class NPCDialogueScript : MonoBehaviour
             //Disable Player Movement
             if (stopMovementWhenTalking)
             {
-                playerScript.enabled = false;
-                playerScript.PlayAnimation("idle" + playerScript.currentAnim.Substring(4));
-                playerScript.move = new Vector3(0, 0, 0);
+                StopPlayerMovement();
             }
 
             //Decide what is displayed in text box
@@ -105,7 +103,7 @@ public class NPCDialogueScript : MonoBehaviour
         }
 
         //Check if player is nearby, facing NPC, and clicks/presses E
-        talkNow = playerIsHere && PlayerFacingNPC() && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0));
+        talkNow = playerIsHere && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0));
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -218,6 +216,14 @@ public class NPCDialogueScript : MonoBehaviour
 
         //Actually put the dialogue in the text box thingy
         dialogueText.text = line;
+    }
+
+    public void StopPlayerMovement()
+    {
+        playerScript.enabled = false;
+        playerScript.PlayAnimation("idle" + playerScript.currentAnim.Substring(4));
+        playerScript.move = Vector3.zero;
+        player.GetComponent<Rigidbody2D>().linearVelocity = Vector3.zero;
     }
 }
 

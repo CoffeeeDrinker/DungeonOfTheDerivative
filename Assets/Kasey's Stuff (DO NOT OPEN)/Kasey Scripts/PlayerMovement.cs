@@ -18,7 +18,7 @@ public class PlayerMovement : MonoBehaviour
     //Player name (this isn't being used in this script but I'm just holding it here)
     public string playerName;
 
-    void Update()
+    void FixedUpdate()
     {
         //Move Player
         move.x = Input.GetAxisRaw("Horizontal");
