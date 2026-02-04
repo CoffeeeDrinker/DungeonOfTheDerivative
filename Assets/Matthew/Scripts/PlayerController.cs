@@ -1,3 +1,4 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
@@ -12,6 +13,7 @@ public class PlayerController : MonoBehaviour, ICombatant
     public GameObject healthBar;
     public GameObject staminaBar;
     [SerializeField] GameObject statusMarker;
+    private SpriteRenderer statusRenderer;
     [SerializeField] GameObject healthBarEmptySpace;
     [SerializeField] GameObject staminaBarEmptySpace;
     private StatusEffect status = null;
@@ -21,14 +23,14 @@ public class PlayerController : MonoBehaviour, ICombatant
     private int maxStamina;
     private int maxHealth;
     private int XP = 0;
-
     private Move lastMove;
     public List<Move> moveList;
     // Start is called before the first frame update
     // Start is called before the first frame update
     void Start()
     {
-
+        statusRenderer = statusMarker.GetComponent<SpriteRenderer>();
+        statusRenderer.enabled = true;
         statusMarker.SetActive(false);
         healthBarEmptySpace.SetActive(true);
         staminaBarEmptySpace.SetActive(true);
@@ -230,9 +232,14 @@ public class PlayerController : MonoBehaviour, ICombatant
 
     void ICombatant.AddStatusEffect(StatusEffect s)
     {
-        if(status == null) //only sets status if not already set
+        if (status == null) //only sets status if not already set
+        {
             status = s;
-        statusMarker.SetActive(true);
+            statusMarker.SetActive(true);
+            statusMarker.GetComponent<SpriteRenderer>().enabled = true;
+            //statusMarker.GetComponent<SpriteRenderer>().sprite = s.sprite;
+            //statusRenderer.sprite = s.sprite;
+        }
         //statusMarker.GetComponent<SpriteRenderer>().sprite = s.sprite;
     }
 

@@ -11,6 +11,7 @@ public class EnemyController : MonoBehaviour, ICombatant
     AttackAI personality;
     public GameObject m_enemy;
     public GameObject healthBar;
+    public GameObject playerObj;
     [SerializeField] int level;
     int maxHealth;
     int maxStamina;
@@ -21,11 +22,13 @@ public class EnemyController : MonoBehaviour, ICombatant
     private Move lastMove;
     public Dictionary<Move, float> priorities;
     private StatusEffect status;
+    private ICombatant player;
     [SerializeField] GameObject statusMarker;
     [SerializeField] GameObject healthBarEmptySpace;
     // Start is called before the first frame update
     void Start()
     {
+        player = playerObj.GetComponent<ICombatant>();
         healthBarEmptySpace.SetActive(true);
         statusMarker.SetActive(false);
         maxStamina = (int)(100 + 100 * ((level - 1.0) * 0.1));
@@ -92,11 +95,8 @@ public class EnemyController : MonoBehaviour, ICombatant
                     }
                 }),
         };
-        personality = new AttackAI(moveList[0], moveList[1], moveList[2], moveList[3], AttackAI.AGGRESSIVE);
+        personality = new AttackAI(moveList, this, player, AttackAI.TRICKY);
         priorities = personality.getPriorities();
-        foreach (Move m in priorities.Keys) {
-            moveList.Add(m);
-        };
         healthBarEmptySpace.transform.localScale = new Vector3(((float)(maxHealth - health) / (float)maxHealth), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
     }
 
@@ -116,7 +116,7 @@ public class EnemyController : MonoBehaviour, ICombatant
     public void MakeNewMove(ICombatant target)
     {
         //Update rest priority
-        priorities[moveList[0]] = 0.01f * (maxStamina - stamina);
+        priorities = personality.getPriorities();
         /*
         for (int i = 0; i < priorities.Count; i++)
         {
@@ -124,10 +124,11 @@ public class EnemyController : MonoBehaviour, ICombatant
         } */
         //select which move to use
         float selectionRange = 0;
+        Debug.Log("MoveList: " + moveList.Count);
         for (int i = 0; i < moveList.Count; i++)
         {
             //if (moveList[i].staminaCost <= stamina) //only consider moves that can be used with current stamina
-                selectionRange += priorities[moveList[i]];
+            selectionRange += priorities[moveList[i]];
         }
         float random = UnityEngine.Random.Range(0, selectionRange);
         for (int i = 0; i < moveList.Count; i++)
@@ -333,7 +334,7 @@ public class EnemyController : MonoBehaviour, ICombatant
 
 struct AttackAI
 {
-    public static Algorithm AGGRESSIVE = new Algorithm("Aggressive", (moves) =>
+    public static Algorithm AGGRESSIVE = new Algorithm("Aggressive", (moves, attacker, opponent) =>
     {
         Dictionary<Move, float> priorityDict = new Dictionary<Move, float>();
         for(int i = 0; i < moves.Count; i++)
@@ -343,6 +344,13 @@ struct AttackAI
             {
                 priorityDict[moves[i]] += 0.2f;
             }
+            else if (moves[i].type == Move.STATUS && opponent.GetStatus() != null)
+            {
+                priorityDict[moves[i]] = 0;
+            } else if (moves[i].type == Move.REST)
+            {
+                priorityDict[moves[i]] = (attacker.GetMaxStamina() - attacker.GetStamina()) * 0.01f;
+            }
             else
             {
                 priorityDict[moves[i]] -= 0.1f;
@@ -350,7 +358,7 @@ struct AttackAI
         }
         return priorityDict;
     });
-    public static Algorithm MODERATE = new Algorithm("Moderate", (moves) =>
+    public static Algorithm MODERATE = new Algorithm("Moderate", (moves, attacker, opponent) =>
     {
         Dictionary<Move, float> priorityDict = new Dictionary<Move, float>();
         for (int i = 0; i < moves.Count; i++)
@@ -360,10 +368,18 @@ struct AttackAI
             {
                 priorityDict[moves[i]] += 0.1f;
             }
+            else if (moves[i].type == Move.STATUS && opponent.GetStatus() != null)
+            {
+                priorityDict[moves[i]] = 0;
+            }
+            else if (moves[i].type == Move.REST)
+            {
+                priorityDict[moves[i]] = (attacker.GetMaxStamina() - attacker.GetStamina()) * 0.01f;
+            }
         }
         return priorityDict;
     });
-    public static Algorithm CAUTIOUS = new Algorithm("Cautious", (moves) =>
+    public static Algorithm CAUTIOUS = new Algorithm("Cautious", (moves, attacker, opponent) =>
     {
         Dictionary<Move, float> priorityDict = new Dictionary<Move, float>();
         for (int i = 0; i < moves.Count; i++)
@@ -373,6 +389,14 @@ struct AttackAI
             {
                 priorityDict[moves[i]] += 0.2f;
             }
+            else if (moves[i].type == Move.STATUS && opponent.GetStatus() != null)
+            {
+                priorityDict[moves[i]] = 0;
+            }
+            else if (moves[i].type == Move.REST)
+            {
+                priorityDict[moves[i]] = (attacker.GetMaxStamina() - attacker.GetStamina()) * 0.01f;
+            }
             else
             {
                 priorityDict[moves[i]] -= 0.1f;
@@ -380,15 +404,23 @@ struct AttackAI
         }
         return priorityDict;
     });
-    public static Algorithm TRICKY = new Algorithm("Tricky", (moves) =>
+    public static Algorithm TRICKY = new Algorithm("Tricky", (moves, attacker, opponent) =>
     {
         Dictionary<Move, float> priorityDict = new Dictionary<Move, float>();
         for (int i = 0; i < moves.Count; i++)
         {
             priorityDict[moves[i]] = 1.0f;
-            if (moves[i].type == Move.STATUS)
+            if (moves[i].type == Move.STATUS && opponent.GetStatus() != null)
+            {
+                priorityDict[moves[i]] = 0;
+            }
+            else if (moves[i].type == Move.STATUS)
             {
                 priorityDict[moves[i]] += 0.2f;
+            }
+            else if (moves[i].type == Move.REST)
+            {
+                priorityDict[moves[i]] = (attacker.GetMaxStamina() - attacker.GetStamina()) * 0.01f;
             }
             else
             {
@@ -399,26 +431,25 @@ struct AttackAI
     });
     Algorithm algorithm;
     List<Move> moveList;
-    Dictionary<Move, float> priorityDict;
+    ICombatant attacker;
+    ICombatant opponent;
     public Dictionary<Move, float> getPriorities()
     {
-        return priorityDict;
+        return algorithm.AssignPriorities(moveList, attacker, opponent);
     }
-    public AttackAI(Move Move1, Move Move2, Move Move3, Move Move4, Algorithm alg){
-        moveList = new List<Move>()
-        {
-            Move1, Move2, Move3, Move4
-        };
+    public AttackAI(List<Move> moveList, ICombatant attacker, ICombatant opp, Algorithm alg){
+        this.moveList = moveList;
         algorithm = alg;
-        priorityDict = algorithm.AssignPriorities(moveList);
+        this.attacker = attacker;
+        this.opponent = opp;
     }
 }
 
 struct Algorithm
 {
     String name;
-    public Func<List<Move>, Dictionary<Move, float>> AssignPriorities;
-    public Algorithm(String name, Func<List<Move>, Dictionary<Move, float>> f)
+    public Func<List<Move>, ICombatant, ICombatant, Dictionary<Move, float>> AssignPriorities;
+    public Algorithm(String name, Func<List<Move>, ICombatant, ICombatant, Dictionary<Move, float>> f)
     {
         this.name = name;
         this.AssignPriorities = f;

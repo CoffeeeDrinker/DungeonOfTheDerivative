@@ -1,0 +1,19 @@
+fileFormatVersion: 2
+guid: 971b49e9a9bc378448a4a4eddb785071
+MonoImporter:
+  externalObjects: {}
+  serializedVersion: 2
+  defaultReferences:
+  - CAFFEINECRASH: {fileID: -2154643249912208947, guid: f56e7cc963316464dbeefb365ed89ea8, type: 3}
+  - CAFFEINATED: {fileID: -6242364564356947253, guid: 2c9316daafe864c40ab4d198120dbfc0, type: 3}
+  - BURNING: {fileID: 2801448113155347191, guid: 062f91e2f230a1e4cb753bfec7064fb8, type: 3}
+  - FROSTBITE: {fileID: -6815351484898106252, guid: c654f1adc359a744abaef1458cff3159, type: 3}
+  - PARALYZED: {fileID: 6360766337083654946, guid: c55700c0b26f98a458a8100875da75d7, type: 3}
+  - POISONED: {fileID: -4347532159779508366, guid: 87a98954e89b9bf41972cdc3eae81453, type: 3}
+  - ASLEEP: {fileID: -5421370498363669730, guid: 778ca33e75fcec946819457ec0e24265, type: 3}
+  - CONFUSED: {fileID: 594318413343068850, guid: d130d2d782874bb4497270f220a17788, type: 3}
+  executionOrder: 0
+  icon: {instanceID: 0}
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 

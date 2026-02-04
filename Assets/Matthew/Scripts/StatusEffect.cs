@@ -16,28 +16,29 @@ public sealed class StatusEffect
 
 public static class StatusEffects
 {
+    private static StatusEffectSpriteHolder spriteholder = new StatusEffectSpriteHolder();
     public readonly static List<Sprite> statusSpriteList = new List<Sprite>()
     {
         //poisoned
-        null,
+        spriteholder.POISONED,
         //buring
-        null,
+        spriteholder.BURNING,
         //asleep
-        null,
+        spriteholder.ASLEEP,
         //caffeine crash
-        null,
+        spriteholder.CAFFEINECRASH,
         //confused
-        null,
+        spriteholder.CONFUSED,
         //caffeinated
-        null,
+        spriteholder.CAFFEINATED,
         //paralyzed,
-        null,
+        spriteholder.PARALYZED,
         //frostbite,
-        null
+        spriteholder.FROSTBITE
     };
     public readonly static StatusEffect POISONED = new StatusEffect(
         "Poisoned",
-        statusSpriteList[0],
+        spriteholder.POISONED,
         (affected) =>
         {
             //Poisoned deals 1/5 of current health as damage each turn
@@ -52,7 +53,7 @@ public static class StatusEffects
      );
     public readonly static StatusEffect BURNING = new StatusEffect(
         "Burning",
-        statusSpriteList[1],
+        spriteholder.BURNING,
         (affected) =>
         {
             //Poisoned deals fixed 10 damage each turn and makes your attacks deal 0.75x damage
@@ -69,7 +70,7 @@ public static class StatusEffects
      );
     public readonly static StatusEffect ASLEEP = new StatusEffect(
         "Asleep",
-        statusSpriteList[2],
+        spriteholder.ASLEEP,
         (affected) =>
         {
             //Asleep makes you skip every turn until you wake up
@@ -87,7 +88,7 @@ public static class StatusEffects
      );
     public readonly static StatusEffect CAFFEINECRASH = new StatusEffect(
         "Caffeine Crash",
-        statusSpriteList[3],
+        spriteholder.CAFFEINECRASH,
         (affected) =>
         {
             //Caffeine Crash depletes stamina by a fixed 10 every turn
@@ -102,7 +103,7 @@ public static class StatusEffects
      );
     public readonly static StatusEffect CONFUSED = new StatusEffect(
         "Confused",
-        statusSpriteList[4],
+        spriteholder.CONFUSED,
         (affected) =>
         {
             //Confused makes affected have a 50% chance of attacking themselves with fixed damage 20 and losing turn
@@ -123,7 +124,7 @@ public static class StatusEffects
 
     public readonly static StatusEffect CAFFEINATED = new StatusEffect(
         "Caffeinated",
-        statusSpriteList[5],
+        spriteholder.CAFFEINATED,
         (affected) =>
         {
             //Caffinated makes you gain fixed 20 stamina every turn
@@ -141,7 +142,7 @@ public static class StatusEffects
 
     public readonly static StatusEffect PARALYZED = new StatusEffect(
         "Paralyzed",
-        statusSpriteList[6],
+        spriteholder.PARALYZED,
         (affected) =>
         {
             //Paralyzed gives you a 50% chance of losing your turn each turn
@@ -161,7 +162,7 @@ public static class StatusEffects
 
     public readonly static StatusEffect FROSTBITE = new StatusEffect(
         "Frostbite",
-        statusSpriteList[7],
+        spriteholder.FROSTBITE,
         (affected) =>
         {
             //Frostbite halves the strength of your attacks
