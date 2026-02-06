@@ -223,7 +223,7 @@ public class NPCDialogueScript : MonoBehaviour
         playerScript.enabled = false;
         playerScript.PlayAnimation("idle" + playerScript.currentAnim.Substring(4));
         playerScript.move = Vector3.zero;
-        player.GetComponent<Rigidbody2D>().linearVelocity = Vector3.zero;
+        player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
     }
 }
 

@@ -24,7 +24,7 @@ public class PlayerMovement : MonoBehaviour
         move.x = Input.GetAxisRaw("Horizontal");
         move.y = Input.GetAxisRaw("Vertical");
         move.Normalize();
-        PlayerRB.linearVelocity = move * speed * Time.deltaTime;
+        PlayerRB.velocity = move * speed * Time.deltaTime;
 
         //Walk Animation
         if (prevMove == null || prevMove != move)
