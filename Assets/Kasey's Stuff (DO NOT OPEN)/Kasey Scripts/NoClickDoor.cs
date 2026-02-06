@@ -18,7 +18,7 @@ public class NoClickDoor : MonoBehaviour
 
     void Update()
     {
-        //If player is nearby and the player clicks a button teleport them to new area
+        //If player is nearby teleport them to new area
         if (playerIsHere && transitionSprite.GetComponent<SpriteRenderer>().sprite == null)
         {
             //If we need to open a new scene the user will go to that

@@ -2,9 +2,12 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.SceneManagement;
+using UnityEngine.Tilemaps;
 
 public class Door : MonoBehaviour
 {
+    public string doorType;
+
     public Transform player;
     public Vector2 newLocation;
     public string newScene;
@@ -12,32 +15,74 @@ public class Door : MonoBehaviour
 
     public Animator TransitionAnims;
     public GameObject transitionSprite;
-    public Sprite lastInTransition;
 
     public List<GameObject> newTiles;
     public List<GameObject> oldTiles;
 
+    public float percentTransparent;
+    private Color transparentColor;
+
+    private bool changedLayer = false;
+
+    void Start()
+    {
+        transparentColor = new Color(1f, 1f, 1f, percentTransparent);
+    }
+
     void Update()
     {
-        //If player is nearby and the player clicks a button teleport them to new area
-        if (playerIsHere && Input.GetMouseButtonDown(0))
+        if (doorType == "click" || doorType == "")
         {
-            //If we need to open a new scene the user will go to that
-            if (newScene != null && newScene != "")
+            //If player is nearby and the player clicks a button teleport them to new area
+            if (playerIsHere && Input.GetMouseButtonDown(0))
             {
-                SceneManager.LoadScene(newScene);
+                //If we need to open a new scene the user will go to that
+                if (newScene != null && newScene != "")
+                {
+                    SceneManager.LoadScene(newScene);
+                }
+                player.gameObject.GetComponent<PlayerMovement>().enabled = false;
+
+                //Play Transition Animation
+                TransitionAnims.ResetTrigger("closeTransition");
+                TransitionAnims.SetTrigger("openTransition");
             }
-            player.gameObject.GetComponent<PlayerMovement>().enabled = false;
 
-            //Play Transition Animation
-            TransitionAnims.ResetTrigger("closeTransition");
-            TransitionAnims.SetTrigger("openTransition");
-        }
-
-        //Transport player to new location
-        if (playerIsHere && TransitionAnims.GetCurrentAnimatorStateInfo(0).IsName("Transition") && TransitionAnims.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.95f)
+            //Transport player to new location
+            if (playerIsHere && TransitionAnims.GetCurrentAnimatorStateInfo(0).IsName("Transition") && TransitionAnims.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.95f)
+            {
+                NewHall();
+            }
+        } else if(doorType == "noclick")
         {
-            NewHall();
+            //If player is nearby teleport them to new area
+            if (playerIsHere && transitionSprite.GetComponent<SpriteRenderer>().sprite == null)
+            {
+                //If we need to open a new scene the user will go to that
+                if (newScene != null && newScene != "")
+                {
+                    SceneManager.LoadScene(newScene);
+                }
+                player.gameObject.GetComponent<PlayerMovement>().enabled = false;
+
+                //Play Transition Animation
+                TransitionAnims.ResetTrigger("closeTransition");
+                TransitionAnims.SetTrigger("openTransition");
+            }
+
+            //Transport player to new location
+            if (playerIsHere && TransitionAnims.GetCurrentAnimatorStateInfo(0).IsName("Transition") && TransitionAnims.GetCurrentAnimatorStateInfo(0).normalizedTime >= 0.95f)
+            {
+                NewHall();
+            }
+        } else if (doorType == "layerChange")
+        {
+            //If player is nearby, change the layer they are on (make certain areas semi-transparent)
+            if (playerIsHere && !changedLayer && transitionSprite.GetComponent<SpriteRenderer>().sprite == null)
+            {
+                changedLayer = true;
+                ChangeLayer();
+            }
         }
     }
 
@@ -76,6 +121,34 @@ public class Door : MonoBehaviour
 
             player.gameObject.GetComponent<PlayerMovement>().enabled = true;
             EnableNewLocation();
+        }
+    }
+
+    public void ChangeLayer()
+    {
+        for (int i = 0; i < oldTiles.Count; i++)
+        {
+            for(int j = 0; j < oldTiles[i].transform.childCount; j++)
+            {
+                try
+                {
+                    oldTiles[0].transform.GetChild(0).GetComponent<Tilemap>().color = transparentColor;
+                }
+                catch { }
+            }
+        }
+
+        for (int i = 0; i < newTiles.Count; i++)
+        {
+            newTiles[i].SetActive(true);
+            for (int j = 0; j < oldTiles[i].transform.childCount; j++)
+            {
+                try
+                {
+                    newTiles[i].transform.GetChild(j).GetComponent<Tilemap>().color = Color.white;
+                }
+                catch { }
+            }
         }
     }
 }
