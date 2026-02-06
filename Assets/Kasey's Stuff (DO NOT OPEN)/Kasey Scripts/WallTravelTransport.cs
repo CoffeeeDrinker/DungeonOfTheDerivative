@@ -90,7 +90,7 @@ public class WalkableTile : MonoBehaviour
     {
         playerScript.PlayAnimation("idleDown");
         playerScript.move = Vector3.zero;
-        player.GetComponent<Rigidbody2D>().linearVelocity = Vector2.zero;
+        player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         player.GetComponent<Collider2D>().enabled = false;
         playerScript.enabled = false;
     }
