@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      ContinueMMButton (4)-2.png_0: 1352902350218255097
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
