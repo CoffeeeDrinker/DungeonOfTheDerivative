@@ -18,13 +18,13 @@ public class PlayerMovement : MonoBehaviour
     //Player name (this isn't being used in this script but I'm just holding it here)
     public string playerName = PlayerManager.playerName;
 
-    void Update()
+    void FixedUpdate()
     {
         //Move Player
         move.x = Input.GetAxisRaw("Horizontal");
         move.y = Input.GetAxisRaw("Vertical");
         move.Normalize();
-        PlayerRB.velocity = move * speed * Time.deltaTime;
+        PlayerRB.linearVelocity = move * speed * Time.deltaTime;
 
         //Walk Animation
         if (prevMove == null || prevMove != move)

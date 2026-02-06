@@ -47,9 +47,7 @@ public class NPCDialogueScript : MonoBehaviour
             //Disable Player Movement
             if (stopMovementWhenTalking)
             {
-                playerScript.enabled = false;
-                playerScript.PlayAnimation("idle" + playerScript.currentAnim.Substring(4));
-                playerScript.move = new Vector3(0, 0, 0);
+                StopPlayerMovement();
             }
 
             //Decide what is displayed in text box
@@ -78,7 +76,8 @@ public class NPCDialogueScript : MonoBehaviour
                     {
                         typewriterInstance.StopManualEffects();
                         startTime = Time.fixedTime;
-                        dialogueText.text = NPCDialogue[currentDialogueI].GetLine(currentDialogueLineI);
+                        AddDialogueToTextBox();
+                        //dialogueText.text = NPCDialogue[currentDialogueI].GetLine(currentDialogueLineI);
                         typewriterInstance.Refresh();
 
                         typewriterInstance.StartManualEffects();
@@ -104,7 +103,7 @@ public class NPCDialogueScript : MonoBehaviour
         }
 
         //Check if player is nearby, facing NPC, and clicks/presses E
-        talkNow = playerIsHere && PlayerFacingNPC() && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0));
+        talkNow = playerIsHere && (Input.GetKeyDown(KeyCode.E) || Input.GetMouseButtonDown(0));
     }
 
     void OnTriggerEnter2D(Collider2D col)
@@ -192,4 +191,49 @@ public class NPCDialogueScript : MonoBehaviour
 
         talkNow = true;
     }
+
+    public void AddDialogueToTextBox()
+    {
+        //Get the line
+        string line = NPCDialogue[currentDialogueI].GetLine(currentDialogueLineI);
+
+        //Replace <player_name> with player name if needed
+        if (line.IndexOf("<player_name>") > -1 && playerScript.playerName.Length > 0)
+        {
+            line = line.Substring(0, line.IndexOf("<player_name>")) + playerScript.playerName + line.Substring(line.IndexOf(">")+1);
+        }
+
+        //If pedro is saying this, then make the text red
+        if (line.IndexOf("<pedro_is_speaking>") > -1)
+        {
+            line = line.Substring(line.IndexOf(">")+1);
+            dialogueText.color = Color.red;
+        }
+        else
+        {
+            dialogueText.color = Color.black;
+        }
+
+        //Actually put the dialogue in the text box thingy
+        dialogueText.text = line;
+    }
+
+    public void StopPlayerMovement()
+    {
+        playerScript.enabled = false;
+        playerScript.PlayAnimation("idle" + playerScript.currentAnim.Substring(4));
+        playerScript.move = Vector3.zero;
+        player.GetComponent<Rigidbody2D>().linearVelocity = Vector3.zero;
+    }
 }
+
+
+/*
+Kasey
+I regret my life decisions. For some stupid reason I decided to take 3 math classes this year and I am suffering. Help me.
+does this work?
+Hi there <player_name>. bla bla bla
+~
+That didn't help. :(
+~~
+*/
