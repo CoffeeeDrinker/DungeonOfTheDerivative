@@ -40,6 +40,7 @@ public class EnemyController : MonoBehaviour, ICombatant
             new Move(
                 "Rest", //name of move
                 Move.REST, //is not an attack
+                -1, //undefined stamina cost
                 (origin, direction) => //implementation of move
                 {
                     origin.Rest(30);
@@ -47,6 +48,7 @@ public class EnemyController : MonoBehaviour, ICombatant
             new Move(
                 "Punch",
                 Move.DAMAGE, //is an attack
+                15, //stamina cost
                 (origin, direction) =>
                 {
                     int dmg = UnityEngine.Random.Range(9, 11); //randomly generates base damage within pre-defined bounds
@@ -59,6 +61,7 @@ public class EnemyController : MonoBehaviour, ICombatant
             new Move(
                 "Lulaby",
                 Move.STATUS, //is an attack
+                15, //stamina cost
                 (origin, direction) =>
                 {
                     if (origin.GetStamina() > 15)
@@ -70,6 +73,7 @@ public class EnemyController : MonoBehaviour, ICombatant
             new Move(
                 "Iron Stare",
                 Move.STATUS, //is an attack
+                15, //stamina cost
                 (origin, direction) =>
                 {
                     int dmg = UnityEngine.Random.Range(5, 10); //randomly generates base damage within pre-defined bounds
@@ -85,6 +89,7 @@ public class EnemyController : MonoBehaviour, ICombatant
             new Move(
                 "Evan Smash",
                 Move.DAMAGE, //is an attack
+                15, //stamina cost
                 (origin, direction) =>
                 {
                     int dmg = UnityEngine.Random.Range(25, 30); //randomly generates base damage within pre-defined bounds
@@ -127,8 +132,8 @@ public class EnemyController : MonoBehaviour, ICombatant
         Debug.Log("MoveList: " + moveList.Count);
         for (int i = 0; i < moveList.Count; i++)
         {
-            //if (moveList[i].staminaCost <= stamina) //only consider moves that can be used with current stamina
-            selectionRange += priorities[moveList[i]];
+            if (moveList[i].staminaCost <= stamina) //only consider moves that can be used with current stamina
+                selectionRange += priorities[moveList[i]];
         }
         float random = UnityEngine.Random.Range(0, selectionRange);
         for (int i = 0; i < moveList.Count; i++)

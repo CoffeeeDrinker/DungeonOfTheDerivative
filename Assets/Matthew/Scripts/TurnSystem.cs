@@ -95,26 +95,45 @@ public class TurnSystem : MonoBehaviour
                     }
                     else
                     { //if button pressed is an attack
-                        UI.HideButtons();
-                        gameManager.GetComponent<MathProblemManager>().StartDraw();
-                        //Attacks opponent, then makes it enemy's turn, then resets button
-                        while (IfAttackHit() == 2)
+                        if (input.staminaCost <= player.GetStamina())
                         {
-                            yield return null;
+                            UI.HideButtons();
+                            gameManager.GetComponent<MathProblemManager>().StartDraw();
+                            //Attacks opponent, then makes it enemy's turn, then resets button
+                            while (IfAttackHit() == 2)
+                            {
+                                yield return null;
+                            }
+                            if (IfAttackHit() == 0) //checks if it hit
+                            {
+                                input.move(player, enemy);
+                                gameManager.GetComponent<MathProblemManager>().UnAnswer();
+                            }
+                            else if (IfAttackHit() == 1)
+                            {
+                                Debug.Log("incorrect, no damage :(");
+                                gameManager.GetComponent<MathProblemManager>().UnAnswer();
+                            }
+                            UI.ShowButtons();
+                            turnIndex = 1;
+                            UI.Unclick();
                         }
-                        if (IfAttackHit() == 0) //checks if it hit
+                        else
                         {
-                            input.move(player, enemy);
-                            gameManager.GetComponent<MathProblemManager>().UnAnswer();
+                            UI.DisplayText("You have insufficient stamina!", 2f);
+                            float startTime = Time.time;
+                            while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+                            {
+                                if (Time.time - startTime >= 2)
+                                {
+                                    break;
+                                }
+                                yield return null;
+                            }
+                            isClicked = false;
+                            UI.HideText();
+                            UI.HideAttackOptions();
                         }
-                        else if (IfAttackHit() == 1)
-                        {
-                            Debug.Log("incorrect, no damage :(");
-                            gameManager.GetComponent<MathProblemManager>().UnAnswer();
-                        }
-                        UI.ShowButtons();
-                        turnIndex = 1;
-                        UI.Unclick();
                     }
                 }
                 else

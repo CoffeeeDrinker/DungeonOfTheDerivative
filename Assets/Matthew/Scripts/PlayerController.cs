@@ -46,6 +46,7 @@ public class PlayerController : MonoBehaviour, ICombatant
             new Move(
                 "Punch",
                 Move.DAMAGE, //is an attack
+                15, //stamina cost
                 (origin, direction) =>
                 {
                     int dmg = UnityEngine.Random.Range(9, 11); //randomly generates base damage within pre-defined bounds
@@ -58,6 +59,7 @@ public class PlayerController : MonoBehaviour, ICombatant
             new Move(
                 "Lulaby",
                 Move.STATUS, //is an attack
+                15, //stamina cost
                 (origin, direction) =>
                 {
                     if (origin.GetStamina() > 15)
@@ -69,6 +71,7 @@ public class PlayerController : MonoBehaviour, ICombatant
             new Move(
                 "Iron Stare",
                 Move.STATUS, //is an attack
+                15, //stamina cost
                 (origin, direction) =>
                 {
                     int dmg = UnityEngine.Random.Range(5, 10); //randomly generates base damage within pre-defined bounds
@@ -84,6 +87,7 @@ public class PlayerController : MonoBehaviour, ICombatant
             new Move(
                 "Evan Smash",
                 Move.DAMAGE, //is an attack
+                1500, //stamina cost
                 (origin, direction) =>
                 {
                     int dmg = UnityEngine.Random.Range(25, 75); //randomly generates base damage within pre-defined bounds
@@ -236,11 +240,9 @@ public class PlayerController : MonoBehaviour, ICombatant
         {
             status = s;
             statusMarker.SetActive(true);
-            statusMarker.GetComponent<SpriteRenderer>().enabled = true;
-            //statusMarker.GetComponent<SpriteRenderer>().sprite = s.sprite;
-            //statusRenderer.sprite = s.sprite;
+            statusRenderer.enabled = true;
+            statusRenderer.sprite = s.sprite;
         }
-        //statusMarker.GetComponent<SpriteRenderer>().sprite = s.sprite;
     }
 
     int ICombatant.GetLevel()

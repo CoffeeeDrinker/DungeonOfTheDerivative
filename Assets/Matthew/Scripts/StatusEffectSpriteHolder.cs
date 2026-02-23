@@ -1,26 +1,35 @@
 using System.Collections;
 using System.Collections.Generic;
+using UnityEditor.PackageManager;
 using UnityEngine;
-
+[CreateAssetMenu(fileName = "StatusEffectSprites", menuName = "Status Effect Sprites")]
 public class StatusEffectSpriteHolder : MonoBehaviour
 {
-    [SerializeField] public readonly Sprite CAFFEINECRASH;
-    [SerializeField] public readonly Sprite CAFFEINATED;
-    [SerializeField] public readonly Sprite BURNING;
-    [SerializeField] public readonly Sprite FROSTBITE;
-    [SerializeField] public readonly Sprite PARALYZED;
-    [SerializeField] public readonly Sprite POISONED;
-    [SerializeField] public readonly Sprite ASLEEP;
-    [SerializeField] public readonly Sprite CONFUSED;
-
-    // Start is called before the first frame update
+    [SerializeField] public Sprite CAFFEINECRASHField;
+    [SerializeField] public Sprite CAFFEINATEDField;
+    [SerializeField] public Sprite BURNINGField;
+    [SerializeField] public Sprite FROSTBITEField;
+    [SerializeField] public Sprite PARALYZEDField;
+    [SerializeField] public Sprite POISONEDField;
+    [SerializeField] public Sprite ASLEEPField;
+    [SerializeField] public Sprite CONFUSEDField;
+    public static Sprite CAFFEINECRASH;
+    public static Sprite CAFFEINATED;
+    public static Sprite BURNING;// = BURNINGField;
+    public static Sprite FROSTBITE;// = FROSTBITEField;
+    public static Sprite PARALYZED;// = PARALYZEDField;
+    public static Sprite POISONED;// = POISONEDField;
+    public static Sprite ASLEEP;// = ASLEEPField;
+    public static Sprite CONFUSED;
     void Start()
     {
-    }
-
-    // Update is called once per frame
-    void Update()
-    {
-        
+        CAFFEINECRASH = CAFFEINECRASHField;
+        CAFFEINATED = CAFFEINATEDField;
+        BURNING = BURNINGField;
+        FROSTBITE = FROSTBITEField;
+        PARALYZED = PARALYZEDField;
+        POISONED = POISONEDField;
+        ASLEEP = ASLEEPField;
+        CONFUSED = CONFUSEDField;
     }
 }

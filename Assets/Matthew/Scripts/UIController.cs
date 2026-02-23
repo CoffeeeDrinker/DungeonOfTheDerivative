@@ -14,6 +14,8 @@ public class UIController : MonoBehaviour
     [SerializeField] GameObject runButtonField;
     [SerializeField] GameObject attackOptionMasterField;
     [SerializeField] GameObject combatTextMasterField;
+    [SerializeField] GameObject backButtonField;
+    protected static BackButtonController backButtonController;
     protected static AttackOptionMaster attackController;
     protected static AttackHandler attackHandler;
     protected static InventoryHandler inventoryHandler;
@@ -25,6 +27,7 @@ public class UIController : MonoBehaviour
     Move rest = new Move(
         "Rest",
         Move.REST,
+        -1,
         (origin, direction) => //implementation of move
         {
             origin.Rest(30);
@@ -32,6 +35,7 @@ public class UIController : MonoBehaviour
     Move inventory = new Move(
         "Inventory",
         Move.INVENTORY,
+        -1,
         (origin, direction) => //implementation of move
         {
             
@@ -42,6 +46,7 @@ public class UIController : MonoBehaviour
     Move run = new Move(
         "Run",
         Move.RUN,
+        -1,
         (origin, direction) => //implementation of move
         {
             //no escape
@@ -56,7 +61,7 @@ public class UIController : MonoBehaviour
         runHandler = runButtonField.GetComponent<RunHandler>();
         attackController = attackOptionMasterField.GetComponent<AttackOptionMaster>();
         combatTextController = combatTextMasterField.GetComponent<CombatTextController>();
-
+        backButtonController = backButtonField.GetComponent<BackButtonController>();
         //Question q = new Algebra1Question().GenerateQuestion("Algebra 1");
         //Debug.Log(q.GetQuestion());
         //Debug.Log("Answer: " + q.GetAnswer());
@@ -96,6 +101,10 @@ public class UIController : MonoBehaviour
         {
             Debug.Log("Run");
             return run;
+        } else if (backButtonController.IsClicked())
+        {
+            HideAttackOptions();
+            return null;
         }
         else
         {
@@ -109,6 +118,12 @@ public class UIController : MonoBehaviour
         inventoryHandler.Unclick();
         restHandler.Unclick();
         runHandler.Unclick();
+    }
+
+    public void HideAttackOptions()
+    {
+        attackHandler.Unclick();
+        attackController.ToggleAttackOptions(false);
     }
 
     public void HideButtons()

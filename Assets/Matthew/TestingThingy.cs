@@ -141,6 +141,7 @@ public static class Moves
     public static readonly Move REST = new Move(
         "Rest",
         Move.REST, //is not an attack
+        15, //stamina cost
         (origin, direction) =>
         {
             origin.Rest(20);
@@ -148,6 +149,7 @@ public static class Moves
     public static readonly Move OPENINVENTORY = new Move(
         "Open Inventory",
         Move.INVENTORY,
+        15, //stamina cost
         (origin, direction) =>
         {
             //Open inventory
@@ -155,6 +157,7 @@ public static class Moves
     public static readonly Move TAYLOREXPANSION = new Move(
         "Taylor Expansion",
         Move.BUFF,
+        15, //stamina cost
         (origin, direction) =>
         {
              //origin.SetDefense(origin.GetDefense()*1.1);
@@ -162,6 +165,7 @@ public static class Moves
     public static readonly Move EMPIRICALRECOVERY = new Move(
         "Empirical Recovery",
         Move.HEAL,
+        15, //stamina cost
         (origin, direction) =>
         {
             //heals 10*level 68% of the time, 20*level 27% of the time, 40*level 4.7% of the time, and 80*level 0.3% of the time, just like the empirical rule!
@@ -184,6 +188,7 @@ public static class Moves
     public static readonly Move LINEARLYDEPEND = new Move(
         "Linearly Depend",
         Move.BUFF, //is not an attack
+        15, //stamina cost
         (origin, direction) =>
         {
             //If origin has less attack or defense than direction, buff origin
@@ -205,6 +210,7 @@ public static class Moves
     public static readonly Move AUGMENT = new Move(
         "Augment",
         Move.BUFF, //is not an attack
+        15, //stamina cost
         (origin, direction) =>
         {
             //Increases origin's rank (get it? you add another vector and it increases your rank? I'm so clever)
@@ -216,6 +222,7 @@ public static class Moves
     public static readonly Move DOPPONENTDLEVEL = new Move(
         "dOpponent/dLevel",
         Move.DEBUFF, //is not an attack
+        15, //stamina cost
         (origin, direction) =>
         {
             //Decreases direction's order (get it? you differentiate and it reduces order? I'm so clever)
@@ -227,6 +234,7 @@ public static class Moves
     public static readonly Move SERIESSTUN = new Move(
         "Series Stun",
         Move.DEBUFF, //is an attack (note: this one doesn't deal damage but you still need to solve a math problem to hit)
+        15, //stamina cost
         (origin, direction) =>
         {
             //Stuns the opponent, making them lose their turn
@@ -235,6 +243,7 @@ public static class Moves
     public static readonly Move SUBTRACTIONSLASH = new Move(
         "Subtraction Slash",
         Move.DAMAGE, //is an attack
+        15, //stamina cost
         (origin, direction) =>
         {
             float dmg = UnityEngine.Random.Range(10, 20);
@@ -243,6 +252,7 @@ public static class Moves
     public static readonly Move CONSTANTCRUSH = new Move(
         "Constant Crush",
         Move.DAMAGE, //is an attack
+        15, //stamina cost
         (origin, direction) =>
         {
             float dmg = 15;
@@ -251,6 +261,7 @@ public static class Moves
     public static readonly Move EXPONENTEXPLOSION = new Move(
         "Exponent Explosion",
         Move.DAMAGE, //is an attack
+        15, //stamina cost
         (origin, direction) =>
         {
             int dmg = origin.Attack(UnityEngine.Random.Range(20, 35));
@@ -260,6 +271,7 @@ public static class Moves
     public static readonly Move COLUMNSPACECASCADE = new Move(
         "Columnspace Cascade",
         Move.DAMAGE, //is an attack
+        15, //stamina cost
         (origin, direction) =>
         {
             direction.TakeDamage(origin.Attack(UnityEngine.Random.Range(0, 5)));
