@@ -93,7 +93,8 @@ public class NPCDialogueScript : MonoBehaviour
             }
         }
 
-        if(player.position.y > this.transform.position.y)
+        //Check if player is above or below NPC, then change order if you need to
+        if (player.position.y > this.transform.position.y)
         {
             this.GetComponent<SpriteRenderer>().sortingOrder = player.GetComponent<SpriteRenderer>().sortingOrder + 1;
         }
