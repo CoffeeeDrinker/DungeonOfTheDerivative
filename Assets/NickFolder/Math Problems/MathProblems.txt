@@ -1,0 +1,6096 @@
+Linear Algebra
+LA_1_1_image
+~
+-2,1
+~~
+Multiple Numbers
+~~~
+Linear Algebra
+LA_1_2_image
+~
+36
+~~
+Number
+~~~
+Linear Algebra
+LA_1_3_image
+~
+5,6,-5
+~~
+Vector
+~~~
+Linear Algebra
+LA_1_5_image
+~
+15
+~~
+Number
+~~~
+Linear Algebra
+LA_1_6_image
+~
+6/11,6/11,-7/11
+~~
+Vector
+~~~
+Linear Algebra
+LA_1_7_image
+~
+-6,1
+~~
+Multiple Numbers
+~~~
+Linear Algebra
+LA_1_8_image
+~
+18
+~~
+Number
+~~~
+Linear Algebra
+LA_1_9_image
+~
+4,-7,5
+~~
+Vector
+~~~
+Linear Algebra
+LA_1_10_image
+~
+11
+~~
+Number
+~~~
+Linear Algebra
+LA_1_11_image
+~
+2/3,11/15,-2/15
+~~
+Vector
+~~~
+Linear Algebra
+LA_1_12_image
+~
+4x-2y-2z=0
+~~
+Equation LA
+~~~
+Linear Algebra
+LA_1_13_image
+~
+1+3t,1+5t,1+t
+~~
+Vector Equation
+~~~
+Linear Algebra
+LA_1_14_image
+~
+7/2
+~~
+Number
+~~~
+Linear Algebra
+LA_1_15_image
+~
+sqrt(114)
+~~
+Number
+~~~
+Linear Algebra
+LA_1_16_image
+~
+4,-2,4
+~~
+Vector
+~~~
+Linear Algebra
+LA_1_17_image
+~
+6
+~~
+Number
+~~~
+Linear Algebra
+LA_1_18_image
+~
+8x+y-7z=0
+~~
+Equation LA
+~~~
+Linear Algebra
+LA_1_19_image
+~
+1+t,-1+6t,1+2t
+~~
+Vector Equation
+~~~
+Linear Algebra
+LA_1_20_image
+~
+7
+~~
+Number
+~~~
+Linear Algebra
+LA_1_21_image
+~
+2sqrt(6)
+~~
+Number
+~~~
+Linear Algebra
+LA_1_22_image
+~
+-4,8,8
+~~
+Vector
+~~~
+Linear Algebra
+LA_1_23_image
+~
+12
+~~
+Number
+~~~
+Linear Algebra
+LA_1_24_image
+~
+[3,6]
+[5,12]
+~~
+2x2 Matrix
+~~~
+Linear Algebra
+LA_1_25_image
+~
+[16,30]
+~~
+Vector
+~~~
+Linear Algebra
+LA_1_26_image
+~
+[1,-4]
+[7,5]
+~~
+2x2 Matrix
+~~~
+Linear Algebra
+LA_1_27_image
+~
+4x2
+~~
+Dimensions
+~~~
+Linear Algebra
+LA_1_28_image
+~
+[1,13]
+[0,27]
+~~
+2x2 Matrix
+~~~
+Linear Algebra
+LA_1_29_image
+~
+0,10
+~~
+Multiple Numbers
+~~~
+Linear Algebra
+LA_1_30_image
+~
+[6,-1]
+[-11/2,1]
+--------
+[2, 11]
+[2, 12]
+~~
+2 2x2 Matrixes
+~~~
+Linear Algebra
+LA_1_31_image
+~
+[1,18]
+~~
+Vector
+~~~
+Linear Algebra
+LA_1_32_image
+~
+[7,8]
+[9,-18]
+~~
+2x2 Matrix
+~~~
+Linear Algebra
+LA_1_33_image
+~
+2x4
+~~
+Dimensions
+~~~
+Linear Algebra
+LA_1_34_image
+~
+[1,14]
+[0,8]
+~~
+2x2 Matrix
+~~~
+Linear Algebra
+LA_1_35_image
+~
+0,6
+~~
+Multiple Numbers
+~~~
+Linear Algerba
+LA_1_36_image
+~
+PM^-1
+~~
+Matrixes
+~~~
+Linear Algebra
+LA_1_37_image
+~
+8
+~~
+Number
+~~~
+Linear Algebra
+LA_1_38_image
+~
+17
+~~
+Number
+~~~
+Linear Algebra
+LA_1_39_image
+~
+-1,2
+~~
+Multiple Numbers
+~~~
+Linear Algebra
+LA_1_40_image
+~
+[243,0]
+[0,-32]
+~~
+2x2 Matrix
+~~~
+Linear Algebra
+LA_1_41_image
+~
+[0,1]
+[0,1]
+~~
+2x2 Matrix
+~~~
+Linear Algebra
+LA_1_42_image
+~
+x=4
+y=-2
+~~
+Variables
+~~~
+Linear Algebra
+LA_1_43_image
+~
+16
+~~
+Number
+~~~
+Linear Algebra
+LA_1_44_image
+~
+0
+~~
+Number
+~~~
+Linear Algebra
+LA_1_45_image
+~
+N^-1P
+~~
+Matrixes
+~~~
+Linear Algebra
+LA_1_46_image
+~
+[32,0]
+[0,-243]
+~~
+2x2 Matrix
+~~~
+Linear Algebra
+LA_1_47_image
+~
+[-3,1]
+[-3,1]
+~~
+2x2 Matrix
+~~~
+Linear Algebra
+LA_2_1_image
+~
+x=12
+y=1
+z=6
+~~
+Variables
+~~~
+Linear Algebra
+LA_2_3_image
+~
+2
+~~
+Number
+~~~
+Linear Algebra
+LA_2_4_image
+~
+x=-1
+y=2
+z=0
+~~
+Variables
+~~~
+Linear Algebra
+LA_2_5_image
+~
+3
+~~
+Number
+~~~
+Linear Algebra
+LA_2_6_image
+~
+[1,-1,0]
+[0,1,-1]
+[1,0,-1]
+~~
+3x3 Matrix
+~~~
+Linear Algebra
+LA_2_7_image
+~
+[2,2]
+[2,2]
+~~
+2x2 Matrix
+~~~
+Linear Algebra
+LA_2_8_image
+~
+R^4
+~~
+Domain
+~~~
+Linear Algebra
+LA_2_9_image
+~
+[-120]
+[80]
+~~
+2x1 Matrix
+~~~
+Linear Algebra
+LA_2_10_image
+~
+[0,1,-1]
+[1,1,0]
+~~
+2x3 Matrix
+~~~
+Linear Algebra
+LA_2_11_image
+~
+[200]
+[400]
+~~
+2x1 Matrix
+~~~
+Linear Algebra
+LA_2_12_image
+~
+[-20]
+[10]
+~~
+2x1 Matrix
+~~~
+Linear Algebra
+LA_2_13_image
+~
+[38]
+[24]
+~~
+2x1 Matrix
+~~~
+Linear Algebra
+LA_2_14_image
+~
+R^3
+~~
+Domain
+~~~
+Linear Algebra
+LA_2_15_image
+~
+8/5
+~~
+Number
+~~~
+Linear Algebra
+LA_2_16_image
+~
+-3
+~~
+Number
+~~~
+Linear Algebra
+LA_2_17_image
+~
+[8,4,1]
+~~
+1x3 Matrix
+~~~
+Linear Algebra
+LA_2_18_image
+~
+[-1]
+[2]
+~~
+2x1 Matrix
+~~~
+Linear Algebra
+LA_2_19_image
+~
+[2,-1,0]
+[1,2/3,1/3]
+[-1,1,0]
+~~
+3x3 Matrix
+~~~
+Linear Algebra
+LA_2_20_image
+~
+1
+~~
+Number
+~~~
+Linear Algebra
+LA_2_21_image
+~
+-3
+~~
+Number
+~~~
+Linear Algebra
+LA_2_22_image
+~
+[2,11,3]
+~~
+1x3 Matrix
+~~~
+Linear Algebra
+LA_2_23_image
+~
+[-1]
+[0]
+~~
+2x1 Matrix
+~~~
+Linear Algebra
+LA_2_24_image
+~
+[1,-1,1]
+[0,1,0]
+[0,1,-1]
+~~
+3x3 Matrix
+~~~
+Linear Algebra
+LA_2_25_image
+~
+2a
+-3b
+~~
+Combination
+~~~
+Linear Algebra
+LA_2_26_image
+~
+a: no
+b: yes
+~~
+Variable YesNo
+~~~
+Linear Algebra
+LA_2_27_image
+~
+[3]
+[-3]
+~~
+2x1 Matrix
+~~~
+Linear Algebra
+LA_2_28_image
+~
+5/2
+~~
+Number
+~~~
+Linear Algebra
+LA_2_29_image
+~
+[M2, 2M1]
+~~
+NICK TURNER METHOD 1x2
+~~~
+Linear Algebra
+LA_2_30_image
+~
+[QR1]
+[QR1 + QR2]
+~~
+NICK TURNER METHOD 2x1
+~~~
+Linear Algebra
+LA_2_31_image
+~
+2a
+-b
+~~
+Combination
+~~~
+Linear Algebra
+LA_2_32_image
+~
+a: yes
+b: no
+~~
+Variable YesNo
+~~~
+Linear Algebra
+LA_2_33_image
+~
+4/3
+~~
+Number
+~~~
+Linear Algebra
+LA_2_34_image
+~
+[-1]
+[-14]
+~~
+2x1 Matrix
+~~~
+Linear Algebra
+LA_2_35_image
+~
+[M1, -M1+M2]
+~~
+NICK TURNER METHOD 1x2
+~~~
+Linear Algebra
+LA_2_36_image
+~
+[QR2]
+[-QR1]
+~~
+NICK TURNER METHOD 2x1
+~~~
+Linear Algebra
+LA_3_1_image
+~
+Infinite
+~~
+Solutions
+~~~
+Linear Algebra
+LA_3_2_image
+~
+2
+~~
+Number
+~~~
+Linear Algebra
+LA_3_3_image
+~
+Unique
+~~
+Solutions
+~~~
+Linear Algebra
+LA_3_4_image
+~
+0
+~~
+Number
+~~~
+Linear Algebra
+LA_3_5_image
+~
+No Solution
+~~
+Solutions
+~~~
+Linear Algebra
+LA_3_6_image
+~
+1
+~~
+Number
+~~~
+Linear Algebra
+LA_3_7_image
+~
+Unique
+~~
+Solutions
+~~~
+Linear Algebra
+LA_3_8_image
+~
+0
+~~
+Number
+~~~
+Linear Algebra
+LA_3_9_image
+~
+No Solution
+~~
+Solutions
+~~~
+Linear Algebra
+LA_3_10_image
+~
+2
+~~
+Number
+~~~
+Linear Algebra
+LA_3_11_image
+~
+Infinite
+~~
+Solutions
+~~~
+Linear Algebra
+LA_3_12_image
+~
+1
+~~
+Number
+~~~
+Linear Algebra
+LA_3_13_image
+~
+Linearly Independent
+~~
+Dependent/Independent
+~~~
+Linear Algebra
+LA_3_14_image
+~
+-1
+~~
+Number
+~~~
+Linear Algebra
+LA_3_15_image
+~
+Linearly Dependent
+~~
+Dependent/Independent
+~~~
+Linear Algebra
+LA_3_16_image
+~
+-2/3
+~~
+Number
+~~~
+Linear Algebra
+LA_3_17_image
+~
+Linearly Independent
+~~
+Dependent/Independent
+~~~
+Linear Algebra
+LA_3_18_image
+~
+-2
+~~
+Number
+~~~
+Linear Algebra
+LA_3_19_image
+~
+Linear Dependent
+~~
+Dependent/Independent
+~~~
+Linear Algebra
+LA_3_20_image
+~
+5
+~~
+Number
+~~~
+Linear Algebra
+A is a singular matrix: A is row equivalent to the identity Matrix
+~
+False
+~~
+True/False
+~~~
+Linear Algebra
+A is a singular matrix: Ax = b has infinitely many solutions for at least one b
+~
+True
+~~
+True/False
+~~~
+Linear Algebra
+A is a singular matrix: A^-1 does not exist
+~
+True
+~~
+True/False
+~~~
+Linear Algebra
+A is a nonsingular matrix: At least one row of A can be written as a combination of the others.
+~
+False
+~~
+True/False
+~~~
+A is a nonsingular matrix: Ax = b has no solution for at least one b
+~
+False
+~~
+True/False
+~~~
+A is a nonsingular matrix: The determinate of A is nonzero
+~
+True
+~~
+True/False
+~~~
+Linear Algebra
+LA_3_21_image
+~
+10
+~~
+Number
+~~~
+Linear Algebra
+LA_3_22_image
+~
+Singular
+~~
+Singular/Nonsingular
+~~~
+Linear Algebra
+LA_3_23_image
+~
+Nonsingular
+~~
+Singular/Nonsingular
+~~~
+Linear Algebra
+Suppose A is a nonsingular matrix: Ax = b has infinitely many solutions for at least one b
+~
+False
+~~
+True/False
+~~~
+Linear Algebra
+Suppose A is a nonsingular matrix: A^-1 does not exist
+~
+False
+~~
+True/False
+~~~
+Linear Algebra
+Suppose A is a nonsingular matrix: A is row equivalent to the identity matrix
+~
+True
+~~
+True/False
+~~~
+Linear Algebra
+Suppose A is a singular matrix: Ax = b has no solution for at least one b
+~
+True
+~~
+True/False
+~~~
+Linear Algebra
+Suppose A is a singular matrix: The determinant of A is nonzero
+~
+False
+~~
+True/False
+~~~
+Linear Algebra
+Suppose A is a singular matrix: At least one row of A can be written as combination of the others
+~
+True
+~~
+True/False
+~~~
+Linear Algebra
+LA_3_24_image
+~
+7
+~~
+Number
+~~~
+Linear Algebra
+LA_3_25_image
+~
+Nonsingular
+~~
+Singular/Nonsingular
+~~~
+Linear Algebra
+LA_3_26_image
+~
+Singular
+~~
+Singular/Nonsingular
+~~~
+Linear Algebra
+LA_3_27_image
+~
+R^4
+~~
+Domain
+~~~
+Linear Algebra
+LA_3_28_image
+~
+[3]
+[7]
+[-1]
+~~
+3x1 Matrix
+~~~
+Linear Algebra
+LA_3_29_image
+~
+[1]
+[3]
+~~
+2x1 Matrix
+~~~
+Linear Algebra
+LA_3_30_image
+~
+[7,-5]
+[-4,3]
+~~
+2x2 Matrix
+~~~
+Linear Algebra
+LA_3_31_image
+~
+R^2
+~~
+Domain
+~~~
+Linear Algebra
+LA_3_32_image
+~
+[2]
+[4]
+[-8]
+~~
+3x1 Matrix
+~~~
+Linear Algebra
+LA_3_33_image
+~
+[4]
+[3]
+[-4]
+~~
+3x1 Matrix
+~~~
+Linear Algebra
+LA_3_34_image
+~
+[5,-6]
+[-4,5]
+~~
+2x2 Matrix
+~~~
+Linear Algebra
+LA_4_1_image
+~
+Is a subspace
+~~
+Subspace/Notsubspace
+~~~
+Linear Algebra
+LA_4_2_image
+~
+Is not a subspace
+~~
+Subspace/Notsubspace
+~~~
+Linear Algebra
+LA_4_3_image
+~
+Is not a subspace
+~~
+Subspace/Notsubspace
+~~~
+Linear Algebra
+LA_4_4_image
+~
+Is a subspace
+~~
+Subspace/Notsubspace
+~~~
+Linear Algebra
+LA_4_5_image
+~
+Is not a subspace
+~~
+Subspace/Notsubspace
+~~~
+Linear Algebra
+LA_4_6_image
+~
+Is a subspace
+~~
+Subspace/Notsubspace
+~~~
+Linear Algebra
+LA_4_7_image
+~
+Yes
+~~
+Yes/No
+~~~
+Linear Algebra
+LA_4_8_image
+~
+2
+~~
+Number
+~~~
+Linear Algebra
+LA_4_9_image
+~
+-3
+~~
+Number
+~~~
+Linear Algebra
+LA_4_10_image
+~
+-4
+~~
+Number
+~~~
+Linear Algebra
+LA_4_11_image
+~
+No
+~~
+Yes/No
+~~~
+Linear Algebra
+LA_4_12_image
+~
+3
+~~
+Number
+~~~
+Linear Algebra
+LA_4_13_image
+~
+-2
+~~
+Number
+~~~
+Linear Algebra
+LA_4_14_image
+~
+3
+~~
+Number
+~~~
+Linear Algebra
+LA_4_15_image
+~
+yes
+~~
+Yes/No
+~~~
+Linear Algebra
+LA_4_16_image
+~
+3
+~~
+Number
+~~~
+Linear Algebra
+LA_4_17_image
+~
+No
+~~
+Yes/No
+~~~
+Linear Algebra
+LA_4_18_image
+~
+No
+~~
+Yes/No
+~~~
+Linear Algebra
+LA_4_19_image
+~
+-1
+~~
+Number
+~~~
+Linear Algebra
+LA_4_20_image
+~
+Yes
+~~
+Yes/No
+~~~
+Linear Algebra
+LA_5_1_image
+~
+3
+~~
+Number
+~~~
+Linear Algebra
+LA_5_2_image
+~
+1
+~~
+Number
+~~~
+Linear Algebra
+LA_5_3_image
+~
+2
+~~
+Number
+~~~
+Linear Algebra
+LA_5_4_image
+~
+2
+~~
+Number
+~~~
+Linear Algebra
+LA_5_5_image
+~
+2
+~~
+Number
+~~~
+Linear Algebra
+LA_5_6_image
+~
+3
+~~
+Number
+~~~
+Linear Algebra
+LA_5_7_image
+~
+rank=3
+nullity=2
+~~
+RankNullity
+~~~
+Linear Algebra
+LA_5_8_image
+~
+3
+~~
+Number
+~~~
+Linear Algebra
+LA_5_9_image
+~
+rank=2
+nullity=1
+~~
+RankNullity
+~~~
+Linear Algebra
+LA_5_10_image
+~
+4
+~~
+Number
+~~~
+Linear Algebra
+LA_5_11_image
+~
+2
+~~
+Number
+~~~
+Linear Algebra
+LA_5_12_image
+~
+B
+~~
+Number
+~~~
+Linear Algebra
+LA_5_13_image
+~
+2
+~~
+Number
+~~~
+Linear Algebra
+LA_5_14_image
+~
+1
+~~
+Number
+~~~
+Linear Algebra
+LA_5_15_image
+~
+C
+~~
+Number
+~~~
+Linear Algebra
+LA_5_16_image
+~
+3
+~~
+Number
+~~~
+Linear Algebra
+LA_5_17_image
+~
+4
+~~
+Number
+~~~
+Linear Algebra
+LA_5_18_image
+~
+[3]
+[3]
+~~
+2x1 Matrix
+~~~
+Linear Algebra
+LA_5_19_image
+~
+[-2/5]
+[0]
+[6/5]
+[0]
+~~
+4x1 Matrix
+~~~
+Linear Algebra
+LA_5_20_image
+~
+[11]
+[4]
+[-3]
+~~
+3x1 Matrix
+~~~
+Linear Algebra
+LA_5_21_image
+~
+[57/10]
+[19/10]
+~~
+2x1 Matrix
+~~~
+Linear Algebra
+LA_5_22_image
+~
+[-1]
+[0]
+[1]
+[0]
+~~
+4x1 Matrix
+~~~
+Linear Algebra
+LA_5_23_image
+~
+[6]
+[14]
+[6]
+~~
+3x1 Matrix
+~~~
+Linear Algebra
+LA_5_24_image
+~
+6
+~~
+Number
+~~~
+Linear Algebra
+LA_5_25_image
+~
+11
+~~
+Number
+~~~
+Linear Algebra
+LA_5_26_image
+~
+Yes
+~~
+Yes/No
+~~~
+Linear Algebra
+LA_5_27_image
+~
+Eigenvalue=-3
+Eigenvalue=2
+~~
+Variables
+~~~
+Linear Algebra
+LA_5_28_image
+~
+-9
+~~
+Number
+~~~
+Linear Algebra
+LA_5_29_image
+~
+7
+~~
+Number
+~~~
+Linear Algebra
+LA_5_30_image
+~
+No
+~~
+Yes/No
+~~~
+Linear Algebra
+LA_5_31_image
+~
+Eigenvalue=-4
+Eigenvalue=3
+~~
+Variables
+~~~
+Linear Algebra
+LA_6_1_image
+~
+det(A)=30
+rank(A)=3
+~~
+Variables
+~~~
+Linear Algebra
+LA_6_2_image
+~
+18
+~~
+Number
+~~~
+Linear Algebra
+LA_6_3_image
+~
+9/4
+~~
+Number
+~~~
+Linear Algebra
+LA_6_4_image
+~
+3
+~~
+Number
+~~~
+Linear Algebra
+LA_6_5_image
+~
+36
+~~
+Number
+~~~
+Linear Algebra
+LA_6_6_image
+~
+det(A)=0
+rank(A)=1
+~~
+Variables
+~~~
+Linear Algebra
+LA_6_7_image
+~
+4
+~~
+Number
+~~~
+Linear Algebra
+LA_6_8_image
+~
+-2
+~~
+Number
+~~~
+Linear Algebra
+LA_6_9_image
+~
+18
+~~
+Number
+~~~
+Linear Algebra
+LA_6_10_image
+~
+15
+~~
+Number
+~~~
+Linear Algebra
+LA_6_11_image
+~
+Eigenvalue=-7
+Eigenvalue=-3
+Eigenvalue=2
+~~
+Variables
+~~~
+Linear Algebra
+LA_6_12_image
+~
+1
+~~
+Number
+~~~
+Linear Algebra
+LA_6_13_image
+~
+3
+~~
+Number
+~~~
+Linear Algebra
+LA_6_14_image
+~
+Eigenvalue=-5
+Eigenvalue=-3
+Eigenvalue=3
+~~
+Variables
+~~~
+Linear Algebra
+LA_6_15_image
+~
+3
+~~
+Number
+~~~
+Linear Algebra
+LA_6_16_image
+~
+1
+~~
+Number
+~~~
+MVC
+MVC_1_1_image
+~
+1
+~~
+Number
+~~~
+MVC_1_2_image
+~
+7
+~~
+Number
+~~~
+MVC_1_3_image
+~
+0
+~~
+Number
+~~~
+MVC_1_4_image
+~
+60
+~~
+Number
+~~~
+MVC_1_5_image
+~
+6
+~~
+Number
+~~~
+MVC_1_6_image
+~
+[6,2,-1/4]
+~~
+1x3 Matrix
+~~~
+MVC_1_7_image
+~
+[12,3,-2/3]
+~~
+1x3 Matrix
+~~~
+MVC_1_8_image
+~
+Decreasing
+~~
+Increasing/Decreasing
+~~~
+MVC_1_9_image
+~
+3
+~~
+Number
+~~~
+MVC_1_10_image
+~
+Decreasing
+~~
+Increasing/Decreasing
+~~~
+MVC_1_11_image
+~
+38/9
+~~
+Number
+~~~
+MVC_1_12_image
+~
+A:y>=0
+B:y<=0
+C:y>0
+D:y<0
+A
+~~
+MCQ
+~~~
+MVC_1_13_image
+~
+A
+~~
+Number
+~~~
+MVC_1_14_image
+~
+B
+~~
+Number
+~~~
+MVC_1_15_image
+~
+A:x>=0
+B:x<=0
+C:x>0
+D:x<0
+B
+~~
+MCQ
+~~~
+MVC_2_1_image
+~
+104
+~~
+Number
+~~~
+MVC_2_2_image
+~
+-2
+~~
+Number
+~~~
+MVC_2_3_image
+~
+2e
+~~
+Number
+~~~
+MVC_2_4_image
+~
+-1
+~~
+Number
+~~~
+MVC_2_5_image
+~
+144
+~~
+Number
+~~~
+MVC_2_6_image
+~
+-24
+~~
+Number
+~~~
+MVC_2_7_image
+~
+-2e
+~~
+Number
+~~~
+MVC_2_8_image
+~
+-4
+~~
+Number
+~~~
+MVC_2_9_image
+~
+1/3
+~~
+Number
+~~~
+MVC_2_10_image
+~
+[8]
+[46]
+~~
+2x1 Matrix
+~~~
+MVC_2_11_image
+~
+[20]
+[94]
+~~
+2x1 Matrix
+~~~
+MVC_2_12_image
+~
+5/3
+~~
+Number
+~~~
+MVC_2_13_image
+~
+No
+~~
+Yes/No
+~~~
+MVC_2_14_image
+~
+Saddle
+Maximum
+Minimum
+_
+Saddle
+~~
+Options
+~~~
+MVC_2_15_image
+~
+[1,-2]
+~~
+1x2 Matrix
+~~~
+MVC_2_16_image
+~
+Maximum
+Minimum
+Saddle
+_
+Saddle
+~~
+Options
+~~~
+MVC_2_17_image
+~
+4/3
+~~
+Number
+~~~
+MVC_2_18_image
+~
+Yes
+~~
+Yes/No
+~~~
+MVC_2_19_image
+~
+Saddle
+Maximum
+Minimum
+~
+Minimum
+~~
+Options
+~~~
+MVC_2_20_image
+~
+[-1,-2]
+~~
+1x2 Matrix
+~~~
+MVC_2_22_image
+~
+2
+~~
+Number
+~~~
+MVC_2_23_image
+~
+3366
+~~
+Number
+~~~
+MVC_3_1_image
+~
+30
+~~
+Number
+~~~
+MVC_3_2_image
+~
+24
+~~
+Number
+~~~
+MVC_3_3_image
+~
+24
+~~
+Number
+~~~
+MVC_3_4_image
+~
+15
+~~
+Number
+~~~
+MVC_3_5_image
+~
+1023/50
+~~
+Number
+~~~
+MVC_3_6_image
+~
+1
+~~
+Number
+~~~
+MVC_3_7_image
+~
+15/6
+~~
+Number
+~~~
+MVC_3_8_image
+~
+255/32
+~~
+Number
+~~~
+MVC_3_9_image
+~
+No
+~~
+Yes/No
+~~~
+MVC_3_10_image
+~
+No
+~~
+Yes/No
+~~~
+MVC_3_11_image
+~
+258
+~~
+Number
+~~~
+MVC_3_12_image
+~
+0
+~~
+Number
+~~~
+MVC_3_13_image
+~
+13
+~~
+Number
+~~~
+MVC_3_14_image
+~
+0
+~~
+Number
+~~~
+MVC_3_15_image
+~
+13
+~~
+Number
+~~~
+MVC_3_16_image
+~
+130
+~~
+Number
+~~~
+MVC_3_17_image
+~
+-16
+~~
+Number
+~~~
+MVC_3_18_image
+~
+Yes
+~~
+Yes/No
+~~~
+MVC_3_19_image
+~
+-4
+~~
+Number
+~~~
+MVC_4_1_image
+~
+4473/500
+~~
+Number
+~~~
+MVC_4_2_image
+~
+30
+~~
+Number
+~~~
+Calc BC
+calcbc1.1.1_image
+~
+3
+~~
+Number
+~~~
+Calc BC
+calcbc1.1.2_image
+~
+20
+~~
+Number
+~~~
+Calc BC
+calcbc1.1.3_image
+~
+1
+~~
+Number
+~~~
+Calc BC
+calcbc1.1.4_image
+~
+No
+~~
+Yes/No
+~~~
+Calc BC
+calcbc1.1.5_image
+~
+2/3
+~~
+Number
+~~~
+Calc BC
+calcbc1.2.2_image
+~
+-3
+~~
+Number
+~~~
+Calc BC
+calcbc1.2.4_image
+~
+1/2
+~~
+Number
+~~~
+Calc BC
+calcbc1.2.5_image
+~
+0
+~~
+Number
+~~~
+Calc BC
+calcbc1.2.6_image
+~
+-4/3
+~~
+Number
+~~~
+Calc BC
+calcbc1.3.4_image
+~
+-10
+~~
+Number
+~~~
+Calc BC
+calcbc1.3.6_image
+~
+7/6
+~~
+Number
+~~~
+Calc BC
+calcbc1.4.3_image
+~
+y+3=15(x-2)
+~~
+Equation
+~~~
+Calc BC
+calcbc1.4.5_image
+~
+1
+~~
+Number
+~~~
+Calc BC
+calcbc1.4.6_image
+~
+D
+~~
+Number
+~~~
+Calc BC
+calcbc2.1.6_image
+~
+1/3
+~~
+Number
+~~~
+Calc BC
+calcbc2.2.2_image
+~
+15
+~~
+Number
+~~~
+Calc BC
+calcbc2.2.3_image
+~
+5
+~~
+Number
+~~~
+Calc BC
+calcbc2.2.4_image
+~
+-1/121
+~~
+Number
+~~~
+Calc BC
+calcbc2.2.5_image
+~
+-43/13
+~~
+Number
+~~~
+Calc BC
+calcbc2.3.2_image
+~
+1
+~~
+Number
+~~~
+Calc BC
+calcbc2.3.5_image
+~
+3/2
+~~
+Number
+~~~
+Calc BC
+calcbc2.3.6_image
+~
+-60
+~~
+Number
+~~~
+Calc BC
+calcbc2.4.5_image
+~
+84
+~~
+Number
+~~~
+Calc BC
+calcbc3.1.6_image
+~
+-2
+~~
+Number
+~~~
+Calc BC
+calcbc3.3.1_image
+~
+-28
+~~
+Number
+~~~
+Calc BC
+calcbc3.3.2_image
+~
+False
+~~
+Boolean
+~~~
+Calc BC
+calcbc3.3.3_image
+~
+25
+~~
+Number
+~~~
+Calc BC
+calcbc3.3.7_image
+~
+7
+~~
+Number
+~~~
+Calc BC
+BC_3_1_image
+~
+5
+~~
+Number
+~~~
+Calc BC
+BC_3_2_image
+~
+Yes
+~~
+Yes/No
+~~~
+Calc BC
+BC_3_3_image
+~
+-16
+~~
+Number
+~~~
+Calc BC
+BC_4_1_image
+~
+-1/9
+~~
+Number
+~~~
+Calc BC
+BC_4_2_image
+~
+Local Maximum
+Local Minimum
+Neither
+_
+Local Maximum
+~~
+Options
+~~~
+Calc BC
+BC_4_3_image
+~
+4/5
+~~
+Number
+~~~
+Calc BC
+BC_4_4_image
+~
+Horizontal
+Vertical
+Neither
+_
+Horizontal
+~~
+Options
+~~~
+Calc BC
+BC_4_5_image
+~
+1/8
+~~
+Number
+~~~
+Calc BC
+BC_4_6_image
+~
+Local Maximum
+Local Minimum
+Neither
+_
+Local Minimum
+~~
+Options
+~~~
+Calc BC
+BC_4_7_image
+~
+9/16
+~~
+Number
+~~~
+Calc BC
+BC_4_8_image
+~
+Horizontal
+Vertical
+Neither
+_
+Vertical
+~~
+Options
+~~~
+Calc BC
+BC_4_9_image
+~
+-1.08
+~~
+Number
+~~~
+Calc BC
+BC_4_10_image
+~
+C
+~~
+Number
+~~~
+Calc BC
+BC_4_11_image
+~
+5.8
+~~
+Number
+~~~
+Calc BC
+BC_4_12_image
+~
+-2.4
+~~
+Number
+~~~
+Calc BC
+BC_4_13_image
+~
+D
+~~
+Number
+~~~
+Calc BC
+BC_4_14_image
+~
+7.5
+~~
+Number
+~~~
+Calc BC
+BC_4_15_image
+~
+3/10
+~~
+Number
+~~~
+Calc BC
+BC_4_16_image
+~
+-2/3
+~~
+Number
+~~~
+Calc BC
+BC_4_17_image
+~
+80/27
+~~
+Number
+~~~
+Calc BC
+BC_4_18_image
+~
+5/2
+~~
+Number
+~~~
+Calc BC
+BC_4_19_image
+~
+9.19
+~~
+Number
+~~~
+Calc BC
+BC_4_20_image
+~
+25/24
+~~
+Number
+~~~
+Calc BC
+BC_4_21_image
+~
+2/5
+~~
+Number
+~~~
+Calc BC
+BC_4_22_image
+~
+-3/5
+~~
+Number
+~~~
+Calc BC
+BC_4_23_image
+~
+5/3
+~~
+Number
+~~~
+Calc BC
+BC_4_24_image
+~
+5.51
+~~
+Number
+~~~
+Calc BC
+BC_4_25_image
+~
+10/19
+~~
+Number
+~~~
+Calc BC
+BC_4_26_image
+~
+Increasing
+Decreasing
+_
+Increasing
+~~
+Options
+~~~
+Calc BC
+BC_4_27_image
+~
+-5.7
+~~
+Number
+~~~
+Calc BC
+BC_5_1_image
+~
+Local Maximum
+Local Minimum
+Neither
+_
+Local Maximum
+~~
+Options
+~~~
+Calc BC
+BC_5_2_image
+~
+-5
+~~
+Number
+~~~
+Calc BC
+BC_5_3_image
+~
+4
+~~
+Number
+~~~
+Calc BC
+BC_5_4_image
+~
+Local Maximum
+Local Minimum
+Neither
+_
+Local Minimum
+~~
+Options
+~~~
+Calc BC
+BC_5_5_image
+~
+-7/8
+~~
+Number
+~~~
+Calc BC
+BC_5_6_image
+~
+1.7
+~~
+Number
+~~~
+Calc BC
+BC_5_7_image
+~
+8/27
+~~
+Number
+~~~
+Calc BC
+BC_5_8_image
+~
+7/50
+~~
+Number
+~~~
+Calc BC
+BC_5_9_image
+~
+0
+~~
+Number
+~~~
+Calc BC
+BC_5_10_image
+~
+-1
+~~
+Number
+~~~
+Calc BC
+BC_5_11_image
+~
+2/3
+~~
+Number
+~~~
+Calc BC
+BC_5_12_image
+~
+1/2
+~~
+Number
+~~~
+Calc BC
+BC_5_13_image
+~
+0
+~~
+Number
+~~~
+Calc BC
+BC_5_14_image
+~
+3/2
+~~
+Number
+~~~
+Calc BC
+BC_5_15_image
+~
+3
+~~
+Number
+~~~
+Calc BC
+BC_5_16_image
+~
+-5/7
+~~
+Number
+~~~
+Calc BC
+BC_5_17_image
+~
+-1/2
+~~
+Number
+~~~
+Calc BC
+BC_5_18_image
+~
+3
+~~
+Number
+~~~
+Calc BC
+BC_6_1_image
+~
+52
+~~
+Number
+~~~
+Calc BC
+BC_6_2_image
+~
+-70
+~~
+Number
+~~~
+Calc BC
+BC_6_3_image
+~
+3300
+~~
+Number
+~~~
+Calc BC
+BC_6_4_image
+~
+Overestimate
+Underestimate
+_
+Overestimate
+~~
+Options
+~~~
+Calc BC
+BC_6_5_image
+~
+-1/3
+~~
+Number
+~~~
+Calc BC
+BC_6_6_image
+~
+-4
+~~
+Number
+~~~
+Calc BC
+BC_6_7_image
+~
+35
+~~
+Number
+~~~
+Calc BC
+BC_6_8_image
+~
+30
+~~
+Number
+~~~
+Calc BC
+BC_6_9_image
+~
+3000
+~~
+Number
+~~~
+Calc BC
+BC_6_10_image
+~
+Overestimate
+Underestimate
+_
+Underestimate
+~~
+Options
+~~~
+Calc BC
+BC_6_11_image
+~
+-1/32
+~~
+Number
+~~~
+Calc BC
+BC_6_12_image
+~
+30
+~~
+Number
+~~~
+Calc BC
+BC_6_13_image
+~
+4
+~~
+Number
+~~~
+Calc BC
+BC_6_14_image
+~
+4/3
+~~
+Number
+~~~
+Calc BC
+BC_6_15_image
+~
+5/2
+~~
+Number
+~~~
+Calc BC
+BC_6_16_image
+~
+18
+~~
+Number
+~~~
+Calc BC
+BC_6_17_image
+~
+33
+~~
+Number
+~~~
+Calc BC
+BC_6_18_image
+~
+7
+~~
+Number
+~~~
+Calc BC
+BC_6_19_image
+~
+3/5
+~~
+Number
+~~~
+Calc BC
+BC_6_20_image
+~
+7
+~~
+Number
+~~~
+Calc BC
+BC_6_21_image
+~
+21
+~~
+Number
+~~~
+Calc BC
+BC_6_22_image
+~
+10
+~~
+Number
+~~~
+Calc BC
+BC_6_23_image
+~
+12
+~~
+Number
+~~~
+Calc BC
+BC_6_24_image
+~
+3
+~~
+Number
+~~~
+Calc BC
+BC_6_25_image
+~
+48
+~~
+Number
+~~~
+Calc BC
+BC_6_26_image
+~
+9/2
+~~
+Number
+~~~
+Calc BC
+BC_6_27_image
+~
+62
+~~
+Number
+~~~
+Calc BC
+BC_6_28_image
+~
+24
+~~
+Number
+~~~
+Calc BC
+BC_7_1_image
+~
+108
+~~
+Number
+~~~
+Calc BC
+BC_7_2_image
+~
+11
+~~
+Number
+~~~
+Calc BC
+BC_8_1_image
+~
+18
+~~
+Number
+~~~
+Calc BC
+BC_8_2_image
+~
+31/3
+~~
+Number
+~~~
+Calc BC
+BC_8_3_image
+~
+8/3
+~~
+Number
+~~~
+Calc BC
+BC_8_4_image
+~
+12
+~~
+Number
+~~~
+Calc BC
+BC_8_5_image
+~
+430/21
+~~
+Number
+~~~
+Calc BC
+BC_8_6_image
+~
+1/3
+~~
+Number
+~~~
+Calc BC
+BC_8_9_image
+~
+1/4
+~~
+Number
+~~~
+Calc BC
+BC_8_10_image
+~
+D
+~~
+Number
+~~~
+Calc BC
+BC_8_11_image
+~
+C
+~~
+Number
+~~~
+Calc BC
+BC_8_12_image
+~
+81
+~~
+Number
+~~~
+Calc BC
+BC_8_13_image
+~
+4/5
+~~
+Number
+~~~
+Calc BC
+BC_8_14_image
+~
+96
+~~
+Number
+~~~
+Calc BC
+BC_8_15_image
+~
+4/7
+~~
+Number
+~~~
+Calc BC
+BC_8_16_image
+~
+29
+~~
+Number
+~~~
+Calc BC
+BC_9_1_image
+~
+7/9
+~~
+Number
+~~~
+Calc BC
+BC_9_2_image
+~
+34
+~~
+Number
+~~~
+Calc BC
+BC_9_3_image
+~
+14/27
+~~
+Number
+~~~
+Calc BC
+BC_9_4_image
+~
+C
+~~
+Number
+~~~
+Calc BC
+BC_9_5_image
+~
+4
+~~
+Number
+~~~
+Calc BC
+BC_9_6_image
+~
+B
+~~
+Number
+~~~
+Calc BC
+BC_9_7_image
+~
+49/3
+~~
+Number
+~~~
+Calc BC
+BC_9_8_image
+~
+1/24
+~~
+Number
+~~~
+Calc BC
+BC_9_9_image
+~
+-8
+~~
+Number
+~~~
+Calc BC
+BC_9_10_image
+~
+18
+~~
+Number
+~~~
+Calc BC
+BC_9_11_image
+~
+C
+~~
+Number
+~~~
+Calc BC
+BC_9_12_image
+~
+1/12
+~~
+Number
+~~~
+Calc BC
+BC_9_13_image
+~
+-5/2
+~~
+Number
+~~~
+Calc BC
+BC_9_14_image
+~
+6
+~~
+Number
+~~~
+Calc BC
+BC_9_15_image
+~
+B
+~~
+Number
+~~~
+Calc BC
+BC_9_16_image
+~
+B
+~~
+Number
+~~~
+Calc BC
+BC_9_17_image
+~
+A
+~~
+Number
+~~~
+Calc BC
+BC_9_18_image
+~
+[44,1/2]
+~~
+1x2 Matrix
+~~~
+Calc BC
+BC_10_1_image
+~
+[4,-24]
+~~
+1x2 Matrix
+~~~
+Calc BC
+BC_10_2_image
+~
+[-1,-8]
+~~
+1x2 Matrix
+~~~
+Calc BC
+BC_10_3_image
+~
+[17,1]
+~~
+1x2 Matrix
+~~~
+Calc BC
+BC_10_4_image
+~
+[3,-27]
+~~
+1x2 Matrix
+~~~
+Calc BC
+BC_10_5_image
+~
+[3,3]
+~~
+1x2 Matrix
+~~~
+Calc BC
+BC_10_6_image
+~
+13
+~~
+Number
+~~~
+Calc BC
+BC_10_7_image
+~
+31
+~~
+Number
+~~~
+Calc BC
+BC_10_8_image
+~
+24
+~~
+Number
+~~~
+Calc BC
+BC_10_9_image
+~
+[9,-16]
+~~
+1x2 Matrix
+~~~
+Calc BC
+BC_10_10_image
+~
+[-4,12]
+~~
+1x2 Matrix
+~~~
+Calc BC
+BC_10_11_image
+~
+20
+~~
+Number
+~~~
+Calc BC
+BC_10_12_image
+~
+12
+~~
+Number
+~~~
+Calc BC
+BC_10_13_image
+~
+25
+~~
+Number
+~~~
+Calc BC
+BC_10_14_image
+~
+-1
+~~
+Number
+~~~
+Calc BC
+BC_10_15_image
+~
+Toward
+Away
+_
+Toward
+~~
+Options
+~~~
+Calc BC
+BC_10_16_image
+~
+5/-2
+~~
+Number
+~~~
+Calc BC
+BC_10_17_image
+~
+1
+~~
+Number
+~~~
+Calc BC
+BC_10_18_image
+~
+2
+~~
+Number
+~~~
+Calc BC
+BC_10_19_image
+~
+-1.5
+~~
+Number
+~~~
+Calc BC
+BC_10_20_image
+~
+2/5
+~~
+Number
+~~~
+Calc BC
+BC_10_21_image
+~
+Toward
+Away
+_
+Away
+~~
+Options
+~~~
+Calc BC
+BC_10_22_image
+~
+3/20
+~~
+Number
+~~~
+Calc BC
+BC_10_23_image
+~
+2/21
+~~
+Number
+~~~
+Calc BC
+BC_11_1_image
+~
+2
+~~
+Number
+~~~
+Calc BC
+BC_11_2_image
+~
+5
+~~
+Number
+~~~
+Calc BC
+BC_11_3_image
+~
+B
+~~
+Number
+~~~
+Calc BC
+BC_11_4_image
+~
+Converges
+Diverges
+_
+Converges
+~~
+Options
+~~~
+Calc BC
+BC_11_5_image
+~
+A
+~~
+Number
+~~~
+Calc BC
+BC_11_6_image
+~
+Converges
+Diverges
+_
+Diverges
+~~
+Options
+~~~
+Calc BC
+BC_11_7_image
+~
+Converges
+Diverges
+_
+Converges
+~~
+Options
+~~~
+Calc BC
+BC_11_8_image
+~
+C
+~~
+Number
+~~~
+Calc BC
+BC_11_9_image
+~
+Converges
+Diverges
+_
+Diverges
+~~
+Options
+~~~
+Calc BC
+BC_11_10_image
+~
+A
+~~
+Number
+~~~
+Calc BC
+BC_11_11_image
+~
+Converges
+Diverges
+_
+Converges
+~~
+Options
+~~~
+Calc BC
+BC_11_12_image
+~
+Converges
+Diverges
+_
+Converges
+~~
+Options
+~~~
+Calc BC
+BC_12_1_image
+~
+1/12
+~~
+Number
+~~~
+Calc BC
+BC_12_2_image
+~
+1/640
+~~
+Number
+~~~
+Calc BC
+BC_12_3_image
+~
+1/8
+~~
+Number
+~~~
+Calc BC
+BC_12_4_image
+~
+7/9240
+~~
+Number
+~~~
+Calc BC
+BC_12_5_image
+~
+-1/2
+~~
+Number
+~~~
+Calc BC
+BC_12_6_image
+~
+-7/24
+~~
+Number
+~~~
+Calc BC
+BC_12_7_image
+~
+-35280
+~~
+Number
+~~~
+Calc BC
+BC_12_8_image
+~
+Inflection
+No Inflection
+_
+Inflection
+~~
+Options
+~~~
+Calc BC
+BC_12_9_image
+~
+Maximum
+Minimum
+Neither
+_
+Minimum
+~~
+Options
+~~~
+Calc BC
+BC_12_10_image
+~
+-600
+~~
+Number
+~~~
+Calc BC
+BC_12_11_image
+~
+Maximum
+Minimum
+Neither
+_
+Neither
+~~
+Options
+~~~
+Calc BC
+BC_12_12_image
+~
+Yes
+No
+_
+Yes
+~~
+Options
+~~~
+Calc BC
+BC_12_13_image
+~
+-2
+~~
+Number
+~~~
+Calc BC
+BC_12_14_image
+~
+1/15
+~~
+Number
+~~~
+Calc BC
+BC_12_15_image
+~
+11/2
+~~
+Number
+~~~
+Calc BC
+BC_12_16_image
+~
+227/20
+~~
+Number
+~~~
+Calc BC
+BC_12_17_image
+~
+88
+~~
+Number
+~~~
+Calc BC
+BC_12_18_image
+~
+87/20
+~~
+Number
+~~~
+Calc BC
+BC_13_1_image
+~
+19/2
+~~
+Number
+~~~
+Calc BC
+BC_13_2_image
+~
+4
+~~
+Number
+~~~
+Calc BC
+BC_13_3_image
+~
+E
+~~
+Number
+~~~
+Calc BC
+BC_13_4_image
+~
+30
+~~
+Number
+~~~
+Calc BC
+BC_13_5_image
+~
+D
+~~
+Number
+~~~
+Calc BC
+BC_13_6_image
+~
+A
+~~
+Number
+~~~
+Calc BC
+BC_13_7_image
+~
+A
+~~
+Number
+~~~
+Calc BC
+BC_13_8_image
+~
+40
+~~
+Number
+~~~
+Calc BC
+BC_13_9_image
+~
+D
+~~
+Number
+~~~
+Calc BC
+BC_13_10_image
+~
+E
+~~
+Number
+~~~
+Precal
+PC_1_1_image
+~
+-6
+~~
+Number
+~~~
+Precal
+PC_1_2_image
+~
+-5
+~~
+Number
+~~~
+Precal
+PC_1_3_image
+~
+x=3
+x=9
+~~
+Variables
+~~~
+Precal
+PC_1_4_image
+~
+4
+~~
+Number
+~~~
+Precal
+PC_1_5_image
+~
+-4
+~~
+Number
+~~~
+Precal
+PC_1_6_image
+~
+-5
+~~
+Number
+~~~
+Precal
+PC_1_7_image
+~
+-5
+~~
+Number
+~~~
+Precal
+PC_1_8_image
+~
+x=3
+x=11
+~~
+Variables
+~~~
+Precal
+PC_1_9_image
+~
+-6
+~~
+Number
+~~~
+Precal
+PC_1_10_image
+~
+x=0
+x=6
+~~
+Variables
+~~~
+Precal
+PC_1_11_image
+~
+x=-5
+x=1
+~~
+Variables
+~~~
+Precal
+PC_1_12_image
+~
+x=-3
+x=-2
+~~
+Variables
+~~~
+Precal
+PC_1_13_image
+~
+x=-3
+x=0
+~~
+Variables
+~~~
+Precal
+PC_1_14_image
+~
+x=-2
+x=1
+~~
+Variables
+~~~
+Precal
+PC_1_15_image
+~
+x=0
+x=9
+~~
+Variables
+~~~
+Precal
+PC_1_16_image
+~
+x=-3
+x=2
+~~
+Variables
+~~~
+Precal
+PC_1_17_image
+~
+x=-4
+x=-1
+~~
+Variables
+~~~
+Precal
+PC_1_18_image
+~
+x=-1
+x=0
+~~
+Variables
+~~~
+Precal
+PC_1_19_image
+~
+x=-2
+x=1
+~~
+Variables
+~~~
+Precal
+PC_1_20_image
+~
+[-2,-5]
+~~
+1x2 Matrix
+~~~
+Precal
+PC_1_21_image
+~
+[1/2,-25/2]
+~~
+1x2 Matrix
+~~~
+Precal
+PC_1_22_image
+~
+[-3,-11]
+~~
+1x2 Matrix
+~~~
+Precal
+PC_1_23_image
+~
+[3/2,-25/2]
+~~
+1x2 Matrix
+~~~
+Precal
+PC_1_24_image
+~
+B
+~~
+Number
+~~~
+Precal
+PC_1_25_image
+~
+D
+~~
+Number
+~~~
+Precal
+PC_2_1_image
+~
+5
+~~
+Number
+~~~
+Precal
+PC_2_2_image
+~
+-3/7
+~~
+Number
+~~~
+Precal
+PC_2_3_image
+~
+Quadratic
+Linear
+Neither
+_
+Linear
+~~
+Options
+~~~
+Precal
+PC_2_4_image
+~
+8
+~~
+Number
+~~~
+Precal
+PC_2_5_image
+~
+15/7
+~~
+Number
+~~~
+Precal
+PC_2_6_image
+~
+4
+~~
+Number
+~~~
+Precal
+PC_2_7_image
+~
+1
+~~
+Number
+~~~
+Precal
+PC_2_8_image
+~
+11
+~~
+Number
+~~~
+Precal
+PC_2_9_image
+~
+2
+~~
+Number
+~~~
+Precal
+PC_2_10_image
+~
+[2,4]
+~~
+1x2 Matrix
+~~~
+Precal
+PC_2_11_image
+~
+E
+~~
+Number
+~~~
+Precal
+PC_2_12_image
+~
+1
+~~
+Number
+~~~
+Precal
+PC_2_13_image
+~
+[-1,1]
+~~
+1x2 Matrix
+~~~
+Precal
+PC_2_14_image
+~
+[2,4]
+~~
+1x2 Matrix
+~~~
+Precal
+PC_2_15_image
+~
+D
+~~
+Number
+~~~
+Precal
+PC_2_16_image
+~
+C
+~~
+Number
+~~~
+Precal
+PC_2_17_image
+~
+C
+~~
+Number
+~~~
+Precal
+PC_2_18_image
+~
+A=5
+B=1
+C=2
+D=5
+E=2
+~~
+Variables
+~~~
+Precal
+PC_2_19_image
+~
+A=2
+B=-5
+C=6
+~~
+Variables
+~~~
+Precal
+PC_2_20_image
+~
+A
+~~
+Number
+~~~
+Precal
+PC_2_21_image
+~
+A=4
+B=1
+C=2
+D=5
+E=2
+~~
+Variables
+~~~
+Precal
+PC_2_22_image
+~
+A=1
+B=-4
+C=5
+~~
+Variables
+~~~
+Precal
+PC_2_23_image
+~
+Distinct Real Zeros=2
+Non-Real Zeros=0
+~~
+Variables
+~~~
+Precal
+PC_2_24_image
+~
+Distinct Real Zeroes=1
+Non-Real Zeroes=2
+~~
+Variables
+~~~
+Precal
+PC_2_25_image
+~
+6
+~~
+Number
+~~~
+Precal
+PC_2_26_image
+~
+3
+~~
+Number
+~~~
+Precal
+PC_2_27_image
+~
+7
+~~
+Number
+~~~
+Precal
+PC_2_28_image
+~
+4
+~~
+Number
+~~~
+Precal
+PC_2_29_image
+~
+Distinct Real Zeros=2
+Non-Real Zeros=0
+~~
+Variables
+~~~
+Precal
+PC_2_30_image
+~
+Distinct Real Zeros=1
+Non-Real Zeroes=2
+~~
+Variables
+~~~
+Precal
+PC_2_31_image
+~
+5
+~~
+Number
+~~~
+Precal
+PC_2_32_image
+~
+3
+~~
+Number
+~~~
+Precal
+PC_2_33_image
+~
+6
+~~
+Number
+~~~
+Precal
+PC_2_34_image
+~
+4
+~~
+Number
+~~~
+Precal
+PC_2_35_image
+~
+Degree of polynomial=3
+Leading coefficient=-2
+~~
+Variables
+~~~
+Precal
+PC_2_36_image
+~
+Degree of polynomial=3
+Leading coefficient=4
+~~
+Variables
+~~~
+Precal
+PC_2_37_image
+~
+Degree of polynomial=6
+Leading coefficient=-16
+~~
+Variables
+~~~
+Precal
+PC_2_38_image
+~
+8
+~~
+Number
+~~~
+Precal
+PC_2_39_image
+~
+Degree of polynomial=3
+Leading coefficient=9
+~~
+Variables
+~~~
+Precal
+PC_2_40_image
+~
+Degree of polynomial=3
+Leading coefficient=-2
+~~
+Variables
+~~~
+Precal
+PC_2_41_image
+~
+12
+~~
+Number
+~~~
+Precal
+PC_3_1_image
+~
+a=1
+b=2
+c=3
+~~
+Variables
+~~~
+Precal
+PC_3_2_image
+~
+4
+~~
+Number
+~~~
+Precal
+PC_3_3_image
+~
+3
+~~
+Number
+~~~
+Precal
+PC_3_4_image
+~
+7
+~~
+Number
+~~~
+Precal
+PC_3_5_image
+~
+2
+~~
+Number
+~~~
+Precal
+PC_3_6_image
+~
+-3
+~~
+Number
+~~~
+Precal
+PC_3_7_image
+~
+0
+~~
+Number
+~~~
+Precal
+PC_3_8_image
+~
+a=-3
+b=4
+~~
+Variables
+~~~
+Precal
+PC_3_9_image
+~
+-6
+~~
+Number
+~~~
+Precal
+PC_3_10_image
+~
+0
+~~
+Number
+~~~
+Precal
+PC_3_11_image
+~
+a=-2
+b=9
+~~
+Variables
+~~~
+Precal
+PC_3_12_image
+~
+D
+~~
+Number
+~~~
+Precal
+PC_3_13_image
+~
+0
+Number
+Linear
+Quadratic
+Cubic
+_
+Linear
+~~
+Options
+~~~
+Precal
+PC_3_14_image
+~
+D
+~~
+Number
+~~~
+Precal
+PC_3_15_image
+~
+0
+Number
+Linear
+Quadratic
+Cubic
+_
+Linear
+~~
+Options
+~~~
+Precal
+PC_4_1_image
+~
+64
+~~
+Number
+~~~
+Precal
+PC_4_2_image
+~
+2/3
+~~
+Number
+~~~
+Precal
+PC_4_3_image
+~
+1/2
+~~
+Number
+~~~
+Precal
+PC_4_4_image
+~
+54
+~~
+Number
+~~~
+Precal
+PC_4_5_image
+~
+a=4
+b=3
+c=6
+~~
+Variables
+~~~
+Precal
+PC_4_6_image
+~
+6250
+~~
+Number
+~~~
+Precal
+PC_4_7_image
+~
+54
+~~
+Number
+~~~
+Precal
+PC_4_8_image
+~
+1/2
+~~
+Number
+~~~
+Precal
+PC_4_9_image
+~
+2/9
+~~
+Number
+~~~
+Precal
+PC_4_10_image
+~
+16
+~~
+Number
+~~~
+Precal
+PC_4_11_image
+~
+a=3
+b=5
+c=4
+~~
+Variables
+~~~
+Precal
+PC_4_12_image
+~
+3125
+~~
+Number
+~~~
+Precal
+PC_4_13_image
+~
+1/32
+~~
+Number
+~~~
+Precal
+PC_4_14_image
+~
+4
+~~
+Number
+~~~
+Precal
+PC_4_15_image
+~
+4
+~~
+Number
+~~~
+Precal
+PC_4_16_image
+~
+a=4
+b=2
+~~
+Variables
+~~~
+Precal
+PC_4_17_image
+~
+a=12
+b=1/3
+~~
+Variables
+~~~
+Precal
+PC_4_18_image
+~
+16
+~~
+Number
+~~~
+Precal
+PC_4_19_image
+~
+1/9
+~~
+Number
+~~~
+Precal
+PC_4_20_image
+~
+1/16
+~~
+Number
+~~~
+Precal
+PC_4_21_image
+~
+2
+~~
+Number
+~~~
+Precal
+PC_4_22_image
+~
+5
+~~
+Number
+~~~
+Precal
+PC_4_23_image
+~
+a=4
+b=2
+~~
+Variables
+~~~
+Precal
+PC_4_24_image
+~
+a=6
+b=1/3
+~~
+Variables
+~~~
+Precal
+PC_4_25_image
+~
+27
+~~
+Number
+~~~
+Precal
+PC_4_26_image
+~
+1/16
+~~
+Number
+~~~
+Precal
+PC_4_27_image
+~
+Exponential
+Logarithmic
+_
+Logarithmic
+~~
+Options
+~~~
+Precal
+PC_4_28_image
+~
+A
+~~
+Number
+~~~
+Precal
+PC_4_29_image
+~
+9
+~~
+Number
+~~~
+Precal
+PC_4_30_image
+~
+2
+~~
+Number
+~~~
+Precal
+PC_4_31_image
+~
+Exponential
+Logarithmic
+_
+Exponential
+~~
+Options
+~~~
+Precal
+PC_4_32_image
+~
+C
+~~
+Number
+~~~
+Precal
+PC_4_33_image
+~
+16
+~~
+Number
+~~~
+Precal
+PC_4_34_image
+~
+3
+~~
+Number
+~~~
+Precal
+PC_4_35_image
+~
+0
+~~
+Number
+~~~
+Precal
+PC_4_36_image
+~
+2
+~~
+Number
+~~~
+Precal
+PC_4_37_image
+~
+-1
+~~
+Number
+~~~
+Precal
+PC_4_38_image
+~
+1/2
+~~
+Number
+~~~
+Precal
+PC_4_39_image
+~
+-1/3
+~~
+Number
+~~~
+Precal
+PC_4_40_image
+~
+6
+~~
+Number
+~~~
+Precal
+PC_4_41_image
+~
+0
+~~
+Number
+~~~
+Precal
+PC_4_42_image
+~
+575
+~~
+Number
+~~~
+Precal
+PC_4_43_image
+~
+A
+~~
+Number
+~~~
+Precal
+PC_4_44_image
+~
+-1
+~~
+Number
+~~~
+Precal
+PC_4_45_image
+~
+3
+~~
+Number
+~~~
+Precal
+PC_4_46_image
+~
+1/3
+~~
+Number
+~~~
+Precal
+PC_4_47_image
+~
+0
+~~
+Number
+~~~
+Precal
+PC_4_48_image
+~
+-1/2
+~~
+Number
+~~~
+Precal
+PC_4_49_image
+~
+12
+~~
+Number
+~~~
+Precal
+PC_4_50_image
+~
+1
+~~
+Number
+~~~
+Precal
+PC_4_51_image
+~
+0
+~~
+Number
+~~~
+Precal
+PC_4_52_image
+~
+625
+~~
+Number
+~~~
+Precal
+PC_4_53_image
+~
+C
+~~
+Number
+~~~
+Precal
+PC_4_54_image
+~
+4
+~~
+Number
+~~~
+Precal
+PC_4_55_image
+~
+5/2
+~~
+Number
+~~~
+Precal
+PC_4_56_image
+~
+3/2
+~~
+Number
+~~~
+Precal
+PC_4_57_image
+~
+3
+~~
+Number
+~~~
+Precal
+PC_4_58_image
+~
+3
+~~
+Number
+~~~
+Precal
+PC_4_59_image
+~
+3/2
+~~
+Number
+~~~
+Precal
+PC_4_60_image
+~
+4
+~~
+Number
+~~~
+Precal
+PC_4_61_image
+~
+1
+~~
+Number
+~~~
+Precal
+PC_4_62_image
+~
+-2
+~~
+Number
+~~~
+Precal
+PC_4_63_image
+~
+4
+~~
+Number
+~~~
+Precal
+PC_4_64_image
+~
+4
+~~
+Number
+~~~
+Precal
+PC_4_65_image
+~
+-3
+~~
+Number
+~~~
+Precal
+PC_5_1_image
+~
+19/16
+~~
+Number
+~~~
+Precal
+PC_5_2_image
+~
+4
+~~
+Number
+~~~
+Precal
+PC_5_3_image
+~
+0
+~~
+Number
+~~~
+Precal
+PC_5_4_image
+~
+25/4
+~~
+Number
+~~~
+Precal
+PC_5_5_image
+~
+11/9
+~~
+Number
+~~~
+Precal
+PC_5_6_image
+~
+-1
+~~
+Number
+~~~
+Precal
+PC_5_7_image
+~
+1
+~~
+Number
+~~~
+Precal
+PC_5_8_image
+~
+17/4
+~~
+Number
+~~~
+Precal
+PC_5_9_image
+~
+0
+~~
+Number
+~~~
+Precal
+PC_5_10_image
+~
+-1
+~~
+Number
+~~~
+Precal
+PC_5_11_image
+~
+1
+~~
+Number
+~~~
+Precal
+PC_5_12_image
+~
+1
+~~
+Number
+~~~
+Precal
+PC_5_13_image
+~
+3
+~~
+Number
+~~~
+Precal
+PC_5_14_image
+~
+4
+~~
+Number
+~~~
+Precal
+PC_5_15_image
+~
+100
+~~
+Number
+~~~
+Precal
+PC_5_16_image
+~
+-2
+~~
+Number
+~~~
+Precal
+PC_5_17_image
+~
+1
+~~
+Number
+~~~
+Precal
+PC_5_18_image
+~
+0
+~~
+Number
+~~~
+Precal
+PC_5_19_image
+~
+-2
+~~
+Number
+~~~
+Precal
+PC_5_20_image
+~
+1
+~~
+Number
+~~~
+Precal
+PC_5_21_image
+~
+5
+~~
+Number
+~~~
+Precal
+PC_5_22_image
+~
+1000
+~~
+Number
+~~~
+Precal
+PC_5_23_image
+~
+12
+~~
+Number
+~~~
+Precal
+PC_5_24_image
+~
+7
+~~
+Number
+~~~
+Precal
+PC_5_25_image
+~
+Neither
+Even
+Odd
+_
+Neither
+~~
+Options
+~~~
+Precal
+PC_5_26_image
+~
+2
+~~
+Number
+~~~
+Precal
+PC_5_27_image
+~
+-9
+~~
+Number
+~~~
+Precal
+PC_5_28_image
+~
+Even
+Odd
+_
+Even
+~~
+Options
+~~~
+Precal
+PC_5_29_image
+~
+Even
+Neither
+Odd
+_
+Neither
+~~
+Options
+~~~
+Precal
+PC_5_30_image
+~
+3
+~~
+Number
+~~~
+Precal
+PC_5_31_image
+~
+-7
+~~
+Number
+~~~
+Precal
+PC_6_1_image
+~
+1/2
+~~
+Number
+~~~
+Precal
+PC_6_2_image
+~
+3
+~~
+Number
+~~~
+Precal
+PC_6_3_image
+~
+13/5
+~~
+Number
+~~~
+Precal
+PC_6_4_image
+~
+1/2
+~~
+Number
+~~~
+Precal
+PC_6_5_image
+~
+5
+~~
+Number
+~~~
+Precal
+PC_6_6_image
+~
+5/4
+~~
+Number
+~~~
+Precal
+PC_6_7_image
+~
+1/2
+~~
+Number
+~~~
+Precal
+PC_6_8_image
+~
+1
+~~
+Number
+~~~
+Precal
+PC_6_9_image
+~
+4/5
+~~
+Number
+~~~
+Precal
+PC_6_10_image
+~
+5/3
+~~
+Number
+~~~
+Precal
+PC_6_11_image
+~
+4/3
+~~
+Number
+~~~
+Precal
+PC_6_12_image
+~
+3/4
+~~
+Number
+~~~
+Precal
+PC_6_13_image
+~
+3/5
+~~
+Number
+~~~
+Precal
+PC_6_14_image
+~
+2
+~~
+Number
+~~~
+Precal
+PC_6_15_image
+~
+1
+~~
+Number
+~~~
+Precal
+PC_6_16_image
+~
+4/5
+~~
+Number
+~~~
+Precal
+PC_6_17_image
+~
+5/3
+~~
+Number
+~~~
+Precal
+PC_6_18_image
+~
+4/3
+~~
+Number
+~~~
+Precal
+PC_6_19_image
+~
+4/5
+~~
+Number
+~~~
+Precal
+PC_6_20_image
+~
+3/4
+~~
+Number
+~~~
+Precal
+PC_6_21_image
+~
+-1/2
+~~
+Number
+~~~
+Precal
+PC_6_22_image
+~
+5
+~~
+Number
+~~~
+Precal
+PC_6_23_image
+~
+18
+~~
+Number
+~~~
+Precal
+PC_6_24_image
+~
+3/5
+~~
+Number
+~~~
+Precal
+PC_6_25_image
+~
+-5/4
+~~
+Number
+~~~
+Precal
+PC_6_26_image
+~
+-1/2
+~~
+Number
+~~~
+Precal
+PC_6_27_image
+~
+-2
+~~
+Number
+~~~
+Precal
+PC_6_28_image
+~
+3
+~~
+Number
+~~~
+Precal
+PC_6_29_image
+~
+14
+~~
+Number
+~~~
+Precal
+PC_6_30_image
+~
+-4/5
+~~
+Number
+~~~
+Precal
+PC_6_31_image
+~
+5/3
+~~
+Number
+~~~
+Precal
+PC_6_32_image
+~
+0
+~~
+Number
+~~~
+Precal
+PC_6_33_image
+~
+-1
+~~
+Number
+~~~
+Precal
+PC_6_34_image
+~
+-1
+~~
+Number
+~~~
+Precal
+PC_6_35_image
+~
+6
+~~
+Number
+~~~
+Precal
+PC_6_36_image
+~
+0
+~~
+Number
+~~~
+Precal
+PC_6_37_image
+~
+1
+~~
+Number
+~~~
+Precal
+PC_6_38_image
+~
+1
+~~
+Number
+~~~
+Precal
+PC_6_39_image
+~
+5
+~~
+Number
+~~~
+Precal
+PC_7_1_image
+~
+2
+~~
+Number
+~~~
+Precal
+PC_7_2_image
+~
+3
+~~
+Number
+~~~
+Precal
+PC_7_3_image
+~
+a=2
+d=3
+b=2
+~~
+Variables
+~~~
+Precal
+PC_7_4_image
+~
+B
+~~
+Number
+~~~
+Precal
+PC_7_5_image
+~
+A
+~~
+Number
+~~~
+Precal
+PC_7_6_image
+~
+4
+~~
+Number
+~~~
+Precal
+PC_7_7_image
+~
+2
+~~
+Number
+~~~
+Precal
+PC_7_8_image
+~
+a=3
+d=4
+b=2
+~~
+Variables
+~~~
+Precal
+PC_7_9_image
+~
+D
+~~
+Number
+~~~
+Precal
+PC_7_10_image
+~
+B
+~~
+Number
+~~~
+Precal
+PC_7_11_image
+~
+12
+~~
+Number
+~~~
+Precal
+PC_7_12_image
+~
+2
+~~
+Number
+~~~
+PC_7_13_image
+~
+high=5
+low=1
+~~
+Variables
+~~~
+Precal
+PC_7_14_image
+~
+C
+~~
+Number
+~~~
+Precal
+PC_7_15_image
+~
+1
+~~
+Number
+~~~
+Precal
+PC_7_16_image
+~
+2
+~~
+Number
+~~~
+Precal
+PC_7_17_image
+~
+12
+~~
+Number
+~~~
+Precal
+PC_7_18_image
+~
+3
+~~
+Number
+~~~
+Precal
+PC_7_19_image
+~
+high=8
+low=2
+~~
+Variables
+~~~
+Precal
+PC_7_20_image
+~
+A
+~~
+Number
+~~~
+Precal
+PC_7_21_image
+~
+2
+~~
+Number
+~~~
+Precal
+PC_7_22_image
+~
+3
+~~
+Number
+~~~
+Precal
+PC_8_1_image
+~
+-1
+~~
+Number
+~~~
+Precal
+PC_11_1_image
+~
+Quadratic
+Cubic
+_
+Cubic
+~~
+Options
+~~~
+Precal
+PC_11_2_image
+~
+Overestimate
+Underestimate
+_
+Underestimate
+~~
+Options
+~~~
+Precal
+PC_11_3_image
+~
+True
+False
+_
+False
+~~
+Options
+~~~
+Precal
+PC_11_4_image
+~
+True
+False
+_
+True
+~~
+Options
+~~~
+Precal
+PC_11_5_image
+~
+Overestimate
+Underestimate
+_
+Overestimate
+~~
+Options
+~~~
+Precal
+PC_11_6_image
+~
+Point A
+Point B
+_
+Point A
+~~
+Options
+~~~
+Precal
+PC_11_7_image
+~
+Quadratic
+Cubic
+_
+Quadratic
+~~
+Options
+~~~
+Precal
+PC_11_8_image
+~
+Overestimate
+Underestimate
+_
+Overestimate
+~~
+Options
+~~~
+Precal
+PC_11_9_image
+~
+True
+False
+_
+True
+~~
+Options
+~~~
+Precal
+PC_11_10_image
+~
+True
+False
+_
+False
+~~
+Options
+~~~
+Precal
+PC_11_11_image
+~
+C
+~~
+Number
+~~~
+Precal
+PC_11_12_image
+~
+Positive
+Negative
+_
+Negative
+~~
+Options
+~~~
+Precal
+PC_11_13_image
+~
+Positive
+Negative
+_
+Positive
+~~
+Options
+~~~
+Precal
+PC_11_14_image
+~
+C
+~~
+Number
+~~~
+Precal
+PC_11_15_image
+~
+Positive
+Negative
+_
+Negative
+~~
+Options
+~~~
+Precal
+PC_11_16_image
+~
+Positive
+Negative
+_
+Positive
+~~
+Options
+~~~
+Precal
+PC_11_17_image
+~
+C
+~~
+Number
+~~~
+Precal
+PC_11_18_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_1_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_2_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_3_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_4_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_5_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_6_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_7_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_8_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_9_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_10_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_11_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_12_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_13_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_14_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_15_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_16_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_17_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_18_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_19_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_20_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_21_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_22_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_23_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_24_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_25_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_26_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_27_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_28_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_29_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_30_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_31_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_32_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_33_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_34_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_35_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_36_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_37_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_38_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_39_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_40_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_41_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_42_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_43_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_44_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_45_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_46_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_47_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_48_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_49_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_50_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_51_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_52_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_53_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_54_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_55_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_56_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_57_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_58_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_59_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_60_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_61_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_62_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_63_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_64_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_65_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_66_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_67_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_68_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_69_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_70_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_71_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_72_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_73_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_74_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_75_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_76_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_77_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_78_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_79_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_80_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_81_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_82_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_83_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_84_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_85_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_86_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_87_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_88_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_89_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_90_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_91_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_92_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_93_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_94_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_95_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_96_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_97_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_98_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_99_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_100_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_101_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_102_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_103_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_104_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_105_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_106_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_107_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_108_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_109_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_110_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_111_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_112_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_113_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_114_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_115_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_116_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_117_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_118_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_119_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_120_image
+~
+D
+~~
+Number
+~~~
+Algebra 2
+A2_121_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_122_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_123_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_124_image
+~
+B
+~~
+Number
+~~~
+Algebra 2
+A2_125_image
+~
+C
+~~
+Number
+~~~
+Algebra 2
+A2_126_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_127_image
+~
+A
+~~
+Number
+~~~
+Algebra 2
+A2_128_image
+~
+B
+~~
+Number
+~~~
