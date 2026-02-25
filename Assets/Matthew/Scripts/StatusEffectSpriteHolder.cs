@@ -15,11 +15,11 @@ public class StatusEffectSpriteHolder : MonoBehaviour
     [SerializeField] public Sprite CONFUSEDField;
     public static Sprite CAFFEINECRASH;
     public static Sprite CAFFEINATED;
-    public static Sprite BURNING;// = BURNINGField;
-    public static Sprite FROSTBITE;// = FROSTBITEField;
-    public static Sprite PARALYZED;// = PARALYZEDField;
-    public static Sprite POISONED;// = POISONEDField;
-    public static Sprite ASLEEP;// = ASLEEPField;
+    public static Sprite BURNING;
+    public static Sprite FROSTBITE;
+    public static Sprite PARALYZED;
+    public static Sprite POISONED;
+    public static Sprite ASLEEP;
     public static Sprite CONFUSED;
     void Start()
     {

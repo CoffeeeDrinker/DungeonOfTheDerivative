@@ -47,9 +47,9 @@ public class UIController : MonoBehaviour
         "Run",
         Move.RUN,
         -1,
-        (origin, direction) => //implementation of move
+        (origin, direction) => 
         {
-            //no escape
+            direction.Win(origin.getXP()); 
         });
 
     // Start is called before the first frame update
@@ -91,15 +91,12 @@ public class UIController : MonoBehaviour
         }
         else if (inventoryHandler.IsClicked())
         {
-            Debug.Log("Inventory");
             return inventory;
         } else if (restHandler.IsClicked())
         {
-            Debug.Log("Rest");
             return rest;
         } else if (runHandler.IsClicked())
         {
-            Debug.Log("Run");
             return run;
         } else if (backButtonController.IsClicked())
         {

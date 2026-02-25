@@ -34,7 +34,7 @@ public class PlayerController : MonoBehaviour, ICombatant
         statusMarker.SetActive(false);
         healthBarEmptySpace.SetActive(true);
         staminaBarEmptySpace.SetActive(true);
-        maxHealth = (int)(100000 + 100*((playerLevel - 1.0) * 0.1));
+        maxHealth = (int)(100 + 100*((playerLevel - 1.0) * 0.1));
         maxStamina = (int)(100 + 100 * ((playerLevel - 1.0) * 0.1));
         health = maxHealth;
         stamina = maxStamina;

@@ -72,6 +72,25 @@ public class TurnSystem : MonoBehaviour
                     if (input == null) //if no input has been recieved
                     {
                         yield return null; //if no input recieved, wait a frame
+                    } else if(input.type == Move.RUN)
+                    {
+                        isClicked = false;
+                        UI.DisplayText("You got away!", 2f);
+                        float startTime = Time.time;
+                        while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+                        {
+                            if (Time.time - startTime >= 2)
+                            {
+                                break;
+                            }
+                            yield return null;
+                        }
+                        isClicked = false;
+                        UI.HideText();
+                        winner = enemy;
+                        gameManager.GetComponent<CombatManager>().CloseCombatSystem();
+                        itemManager.ExitCombat();
+                        break;
                     }
                     else if (input.type == Move.INVENTORY || input.type == Move.REST) //if it is something other than an attack
                     {
@@ -225,6 +244,8 @@ public class TurnSystem : MonoBehaviour
         {
             enemy.Win(0);
             winner = enemy;
+            gameManager.GetComponent<CombatManager>().CloseCombatSystem();
+            itemManager.ExitCombat();
         }
     }
 
