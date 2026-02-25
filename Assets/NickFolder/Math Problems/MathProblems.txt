@@ -6094,3 +6094,682 @@ B
 ~~
 Number
 ~~~
+Algebra 1
+A_1_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_2_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_3_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_4_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_5_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_6_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_7_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_8_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_9_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_10_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_11_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_12_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_13_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_14_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_15_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_16_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_17_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_18_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_19_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_20_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_21_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_22_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_23_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_24_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_25_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_26_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_27_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_28_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_29_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_30_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_31_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_32_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_33_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_34_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_35_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_36_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_37_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_38_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_39_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_40_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_41_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_42_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_43_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_44_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_45_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_46_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_47_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_48_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_49_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_50_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_51_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_52_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_53_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_54_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_55_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_56_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_57_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_58_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_59_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_60_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_61_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_62_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_63_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_64_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_65_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_66_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_67_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_68_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_69_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_70_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_71_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_72_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_73_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_74_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_75_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_76_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_77_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_78_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_79_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_80_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_81_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_82_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_83_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_84_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_85_image
+~
+A
+~~
+Number
+~~~
+Algebra 1
+A_86_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_87_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_88_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_89_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_90_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_91_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_92_image
+~
+D
+~~
+Number
+~~~
+Algebra 1
+A_93_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_94_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_95_image
+~
+C
+~~
+Number
+~~~
+Algebra 1
+A_96_image
+~
+B
+~~
+Number
+~~~
+Algebra 1
+A_97_image
+~
+A
+~~
+Number
+~~~
