@@ -1,0 +1,6607 @@
+fileFormatVersion: 2
+guid: a72603b862c32c5468ba73ea61536e49
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -3542259658122946307
+    second: dungeon-hall-3.png (1) (1)-2.png (1)_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_0
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df8926fcb9d57dec0800000000000000
+      internalID: -3542259658122946307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_1
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a512982e3ae9094bb53dfe751d7da44
+      internalID: -526042531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_2
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b6efa38fcdfcaad4f9ac7902f51f3792
+      internalID: -974309705
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_3
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32d65d0c1d4ef6b408b4bfac7c814dc7
+      internalID: -1785294271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_4
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4c8a442dd5c05cc408d50b1e42a9fdde
+      internalID: -465320651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_5
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99ec3ced70e1d9f419495f68b3fc5c3e
+      internalID: 1142073076
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_6
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f05fa96d703a13498221b54e90fbcae
+      internalID: 1718359874
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_7
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 85b920adee508bb4f846675148e04f89
+      internalID: -672635175
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_8
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d4109b2bf50cb645a254b38f0ae1218
+      internalID: 1375161856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_9
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4093a7ff77a036347aa4bdb5c507ee85
+      internalID: -225765092
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_10
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddeaba393887c7945b1c1ef8197ff3fb
+      internalID: -753406582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_11
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef525ad0649dd244b9482c4a4d3e45d6
+      internalID: 257970987
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_12
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9c616a7cc3f6421499385b1506730876
+      internalID: 697457052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_13
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 359746745ef492141890518941433962
+      internalID: -1056447173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_14
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 350476d68d36ecc429efe5edd894c6ee
+      internalID: 1417605872
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_15
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e4c3066743b46b49b952056bf52f912
+      internalID: 1505046820
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_16
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5a7cb23670e779948a4d7df39ff21011
+      internalID: -623154505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_17
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2da04e2ca78943d4fb014ffdf8f4b39d
+      internalID: -358234516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_18
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4f5e93f90e1e1045a9f33d946656b31
+      internalID: 612184223
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_19
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 98fd3d5044f42d94aadf016e59b6c8a3
+      internalID: 759756670
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_20
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 18bf95d83c36e6c46b6a3984bde197d5
+      internalID: 44696603
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_21
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 507b0b1677124e54ead6cc58f71a9f94
+      internalID: 58419759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_22
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 59111d6219cbb5a4aaabe91c118b1f1c
+      internalID: 1913548083
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_23
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6e6720d9bcf007b4c9f98e9f9be6f0f1
+      internalID: 1533427232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_24
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a881d5257ef7b848a3093b840d81e30
+      internalID: 1374056706
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_25
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f19df4357acd0e148884046f05f3d057
+      internalID: -507747860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_26
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55dfe034904c4aa478fcd51ae511d387
+      internalID: -277878611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_27
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: de72646b9a2f12b499ae0e1a35947eb4
+      internalID: -941541834
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_28
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33ba9eab408b7e64886932d1f2679aa7
+      internalID: -2062757284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_29
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95e0595e99c83a443accd0b06a3918f0
+      internalID: -837479387
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_30
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 316
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c335b339e67348143924838e58a1ffe6
+      internalID: 1650693200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_31
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 320f29d785297dc40803e68fbd47730c
+      internalID: 1572553516
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_32
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9ba0949cbb608f84ea31caf1dd5724f8
+      internalID: 1844373653
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_33
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 160b3e55c452589409675d11ab60b992
+      internalID: 459360163
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_34
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2186f4aa943428141b2a7a6f7fac039d
+      internalID: -217377271
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_35
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 229220e5f4fc74840a75bd53489ad3ff
+      internalID: -730256871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_36
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd1eae6938a065e4fb2ff854ecfa590c
+      internalID: -145396569
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_37
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec3ff1d670ea3514f8ede6b10ad43120
+      internalID: -1245653846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_38
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b7bfc91d29d58948a1634bf9bbe8083
+      internalID: 942497166
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_39
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a90519e93520e478203955a8c0459c
+      internalID: 1159048962
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_40
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec9c6bb9b3a990847801da59b2bf5b41
+      internalID: 1978700093
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_41
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c33b0f5e2cf2fca4facfa3d6e2d68618
+      internalID: -1126537301
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_42
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f92dc2dbfdc67a544a55870f5d367649
+      internalID: 747179469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_43
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d2ba4eaa88130a429a497b6939cb136
+      internalID: -855576100
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_44
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69e6f460d862ebd40bf93cc3d974562d
+      internalID: 1586163974
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_45
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b525ac0d505602c4eb856f1fda91162e
+      internalID: 615151185
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_46
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d4723b182bd96d4598b369287e2d6b8
+      internalID: 694771720
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_47
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ffdf442bbacb3143aa4364ac57a4ac7
+      internalID: -1997163215
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_48
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e33915296b9f8f5428bd1935fdd95afe
+      internalID: 2092975733
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_49
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b22eb6985441741479acad0db0d54137
+      internalID: -1501245318
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_50
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9a13d08b2a10f7409bdc7a1bdf400c4
+      internalID: 1314237503
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_51
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9f9bbd88acb206b4bada380955182302
+      internalID: -1977118147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_52
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92115c3314e0f844291c618f726c0ed6
+      internalID: 814684793
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_53
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545aec13ffce44540b67a0c59b5e3d81
+      internalID: -551764505
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_54
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e481f47c48afacb429281261e86f5be3
+      internalID: 568676086
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_55
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccb00fb6affd7624688e18fffe3c81c4
+      internalID: -1482640601
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_56
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 802536097c6ff414ab32de3c5c7f5793
+      internalID: 906804032
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_57
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 897b8eeb31554eb4bab96fe8dcffe47a
+      internalID: -1605524359
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_58
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c77d019c460e2e4aa5e587d572c03de
+      internalID: -1952967983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_59
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e02bce2111bf4d949a5a92591dbaa793
+      internalID: 1882734075
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_60
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61f12d0824b959342a6a791d53ce85ff
+      internalID: 1025639299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_61
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 300
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fa421f7981fa014bb944c87bec61c0f
+      internalID: -1954727888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_62
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef8a1e2e94988b4439809bf6dcd77ef8
+      internalID: -29684995
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_63
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0682180d6d24af84c83abb968c05e9af
+      internalID: 1450078018
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_64
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a48d28bf140984844bcd2c1b850ac636
+      internalID: 2109550767
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_65
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0593ff15b82120f419e3ba61350585d3
+      internalID: 1956394021
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_66
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f0788e8181892c4b8c0b3683ba90a71
+      internalID: -635932440
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_67
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: defe197d1b60ecf40b1a56738fc97efc
+      internalID: 102202544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_68
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bfab85929e68200418db205de86d9d97
+      internalID: 2007110365
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_69
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5b430f6ce96d6a945a5da5a43a641158
+      internalID: 2094471469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_70
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35978f6f107bb964f83f375ee6c4df5a
+      internalID: -348663533
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_71
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f1772000dc15e4a4a8ae31272e511fda
+      internalID: -1436296770
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_72
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f0c4d2d16f498545a27fc3a1d10055c
+      internalID: -706534582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_73
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 497859901bbc97a4d909e98f3e51f9ef
+      internalID: 946098783
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_74
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f34b38b066b5e849a2814e32b62a06c
+      internalID: 2002290518
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_75
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 37f483ea608b1614e8376f37597f84ad
+      internalID: 322050530
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_76
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0786871aeea6ee44bbcd063a3889a076
+      internalID: -1290682022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_77
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 69a3ba1dfedd35d43a03ac31e64a33e0
+      internalID: 1992278888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_78
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e07845b37d62a844ba3e3c362bac9c37
+      internalID: 1913263292
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_79
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b79d11f6607f5c45abdcdd03beda2a1
+      internalID: -1690751871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_80
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2efaf63cf8c83bd478511bf7086ab1a9
+      internalID: 212915582
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_81
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e0eea9f28a08d46449ec1fc5e19cb4b0
+      internalID: 865197044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_82
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae75c36444a90834b9687e6e4a5c7a08
+      internalID: 1893716053
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_83
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8ce4cdea66689b45b0c1522e434a065
+      internalID: 224971147
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_84
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 607c48d558ff08340bf0fde847c9ce45
+      internalID: 513261191
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_85
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ff937e4b260fc84f97381abe99c12fe
+      internalID: 204257758
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_86
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d7471ef5b14c537479eb4c3af65d249f
+      internalID: 2102208262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_87
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 284
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c25c81584e6f3ca4a9633a38d6a8b2ce
+      internalID: -650787689
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_88
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d5587f7337258442b198df755ae4fc0
+      internalID: 719988912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_89
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35782ea0e595f7541a545196c919e915
+      internalID: 1212062200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_90
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3ce1d04330990741928830995a5a971
+      internalID: 78464078
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_91
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6a6c34bb90bcc5946b1155bde2b98a5f
+      internalID: -1075366649
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_92
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1282170b73d9d344084b368e05810dcc
+      internalID: -824055814
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_93
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 891498cab6a3a304183a9dc3096ef2f9
+      internalID: -1777233234
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_94
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 34932b6379bc7e94f84b1a3d61cd9ac0
+      internalID: 1498395045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_95
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3f861d4dcca952647b5c569ff3dffe10
+      internalID: -1032586633
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_96
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdf62c2213d9b8a448efa7b00bb9f231
+      internalID: -1451703447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_97
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f2b536c5856a67f43bdc40a529987e3e
+      internalID: 441496910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_98
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed3a666fe109f4a4a806176964d36779
+      internalID: 20847372
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_99
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e411c43b24919214093f05abaf866a65
+      internalID: -1667104802
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_100
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bdacac09f559449419537d10527b0dd2
+      internalID: -1942921544
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_101
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1e88b4db43f2e4e46a90a28bf059fa87
+      internalID: 1955225928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_102
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 878fe424f42ed1546b1e4b0444602baa
+      internalID: -1523073667
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_103
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45f9c9c289552cc4788cf80967b2137a
+      internalID: -282695335
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_104
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 140f0d055674bc347ae7da7c441e2a66
+      internalID: -507795289
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_105
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9949d9ebd045564b891da4b68e7c71c
+      internalID: 784303116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_106
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e24e29cf59f48544b9f7308c730cfb31
+      internalID: -1422217221
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_107
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 658e9842ff5f6e647908c7d364096ea1
+      internalID: 584574644
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_108
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f566a0bca984f3e47a2306c2fc458e8d
+      internalID: -667585243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_109
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 152d36f7f668c3242b57f3f229484ec0
+      internalID: 591304970
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_110
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 74833f178c17cd441a0ae442c2f3178f
+      internalID: 1779781042
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_111
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b40bc9c5524ecb8429646b560e5460ba
+      internalID: -2007684144
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_112
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 47666bc0d1f2f074c8012ee51f0279e3
+      internalID: 971960036
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_113
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 268
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c9b3e70b13f64c64badd081823917185
+      internalID: 329066200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_114
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 16871bfefe150d544a1b65913d80863e
+      internalID: -1076887051
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_115
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 45bd4b6e4ff3ec546b5d34f3ac6051e8
+      internalID: 598431044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_116
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7f6899ff3d4923a4cb03a8759aa0dcc6
+      internalID: 789478109
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_117
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f892a117aec9cba4a95399fb29bce826
+      internalID: 1960066257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_118
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a9f1a12c20815643bab4f6f425f37dc
+      internalID: -1410036193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_119
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3439b25e973332e4e946343ff85bc996
+      internalID: 2057111607
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_120
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8522935aa8bcc7d4dba26238316b8f96
+      internalID: 720190232
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_121
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e17116a0b0d4b846835284c968794bb
+      internalID: 53015698
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_122
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d5829a4b049540c4b968724fd0ec33be
+      internalID: 1316968491
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_123
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ffd1fcf6b430874b9e61c1dc3b7d799
+      internalID: 1550799085
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_124
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: df0f6544162e56546becd34daada2774
+      internalID: -118672068
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_125
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18fec0cad13afa4ea73bddae7d905b9
+      internalID: 1993450539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_126
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6ae6b10e46a308d49992018463b7e46b
+      internalID: 1257971177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_127
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 569a30fb33bb65f42bb95a1dda74889d
+      internalID: 1625720405
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_128
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 97b91fddacfaec04696c9951843ed1d4
+      internalID: -1815309063
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_129
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35065c3f6a2cdfe448119225ff12525e
+      internalID: -1619627910
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_130
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 673e54ad1dfccee479d4b1e76eba3307
+      internalID: -430789374
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_131
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7df06e8874cf64440a48ef6b343904c1
+      internalID: -1984956753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_132
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8985ec59d464367458b614b59e8fa056
+      internalID: -874674675
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_133
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae5edd2e4991c914d9c70761ef80dd93
+      internalID: -439202439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_134
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 275e77fe89243d84ea63e7d7e6eff89d
+      internalID: 1384444634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_135
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da70d4966ccee23489049c33cf0e8c7c
+      internalID: 967158243
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_136
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b2f1984eae5a30f41a8b39cd34ec3b3f
+      internalID: -1345851037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_137
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d384fa31a8a48564ea221b521699d9ab
+      internalID: -1986496796
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_138
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 714c4f5b0f5261442b8c50cbbe0ea3f1
+      internalID: -1495711838
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_139
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 252
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 39a60666575cbec46b544706aa9d7987
+      internalID: -1926219370
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_140
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 50125e5b02d3f5549b4e5fdf6e49bca1
+      internalID: 1044621218
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_141
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 890da93906631644abca1c125bc87140
+      internalID: -2118858257
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_142
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2adc6fd135589aa4586c9a3bd1c1ac51
+      internalID: -1416680179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_143
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8780ece1e71ef2f4b98c488265e5acc9
+      internalID: -1834459161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_144
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66016cd04db8dba41893daad52faeab9
+      internalID: 788293426
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_145
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ab45aff1b213613449ec1b29b520d0b7
+      internalID: 2098525062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_146
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc22e433321bd7b4bb70a88f7400c168
+      internalID: 167723868
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_147
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fcd137a9cf6360f419faaf98e6768b42
+      internalID: -2020007660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_148
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21336dd1d13f91b4c9ed982100653306
+      internalID: 2064810539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_149
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9665acf59e472184cbd8085398a9836d
+      internalID: 317978233
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_150
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d4b59c517c136c543bdd184c1525eafb
+      internalID: -1660829712
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_151
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bd2d58c448ad8574c96e575581e11a9e
+      internalID: -1925586945
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_152
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d6b4c20063e4917468b44221860a56a5
+      internalID: -1002588583
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_153
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5ca9d05c184db004f9e96590a7b0c7fc
+      internalID: 781577449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_154
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5376c7fe1c8ed394b8e712264546ad35
+      internalID: -380111701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_155
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3a5f490e79358fb44948448ad7c5976c
+      internalID: -247961911
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_156
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 545409eb2240fc64a8955f8ecdf5b91f
+      internalID: 1970726709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_157
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4f76a69e9cd0bc4b90c7a84407ec8bd
+      internalID: 735580618
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_158
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8fdb822d182f215408791578203122e7
+      internalID: 418584067
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_159
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 73ed712dbb1b27e46b9c66dbfc6db539
+      internalID: 654504961
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_160
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a644b5b924b1cb84ca63101446fc17c7
+      internalID: -245045256
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_161
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10201774de8c90748b5235b99483fcfd
+      internalID: 362522161
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_162
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc10fa66aa2104d45bccaaeea483d180
+      internalID: 1428901472
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_163
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76341968b2aac5e43a856ea7bfe4ed9d
+      internalID: -574942932
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_164
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57412cdd51b09c441864a40e1ee1249f
+      internalID: -2120945424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_165
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8376499481358fe49a2e8201d9c37da4
+      internalID: -1438567608
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_166
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93c608f79b8627f4fbd1bf3967f406a9
+      internalID: 1599987841
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_167
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7c7ced4cd81e05c40bdaff9ac0a27088
+      internalID: -1253608230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_168
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 614d1a46719ebe14fb92f3db061f9da6
+      internalID: -47192414
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_169
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b4482a884f9d8c74e9c1306488a8e8d3
+      internalID: 2094136037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_170
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 236
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b9ca18ec21e0c78479b460809a5fc19f
+      internalID: 191286863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_171
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 12, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: eb366b9ccbcd2664eb9222ec4b9c3e76
+      internalID: 452821064
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_172
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21183b7d169d8824ebe21e20b11e1244
+      internalID: -2013176602
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_173
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a35af5260bbbe7943b30230aadba34e6
+      internalID: -1539984753
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_174
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec89094f6790dff40a58fc4dadb0d786
+      internalID: -1574800134
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_175
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a3f32287db3cc3c448efa153fe53250a
+      internalID: 676856884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_176
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96c4008e000a04d46afbf9486fae46eb
+      internalID: 56002813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_177
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 05867453e47e0244298fd963e7d6f97d
+      internalID: -184922310
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_178
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af0f5e8826660a49b47ee0c1c172343
+      internalID: -345440265
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_179
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b2f4b0018f2adb48bc9eb1ef3791a83
+      internalID: 880351195
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_180
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 167e6d5d46832e14e8c3d33583479c9a
+      internalID: -1866600313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_181
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dfc30c55db28fd34da4e5cdc823d7bc7
+      internalID: 1930847309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_182
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 288a3b48433846b4c9cf92055e0a3188
+      internalID: 1298948391
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_183
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 43eaa9b5c3f6ed745a8106d8fe3a36e9
+      internalID: 646752022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_184
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 53498f0f458b1b6429d9f4df2b348ecd
+      internalID: -44043867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_185
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07fef2aed604f1049be50460870f2004
+      internalID: -956307336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_186
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7a16576739ce43b42a9bfd0bfd9a6509
+      internalID: 2102267453
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_187
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4428981d03de6dd46b99785fd62747f4
+      internalID: -515462985
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_188
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a2d5aa9f500db94b9724f1694668852
+      internalID: 1920233300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_189
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5fbef15406258fe4a94d38bc127ec494
+      internalID: 1062440250
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_190
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c302163d00bb6eb4da1503d0efa9968d
+      internalID: -2114743805
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_191
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 81d391540cd48c44d9bd5838be021fe5
+      internalID: 1420034858
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_192
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f9b2668f5e49cae49b76531743e9a278
+      internalID: 1452518447
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_193
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: afde663c1f1651d42ac0017da51dbb77
+      internalID: 453273179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_194
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94c2b8f8fab97234ea819a68d7cced7b
+      internalID: 2007640113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_195
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0d4c9909fbcb2d249b64e466552b9990
+      internalID: 1841206727
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_196
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e9e50925b01c3ea4782a42a31c4b292f
+      internalID: 275387671
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_197
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0a9b0c86587284a4c8765360009e0166
+      internalID: 386821641
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_198
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f62ab8dc4af17de4186a25e1c66c6f87
+      internalID: 1394910334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_199
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2c033c6089f19c8429a1d03db361a4dd
+      internalID: 520910611
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_200
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 326498b595caa5d4e8186ed398b57dcc
+      internalID: -1814410015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_201
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 220
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f315abf711828a941a9c475eb12a4344
+      internalID: -173776316
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_202
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 12, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 32eccfd7acb801e4ba85a05fa5b7a365
+      internalID: -334997696
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_203
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 926a3db5a17a42348b96960026e6feb2
+      internalID: -1207299363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_204
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f52799ff2ffbb264eb2f873fcbbb4169
+      internalID: -792948277
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_205
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8e664937ca33cee4184445786ffb91b6
+      internalID: 1863118823
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_206
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 92c410f2f5a66ff44a27e37c71975475
+      internalID: 752869817
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_207
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c41dd3377e0460b4a892649997ca76f3
+      internalID: -1637147768
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_208
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d18cdf64d18c7ef419371705e77aca5e
+      internalID: -795964737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_209
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cc021aa60d448e84298278fb639dd68d
+      internalID: 73537536
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_210
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 35b6913abd25c334e9940d5f72eac87e
+      internalID: -1469186723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_211
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5d25fc6e90d928e49914103a86513222
+      internalID: 970808709
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_212
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d72b29602a276b4aa57071d729f2fa6
+      internalID: -46078451
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_213
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 308ae02aab098f84188d7757c0a5b2b9
+      internalID: 2105974804
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_214
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5f1023802364d5040b0d74b4a08488d2
+      internalID: 1181546849
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_215
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2b5fc68f421f9e942af7bb3c6737bff2
+      internalID: -50574062
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_216
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8053912641576bc4cb5dd26633d2b33d
+      internalID: 1068343299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_217
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7af78c35f15b1254e932655c041afe13
+      internalID: 1200097474
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_218
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0e2fddb6f4afa7b4c8cb7c716dd12bc0
+      internalID: 405551861
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_219
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 91a6f0647d9a3ce4984f625770d0492c
+      internalID: 482683008
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_220
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d3d4f4f5bb58de943bc061d963485ddc
+      internalID: -1049549885
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_221
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 217f4355ff1fbb949a27af4e7d2c36c4
+      internalID: -141117169
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_222
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 158b63163ac0e4f47b7b780a91f03a0d
+      internalID: -611514940
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_223
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3c7450e6715b6244a99bc22d1183714
+      internalID: -293876612
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_224
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6f16a06b1a26fed43807467fd6f2bfcd
+      internalID: 586241661
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_225
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be09334e857472d44973737fbdf7c177
+      internalID: -911974648
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_226
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d79a785afbeb944399eac449a99d4df
+      internalID: 125815950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_227
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e670e67a895c08349b414198b5ce2369
+      internalID: -2094397416
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_228
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24acd0f680963c543aa5c98f16d895cb
+      internalID: -1526399212
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_229
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3d386a38befd849b4b101d44d9f423
+      internalID: 1487200591
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_230
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 10bc51720ae86c54ab774bbb906cbfef
+      internalID: 754464862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_231
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9df304e5762cd3840af766b76832d966
+      internalID: -585943660
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_232
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 204
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a476a013e732c7f43a8a2c69ad75474b
+      internalID: -1136537031
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_233
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 12, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ccecf040026b60a40be29ff79ec512d3
+      internalID: -1814510555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_234
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4ac30e30b2138fa4d88d1e1e50963221
+      internalID: 287525731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_235
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cb15dd20e6465ac47a276a5da865ae36
+      internalID: 885276723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_236
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2679afdcf91cb3a41af15d0e1edd944e
+      internalID: -1265208863
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_237
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2182dd92d8bbe40bec2d2b35de2791
+      internalID: 916198613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_238
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 96d325208e5dda144b3c2bc63a612118
+      internalID: 942999146
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_239
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0da876041b64b4249976d797897f1678
+      internalID: -732770628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_240
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63736ec71b3506549adcac3af392554f
+      internalID: -1512604963
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_241
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: be9e2fa19c86b1140810aa63a2f97f53
+      internalID: 185762620
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_242
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1c39918ae58a22c4a875b327b475bd53
+      internalID: 1667852050
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_243
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7d848223ce04fe642909ab2d62ba01ac
+      internalID: -1424782701
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_244
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6468e23e82b7dac41b99a3dc349c8b24
+      internalID: -1807315568
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_245
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 946feef5a1b8da94494c44b5a23c08a2
+      internalID: 1621996449
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_246
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d59530900e7f96468c4a84e0f2b2e1d
+      internalID: 1365138691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_247
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 281200a52a682ea48a51cdc6d54e4b30
+      internalID: 813547757
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_248
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: db99fcf0d72966f458d55f8997d4e97b
+      internalID: -215073884
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_249
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a16cb20755ad9274495b4ec4836ced82
+      internalID: -1522149445
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_250
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 27ceb910b49e70b448f94aaabdc67d2c
+      internalID: 212623022
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_251
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9e1649fe4343fc347a45befa55d56408
+      internalID: -36376553
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_252
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da4982f5336362347ae7f257c2b30fd9
+      internalID: 297108285
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_253
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d3ec9e9ad8f0c5499f35f6267b79182
+      internalID: 1840813364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_254
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e05879d1de3002c46ac0964a51eecae7
+      internalID: 466396912
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_255
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 937b57c6a3f100045b610ba668a240b1
+      internalID: 85455656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_256
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ffdcdc83bdb2c13438cf50d5ad499369
+      internalID: 295425237
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_257
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d634de40c7e272d41ab7edce01b4c000
+      internalID: 383625600
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_258
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f027c0cd464033a4582b00587f98fb70
+      internalID: -1754421999
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_259
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 00e50a910e1a08f4594803a29bacff06
+      internalID: -96063672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_260
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 861390d6eee2eef449c46696ff01e138
+      internalID: -1995535283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_261
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed4c53f107e974043bad92508f2a40c8
+      internalID: 721104337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_262
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2e56e0ea52345244ea12927dff57aea4
+      internalID: 1989860262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_263
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 188
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2307e17e50d3dbe4fa0b72d7269a7468
+      internalID: 1277614366
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_264
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 12, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e5d76338fb9470a49a6ab30d6c3769b1
+      internalID: -1769663142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_265
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2875afff415bde74cbfadd2c4bde82a3
+      internalID: -415626826
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_266
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61507aa5b2219224da86ed1423bbc83d
+      internalID: 1213405150
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_267
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 88714c55adeb1cd4a95ad3243a90415b
+      internalID: 1246002291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_268
+      rect:
+        serializedVersion: 2
+        x: 240
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c7813bdce0b2a142a0e9870fceb558d
+      internalID: -959913015
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_269
+      rect:
+        serializedVersion: 2
+        x: 256
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ef1b76bf4363abe48aae3bade98560de
+      internalID: 1389366916
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_270
+      rect:
+        serializedVersion: 2
+        x: 272
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cf7e4e9ed4dd83a4bbf09e1100d43128
+      internalID: -643967938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_271
+      rect:
+        serializedVersion: 2
+        x: 288
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89d71f73a7043d943bc1cff864d8e19f
+      internalID: -68754541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_272
+      rect:
+        serializedVersion: 2
+        x: 304
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec88eae83ba6c724bb5afc780aa5e1db
+      internalID: 1538872914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_273
+      rect:
+        serializedVersion: 2
+        x: 320
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6355d7c8c58a5d8429eb06a103142e4c
+      internalID: 797514488
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_274
+      rect:
+        serializedVersion: 2
+        x: 336
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 94a5f1b129a3a3344a77bc928a2e4e22
+      internalID: 1144160763
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_275
+      rect:
+        serializedVersion: 2
+        x: 352
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 33042eff477d5ff46aa95adac4f3c518
+      internalID: 656932193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_276
+      rect:
+        serializedVersion: 2
+        x: 368
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e27d081e1287eb94085a95336d7c1da8
+      internalID: 1637458905
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_277
+      rect:
+        serializedVersion: 2
+        x: 384
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9805328468e7e844dab1572b460d4a36
+      internalID: -1088517546
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_278
+      rect:
+        serializedVersion: 2
+        x: 400
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4706d590accfa0c4ab58d376d7fd7221
+      internalID: -1664430207
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_279
+      rect:
+        serializedVersion: 2
+        x: 416
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61c0883e809a7e440b8293ac93e0022c
+      internalID: 1961173231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_280
+      rect:
+        serializedVersion: 2
+        x: 432
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fbd3bd6fbaa119b4b9ec4e4edc593fc0
+      internalID: 1335050122
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_281
+      rect:
+        serializedVersion: 2
+        x: 448
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 31d1d765a7d7a6c4c9cd3a6d5000b129
+      internalID: -2122519628
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_282
+      rect:
+        serializedVersion: 2
+        x: 464
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc585d8913848a549a16c517f158ddd1
+      internalID: 2060125058
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_283
+      rect:
+        serializedVersion: 2
+        x: 480
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6d803b9cc941c6d478cee00c009c4a9a
+      internalID: -845662535
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_284
+      rect:
+        serializedVersion: 2
+        x: 496
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e2a1b82a17dfea419372cd79d1e0153
+      internalID: 282324309
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_285
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb27dde1cf14ce24f923b8db8e9b123e
+      internalID: 998925104
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_286
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 26f10c11f66089b44ba7df1ba2f82cd7
+      internalID: 2095385547
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_287
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 93cfcdb5a31f4414793a7d970faca2c5
+      internalID: 1596162052
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_288
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7e8914c43d3c92d4992e6a4d917b5b52
+      internalID: 506978436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_289
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 49bb19e48615d6e4bbe94273d339c2d6
+      internalID: 1724546342
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_290
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f17cdcb25060c7d49a76a81a37c422eb
+      internalID: 418896824
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_291
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f832d16013f0b98448736cfa6f7bb222
+      internalID: -102290560
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_292
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ee99e4734424fe64ea1d07f8d55142a1
+      internalID: -749255703
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_293
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2305fadf159c25d4eb1c745e208ae7ec
+      internalID: 1966405935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: dungeon-hall-3.png (1) (1)-2.png (1)_294
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 172
+        width: 16
+        height: 16
+      alignment: 1
+      pivot: {x: 0, y: 1}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bc2fc2345242291478989560c443b29e
+      internalID: 1770026989
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 7afd1b2aadfdacd44af3e6fa60342691
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      dungeon-hall-3.png (1) (1)-2.png (1)_0: -3542259658122946307
+      dungeon-hall-3.png (1) (1)-2.png (1)_1: -526042531
+      dungeon-hall-3.png (1) (1)-2.png (1)_10: -753406582
+      dungeon-hall-3.png (1) (1)-2.png (1)_100: -1942921544
+      dungeon-hall-3.png (1) (1)-2.png (1)_101: 1955225928
+      dungeon-hall-3.png (1) (1)-2.png (1)_102: -1523073667
+      dungeon-hall-3.png (1) (1)-2.png (1)_103: -282695335
+      dungeon-hall-3.png (1) (1)-2.png (1)_104: -507795289
+      dungeon-hall-3.png (1) (1)-2.png (1)_105: 784303116
+      dungeon-hall-3.png (1) (1)-2.png (1)_106: -1422217221
+      dungeon-hall-3.png (1) (1)-2.png (1)_107: 584574644
+      dungeon-hall-3.png (1) (1)-2.png (1)_108: -667585243
+      dungeon-hall-3.png (1) (1)-2.png (1)_109: 591304970
+      dungeon-hall-3.png (1) (1)-2.png (1)_11: 257970987
+      dungeon-hall-3.png (1) (1)-2.png (1)_110: 1779781042
+      dungeon-hall-3.png (1) (1)-2.png (1)_111: -2007684144
+      dungeon-hall-3.png (1) (1)-2.png (1)_112: 971960036
+      dungeon-hall-3.png (1) (1)-2.png (1)_113: 329066200
+      dungeon-hall-3.png (1) (1)-2.png (1)_114: -1076887051
+      dungeon-hall-3.png (1) (1)-2.png (1)_115: 598431044
+      dungeon-hall-3.png (1) (1)-2.png (1)_116: 789478109
+      dungeon-hall-3.png (1) (1)-2.png (1)_117: 1960066257
+      dungeon-hall-3.png (1) (1)-2.png (1)_118: -1410036193
+      dungeon-hall-3.png (1) (1)-2.png (1)_119: 2057111607
+      dungeon-hall-3.png (1) (1)-2.png (1)_12: 697457052
+      dungeon-hall-3.png (1) (1)-2.png (1)_120: 720190232
+      dungeon-hall-3.png (1) (1)-2.png (1)_121: 53015698
+      dungeon-hall-3.png (1) (1)-2.png (1)_122: 1316968491
+      dungeon-hall-3.png (1) (1)-2.png (1)_123: 1550799085
+      dungeon-hall-3.png (1) (1)-2.png (1)_124: -118672068
+      dungeon-hall-3.png (1) (1)-2.png (1)_125: 1993450539
+      dungeon-hall-3.png (1) (1)-2.png (1)_126: 1257971177
+      dungeon-hall-3.png (1) (1)-2.png (1)_127: 1625720405
+      dungeon-hall-3.png (1) (1)-2.png (1)_128: -1815309063
+      dungeon-hall-3.png (1) (1)-2.png (1)_129: -1619627910
+      dungeon-hall-3.png (1) (1)-2.png (1)_13: -1056447173
+      dungeon-hall-3.png (1) (1)-2.png (1)_130: -430789374
+      dungeon-hall-3.png (1) (1)-2.png (1)_131: -1984956753
+      dungeon-hall-3.png (1) (1)-2.png (1)_132: -874674675
+      dungeon-hall-3.png (1) (1)-2.png (1)_133: -439202439
+      dungeon-hall-3.png (1) (1)-2.png (1)_134: 1384444634
+      dungeon-hall-3.png (1) (1)-2.png (1)_135: 967158243
+      dungeon-hall-3.png (1) (1)-2.png (1)_136: -1345851037
+      dungeon-hall-3.png (1) (1)-2.png (1)_137: -1986496796
+      dungeon-hall-3.png (1) (1)-2.png (1)_138: -1495711838
+      dungeon-hall-3.png (1) (1)-2.png (1)_139: -1926219370
+      dungeon-hall-3.png (1) (1)-2.png (1)_14: 1417605872
+      dungeon-hall-3.png (1) (1)-2.png (1)_140: 1044621218
+      dungeon-hall-3.png (1) (1)-2.png (1)_141: -2118858257
+      dungeon-hall-3.png (1) (1)-2.png (1)_142: -1416680179
+      dungeon-hall-3.png (1) (1)-2.png (1)_143: -1834459161
+      dungeon-hall-3.png (1) (1)-2.png (1)_144: 788293426
+      dungeon-hall-3.png (1) (1)-2.png (1)_145: 2098525062
+      dungeon-hall-3.png (1) (1)-2.png (1)_146: 167723868
+      dungeon-hall-3.png (1) (1)-2.png (1)_147: -2020007660
+      dungeon-hall-3.png (1) (1)-2.png (1)_148: 2064810539
+      dungeon-hall-3.png (1) (1)-2.png (1)_149: 317978233
+      dungeon-hall-3.png (1) (1)-2.png (1)_15: 1505046820
+      dungeon-hall-3.png (1) (1)-2.png (1)_150: -1660829712
+      dungeon-hall-3.png (1) (1)-2.png (1)_151: -1925586945
+      dungeon-hall-3.png (1) (1)-2.png (1)_152: -1002588583
+      dungeon-hall-3.png (1) (1)-2.png (1)_153: 781577449
+      dungeon-hall-3.png (1) (1)-2.png (1)_154: -380111701
+      dungeon-hall-3.png (1) (1)-2.png (1)_155: -247961911
+      dungeon-hall-3.png (1) (1)-2.png (1)_156: 1970726709
+      dungeon-hall-3.png (1) (1)-2.png (1)_157: 735580618
+      dungeon-hall-3.png (1) (1)-2.png (1)_158: 418584067
+      dungeon-hall-3.png (1) (1)-2.png (1)_159: 654504961
+      dungeon-hall-3.png (1) (1)-2.png (1)_16: -623154505
+      dungeon-hall-3.png (1) (1)-2.png (1)_160: -245045256
+      dungeon-hall-3.png (1) (1)-2.png (1)_161: 362522161
+      dungeon-hall-3.png (1) (1)-2.png (1)_162: 1428901472
+      dungeon-hall-3.png (1) (1)-2.png (1)_163: -574942932
+      dungeon-hall-3.png (1) (1)-2.png (1)_164: -2120945424
+      dungeon-hall-3.png (1) (1)-2.png (1)_165: -1438567608
+      dungeon-hall-3.png (1) (1)-2.png (1)_166: 1599987841
+      dungeon-hall-3.png (1) (1)-2.png (1)_167: -1253608230
+      dungeon-hall-3.png (1) (1)-2.png (1)_168: -47192414
+      dungeon-hall-3.png (1) (1)-2.png (1)_169: 2094136037
+      dungeon-hall-3.png (1) (1)-2.png (1)_17: -358234516
+      dungeon-hall-3.png (1) (1)-2.png (1)_170: 191286863
+      dungeon-hall-3.png (1) (1)-2.png (1)_171: 452821064
+      dungeon-hall-3.png (1) (1)-2.png (1)_172: -2013176602
+      dungeon-hall-3.png (1) (1)-2.png (1)_173: -1539984753
+      dungeon-hall-3.png (1) (1)-2.png (1)_174: -1574800134
+      dungeon-hall-3.png (1) (1)-2.png (1)_175: 676856884
+      dungeon-hall-3.png (1) (1)-2.png (1)_176: 56002813
+      dungeon-hall-3.png (1) (1)-2.png (1)_177: -184922310
+      dungeon-hall-3.png (1) (1)-2.png (1)_178: -345440265
+      dungeon-hall-3.png (1) (1)-2.png (1)_179: 880351195
+      dungeon-hall-3.png (1) (1)-2.png (1)_18: 612184223
+      dungeon-hall-3.png (1) (1)-2.png (1)_180: -1866600313
+      dungeon-hall-3.png (1) (1)-2.png (1)_181: 1930847309
+      dungeon-hall-3.png (1) (1)-2.png (1)_182: 1298948391
+      dungeon-hall-3.png (1) (1)-2.png (1)_183: 646752022
+      dungeon-hall-3.png (1) (1)-2.png (1)_184: -44043867
+      dungeon-hall-3.png (1) (1)-2.png (1)_185: -956307336
+      dungeon-hall-3.png (1) (1)-2.png (1)_186: 2102267453
+      dungeon-hall-3.png (1) (1)-2.png (1)_187: -515462985
+      dungeon-hall-3.png (1) (1)-2.png (1)_188: 1920233300
+      dungeon-hall-3.png (1) (1)-2.png (1)_189: 1062440250
+      dungeon-hall-3.png (1) (1)-2.png (1)_19: 759756670
+      dungeon-hall-3.png (1) (1)-2.png (1)_190: -2114743805
+      dungeon-hall-3.png (1) (1)-2.png (1)_191: 1420034858
+      dungeon-hall-3.png (1) (1)-2.png (1)_192: 1452518447
+      dungeon-hall-3.png (1) (1)-2.png (1)_193: 453273179
+      dungeon-hall-3.png (1) (1)-2.png (1)_194: 2007640113
+      dungeon-hall-3.png (1) (1)-2.png (1)_195: 1841206727
+      dungeon-hall-3.png (1) (1)-2.png (1)_196: 275387671
+      dungeon-hall-3.png (1) (1)-2.png (1)_197: 386821641
+      dungeon-hall-3.png (1) (1)-2.png (1)_198: 1394910334
+      dungeon-hall-3.png (1) (1)-2.png (1)_199: 520910611
+      dungeon-hall-3.png (1) (1)-2.png (1)_2: -974309705
+      dungeon-hall-3.png (1) (1)-2.png (1)_20: 44696603
+      dungeon-hall-3.png (1) (1)-2.png (1)_200: -1814410015
+      dungeon-hall-3.png (1) (1)-2.png (1)_201: -173776316
+      dungeon-hall-3.png (1) (1)-2.png (1)_202: -334997696
+      dungeon-hall-3.png (1) (1)-2.png (1)_203: -1207299363
+      dungeon-hall-3.png (1) (1)-2.png (1)_204: -792948277
+      dungeon-hall-3.png (1) (1)-2.png (1)_205: 1863118823
+      dungeon-hall-3.png (1) (1)-2.png (1)_206: 752869817
+      dungeon-hall-3.png (1) (1)-2.png (1)_207: -1637147768
+      dungeon-hall-3.png (1) (1)-2.png (1)_208: -795964737
+      dungeon-hall-3.png (1) (1)-2.png (1)_209: 73537536
+      dungeon-hall-3.png (1) (1)-2.png (1)_21: 58419759
+      dungeon-hall-3.png (1) (1)-2.png (1)_210: -1469186723
+      dungeon-hall-3.png (1) (1)-2.png (1)_211: 970808709
+      dungeon-hall-3.png (1) (1)-2.png (1)_212: -46078451
+      dungeon-hall-3.png (1) (1)-2.png (1)_213: 2105974804
+      dungeon-hall-3.png (1) (1)-2.png (1)_214: 1181546849
+      dungeon-hall-3.png (1) (1)-2.png (1)_215: -50574062
+      dungeon-hall-3.png (1) (1)-2.png (1)_216: 1068343299
+      dungeon-hall-3.png (1) (1)-2.png (1)_217: 1200097474
+      dungeon-hall-3.png (1) (1)-2.png (1)_218: 405551861
+      dungeon-hall-3.png (1) (1)-2.png (1)_219: 482683008
+      dungeon-hall-3.png (1) (1)-2.png (1)_22: 1913548083
+      dungeon-hall-3.png (1) (1)-2.png (1)_220: -1049549885
+      dungeon-hall-3.png (1) (1)-2.png (1)_221: -141117169
+      dungeon-hall-3.png (1) (1)-2.png (1)_222: -611514940
+      dungeon-hall-3.png (1) (1)-2.png (1)_223: -293876612
+      dungeon-hall-3.png (1) (1)-2.png (1)_224: 586241661
+      dungeon-hall-3.png (1) (1)-2.png (1)_225: -911974648
+      dungeon-hall-3.png (1) (1)-2.png (1)_226: 125815950
+      dungeon-hall-3.png (1) (1)-2.png (1)_227: -2094397416
+      dungeon-hall-3.png (1) (1)-2.png (1)_228: -1526399212
+      dungeon-hall-3.png (1) (1)-2.png (1)_229: 1487200591
+      dungeon-hall-3.png (1) (1)-2.png (1)_23: 1533427232
+      dungeon-hall-3.png (1) (1)-2.png (1)_230: 754464862
+      dungeon-hall-3.png (1) (1)-2.png (1)_231: -585943660
+      dungeon-hall-3.png (1) (1)-2.png (1)_232: -1136537031
+      dungeon-hall-3.png (1) (1)-2.png (1)_233: -1814510555
+      dungeon-hall-3.png (1) (1)-2.png (1)_234: 287525731
+      dungeon-hall-3.png (1) (1)-2.png (1)_235: 885276723
+      dungeon-hall-3.png (1) (1)-2.png (1)_236: -1265208863
+      dungeon-hall-3.png (1) (1)-2.png (1)_237: 916198613
+      dungeon-hall-3.png (1) (1)-2.png (1)_238: 942999146
+      dungeon-hall-3.png (1) (1)-2.png (1)_239: -732770628
+      dungeon-hall-3.png (1) (1)-2.png (1)_24: 1374056706
+      dungeon-hall-3.png (1) (1)-2.png (1)_240: -1512604963
+      dungeon-hall-3.png (1) (1)-2.png (1)_241: 185762620
+      dungeon-hall-3.png (1) (1)-2.png (1)_242: 1667852050
+      dungeon-hall-3.png (1) (1)-2.png (1)_243: -1424782701
+      dungeon-hall-3.png (1) (1)-2.png (1)_244: -1807315568
+      dungeon-hall-3.png (1) (1)-2.png (1)_245: 1621996449
+      dungeon-hall-3.png (1) (1)-2.png (1)_246: 1365138691
+      dungeon-hall-3.png (1) (1)-2.png (1)_247: 813547757
+      dungeon-hall-3.png (1) (1)-2.png (1)_248: -215073884
+      dungeon-hall-3.png (1) (1)-2.png (1)_249: -1522149445
+      dungeon-hall-3.png (1) (1)-2.png (1)_25: -507747860
+      dungeon-hall-3.png (1) (1)-2.png (1)_250: 212623022
+      dungeon-hall-3.png (1) (1)-2.png (1)_251: -36376553
+      dungeon-hall-3.png (1) (1)-2.png (1)_252: 297108285
+      dungeon-hall-3.png (1) (1)-2.png (1)_253: 1840813364
+      dungeon-hall-3.png (1) (1)-2.png (1)_254: 466396912
+      dungeon-hall-3.png (1) (1)-2.png (1)_255: 85455656
+      dungeon-hall-3.png (1) (1)-2.png (1)_256: 295425237
+      dungeon-hall-3.png (1) (1)-2.png (1)_257: 383625600
+      dungeon-hall-3.png (1) (1)-2.png (1)_258: -1754421999
+      dungeon-hall-3.png (1) (1)-2.png (1)_259: -96063672
+      dungeon-hall-3.png (1) (1)-2.png (1)_26: -277878611
+      dungeon-hall-3.png (1) (1)-2.png (1)_260: -1995535283
+      dungeon-hall-3.png (1) (1)-2.png (1)_261: 721104337
+      dungeon-hall-3.png (1) (1)-2.png (1)_262: 1989860262
+      dungeon-hall-3.png (1) (1)-2.png (1)_263: 1277614366
+      dungeon-hall-3.png (1) (1)-2.png (1)_264: -1769663142
+      dungeon-hall-3.png (1) (1)-2.png (1)_265: -415626826
+      dungeon-hall-3.png (1) (1)-2.png (1)_266: 1213405150
+      dungeon-hall-3.png (1) (1)-2.png (1)_267: 1246002291
+      dungeon-hall-3.png (1) (1)-2.png (1)_268: -959913015
+      dungeon-hall-3.png (1) (1)-2.png (1)_269: 1389366916
+      dungeon-hall-3.png (1) (1)-2.png (1)_27: -941541834
+      dungeon-hall-3.png (1) (1)-2.png (1)_270: -643967938
+      dungeon-hall-3.png (1) (1)-2.png (1)_271: -68754541
+      dungeon-hall-3.png (1) (1)-2.png (1)_272: 1538872914
+      dungeon-hall-3.png (1) (1)-2.png (1)_273: 797514488
+      dungeon-hall-3.png (1) (1)-2.png (1)_274: 1144160763
+      dungeon-hall-3.png (1) (1)-2.png (1)_275: 656932193
+      dungeon-hall-3.png (1) (1)-2.png (1)_276: 1637458905
+      dungeon-hall-3.png (1) (1)-2.png (1)_277: -1088517546
+      dungeon-hall-3.png (1) (1)-2.png (1)_278: -1664430207
+      dungeon-hall-3.png (1) (1)-2.png (1)_279: 1961173231
+      dungeon-hall-3.png (1) (1)-2.png (1)_28: -2062757284
+      dungeon-hall-3.png (1) (1)-2.png (1)_280: 1335050122
+      dungeon-hall-3.png (1) (1)-2.png (1)_281: -2122519628
+      dungeon-hall-3.png (1) (1)-2.png (1)_282: 2060125058
+      dungeon-hall-3.png (1) (1)-2.png (1)_283: -845662535
+      dungeon-hall-3.png (1) (1)-2.png (1)_284: 282324309
+      dungeon-hall-3.png (1) (1)-2.png (1)_285: 998925104
+      dungeon-hall-3.png (1) (1)-2.png (1)_286: 2095385547
+      dungeon-hall-3.png (1) (1)-2.png (1)_287: 1596162052
+      dungeon-hall-3.png (1) (1)-2.png (1)_288: 506978436
+      dungeon-hall-3.png (1) (1)-2.png (1)_289: 1724546342
+      dungeon-hall-3.png (1) (1)-2.png (1)_29: -837479387
+      dungeon-hall-3.png (1) (1)-2.png (1)_290: 418896824
+      dungeon-hall-3.png (1) (1)-2.png (1)_291: -102290560
+      dungeon-hall-3.png (1) (1)-2.png (1)_292: -749255703
+      dungeon-hall-3.png (1) (1)-2.png (1)_293: 1966405935
+      dungeon-hall-3.png (1) (1)-2.png (1)_294: 1770026989
+      dungeon-hall-3.png (1) (1)-2.png (1)_3: -1785294271
+      dungeon-hall-3.png (1) (1)-2.png (1)_30: 1650693200
+      dungeon-hall-3.png (1) (1)-2.png (1)_31: 1572553516
+      dungeon-hall-3.png (1) (1)-2.png (1)_32: 1844373653
+      dungeon-hall-3.png (1) (1)-2.png (1)_33: 459360163
+      dungeon-hall-3.png (1) (1)-2.png (1)_34: -217377271
+      dungeon-hall-3.png (1) (1)-2.png (1)_35: -730256871
+      dungeon-hall-3.png (1) (1)-2.png (1)_36: -145396569
+      dungeon-hall-3.png (1) (1)-2.png (1)_37: -1245653846
+      dungeon-hall-3.png (1) (1)-2.png (1)_38: 942497166
+      dungeon-hall-3.png (1) (1)-2.png (1)_39: 1159048962
+      dungeon-hall-3.png (1) (1)-2.png (1)_4: -465320651
+      dungeon-hall-3.png (1) (1)-2.png (1)_40: 1978700093
+      dungeon-hall-3.png (1) (1)-2.png (1)_41: -1126537301
+      dungeon-hall-3.png (1) (1)-2.png (1)_42: 747179469
+      dungeon-hall-3.png (1) (1)-2.png (1)_43: -855576100
+      dungeon-hall-3.png (1) (1)-2.png (1)_44: 1586163974
+      dungeon-hall-3.png (1) (1)-2.png (1)_45: 615151185
+      dungeon-hall-3.png (1) (1)-2.png (1)_46: 694771720
+      dungeon-hall-3.png (1) (1)-2.png (1)_47: -1997163215
+      dungeon-hall-3.png (1) (1)-2.png (1)_48: 2092975733
+      dungeon-hall-3.png (1) (1)-2.png (1)_49: -1501245318
+      dungeon-hall-3.png (1) (1)-2.png (1)_5: 1142073076
+      dungeon-hall-3.png (1) (1)-2.png (1)_50: 1314237503
+      dungeon-hall-3.png (1) (1)-2.png (1)_51: -1977118147
+      dungeon-hall-3.png (1) (1)-2.png (1)_52: 814684793
+      dungeon-hall-3.png (1) (1)-2.png (1)_53: -551764505
+      dungeon-hall-3.png (1) (1)-2.png (1)_54: 568676086
+      dungeon-hall-3.png (1) (1)-2.png (1)_55: -1482640601
+      dungeon-hall-3.png (1) (1)-2.png (1)_56: 906804032
+      dungeon-hall-3.png (1) (1)-2.png (1)_57: -1605524359
+      dungeon-hall-3.png (1) (1)-2.png (1)_58: -1952967983
+      dungeon-hall-3.png (1) (1)-2.png (1)_59: 1882734075
+      dungeon-hall-3.png (1) (1)-2.png (1)_6: 1718359874
+      dungeon-hall-3.png (1) (1)-2.png (1)_60: 1025639299
+      dungeon-hall-3.png (1) (1)-2.png (1)_61: -1954727888
+      dungeon-hall-3.png (1) (1)-2.png (1)_62: -29684995
+      dungeon-hall-3.png (1) (1)-2.png (1)_63: 1450078018
+      dungeon-hall-3.png (1) (1)-2.png (1)_64: 2109550767
+      dungeon-hall-3.png (1) (1)-2.png (1)_65: 1956394021
+      dungeon-hall-3.png (1) (1)-2.png (1)_66: -635932440
+      dungeon-hall-3.png (1) (1)-2.png (1)_67: 102202544
+      dungeon-hall-3.png (1) (1)-2.png (1)_68: 2007110365
+      dungeon-hall-3.png (1) (1)-2.png (1)_69: 2094471469
+      dungeon-hall-3.png (1) (1)-2.png (1)_7: -672635175
+      dungeon-hall-3.png (1) (1)-2.png (1)_70: -348663533
+      dungeon-hall-3.png (1) (1)-2.png (1)_71: -1436296770
+      dungeon-hall-3.png (1) (1)-2.png (1)_72: -706534582
+      dungeon-hall-3.png (1) (1)-2.png (1)_73: 946098783
+      dungeon-hall-3.png (1) (1)-2.png (1)_74: 2002290518
+      dungeon-hall-3.png (1) (1)-2.png (1)_75: 322050530
+      dungeon-hall-3.png (1) (1)-2.png (1)_76: -1290682022
+      dungeon-hall-3.png (1) (1)-2.png (1)_77: 1992278888
+      dungeon-hall-3.png (1) (1)-2.png (1)_78: 1913263292
+      dungeon-hall-3.png (1) (1)-2.png (1)_79: -1690751871
+      dungeon-hall-3.png (1) (1)-2.png (1)_8: 1375161856
+      dungeon-hall-3.png (1) (1)-2.png (1)_80: 212915582
+      dungeon-hall-3.png (1) (1)-2.png (1)_81: 865197044
+      dungeon-hall-3.png (1) (1)-2.png (1)_82: 1893716053
+      dungeon-hall-3.png (1) (1)-2.png (1)_83: 224971147
+      dungeon-hall-3.png (1) (1)-2.png (1)_84: 513261191
+      dungeon-hall-3.png (1) (1)-2.png (1)_85: 204257758
+      dungeon-hall-3.png (1) (1)-2.png (1)_86: 2102208262
+      dungeon-hall-3.png (1) (1)-2.png (1)_87: -650787689
+      dungeon-hall-3.png (1) (1)-2.png (1)_88: 719988912
+      dungeon-hall-3.png (1) (1)-2.png (1)_89: 1212062200
+      dungeon-hall-3.png (1) (1)-2.png (1)_9: -225765092
+      dungeon-hall-3.png (1) (1)-2.png (1)_90: 78464078
+      dungeon-hall-3.png (1) (1)-2.png (1)_91: -1075366649
+      dungeon-hall-3.png (1) (1)-2.png (1)_92: -824055814
+      dungeon-hall-3.png (1) (1)-2.png (1)_93: -1777233234
+      dungeon-hall-3.png (1) (1)-2.png (1)_94: 1498395045
+      dungeon-hall-3.png (1) (1)-2.png (1)_95: -1032586633
+      dungeon-hall-3.png (1) (1)-2.png (1)_96: -1451703447
+      dungeon-hall-3.png (1) (1)-2.png (1)_97: 441496910
+      dungeon-hall-3.png (1) (1)-2.png (1)_98: 20847372
+      dungeon-hall-3.png (1) (1)-2.png (1)_99: -1667104802
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
