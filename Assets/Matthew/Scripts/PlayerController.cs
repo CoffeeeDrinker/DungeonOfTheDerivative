@@ -19,6 +19,8 @@ public class PlayerController : MonoBehaviour, ICombatant
     private StatusEffect status = null;
     private int health;
     private int stamina;
+    private float defenseModifier = 1;
+    private float attackModifier = 1;
     [SerializeField] int playerLevel;
     private int maxStamina;
     private int maxHealth;
@@ -43,7 +45,8 @@ public class PlayerController : MonoBehaviour, ICombatant
         attackButton = attackButtonField.GetComponent<AttackHandler>();
         moveList = new List<Move>() //initializes list of moves
         {
-            new Move(
+            Moves.TAYLOREXPANSION,
+            /*new Move(
                 "Punch",
                 Move.DAMAGE, //is an attack
                 15, //stamina cost
@@ -55,7 +58,7 @@ public class PlayerController : MonoBehaviour, ICombatant
                         direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
                         origin.DepleteStamina(15);
                     }
-                }),
+                }),*/
             new Move(
                 "Lulaby",
                 Move.STATUS, //is an attack
@@ -87,7 +90,7 @@ public class PlayerController : MonoBehaviour, ICombatant
             new Move(
                 "Evan Smash",
                 Move.DAMAGE, //is an attack
-                1500, //stamina cost
+                15, //stamina cost
                 (origin, direction) =>
                 {
                     int dmg = UnityEngine.Random.Range(25, 75); //randomly generates base damage within pre-defined bounds
@@ -113,7 +116,7 @@ public class PlayerController : MonoBehaviour, ICombatant
             //lastMove = move;
 
             //return damage after modifiers
-            int damage = baseDmg * playerLevel;
+            int damage = (int)(baseDmg * playerLevel * attackModifier);
             return damage;
     }
 
@@ -121,6 +124,7 @@ public class PlayerController : MonoBehaviour, ICombatant
     //Precondition: damage is an integer greater than 0
     //Postcondition: returns true if health is greater than 0, false otherwise
     public bool TakeDamage(int damage){
+        damage = (int)(damage / defenseModifier);
         health -= damage;
         if(health < 0)
         {
@@ -280,4 +284,44 @@ public class PlayerController : MonoBehaviour, ICombatant
         this.health += health;
     }
 
+    float ICombatant.GetDefense()
+    {
+        return defenseModifier;
+    }
+
+    bool ICombatant.SetDefense(float d)
+    {
+        defenseModifier = d;
+        if (defenseModifier > 2)
+        {
+            defenseModifier = 2f;
+            return false;
+        } else if(defenseModifier < 0.5)
+        {
+            defenseModifier = 0.5f;
+            return false;
+        }
+        return true;
+    }
+
+    float ICombatant.GetAttackModifier()
+    {
+        return attackModifier;
+    }
+
+    bool ICombatant.SetAttackModifier(float a)
+    {
+        attackModifier = a;
+        if (attackModifier > 1.5)
+        {
+            attackModifier = 2f;
+            return false;
+        }
+        else if (attackModifier < 0.5)
+        {
+            attackModifier = 0.5f;
+            return false;
+        }
+        return true;
+    }
 }

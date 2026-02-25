@@ -17,6 +17,7 @@ public class EnemyController : MonoBehaviour, ICombatant
     int maxStamina;
     int health;
     int stamina;
+    private float defenseModifier;
     public readonly int XPWorth;
     private List<Move> moveList;
     private Move lastMove;
@@ -35,6 +36,7 @@ public class EnemyController : MonoBehaviour, ICombatant
         maxHealth = (int)(100 + 100 * ((level - 1.0) * 0.1));
         stamina = maxStamina;
         health = maxHealth;
+        defenseModifier = 1;
         moveList = new List<Move>() //initializes list of moves
         {
             new Move(
@@ -129,7 +131,6 @@ public class EnemyController : MonoBehaviour, ICombatant
         } */
         //select which move to use
         float selectionRange = 0;
-        Debug.Log("MoveList: " + moveList.Count);
         for (int i = 0; i < moveList.Count; i++)
         {
             if (moveList[i].staminaCost <= stamina) //only consider moves that can be used with current stamina
@@ -171,6 +172,7 @@ public class EnemyController : MonoBehaviour, ICombatant
     //Postcondition: returns true if health is greater than 0, false otherwise
     bool ICombatant.TakeDamage(int damage)
     {
+        damage = (int)(damage/defenseModifier);
         health -= damage;
         if (health < 0)
         {
@@ -283,6 +285,26 @@ public class EnemyController : MonoBehaviour, ICombatant
     int ICombatant.GetLevel()
     {
         return level;
+    }
+
+    float ICombatant.GetDefense()
+    {
+        return defenseModifier;
+    }
+
+    bool ICombatant.SetDefense(float d)
+    {
+        defenseModifier = d;
+        if (defenseModifier > 2)
+        {
+            defenseModifier = 2f;
+            return false;
+        } else if(defenseModifier < 0.5)
+        {
+            defenseModifier = 0.5f;
+            return true;
+        }
+        return true;
     }
 
     //Debug method to test selection algorithm and determine distribution of move picks

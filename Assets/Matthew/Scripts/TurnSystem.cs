@@ -225,8 +225,21 @@ public class TurnSystem : MonoBehaviour
                 }
                 else
                 {
+
                     //If enemy dies, end combat
                     Debug.Log("You won!");
+                    UI.DisplayText("Enemy collapsed from exhaustion!", 2f);
+                    float startTime = Time.time;
+                    while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+                    {
+                        if (Time.time - startTime >= 2)
+                        {
+                            break;
+                        }
+                        yield return null;
+                    }
+                    isClicked = false;
+                    UI.HideText();
                     player.Win(enemy.getXP());
                     winner = player;
 
@@ -242,6 +255,18 @@ public class TurnSystem : MonoBehaviour
         } while (player.IsAlive()); //Run until one side is completely dead
         if (!player.IsAlive())
         {
+            UI.DisplayText("You passed out from exhaustion!", 2f);
+            float startTime = Time.time;
+            while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+            {
+                if (Time.time - startTime >= 2)
+                {
+                    break;
+                }
+                yield return null;
+            }
+            isClicked = false;
+            UI.HideText();
             enemy.Win(0);
             winner = enemy;
             gameManager.GetComponent<CombatManager>().CloseCombatSystem();
