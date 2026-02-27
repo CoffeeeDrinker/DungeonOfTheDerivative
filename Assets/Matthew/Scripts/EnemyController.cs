@@ -18,6 +18,7 @@ public class EnemyController : MonoBehaviour, ICombatant
     int health;
     int stamina;
     private float defenseModifier;
+    private float attackModifier;
     public readonly int XPWorth;
     private List<Move> moveList;
     private Move lastMove;
@@ -302,6 +303,27 @@ public class EnemyController : MonoBehaviour, ICombatant
         } else if(defenseModifier < 0.5)
         {
             defenseModifier = 0.5f;
+            return true;
+        }
+        return true;
+    }
+
+    float ICombatant.GetAttackModifier()
+    {
+        return defenseModifier;
+    }
+
+    bool ICombatant.SetAttackModifier(float d)
+    {
+        attackModifier = d;
+        if (attackModifier > 1.5)
+        {
+            attackModifier = 1.5f;
+            return false;
+        }
+        else if (attackModifier < 0.5)
+        {
+            attackModifier = 0.5f;
             return true;
         }
         return true;

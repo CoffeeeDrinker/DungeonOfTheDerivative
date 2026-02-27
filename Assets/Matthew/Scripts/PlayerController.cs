@@ -314,7 +314,7 @@ public class PlayerController : MonoBehaviour, ICombatant
         attackModifier = a;
         if (attackModifier > 1.5)
         {
-            attackModifier = 2f;
+            attackModifier = 1.5f;
             return false;
         }
         else if (attackModifier < 0.5)
