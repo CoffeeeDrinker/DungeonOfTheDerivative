@@ -4,12 +4,11 @@ using UnityEngine;
 
 public class BattleSuperStaminaPotion : MonoBehaviour
 {
-    [SerializeField] GameObject player;
     ICombatant user;
     // Start is called before the first frame update
     void Start()
     {
-        user = player.GetComponent<ICombatant>();
+        user = GameObject.FindWithTag("Player").GetComponent<ICombatant>();
     }
 
     // Update is called once per frame
