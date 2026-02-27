@@ -47,11 +47,7 @@ public class UIController : MonoBehaviour
         "Run",
         Move.RUN,
         -1,
-        (origin, direction) => 
-        {
-            direction.Win(origin.getXP()); 
-        });
-
+        (origin, direction) => {});
     // Start is called before the first frame update
     void Start()
     {
@@ -76,7 +72,15 @@ public class UIController : MonoBehaviour
     //Postcondition: returns the base damage of the attack if an attack was made, -1 if inventory was opened, -2 if no input was recieved, -3 if rest, -4 if run
     public Move GotInput()
     {
-        if (attackHandler.IsClicked())
+        if (backButtonController.IsClicked())
+        {
+            HideAttackOptions();
+            attackHandler.Unclick();
+            ShowButtons();
+            backButtonController.Unclick();
+            return null;
+        }
+        else if (attackHandler.IsClicked())
         {
             HideButtons();
             attackController.ToggleAttackOptions(true);
@@ -98,10 +102,6 @@ public class UIController : MonoBehaviour
         } else if (runHandler.IsClicked())
         {
             return run;
-        } else if (backButtonController.IsClicked())
-        {
-            HideAttackOptions();
-            return null;
         }
         else
         {

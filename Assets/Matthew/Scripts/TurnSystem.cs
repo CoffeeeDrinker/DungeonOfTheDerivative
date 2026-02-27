@@ -75,22 +75,42 @@ public class TurnSystem : MonoBehaviour
                     } else if(input.type == Move.RUN)
                     {
                         isClicked = false;
-                        UI.DisplayText("You got away!", 2f);
-                        float startTime = Time.time;
-                        while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+                        if (UnityEngine.Random.Range(0f, 1f) > 0.6) //60% chance of not escaping
                         {
-                            if (Time.time - startTime >= 2)
+                            UI.DisplayText("You got away!", 2f);
+                            float startTime = Time.time;
+                            while (!isClicked) //checks if player is trying to skip by pressing left mouse button
                             {
-                                break;
+                                if (Time.time - startTime >= 2)
+                                {
+                                    break;
+                                }
+                                yield return null;
                             }
-                            yield return null;
+                            isClicked = false;
+                            UI.HideText();
+                            winner = enemy;
+                            gameManager.GetComponent<CombatManager>().CloseCombatSystem();
+                            itemManager.ExitCombat();
+                            break;
                         }
-                        isClicked = false;
-                        UI.HideText();
-                        winner = enemy;
-                        gameManager.GetComponent<CombatManager>().CloseCombatSystem();
-                        itemManager.ExitCombat();
-                        break;
+                        else
+                        {
+                            UI.DisplayText("You weren't able to escape!", 2f);
+                            float startTime = Time.time;
+                            while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+                            {
+                                if (Time.time - startTime >= 2)
+                                {
+                                    break;
+                                }
+                                yield return null;
+                            }
+                            isClicked = false;
+                            UI.HideText();
+                            UI.Unclick();
+                            turnIndex++;
+                        }
                     }
                     else if (input.type == Move.INVENTORY || input.type == Move.REST) //if it is something other than an attack
                     {
