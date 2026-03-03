@@ -8,18 +8,19 @@ using UnityEngine;
 
 public class EnemyController : MonoBehaviour, ICombatant
 {
+    [SerializeField] EnemyPreset preset;
     AttackAI personality;
     public GameObject m_enemy;
     public GameObject healthBar;
     public GameObject playerObj;
-    [SerializeField] int level;
+    int level;
     int maxHealth;
     int maxStamina;
     int health;
     int stamina;
     private float defenseModifier;
     private float attackModifier;
-    public readonly int XPWorth;
+    public int XPWorth;
     private List<Move> moveList;
     private Move lastMove;
     public Dictionary<Move, float> priorities;
@@ -33,11 +34,14 @@ public class EnemyController : MonoBehaviour, ICombatant
         player = playerObj.GetComponent<ICombatant>();
         healthBarEmptySpace.SetActive(true);
         statusMarker.SetActive(false);
-        maxStamina = (int)(100 + 100 * ((level - 1.0) * 0.1));
-        maxHealth = (int)(100 + 100 * ((level - 1.0) * 0.1));
+        level = preset.level;
+        maxStamina = preset.maxStamina*preset.level;
+        maxHealth = preset.maxHealth*(preset.level);
         stamina = maxStamina;
         health = maxHealth;
-        defenseModifier = 1;
+        defenseModifier = preset.defenseModifier;
+        attackModifier = preset.attackModifier;
+        XPWorth = preset.XPWorth;
         moveList = new List<Move>() //initializes list of moves
         {
             new Move(
@@ -381,6 +385,46 @@ public class EnemyController : MonoBehaviour, ICombatant
       }*/
 }
 
+[System.Serializable] struct EnemyPreset
+{
+    [SerializeField] public int maxHealth;
+    [SerializeField] public int maxStamina;
+    [SerializeField] public int level;
+    [SerializeField] public float defenseModifier;
+    [SerializeField] public float attackModifier;
+    [SerializeField] public int XPWorth;
+    //public readonly String personalityType; //must be exactly the name of one of the predefined archetypes in AttackAI
+    //readonly Algorithm personality;
+    public EnemyPreset(int maxHealth, int maxStamina, int level)
+    {
+        this.maxHealth = maxHealth;
+        this.maxStamina = maxStamina;
+        this.level = level;
+        defenseModifier = 1;
+        attackModifier = 1;
+        XPWorth = level * 100;
+    }
+    public EnemyPreset(int maxHealth, int maxStamina, int level, int XPWorth)
+    {
+        this.maxHealth = maxHealth;
+        this.maxStamina = maxStamina;
+        this.level = level;
+        defenseModifier = 1;
+        attackModifier = 1;
+        this.XPWorth = XPWorth;
+    }
+
+    public EnemyPreset(int maxHealth, int maxStamina, int level, int XPWorth, float defenseModifier, float attackModifier)
+    {
+        this.maxHealth = maxHealth;
+        this.maxStamina = maxStamina;
+        this.level = level;
+        this.defenseModifier = defenseModifier;
+        this.attackModifier = attackModifier;
+        this.XPWorth = XPWorth;
+    }
+}
+
 struct AttackAI
 {
     public static Algorithm AGGRESSIVE = new Algorithm("Aggressive", (moves, attacker, opponent) =>
@@ -496,7 +540,7 @@ struct AttackAI
 
 struct Algorithm
 {
-    String name;
+    public String name;
     public Func<List<Move>, ICombatant, ICombatant, Dictionary<Move, float>> AssignPriorities;
     public Algorithm(String name, Func<List<Move>, ICombatant, ICombatant, Dictionary<Move, float>> f)
     {
