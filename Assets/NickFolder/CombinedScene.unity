@@ -22956,13 +22956,41 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1983845548}
     - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
+      propertyPath: preset.level
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
       propertyPath: statusMarker
       value: 
       objectReference: {fileID: 768340117}
     - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
+      propertyPath: preset.XPWorth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
+      propertyPath: preset.maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
+      propertyPath: preset.maxStamina
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
       propertyPath: healthBarEmptySpace
       value: 
       objectReference: {fileID: 1149194234}
+    - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
+      propertyPath: preset.attackModifier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
+      propertyPath: preset.defenseModifier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
+      propertyPath: preset.personalityContainer
+      value: 
+      objectReference: {fileID: 3274118379491295738, guid: 0e8cc278c76a8f24c8822a276eae26ff, type: 3}
     - target: {fileID: 3615384827168689191, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
       propertyPath: m_SortingOrder
       value: 21

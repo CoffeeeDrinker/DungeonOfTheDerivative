@@ -31,6 +31,7 @@ public class EnemyController : MonoBehaviour, ICombatant
     // Start is called before the first frame update
     void Start()
     {
+        preset.Initialize();
         player = playerObj.GetComponent<ICombatant>();
         healthBarEmptySpace.SetActive(true);
         statusMarker.SetActive(false);
@@ -394,8 +395,14 @@ public class EnemyController : MonoBehaviour, ICombatant
     [SerializeField] public float attackModifier;
     [SerializeField] public int XPWorth;
     //public readonly String personalityType; //must be exactly the name of one of the predefined archetypes in AttackAI
-    //readonly Algorithm personality;
-    public EnemyPreset(int maxHealth, int maxStamina, int level)
+    [SerializeField] GameObject personalityContainer;
+    public Algorithm personality;
+    public void Initialize()
+    {
+        personality = personalityContainer.GetComponent<PersonalityHolder>().GetPersonality();
+    }
+    /*
+    public EnemyPreset(int maxHealth, int maxStamina, int level, Algorithm AI)
     {
         this.maxHealth = maxHealth;
         this.maxStamina = maxStamina;
@@ -403,6 +410,7 @@ public class EnemyController : MonoBehaviour, ICombatant
         defenseModifier = 1;
         attackModifier = 1;
         XPWorth = level * 100;
+        personality = AI;
     }
     public EnemyPreset(int maxHealth, int maxStamina, int level, int XPWorth)
     {
@@ -412,9 +420,21 @@ public class EnemyController : MonoBehaviour, ICombatant
         defenseModifier = 1;
         attackModifier = 1;
         this.XPWorth = XPWorth;
+        personality = AttackAI.MODERATE;
     }
 
-    public EnemyPreset(int maxHealth, int maxStamina, int level, int XPWorth, float defenseModifier, float attackModifier)
+    public EnemyPreset(int maxHealth, int maxStamina, int level, int XPWorth, Algorithm AI)
+    {
+        this.maxHealth = maxHealth;
+        this.maxStamina = maxStamina;
+        this.level = level;
+        defenseModifier = 1;
+        attackModifier = 1;
+        this.XPWorth = XPWorth;
+        personality = AI;
+    }
+
+    public EnemyPreset(int maxHealth, int maxStamina, int level, int XPWorth, float defenseModifier, float attackModifier, Algorithm AI)
     {
         this.maxHealth = maxHealth;
         this.maxStamina = maxStamina;
@@ -422,129 +442,6 @@ public class EnemyController : MonoBehaviour, ICombatant
         this.defenseModifier = defenseModifier;
         this.attackModifier = attackModifier;
         this.XPWorth = XPWorth;
-    }
-}
-
-struct AttackAI
-{
-    public static Algorithm AGGRESSIVE = new Algorithm("Aggressive", (moves, attacker, opponent) =>
-    {
-        Dictionary<Move, float> priorityDict = new Dictionary<Move, float>();
-        for(int i = 0; i < moves.Count; i++)
-        {
-            priorityDict[moves[i]] = 1.0f;
-            if (moves[i].type == Move.DAMAGE)
-            {
-                priorityDict[moves[i]] += 0.2f;
-            }
-            else if (moves[i].type == Move.STATUS && opponent.GetStatus() != null)
-            {
-                priorityDict[moves[i]] = 0;
-            } else if (moves[i].type == Move.REST)
-            {
-                priorityDict[moves[i]] = (attacker.GetMaxStamina() - attacker.GetStamina()) * 0.01f;
-            }
-            else
-            {
-                priorityDict[moves[i]] -= 0.1f;
-            }
-        }
-        return priorityDict;
-    });
-    public static Algorithm MODERATE = new Algorithm("Moderate", (moves, attacker, opponent) =>
-    {
-        Dictionary<Move, float> priorityDict = new Dictionary<Move, float>();
-        for (int i = 0; i < moves.Count; i++)
-        {
-            priorityDict[moves[i]] = 1.0f;
-            if (moves[i].type == Move.DAMAGE)
-            {
-                priorityDict[moves[i]] += 0.1f;
-            }
-            else if (moves[i].type == Move.STATUS && opponent.GetStatus() != null)
-            {
-                priorityDict[moves[i]] = 0;
-            }
-            else if (moves[i].type == Move.REST)
-            {
-                priorityDict[moves[i]] = (attacker.GetMaxStamina() - attacker.GetStamina()) * 0.01f;
-            }
-        }
-        return priorityDict;
-    });
-    public static Algorithm CAUTIOUS = new Algorithm("Cautious", (moves, attacker, opponent) =>
-    {
-        Dictionary<Move, float> priorityDict = new Dictionary<Move, float>();
-        for (int i = 0; i < moves.Count; i++)
-        {
-            priorityDict[moves[i]] = 1.0f;
-            if (moves[i].type == Move.BUFF)
-            {
-                priorityDict[moves[i]] += 0.2f;
-            }
-            else if (moves[i].type == Move.STATUS && opponent.GetStatus() != null)
-            {
-                priorityDict[moves[i]] = 0;
-            }
-            else if (moves[i].type == Move.REST)
-            {
-                priorityDict[moves[i]] = (attacker.GetMaxStamina() - attacker.GetStamina()) * 0.01f;
-            }
-            else
-            {
-                priorityDict[moves[i]] -= 0.1f;
-            }
-        }
-        return priorityDict;
-    });
-    public static Algorithm TRICKY = new Algorithm("Tricky", (moves, attacker, opponent) =>
-    {
-        Dictionary<Move, float> priorityDict = new Dictionary<Move, float>();
-        for (int i = 0; i < moves.Count; i++)
-        {
-            priorityDict[moves[i]] = 1.0f;
-            if (moves[i].type == Move.STATUS && opponent.GetStatus() != null)
-            {
-                priorityDict[moves[i]] = 0;
-            }
-            else if (moves[i].type == Move.STATUS)
-            {
-                priorityDict[moves[i]] += 0.2f;
-            }
-            else if (moves[i].type == Move.REST)
-            {
-                priorityDict[moves[i]] = (attacker.GetMaxStamina() - attacker.GetStamina()) * 0.01f;
-            }
-            else
-            {
-                priorityDict[moves[i]] -= 0.1f;
-            }
-        }
-        return priorityDict;
-    });
-    Algorithm algorithm;
-    List<Move> moveList;
-    ICombatant attacker;
-    ICombatant opponent;
-    public Dictionary<Move, float> getPriorities()
-    {
-        return algorithm.AssignPriorities(moveList, attacker, opponent);
-    }
-    public AttackAI(List<Move> moveList, ICombatant attacker, ICombatant opp, Algorithm alg){
-        this.moveList = moveList;
-        algorithm = alg;
-        this.attacker = attacker;
-        this.opponent = opp;
-    }
-}
-
-struct Algorithm
-{
-    public String name;
-    public Func<List<Move>, ICombatant, ICombatant, Dictionary<Move, float>> AssignPriorities;
-    public Algorithm(String name, Func<List<Move>, ICombatant, ICombatant, Dictionary<Move, float>> f)
-    {
-        this.name = name;
-        this.AssignPriorities = f;
-    }
+        personality = AI;
+    } */
 }
