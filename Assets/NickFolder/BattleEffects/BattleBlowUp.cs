@@ -4,11 +4,11 @@ using UnityEngine;
 
 public class BattleBlowUp : MonoBehaviour
 {
-    ICombatant user;
+    [SerializeField] ICombatant user;
     // Start is called before the first frame update
     void Start()
     {
-        
+        user = GameObject.FindWithTag("Player").GetComponent<ICombatant>();
     }
 
     // Update is called once per frame

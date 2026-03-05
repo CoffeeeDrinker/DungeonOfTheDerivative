@@ -1,40 +1,62 @@
 using System;
 using System.Collections;
 using System.Collections.Generic;
+using System.Data;
+using Unity.VisualScripting;
 using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
 
 public class EnemyController : MonoBehaviour, ICombatant
 {
+    [SerializeField] EnemyPreset preset;
+    AttackAI personality;
     public GameObject m_enemy;
     public GameObject healthBar;
-    [SerializeField] int level;
+    public GameObject playerObj;
+    int level;
     int maxHealth;
     int maxStamina;
     int health;
     int stamina;
-    public readonly int XPWorth;
+    private float defenseModifier;
+    private float attackModifier;
+    public int XPWorth;
     private List<Move> moveList;
     private Move lastMove;
     public Dictionary<Move, float> priorities;
     private StatusEffect status;
+    private ICombatant player;
     [SerializeField] GameObject statusMarker;
+    [SerializeField] GameObject healthBarEmptySpace;
     // Start is called before the first frame update
     void Start()
     {
+        preset.Initialize();
+        player = playerObj.GetComponent<ICombatant>();
+        healthBarEmptySpace.SetActive(true);
         statusMarker.SetActive(false);
+        level = preset.level;
+        maxStamina = preset.maxStamina*preset.level;
+        maxHealth = preset.maxHealth*(preset.level);
+        stamina = maxStamina;
+        health = maxHealth;
+        defenseModifier = preset.defenseModifier;
+        attackModifier = preset.attackModifier;
+        XPWorth = preset.XPWorth;
         moveList = new List<Move>() //initializes list of moves
         {
             new Move(
                 "Rest", //name of move
-                false, //is not an attack
+                Move.REST, //is not an attack
+                -1, //undefined stamina cost
                 (origin, direction) => //implementation of move
                 {
                     origin.Rest(30);
                 }),
             new Move(
                 "Punch",
-                true, //is an attack
+                Move.DAMAGE, //is an attack
+                15, //stamina cost
                 (origin, direction) =>
                 {
                     int dmg = UnityEngine.Random.Range(9, 11); //randomly generates base damage within pre-defined bounds
@@ -46,7 +68,8 @@ public class EnemyController : MonoBehaviour, ICombatant
                 }),
             new Move(
                 "Lulaby",
-                true, //is an attack
+                Move.STATUS, //is an attack
+                15, //stamina cost
                 (origin, direction) =>
                 {
                     if (origin.GetStamina() > 15)
@@ -57,7 +80,8 @@ public class EnemyController : MonoBehaviour, ICombatant
                 }),
             new Move(
                 "Iron Stare",
-                true, //is an attack
+                Move.STATUS, //is an attack
+                15, //stamina cost
                 (origin, direction) =>
                 {
                     int dmg = UnityEngine.Random.Range(5, 10); //randomly generates base damage within pre-defined bounds
@@ -72,10 +96,11 @@ public class EnemyController : MonoBehaviour, ICombatant
                 }),
             new Move(
                 "Evan Smash",
-                true, //is an attack
+                Move.DAMAGE, //is an attack
+                15, //stamina cost
                 (origin, direction) =>
                 {
-                    int dmg = UnityEngine.Random.Range(25, 75); //randomly generates base damage within pre-defined bounds
+                    int dmg = UnityEngine.Random.Range(25, 30); //randomly generates base damage within pre-defined bounds
                     if (origin.GetStamina() > 15)
                     {
                         direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
@@ -83,13 +108,9 @@ public class EnemyController : MonoBehaviour, ICombatant
                     }
                 }),
         };
-        maxStamina = (int)(100 + 100 * ((level - 1.0) * 0.1));
-        maxHealth = (int)(100 + 100 * ((level - 1.0) * 0.1));
-        stamina = maxStamina;
-        health = maxHealth;
-        priorities = AssignPriority(moveList);
-
-        
+        personality = new AttackAI(moveList, this, player, AttackAI.TRICKY);
+        priorities = personality.getPriorities();
+        healthBarEmptySpace.transform.localScale = new Vector3(((float)(maxHealth - health) / (float)maxHealth), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
     }
 
     // Update is called once per frame
@@ -108,7 +129,7 @@ public class EnemyController : MonoBehaviour, ICombatant
     public void MakeNewMove(ICombatant target)
     {
         //Update rest priority
-        priorities[moveList[0]] = 1;// 0.01f * (maxStamina - stamina);
+        priorities = personality.getPriorities();
         /*
         for (int i = 0; i < priorities.Count; i++)
         {
@@ -118,7 +139,7 @@ public class EnemyController : MonoBehaviour, ICombatant
         float selectionRange = 0;
         for (int i = 0; i < moveList.Count; i++)
         {
-            //if (moveList[i].staminaCost <= stamina) //only consider moves that can be used with current stamina
+            if (moveList[i].staminaCost <= stamina) //only consider moves that can be used with current stamina
                 selectionRange += priorities[moveList[i]];
         }
         float random = UnityEngine.Random.Range(0, selectionRange);
@@ -127,6 +148,7 @@ public class EnemyController : MonoBehaviour, ICombatant
                 if (random <= priorities[moveList[i]])
                 {
                     Debug.Log("Enemy is using: move " + i);
+                    Debug.Log("Enemy health: " + health + "\nEnemy stamina: " + stamina);
                     lastMove = moveList[i];
                     lastMove.move(this, target);
                     break;
@@ -137,26 +159,6 @@ public class EnemyController : MonoBehaviour, ICombatant
                 }
         }
         
-    }
-
-    //Takes moves available to and assigns each one a priority level
-    //Postcondition: returns a dictionary mapping each move to its calculated priority level
-    private Dictionary<Move, float> AssignPriority(List<Move> moves)
-    {
-        Dictionary<Move, float> priorityMap = new Dictionary<Move, float>();
-        //for(int i = 1; i < 5; i++)
-        //{
-        // float priority = 2f;//moves[i].baseDmg / moves[i].staminaCost;
-        //priorityMap.Add(moves[i], priority);
-        //}
-
-        //NOTE: Priority values are harcoded for now. Need to make it so enemy move priorities are assigned at the same time as their moves
-        priorityMap.Add(moves[0], 0.01f * (maxStamina - stamina)); //assigns priority for rest option
-        priorityMap.Add(moves[1], 2);
-        priorityMap.Add(moves[2], 0.5f);
-        priorityMap.Add(moves[3], 0.75f);
-        priorityMap.Add(moves[4], 1f);
-        return priorityMap;
     }
 
     bool ICombatant.IsAlive()
@@ -176,15 +178,23 @@ public class EnemyController : MonoBehaviour, ICombatant
     //Postcondition: returns true if health is greater than 0, false otherwise
     bool ICombatant.TakeDamage(int damage)
     {
+        damage = (int)(damage/defenseModifier);
         health -= damage;
-        healthBar.transform.Translate(damage * (5.71F/maxHealth), 0, 0);
+        if (health < 0)
+        {
+            health = 0;
+        }
+        float xInit = healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+        healthBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxHealth - health) / (float)maxHealth)), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
+        float xDiff = xInit - healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+        healthBarEmptySpace.transform.Translate(0.5f * xDiff, 0, 0);
+        //healthBar.transform.Translate(damage * (5.71F/maxHealth), 0, 0);
         if (health > 0)
         {
             return true;
         }
         else
         {
-            health = 0;
             return false;
         }
     }
@@ -249,6 +259,7 @@ public class EnemyController : MonoBehaviour, ICombatant
         if(status == null)
             this.status = s;
         statusMarker.SetActive(true);
+        statusMarker.GetComponent<SpriteRenderer>().sprite = s.sprite;
     }
 
     StatusEffect ICombatant.GetStatus()
@@ -280,6 +291,47 @@ public class EnemyController : MonoBehaviour, ICombatant
     int ICombatant.GetLevel()
     {
         return level;
+    }
+
+    float ICombatant.GetDefense()
+    {
+        return defenseModifier;
+    }
+
+    bool ICombatant.SetDefense(float d)
+    {
+        defenseModifier = d;
+        if (defenseModifier > 2)
+        {
+            defenseModifier = 2f;
+            return false;
+        } else if(defenseModifier < 0.5)
+        {
+            defenseModifier = 0.5f;
+            return true;
+        }
+        return true;
+    }
+
+    float ICombatant.GetAttackModifier()
+    {
+        return defenseModifier;
+    }
+
+    bool ICombatant.SetAttackModifier(float d)
+    {
+        attackModifier = d;
+        if (attackModifier > 1.5)
+        {
+            attackModifier = 1.5f;
+            return false;
+        }
+        else if (attackModifier < 0.5)
+        {
+            attackModifier = 0.5f;
+            return true;
+        }
+        return true;
     }
 
     //Debug method to test selection algorithm and determine distribution of move picks
@@ -332,4 +384,64 @@ public class EnemyController : MonoBehaviour, ICombatant
           }
           Debug.Log("Move 1 test: " + numMove1 + "\nMove 2 test: " + numMove2 + "\nMove 3 test: " + numMove3 + "\nMove 4 test:" + numMove4 + "\nMove 5 test: " + numMove5);
       }*/
+}
+
+[System.Serializable] struct EnemyPreset
+{
+    [SerializeField] public int maxHealth;
+    [SerializeField] public int maxStamina;
+    [SerializeField] public int level;
+    [SerializeField] public float defenseModifier;
+    [SerializeField] public float attackModifier;
+    [SerializeField] public int XPWorth;
+    //public readonly String personalityType; //must be exactly the name of one of the predefined archetypes in AttackAI
+    [SerializeField] GameObject personalityContainer;
+    public Algorithm personality;
+    public void Initialize()
+    {
+        personality = personalityContainer.GetComponent<PersonalityHolder>().GetPersonality();
+    }
+    /*
+    public EnemyPreset(int maxHealth, int maxStamina, int level, Algorithm AI)
+    {
+        this.maxHealth = maxHealth;
+        this.maxStamina = maxStamina;
+        this.level = level;
+        defenseModifier = 1;
+        attackModifier = 1;
+        XPWorth = level * 100;
+        personality = AI;
+    }
+    public EnemyPreset(int maxHealth, int maxStamina, int level, int XPWorth)
+    {
+        this.maxHealth = maxHealth;
+        this.maxStamina = maxStamina;
+        this.level = level;
+        defenseModifier = 1;
+        attackModifier = 1;
+        this.XPWorth = XPWorth;
+        personality = AttackAI.MODERATE;
+    }
+
+    public EnemyPreset(int maxHealth, int maxStamina, int level, int XPWorth, Algorithm AI)
+    {
+        this.maxHealth = maxHealth;
+        this.maxStamina = maxStamina;
+        this.level = level;
+        defenseModifier = 1;
+        attackModifier = 1;
+        this.XPWorth = XPWorth;
+        personality = AI;
+    }
+
+    public EnemyPreset(int maxHealth, int maxStamina, int level, int XPWorth, float defenseModifier, float attackModifier, Algorithm AI)
+    {
+        this.maxHealth = maxHealth;
+        this.maxStamina = maxStamina;
+        this.level = level;
+        this.defenseModifier = defenseModifier;
+        this.attackModifier = attackModifier;
+        this.XPWorth = XPWorth;
+        personality = AI;
+    } */
 }

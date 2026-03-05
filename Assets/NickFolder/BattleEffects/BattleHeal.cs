@@ -16,7 +16,7 @@ public class BattleHeal : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+        user = GameObject.FindWithTag("Player").GetComponent<ICombatant>();
     }
 
     public void OnClick()
