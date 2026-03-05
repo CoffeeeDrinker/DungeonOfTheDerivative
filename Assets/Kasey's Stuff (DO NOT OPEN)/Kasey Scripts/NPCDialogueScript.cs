@@ -38,6 +38,9 @@ public class NPCDialogueScript : MonoBehaviour
     public MathProblemManager problemManager;
     public CombatManager combatManager;
 
+    //Matthew wuz here >:)
+    [SerializeField] public EnemyPreset Preset;
+
     public bool talkNow = false;
 
     void Update()

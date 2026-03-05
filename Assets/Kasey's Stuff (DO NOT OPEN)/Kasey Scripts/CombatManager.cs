@@ -40,6 +40,7 @@ public class CombatManager : MonoBehaviour
         TransitionAnims.SetTrigger("openTransition");
 
         this.currentNPC = currentNPC;
+        combatSystem.GetComponent<EnemyInfoContainer>().SetPreset(currentNPC.Preset); //Matthew wuz here
         needCombatActive= true;
     }
 

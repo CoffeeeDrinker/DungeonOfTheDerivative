@@ -9,6 +9,7 @@ using UnityEngine;
 public class EnemyController : MonoBehaviour, ICombatant
 {
     [SerializeField] EnemyPreset preset;
+    public GameObject combatController;
     AttackAI personality;
     public GameObject m_enemy;
     public GameObject healthBar;
@@ -31,6 +32,7 @@ public class EnemyController : MonoBehaviour, ICombatant
     // Start is called before the first frame update
     void Start()
     {
+        preset = combatController.GetComponent<EnemyInfoContainer>().GetPreset();
         preset.Initialize();
         player = playerObj.GetComponent<ICombatant>();
         healthBarEmptySpace.SetActive(true);
@@ -386,7 +388,7 @@ public class EnemyController : MonoBehaviour, ICombatant
       }*/
 }
 
-[System.Serializable] struct EnemyPreset
+[System.Serializable] public struct EnemyPreset
 {
     [SerializeField] public int maxHealth;
     [SerializeField] public int maxStamina;
