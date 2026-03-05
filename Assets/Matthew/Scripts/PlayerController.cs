@@ -1,7 +1,9 @@
+using System;
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 using static UnityEngine.GraphicsBuffer;
+
 
 public class PlayerController : MonoBehaviour, ICombatant
 {
@@ -11,31 +13,42 @@ public class PlayerController : MonoBehaviour, ICombatant
     public GameObject healthBar;
     public GameObject staminaBar;
     [SerializeField] GameObject statusMarker;
+    private SpriteRenderer statusRenderer;
+    [SerializeField] GameObject healthBarEmptySpace;
+    [SerializeField] GameObject staminaBarEmptySpace;
     private StatusEffect status = null;
     private int health;
     private int stamina;
+    private float defenseModifier = 1;
+    private float attackModifier = 1;
     [SerializeField] int playerLevel;
     private int maxStamina;
     private int maxHealth;
     private int XP = 0;
-
     private Move lastMove;
     public List<Move> moveList;
     // Start is called before the first frame update
     // Start is called before the first frame update
     void Start()
     {
+        statusRenderer = statusMarker.GetComponent<SpriteRenderer>();
+        statusRenderer.enabled = true;
         statusMarker.SetActive(false);
+        healthBarEmptySpace.SetActive(true);
+        staminaBarEmptySpace.SetActive(true);
         maxHealth = (int)(100 + 100*((playerLevel - 1.0) * 0.1));
         maxStamina = (int)(100 + 100 * ((playerLevel - 1.0) * 0.1));
         health = maxHealth;
         stamina = maxStamina;
+        healthBarEmptySpace.transform.localScale = new Vector3(((float)(maxHealth - health) / (float)maxHealth), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
+        staminaBarEmptySpace.transform.localScale = new Vector3(((float)(maxStamina - stamina) / (float)maxStamina), staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
         attackButton = attackButtonField.GetComponent<AttackHandler>();
         moveList = new List<Move>() //initializes list of moves
-        {
+        { 
             new Move(
                 "Punch",
-                true, //is an attack
+                Move.DAMAGE, //is an attack
+                15, //stamina cost
                 (origin, direction) =>
                 {
                     int dmg = UnityEngine.Random.Range(9, 11); //randomly generates base damage within pre-defined bounds
@@ -47,7 +60,8 @@ public class PlayerController : MonoBehaviour, ICombatant
                 }),
             new Move(
                 "Lulaby",
-                true, //is an attack
+                Move.STATUS, //is an attack
+                15, //stamina cost
                 (origin, direction) =>
                 {
                     if (origin.GetStamina() > 15)
@@ -58,7 +72,8 @@ public class PlayerController : MonoBehaviour, ICombatant
                 }),
             new Move(
                 "Iron Stare",
-                true, //is an attack
+                Move.STATUS, //is an attack
+                15, //stamina cost
                 (origin, direction) =>
                 {
                     int dmg = UnityEngine.Random.Range(5, 10); //randomly generates base damage within pre-defined bounds
@@ -73,7 +88,8 @@ public class PlayerController : MonoBehaviour, ICombatant
                 }),
             new Move(
                 "Evan Smash",
-                true, //is an attack
+                Move.DAMAGE, //is an attack
+                15, //stamina cost
                 (origin, direction) =>
                 {
                     int dmg = UnityEngine.Random.Range(25, 75); //randomly generates base damage within pre-defined bounds
@@ -99,7 +115,7 @@ public class PlayerController : MonoBehaviour, ICombatant
             //lastMove = move;
 
             //return damage after modifiers
-            int damage = baseDmg * playerLevel;
+            int damage = (int)(baseDmg * playerLevel * attackModifier);
             return damage;
     }
 
@@ -107,12 +123,20 @@ public class PlayerController : MonoBehaviour, ICombatant
     //Precondition: damage is an integer greater than 0
     //Postcondition: returns true if health is greater than 0, false otherwise
     public bool TakeDamage(int damage){
+        damage = (int)(damage / defenseModifier);
         health -= damage;
-        healthBar.transform.Translate(-damage*(5.71F/(float)maxHealth), 0, 0);
-        if(health > 0){
+        if(health < 0)
+        {
+            health = 0;
+        }
+        float xInit = healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+        healthBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxHealth - health) / (float)maxHealth)), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
+        float xDiff = xInit - healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+        healthBarEmptySpace.transform.Translate(0.5f*xDiff, 0, 0);
+        //healthBar.transform.Translate(-damage*(5.71F/(float)maxHealth), 0, 0);
+        if (health > 0){
             return true;
         } else{
-            health = 0;
             return false;
         }
     }
@@ -139,13 +163,20 @@ public class PlayerController : MonoBehaviour, ICombatant
     bool ICombatant.DepleteStamina(int exhaustion)
     {
         stamina -= exhaustion;
-        staminaBar.transform.Translate(-exhaustion * (5.71F/maxStamina), 0, 0);
+        if(stamina < 0)
+        {
+            stamina = 0;
+        }
+        float xInit = staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+        staminaBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxStamina - stamina) / (float)maxStamina)), staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
+        float xDiff = xInit - staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+        staminaBarEmptySpace.transform.Translate(0.5f * xDiff, 0, 0);
+        //staminaBar.transform.Translate(-exhaustion * (5.71F/maxStamina), 0, 0);
         if (stamina > 0)
         {
             return true;
         }
         else {
-            stamina = 0;
             return false;
         }
     }
@@ -157,9 +188,25 @@ public class PlayerController : MonoBehaviour, ICombatant
         {
             recharge = maxStamina-stamina;
         }
+        float xInit = staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
         stamina += recharge;
-        staminaBar.transform.Translate(recharge * (5.71F / maxStamina), 0, 0);
+        staminaBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxStamina - stamina) / (float)maxStamina)), staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
+        float xDiff = staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x - xInit;
+        staminaBarEmptySpace.transform.Translate(-0.5f * xDiff, 0, 0);
+        //staminaBar.transform.Translate(recharge * (5.71F / maxStamina), 0, 0);
     }
+    /*
+    private IEnumerator ChangeStaminaBar(int staminaDiff)
+    {
+        for(int i = 1; i <= staminaDiff; i++)
+        {
+            float xInit = staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+            staminaBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(stamina+i) / (float)maxStamina)), staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
+            float xDiff = staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x - xInit;
+            staminaBarEmptySpace.transform.Translate(-0.5f * xDiff, 0, 0);
+            for (int i = 0; i < 5; i++) { yield return null; } //waits 5 frames between updating stamina bar
+        }
+    } */
 
     int ICombatant.getXP()
     {
@@ -204,9 +251,13 @@ public class PlayerController : MonoBehaviour, ICombatant
 
     void ICombatant.AddStatusEffect(StatusEffect s)
     {
-        if(status == null) //only sets status if not already set
+        if (status == null) //only sets status if not already set
+        {
             status = s;
-        statusMarker.SetActive(true);
+            statusMarker.SetActive(true);
+            statusRenderer.enabled = true;
+            statusRenderer.sprite = s.sprite;
+        }
     }
 
     int ICombatant.GetLevel()
@@ -244,4 +295,44 @@ public class PlayerController : MonoBehaviour, ICombatant
         this.health += health;
     }
 
+    float ICombatant.GetDefense()
+    {
+        return defenseModifier;
+    }
+
+    bool ICombatant.SetDefense(float d)
+    {
+        defenseModifier = d;
+        if (defenseModifier > 2)
+        {
+            defenseModifier = 2f;
+            return false;
+        } else if(defenseModifier < 0.5)
+        {
+            defenseModifier = 0.5f;
+            return false;
+        }
+        return true;
+    }
+
+    float ICombatant.GetAttackModifier()
+    {
+        return attackModifier;
+    }
+
+    bool ICombatant.SetAttackModifier(float a)
+    {
+        attackModifier = a;
+        if (attackModifier > 1.5)
+        {
+            attackModifier = 1.5f;
+            return false;
+        }
+        else if (attackModifier < 0.5)
+        {
+            attackModifier = 0.5f;
+            return false;
+        }
+        return true;
+    }
 }

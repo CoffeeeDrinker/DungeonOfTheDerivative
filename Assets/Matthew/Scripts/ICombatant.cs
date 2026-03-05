@@ -41,4 +41,12 @@ public interface ICombatant
     void Heal(int health);
 
     int GetLevel();
+
+    float GetDefense();
+
+    bool SetDefense(float d); //returns true if change works, false otherwise
+
+    float GetAttackModifier();
+
+    bool SetAttackModifier(float a);
 }

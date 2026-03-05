@@ -2,6 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using TMPro;
 using UnityEngine;
+[DefaultExecutionOrder(10)] //this class's Start() method is called later
 public class AttackOptionHandler : MonoBehaviour
 {
 

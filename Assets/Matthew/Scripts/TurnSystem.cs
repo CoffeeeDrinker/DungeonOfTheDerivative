@@ -1,6 +1,7 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEditor;
+using UnityEditor.ShaderGraph.Serialization;
 using UnityEditor.UIElements;
 using UnityEngine;
 [DefaultExecutionOrder(100)] //This class's Start() method will be called last
@@ -38,7 +39,7 @@ public class TurnSystem : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetMouseButtonDown(0) && turnIndex != 0)
+        if (Input.GetMouseButtonDown(0))
         {
             isClicked = !isClicked;
         }
@@ -50,14 +51,68 @@ public class TurnSystem : MonoBehaviour
         {
             if (turnIndex == 0) //if it's player's turn
             {
+                StatusEffect currentStatus = player.GetStatus();
                 if (!player.TurnStart()) //only takes input if turn was not skipped
                 {
+                    if (player.GetStatus() != currentStatus){ //if player just recovered from a status effect
+                        UI.DisplayText("You " + StatusEffects.recoveryMap[currentStatus], 2f);
+                        float startTime = Time.time;
+                        while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+                        {
+                            if (Time.time - startTime >= 2)
+                            {
+                                break;
+                            }
+                            yield return null;
+                        }
+                        isClicked = false;
+                        UI.HideText();
+                    }
                     Move input = UI.GotInput();
                     if (input == null) //if no input has been recieved
                     {
                         yield return null; //if no input recieved, wait a frame
+                    } else if(input.type == Move.RUN)
+                    {
+                        isClicked = false;
+                        if (UnityEngine.Random.Range(0f, 1f) > 0.6) //60% chance of not escaping
+                        {
+                            UI.DisplayText("You got away!", 2f);
+                            float startTime = Time.time;
+                            while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+                            {
+                                if (Time.time - startTime >= 2)
+                                {
+                                    break;
+                                }
+                                yield return null;
+                            }
+                            isClicked = false;
+                            UI.HideText();
+                            winner = enemy;
+                            gameManager.GetComponent<CombatManager>().CloseCombatSystem();
+                            itemManager.ExitCombat();
+                            break;
+                        }
+                        else
+                        {
+                            UI.DisplayText("You weren't able to escape!", 2f);
+                            float startTime = Time.time;
+                            while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+                            {
+                                if (Time.time - startTime >= 2)
+                                {
+                                    break;
+                                }
+                                yield return null;
+                            }
+                            isClicked = false;
+                            UI.HideText();
+                            UI.Unclick();
+                            turnIndex++;
+                        }
                     }
-                    else if (input.isAttack == false) //if it is something other than an attack
+                    else if (input.type == Move.INVENTORY || input.type == Move.REST) //if it is something other than an attack
                     {
                         if (input.name == "Inventory")
                         {
@@ -79,26 +134,45 @@ public class TurnSystem : MonoBehaviour
                     }
                     else
                     { //if button pressed is an attack
-                        UI.HideButtons();
-                        gameManager.GetComponent<MathProblemManager>().StartDraw();
-                        //Attacks opponent, then makes it enemy's turn, then resets button
-                        while (IfAttackHit() == 2)
+                        if (input.staminaCost <= player.GetStamina())
                         {
-                            yield return null;
+                            UI.HideButtons();
+                            gameManager.GetComponent<MathProblemManager>().StartDraw();
+                            //Attacks opponent, then makes it enemy's turn, then resets button
+                            while (IfAttackHit() == 2)
+                            {
+                                yield return null;
+                            }
+                            if (IfAttackHit() == 0) //checks if it hit
+                            {
+                                input.move(player, enemy);
+                                gameManager.GetComponent<MathProblemManager>().UnAnswer();
+                            }
+                            else if (IfAttackHit() == 1)
+                            {
+                                Debug.Log("incorrect, no damage :(");
+                                gameManager.GetComponent<MathProblemManager>().UnAnswer();
+                            }
+                            UI.ShowButtons();
+                            turnIndex = 1;
+                            UI.Unclick();
                         }
-                        if (IfAttackHit() == 0) //checks if it hit
+                        else
                         {
-                            input.move(player, enemy);
-                            gameManager.GetComponent<MathProblemManager>().UnAnswer();
+                            UI.DisplayText("You have insufficient stamina!", 2f);
+                            float startTime = Time.time;
+                            while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+                            {
+                                if (Time.time - startTime >= 2)
+                                {
+                                    break;
+                                }
+                                yield return null;
+                            }
+                            isClicked = false;
+                            UI.HideText();
+                            UI.HideAttackOptions();
                         }
-                        else if (IfAttackHit() == 1)
-                        {
-                            Debug.Log("incorrect, no damage :(");
-                            gameManager.GetComponent<MathProblemManager>().UnAnswer();
-                        }
-                        UI.ShowButtons();
-                        turnIndex = 1;
-                        UI.Unclick();
                     }
                 }
                 else
@@ -108,6 +182,8 @@ public class TurnSystem : MonoBehaviour
             }
             else // if it's enemy's turn
             {
+                isClicked = false;
+                
                 if (enemy.IsAlive())
                 {
                     StatusEffect oldStatus = enemy.GetStatus();
@@ -126,16 +202,16 @@ public class TurnSystem : MonoBehaviour
                                 }
                                 yield return null;
                             }
-                            Debug.Log("Quail?");
                             isClicked = false;
                             UI.HideText();
                         }
                         enemy.MakeNewMove(player);
-                        UI.DisplayText("Enemy is using: " + enemy.GetLastMove().name, 2f);
+                        string displayText = "Enemy is using: " + enemy.GetLastMove().name;
+                        UI.DisplayText(displayText, 2f);
                         startTime = Time.time; //gets starting time for waiting
                         while (!isClicked) //checks if player is trying to skip by pressing left mouse button
                         {
-                            if (Time.time - startTime >= 2)
+                            if (Time.time - startTime >= 2f)
                             {
                                 break;
                             }
@@ -164,13 +240,26 @@ public class TurnSystem : MonoBehaviour
                         isClicked = false;
                         UI.HideText();
                     }
-                        turnIndex = 0;
+                    turnIndex = 0;
                     Debug.Log("Player health: " + player.GetHealth() + "\nPlayer stamina: " + player.GetStamina() + "\nEnemy health: " + enemy.GetHealth() + "\nEnemy stamina: " + enemy.GetStamina());
                 }
                 else
                 {
+
                     //If enemy dies, end combat
                     Debug.Log("You won!");
+                    UI.DisplayText("Enemy collapsed from exhaustion!", 2f);
+                    float startTime = Time.time;
+                    while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+                    {
+                        if (Time.time - startTime >= 2)
+                        {
+                            break;
+                        }
+                        yield return null;
+                    }
+                    isClicked = false;
+                    UI.HideText();
                     player.Win(enemy.getXP());
                     winner = player;
 
@@ -186,8 +275,22 @@ public class TurnSystem : MonoBehaviour
         } while (player.IsAlive()); //Run until one side is completely dead
         if (!player.IsAlive())
         {
+            UI.DisplayText("You passed out from exhaustion!", 2f);
+            float startTime = Time.time;
+            while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+            {
+                if (Time.time - startTime >= 2)
+                {
+                    break;
+                }
+                yield return null;
+            }
+            isClicked = false;
+            UI.HideText();
             enemy.Win(0);
             winner = enemy;
+            gameManager.GetComponent<CombatManager>().CloseCombatSystem();
+            itemManager.ExitCombat();
         }
     }
 

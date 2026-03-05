@@ -3,13 +3,16 @@ using System.Collections.Generic;
 using UnityEngine;
 using UnityEngine.UI;
 using TMPro;
+using System.Data;
 
 public class CombatTextController : MonoBehaviour
 {
     [SerializeField] GameObject background;
     [SerializeField] GameObject textField;
     [SerializeField] string textSpeed; //textSpeed must be set as a string key in textSpeedDict
-    TextMeshProUGUI text;
+    public TextMeshProUGUI text;
+    private bool typing;
+    private IEnumerator coroutine;
     static Dictionary<string, float> textSpeedDict = new Dictionary<string, float>() {
         //Contains text speed settings and the corresponding coefficinets to be used in method TypeTextOverTime based on desired speed
         {"Slow", 1.1f },
@@ -40,6 +43,11 @@ public class CombatTextController : MonoBehaviour
     public void DisplayText(string displayText) //Changes current text displayed to displayText
     {
         text.text = displayText;
+        if (typing)
+        {
+            StopAllCoroutines();
+            typing = false;
+        }
     }
 
     //Types out displayText over duration seconds
@@ -52,6 +60,7 @@ public class CombatTextController : MonoBehaviour
         else
         {
             text.text = "";
+            //coroutine = TypeTextOverTime(displayText, duration);
             StartCoroutine(TypeTextOverTime(displayText, duration));
         }
     }
@@ -59,6 +68,7 @@ public class CombatTextController : MonoBehaviour
     //Coroutine for typing text, called in DisplayText (string displayText, float duration)
     private IEnumerator TypeTextOverTime(string endText, float duration)
     {
+        typing = true;
         char[] chars = endText.ToCharArray();
         int current = 0;
         while (current < chars.Length)
@@ -67,5 +77,6 @@ public class CombatTextController : MonoBehaviour
             current++;
             yield return new WaitForSeconds(duration / (chars.Length * textSpeedDict[textSpeed]));
         }
+        typing = false;
     }
 }

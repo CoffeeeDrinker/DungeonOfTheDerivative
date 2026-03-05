@@ -14,6 +14,8 @@ public class UIController : MonoBehaviour
     [SerializeField] GameObject runButtonField;
     [SerializeField] GameObject attackOptionMasterField;
     [SerializeField] GameObject combatTextMasterField;
+    [SerializeField] GameObject backButtonField;
+    protected static BackButtonController backButtonController;
     protected static AttackOptionMaster attackController;
     protected static AttackHandler attackHandler;
     protected static InventoryHandler inventoryHandler;
@@ -24,14 +26,16 @@ public class UIController : MonoBehaviour
     //Defining certain moves statically here, will probably need to change later when we have a central place to store moves
     Move rest = new Move(
         "Rest",
-        false,
+        Move.REST,
+        -1,
         (origin, direction) => //implementation of move
         {
             origin.Rest(30);
         });
     Move inventory = new Move(
         "Inventory",
-        false,
+        Move.INVENTORY,
+        -1,
         (origin, direction) => //implementation of move
         {
             
@@ -40,13 +44,10 @@ public class UIController : MonoBehaviour
             //Then have the items do whatever they do to either the player (origin) or enemy (direction)
         });
     Move run = new Move(
-        "Inventory",
-        false,
-        (origin, direction) => //implementation of move
-        {
-            //no escape
-        });
-
+        "Run",
+        Move.RUN,
+        -1,
+        (origin, direction) => {});
     // Start is called before the first frame update
     void Start()
     {
@@ -56,7 +57,7 @@ public class UIController : MonoBehaviour
         runHandler = runButtonField.GetComponent<RunHandler>();
         attackController = attackOptionMasterField.GetComponent<AttackOptionMaster>();
         combatTextController = combatTextMasterField.GetComponent<CombatTextController>();
-
+        backButtonController = backButtonField.GetComponent<BackButtonController>();
         //Question q = new Algebra1Question().GenerateQuestion("Algebra 1");
         //Debug.Log(q.GetQuestion());
         //Debug.Log("Answer: " + q.GetAnswer());
@@ -71,7 +72,15 @@ public class UIController : MonoBehaviour
     //Postcondition: returns the base damage of the attack if an attack was made, -1 if inventory was opened, -2 if no input was recieved, -3 if rest, -4 if run
     public Move GotInput()
     {
-        if (attackHandler.IsClicked())
+        if (backButtonController.IsClicked())
+        {
+            HideAttackOptions();
+            attackHandler.Unclick();
+            ShowButtons();
+            backButtonController.Unclick();
+            return null;
+        }
+        else if (attackHandler.IsClicked())
         {
             HideButtons();
             attackController.ToggleAttackOptions(true);
@@ -86,15 +95,12 @@ public class UIController : MonoBehaviour
         }
         else if (inventoryHandler.IsClicked())
         {
-            Debug.Log("Inventory");
             return inventory;
         } else if (restHandler.IsClicked())
         {
-            Debug.Log("Rest");
             return rest;
         } else if (runHandler.IsClicked())
         {
-            Debug.Log("Run");
             return run;
         }
         else
@@ -109,6 +115,12 @@ public class UIController : MonoBehaviour
         inventoryHandler.Unclick();
         restHandler.Unclick();
         runHandler.Unclick();
+    }
+
+    public void HideAttackOptions()
+    {
+        attackHandler.Unclick();
+        attackController.ToggleAttackOptions(false);
     }
 
     public void HideButtons()
@@ -139,6 +151,11 @@ public class UIController : MonoBehaviour
         combatTextMasterField.SetActive(true);
         combatTextController.Toggle();
         combatTextController.DisplayText(text, duration);
+    }
+
+    public string GetText()
+    {
+        return combatTextController.text.text;
     }
 
     public void HideText()
