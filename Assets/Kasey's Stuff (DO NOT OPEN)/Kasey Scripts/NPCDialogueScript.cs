@@ -61,7 +61,9 @@ public class NPCDialogueScript : MonoBehaviour
 
                 //Check if combat should start
                 if (startCombatPostDialogue)
+                {
                     combatManager.StartCombat(gameObject.GetComponent<NPCDialogueScript>());
+                }
                 else
                     playerScript.enabled = true;
             }
@@ -172,21 +174,6 @@ public class NPCDialogueScript : MonoBehaviour
         startCombatPostDialogue = false;
         dialogueText.text = "";
 
-        /*
-        //Activate dialogue box
-        typewriterInstance.Refresh();
-        dialogueTextBox.SetActive(true);
-
-        //Set current dialogue object
-        currentDialogueI = 1;
-        currentDialogueLineI = 0;
-        dialogueText.text = NPCDialogue[currentDialogueI].GetLine(currentDialogueLineI);
-        typewriterInstance.Refresh();
-
-        typewriterEffectComplete = false;
-        startTime = Time.fixedTime;
-        typewriterInstance.StartManualEffects();
-        */
         currentDialogueI = 1;
         currentDialogueLineI = 0;
 
@@ -227,14 +214,3 @@ public class NPCDialogueScript : MonoBehaviour
         player.GetComponent<Rigidbody2D>().velocity = Vector3.zero;
     }
 }
-
-
-/*
-Kasey
-I regret my life decisions. For some stupid reason I decided to take 3 math classes this year and I am suffering. Help me.
-does this work?
-Hi there <player_name>. bla bla bla
-~
-That didn't help. :(
-~~
-*/

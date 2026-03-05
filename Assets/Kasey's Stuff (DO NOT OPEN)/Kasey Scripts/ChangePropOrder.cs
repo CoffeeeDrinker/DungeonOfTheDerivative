@@ -12,7 +12,7 @@ public class ChangePropOrder : MonoBehaviour
         {
             if(transform.GetChild(i).gameObject.layer == 6)
             {
-                if(player.position.y > transform.GetChild(i).position.y)
+                if(player.position.y - transform.GetChild(i).position.y > 0.05)
                 {
                     transform.GetChild(i).GetComponent<SpriteRenderer>().sortingOrder = player.GetComponent<SpriteRenderer>().sortingOrder + 1;
                 }
