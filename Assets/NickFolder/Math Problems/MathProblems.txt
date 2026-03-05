@@ -1,23 +1,9 @@
 Linear Algebra
-LA_1_1_image
-~
--2,1
-~~
-Multiple Numbers
-~~~
-Linear Algebra
 LA_1_2_image
 ~
 36
 ~~
 Number
-~~~
-Linear Algebra
-LA_1_3_image
-~
-5,6,-5
-~~
-Vector
 ~~~
 Linear Algebra
 LA_1_5_image
@@ -27,32 +13,11 @@ LA_1_5_image
 Number
 ~~~
 Linear Algebra
-LA_1_6_image
-~
-6/11,6/11,-7/11
-~~
-Vector
-~~~
-Linear Algebra
-LA_1_7_image
-~
--6,1
-~~
-Multiple Numbers
-~~~
-Linear Algebra
 LA_1_8_image
 ~
 18
 ~~
 Number
-~~~
-Linear Algebra
-LA_1_9_image
-~
-4,-7,5
-~~
-Vector
 ~~~
 Linear Algebra
 LA_1_10_image
@@ -62,46 +27,11 @@ LA_1_10_image
 Number
 ~~~
 Linear Algebra
-LA_1_11_image
-~
-2/3,11/15,-2/15
-~~
-Vector
-~~~
-Linear Algebra
-LA_1_12_image
-~
-4x-2y-2z=0
-~~
-Equation LA
-~~~
-Linear Algebra
-LA_1_13_image
-~
-1+3t,1+5t,1+t
-~~
-Vector Equation
-~~~
-Linear Algebra
 LA_1_14_image
 ~
 7/2
 ~~
 Number
-~~~
-Linear Algebra
-LA_1_15_image
-~
-sqrt(114)
-~~
-Number
-~~~
-Linear Algebra
-LA_1_16_image
-~
-4,-2,4
-~~
-Vector
 ~~~
 Linear Algebra
 LA_1_17_image
@@ -111,39 +41,11 @@ LA_1_17_image
 Number
 ~~~
 Linear Algebra
-LA_1_18_image
-~
-8x+y-7z=0
-~~
-Equation LA
-~~~
-Linear Algebra
-LA_1_19_image
-~
-1+t,-1+6t,1+2t
-~~
-Vector Equation
-~~~
-Linear Algebra
 LA_1_20_image
 ~
 7
 ~~
 Number
-~~~
-Linear Algebra
-LA_1_21_image
-~
-2sqrt(6)
-~~
-Number
-~~~
-Linear Algebra
-LA_1_22_image
-~
--4,8,8
-~~
-Vector
 ~~~
 Linear Algebra
 LA_1_23_image
@@ -161,13 +63,6 @@ LA_1_24_image
 2x2 Matrix
 ~~~
 Linear Algebra
-LA_1_25_image
-~
-[16,30]
-~~
-Vector
-~~~
-Linear Algebra
 LA_1_26_image
 ~
 [1,-4]
@@ -176,37 +71,12 @@ LA_1_26_image
 2x2 Matrix
 ~~~
 Linear Algebra
-LA_1_27_image
-~
-4x2
-~~
-Dimensions
-~~~
-Linear Algebra
 LA_1_28_image
 ~
 [1,13]
 [0,27]
 ~~
 2x2 Matrix
-~~~
-Linear Algebra
-LA_1_29_image
-~
-0,10
-~~
-Multiple Numbers
-~~~
-Linear Algebra
-LA_1_30_image
-~
-[6,-1]
-[-11/2,1]
---------
-[2, 11]
-[2, 12]
-~~
-2 2x2 Matrixes
 ~~~
 Linear Algebra
 LA_1_31_image
@@ -224,33 +94,12 @@ LA_1_32_image
 2x2 Matrix
 ~~~
 Linear Algebra
-LA_1_33_image
-~
-2x4
-~~
-Dimensions
-~~~
-Linear Algebra
 LA_1_34_image
 ~
 [1,14]
 [0,8]
 ~~
 2x2 Matrix
-~~~
-Linear Algebra
-LA_1_35_image
-~
-0,6
-~~
-Multiple Numbers
-~~~
-Linear Algerba
-LA_1_36_image
-~
-PM^-1
-~~
-Matrixes
 ~~~
 Linear Algebra
 LA_1_37_image
@@ -265,13 +114,6 @@ LA_1_38_image
 17
 ~~
 Number
-~~~
-Linear Algebra
-LA_1_39_image
-~
--1,2
-~~
-Multiple Numbers
 ~~~
 Linear Algebra
 LA_1_40_image
@@ -310,13 +152,6 @@ LA_1_44_image
 0
 ~~
 Number
-~~~
-Linear Algebra
-LA_1_45_image
-~
-N^-1P
-~~
-Matrixes
 ~~~
 Linear Algebra
 LA_1_46_image
@@ -384,13 +219,6 @@ LA_2_7_image
 2x2 Matrix
 ~~~
 Linear Algebra
-LA_2_8_image
-~
-R^4
-~~
-Domain
-~~~
-Linear Algebra
 LA_2_9_image
 ~
 [-120]
@@ -429,13 +257,6 @@ LA_2_13_image
 [24]
 ~~
 2x1 Matrix
-~~~
-Linear Algebra
-LA_2_14_image
-~
-R^3
-~~
-Domain
 ~~~
 Linear Algebra
 LA_2_15_image
@@ -514,22 +335,6 @@ LA_2_24_image
 3x3 Matrix
 ~~~
 Linear Algebra
-LA_2_25_image
-~
-2a
--3b
-~~
-Combination
-~~~
-Linear Algebra
-LA_2_26_image
-~
-a: no
-b: yes
-~~
-Variable YesNo
-~~~
-Linear Algebra
 LA_2_27_image
 ~
 [3]
@@ -543,37 +348,6 @@ LA_2_28_image
 5/2
 ~~
 Number
-~~~
-Linear Algebra
-LA_2_29_image
-~
-[M2, 2M1]
-~~
-NICK TURNER METHOD 1x2
-~~~
-Linear Algebra
-LA_2_30_image
-~
-[QR1]
-[QR1 + QR2]
-~~
-NICK TURNER METHOD 2x1
-~~~
-Linear Algebra
-LA_2_31_image
-~
-2a
--b
-~~
-Combination
-~~~
-Linear Algebra
-LA_2_32_image
-~
-a: yes
-b: no
-~~
-Variable YesNo
 ~~~
 Linear Algebra
 LA_2_33_image
@@ -591,26 +365,15 @@ LA_2_34_image
 2x1 Matrix
 ~~~
 Linear Algebra
-LA_2_35_image
-~
-[M1, -M1+M2]
-~~
-NICK TURNER METHOD 1x2
-~~~
-Linear Algebra
-LA_2_36_image
-~
-[QR2]
-[-QR1]
-~~
-NICK TURNER METHOD 2x1
-~~~
-Linear Algebra
 LA_3_1_image
 ~
+No Solution
+Unique
+Infinite
+_
 Infinite
 ~~
-Solutions
+Options
 ~~~
 Linear Algebra
 LA_3_2_image
@@ -622,9 +385,13 @@ Number
 Linear Algebra
 LA_3_3_image
 ~
+No Solution
+Unique
+Infinite
+_
 Unique
 ~~
-Solutions
+Options
 ~~~
 Linear Algebra
 LA_3_4_image
@@ -637,8 +404,12 @@ Linear Algebra
 LA_3_5_image
 ~
 No Solution
+Unique
+Infinite
+_
+No Solution
 ~~
-Solutions
+Options
 ~~~
 Linear Algebra
 LA_3_6_image
@@ -650,9 +421,13 @@ Number
 Linear Algebra
 LA_3_7_image
 ~
+No Solution
+Unique
+Infinite
+_
 Unique
 ~~
-Solutions
+Options
 ~~~
 Linear Algebra
 LA_3_8_image
@@ -665,8 +440,12 @@ Linear Algebra
 LA_3_9_image
 ~
 No Solution
+Unique
+Infinite
+_
+No Solution
 ~~
-Solutions
+Options
 ~~~
 Linear Algebra
 LA_3_10_image
@@ -678,9 +457,13 @@ Number
 Linear Algebra
 LA_3_11_image
 ~
+No Solution
+Unique
+Infinite
+_
 Infinite
 ~~
-Solutions
+Options
 ~~~
 Linear Algebra
 LA_3_12_image
@@ -692,9 +475,12 @@ Number
 Linear Algebra
 LA_3_13_image
 ~
+Linearly Dependent
+Linearly Independent
+_
 Linearly Independent
 ~~
-Dependent/Independent
+Options
 ~~~
 Linear Algebra
 LA_3_14_image
@@ -707,8 +493,11 @@ Linear Algebra
 LA_3_15_image
 ~
 Linearly Dependent
+Linearly Independent
+_
+Linearly Dependent
 ~~
-Dependent/Independent
+Options
 ~~~
 Linear Algebra
 LA_3_16_image
@@ -720,9 +509,12 @@ Number
 Linear Algebra
 LA_3_17_image
 ~
+Linearly Dependent
+Linearly Independent
+_
 Linearly Independent
 ~~
-Dependent/Independent
+Options
 ~~~
 Linear Algebra
 LA_3_18_image
@@ -734,9 +526,12 @@ Number
 Linear Algebra
 LA_3_19_image
 ~
+Linearly Dependent
+Linearly Independent
+_
 Linear Dependent
 ~~
-Dependent/Independent
+Options
 ~~~
 Linear Algebra
 LA_3_20_image
@@ -748,42 +543,60 @@ Number
 Linear Algebra
 A is a singular matrix: A is row equivalent to the identity Matrix
 ~
+True
+False
+_
 False
 ~~
-True/False
+Options
 ~~~
 Linear Algebra
 A is a singular matrix: Ax = b has infinitely many solutions for at least one b
 ~
 True
+False
+_
+True
 ~~
-True/False
+Options
 ~~~
 Linear Algebra
 A is a singular matrix: A^-1 does not exist
 ~
 True
+False
+_
+True
 ~~
-True/False
+Options
 ~~~
 Linear Algebra
 A is a nonsingular matrix: At least one row of A can be written as a combination of the others.
 ~
+True
+False
+_
 False
 ~~
-True/False
+Options
 ~~~
 A is a nonsingular matrix: Ax = b has no solution for at least one b
 ~
+True
+False
+_
 False
 ~~
-True/False
+Options
 ~~~
 A is a nonsingular matrix: The determinate of A is nonzero
 ~
 True
+False
+_
+True
 ~~
-True/False
+Options
 ~~~
 Linear Algebra
 LA_3_21_image
@@ -796,57 +609,81 @@ Linear Algebra
 LA_3_22_image
 ~
 Singular
+Nonsingular
+_
+Singular
 ~~
-Singular/Nonsingular
+Options
 ~~~
 Linear Algebra
 LA_3_23_image
 ~
+Singular
+Nonsingular
+_
 Nonsingular
 ~~
-Singular/Nonsingular
+Options
 ~~~
 Linear Algebra
 Suppose A is a nonsingular matrix: Ax = b has infinitely many solutions for at least one b
 ~
+True
+False
+_
 False
 ~~
-True/False
+Options
 ~~~
 Linear Algebra
 Suppose A is a nonsingular matrix: A^-1 does not exist
 ~
+True
+False
+_
 False
 ~~
-True/False
+Options
 ~~~
 Linear Algebra
 Suppose A is a nonsingular matrix: A is row equivalent to the identity matrix
 ~
 True
+False
+_
+True
 ~~
-True/False
+Options
 ~~~
 Linear Algebra
 Suppose A is a singular matrix: Ax = b has no solution for at least one b
 ~
 True
+False
+_
+True
 ~~
-True/False
+Options
 ~~~
 Linear Algebra
 Suppose A is a singular matrix: The determinant of A is nonzero
 ~
+True
+False
+_
 False
 ~~
-True/False
+Options
 ~~~
 Linear Algebra
 Suppose A is a singular matrix: At least one row of A can be written as combination of the others
 ~
 True
+False
+_
+True
 ~~
-True/False
+Options
 ~~~
 Linear Algebra
 LA_3_24_image
@@ -858,23 +695,22 @@ Number
 Linear Algebra
 LA_3_25_image
 ~
+Singular
+Nonsingular
+_
 Nonsingular
 ~~
-Singular/Nonsingular
+Options
 ~~~
 Linear Algebra
 LA_3_26_image
 ~
 Singular
+Nonsingular
+_
+Singular
 ~~
-Singular/Nonsingular
-~~~
-Linear Algebra
-LA_3_27_image
-~
-R^4
-~~
-Domain
+Options
 ~~~
 Linear Algebra
 LA_3_28_image
@@ -900,13 +736,6 @@ LA_3_30_image
 [-4,3]
 ~~
 2x2 Matrix
-~~~
-Linear Algebra
-LA_3_31_image
-~
-R^2
-~~
-Domain
 ~~~
 Linear Algebra
 LA_3_32_image
@@ -937,51 +766,72 @@ LA_3_34_image
 Linear Algebra
 LA_4_1_image
 ~
-Is a subspace
+Subspace
+Not Subspace
+_
+Subspace
 ~~
-Subspace/Notsubspace
+Options
 ~~~
 Linear Algebra
 LA_4_2_image
 ~
-Is not a subspace
+Subspace
+Not Subspace
+_
+Not Subspace
 ~~
-Subspace/Notsubspace
+Options
 ~~~
 Linear Algebra
 LA_4_3_image
 ~
-Is not a subspace
+Subspace
+Not Subspace
+_
+Not Subspace
 ~~
-Subspace/Notsubspace
+Options
 ~~~
 Linear Algebra
 LA_4_4_image
 ~
-Is a subspace
+Subspace
+Not Subspace
+_
+Subspace
 ~~
-Subspace/Notsubspace
+Options
 ~~~
 Linear Algebra
 LA_4_5_image
 ~
-Is not a subspace
+Subspace
+Not Subspace
+_
+Not Subspace
 ~~
-Subspace/Notsubspace
+Options
 ~~~
 Linear Algebra
 LA_4_6_image
 ~
-Is a subspace
+Subspace
+Not Subspace
+_
+Subspace
 ~~
-Subspace/Notsubspace
+Options
 ~~~
 Linear Algebra
 LA_4_7_image
 ~
 Yes
+No
+_
+Yes
 ~~
-Yes/No
+Options
 ~~~
 Linear Algebra
 LA_4_8_image
@@ -1007,9 +857,12 @@ Number
 Linear Algebra
 LA_4_11_image
 ~
+Yes
+No
+_
 No
 ~~
-Yes/No
+Options
 ~~~
 Linear Algebra
 LA_4_12_image
@@ -1035,9 +888,12 @@ Number
 Linear Algebra
 LA_4_15_image
 ~
-yes
+Yes
+No
+_
+Yes
 ~~
-Yes/No
+Options
 ~~~
 Linear Algebra
 LA_4_16_image
@@ -1049,16 +905,22 @@ Number
 Linear Algebra
 LA_4_17_image
 ~
+Yes
+No
+_
 No
 ~~
-Yes/No
+Options
 ~~~
 Linear Algebra
 LA_4_18_image
 ~
+Yes
+No
+_
 No
 ~~
-Yes/No
+Options
 ~~~
 Linear Algebra
 LA_4_19_image
@@ -1071,8 +933,11 @@ Linear Algebra
 LA_4_20_image
 ~
 Yes
+No
+_
+Yes
 ~~
-Yes/No
+Options
 ~~~
 Linear Algebra
 LA_5_1_image
@@ -1122,7 +987,7 @@ LA_5_7_image
 rank=3
 nullity=2
 ~~
-RankNullity
+Variables
 ~~~
 Linear Algebra
 LA_5_8_image
@@ -1137,7 +1002,7 @@ LA_5_9_image
 rank=2
 nullity=1
 ~~
-RankNullity
+Variables
 ~~~
 Linear Algebra
 LA_5_10_image
@@ -1267,16 +1132,11 @@ Linear Algebra
 LA_5_26_image
 ~
 Yes
+No
+_
+Yes
 ~~
-Yes/No
-~~~
-Linear Algebra
-LA_5_27_image
-~
-Eigenvalue=-3
-Eigenvalue=2
-~~
-Variables
+Options
 ~~~
 Linear Algebra
 LA_5_28_image
@@ -1295,17 +1155,12 @@ Number
 Linear Algebra
 LA_5_30_image
 ~
+Yes
+No
+_
 No
 ~~
-Yes/No
-~~~
-Linear Algebra
-LA_5_31_image
-~
-Eigenvalue=-4
-Eigenvalue=3
-~~
-Variables
+Options
 ~~~
 Linear Algebra
 LA_6_1_image
@@ -1380,15 +1235,6 @@ LA_6_10_image
 Number
 ~~~
 Linear Algebra
-LA_6_11_image
-~
-Eigenvalue=-7
-Eigenvalue=-3
-Eigenvalue=2
-~~
-Variables
-~~~
-Linear Algebra
 LA_6_12_image
 ~
 1
@@ -1401,15 +1247,6 @@ LA_6_13_image
 3
 ~~
 Number
-~~~
-Linear Algebra
-LA_6_14_image
-~
-Eigenvalue=-5
-Eigenvalue=-3
-Eigenvalue=3
-~~
-Variables
 ~~~
 Linear Algebra
 LA_6_15_image
@@ -1425,159 +1262,153 @@ LA_6_16_image
 ~~
 Number
 ~~~
-MVC
+Multivariable Calculus
 MVC_1_1_image
 ~
 1
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_1_2_image
 ~
 7
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_1_3_image
 ~
 0
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_1_4_image
 ~
 60
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_1_5_image
 ~
 6
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_1_6_image
 ~
 [6,2,-1/4]
 ~~
 1x3 Matrix
 ~~~
+Multivariable Calculus
 MVC_1_7_image
 ~
 [12,3,-2/3]
 ~~
 1x3 Matrix
 ~~~
+Multivariable Calculus
 MVC_1_8_image
 ~
+Increasing
+Decreasing
+_
 Decreasing
 ~~
-Increasing/Decreasing
+Options
 ~~~
+Multivariable Calculus
 MVC_1_9_image
 ~
 3
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_1_10_image
 ~
+Increasing
+Decreasing
+_
 Decreasing
 ~~
-Increasing/Decreasing
+Options
 ~~~
+Multivariable Calculus
 MVC_1_11_image
 ~
 38/9
 ~~
 Number
 ~~~
-MVC_1_12_image
-~
-A:y>=0
-B:y<=0
-C:y>0
-D:y<0
-A
-~~
-MCQ
-~~~
+Multivariable Calculus
 MVC_1_13_image
 ~
 A
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_1_14_image
 ~
 B
 ~~
 Number
 ~~~
-MVC_1_15_image
-~
-A:x>=0
-B:x<=0
-C:x>0
-D:x<0
-B
-~~
-MCQ
-~~~
+Multivariable Calculus
 MVC_2_1_image
 ~
 104
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_2_2_image
 ~
 -2
 ~~
 Number
 ~~~
-MVC_2_3_image
-~
-2e
-~~
-Number
-~~~
+Multivariable Calculus
 MVC_2_4_image
 ~
 -1
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_2_5_image
 ~
 144
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_2_6_image
 ~
 -24
 ~~
 Number
 ~~~
-MVC_2_7_image
-~
--2e
-~~
-Number
-~~~
+Multivariable Calculus
 MVC_2_8_image
 ~
 -4
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_2_9_image
 ~
 1/3
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_2_10_image
 ~
 [8]
@@ -1585,6 +1416,7 @@ MVC_2_10_image
 ~~
 2x1 Matrix
 ~~~
+Multivariable Calculus
 MVC_2_11_image
 ~
 [20]
@@ -1592,18 +1424,24 @@ MVC_2_11_image
 ~~
 2x1 Matrix
 ~~~
+Multivariable Calculus
 MVC_2_12_image
 ~
 5/3
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_2_13_image
 ~
+Yes
+No
+_
 No
 ~~
-Yes/No
+Options
 ~~~
+Multivariable Calculus
 MVC_2_14_image
 ~
 Saddle
@@ -1614,12 +1452,14 @@ Saddle
 ~~
 Options
 ~~~
+Multivariable Calculus
 MVC_2_15_image
 ~
 [1,-2]
 ~~
 1x2 Matrix
 ~~~
+Multivariable Calculus
 MVC_2_16_image
 ~
 Maximum
@@ -1630,18 +1470,24 @@ Saddle
 ~~
 Options
 ~~~
+Multivariable Calculus
 MVC_2_17_image
 ~
 4/3
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_2_18_image
 ~
 Yes
+No
+_
+Yes
 ~~
-Yes/No
+Options
 ~~~
+Multivariable Calculus
 MVC_2_19_image
 ~
 Saddle
@@ -1652,144 +1498,171 @@ Minimum
 ~~
 Options
 ~~~
+Multivariable Calculus
 MVC_2_20_image
 ~
 [-1,-2]
 ~~
 1x2 Matrix
 ~~~
+Multivariable Calculus
 MVC_2_22_image
 ~
 2
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_2_23_image
 ~
 3366
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_3_1_image
 ~
 30
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_3_2_image
 ~
 24
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_3_3_image
 ~
 24
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_3_4_image
 ~
 15
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_3_5_image
 ~
 1023/50
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_3_6_image
 ~
 1
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_3_7_image
 ~
 15/6
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_3_8_image
 ~
 255/32
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_3_9_image
 ~
 No
 ~~
 Yes/No
 ~~~
+Multivariable Calculus
 MVC_3_10_image
 ~
 No
 ~~
 Yes/No
 ~~~
+Multivariable Calculus
 MVC_3_11_image
 ~
 258
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_3_12_image
 ~
 0
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_3_13_image
 ~
 13
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_3_14_image
 ~
 0
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_3_15_image
 ~
 13
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_3_16_image
 ~
 130
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_3_17_image
 ~
 -16
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_3_18_image
 ~
 Yes
+No
+_
+Yes
 ~~
-Yes/No
+Options
 ~~~
+Multivariable Calculus
 MVC_3_19_image
 ~
 -4
 ~~
 Number
 ~~~
+Multivariable Calculus
 MVC_4_1_image
 ~
 4473/500
 ~~
 Number
 ~~~
+
 MVC_4_2_image
 ~
 30
@@ -1820,9 +1693,12 @@ Number
 Calc BC
 calcbc1.1.4_image
 ~
+Yes
+No
+_
 No
 ~~
-Yes/No
+Options
 ~~~
 Calc BC
 calcbc1.1.5_image
@@ -1872,13 +1748,6 @@ calcbc1.3.6_image
 7/6
 ~~
 Number
-~~~
-Calc BC
-calcbc1.4.3_image
-~
-y+3=15(x-2)
-~~
-Equation
 ~~~
 Calc BC
 calcbc1.4.5_image
@@ -1974,9 +1843,12 @@ Number
 Calc BC
 calcbc3.3.2_image
 ~
+True
+False
+_
 False
 ~~
-Boolean
+Options
 ~~~
 Calc BC
 calcbc3.3.3_image
@@ -2003,8 +1875,11 @@ Calc BC
 BC_3_2_image
 ~
 Yes
+No
+_
+Yes
 ~~
-Yes/No
+Options
 ~~~
 Calc BC
 BC_3_3_image
@@ -3289,14 +3164,6 @@ PC_1_2_image
 Number
 ~~~
 Precal
-PC_1_3_image
-~
-x=3
-x=9
-~~
-Variables
-~~~
-Precal
 PC_1_4_image
 ~
 4
@@ -3325,14 +3192,6 @@ PC_1_7_image
 Number
 ~~~
 Precal
-PC_1_8_image
-~
-x=3
-x=11
-~~
-Variables
-~~~
-Precal
 PC_1_9_image
 ~
 -6
@@ -3351,70 +3210,6 @@ Precal
 PC_1_11_image
 ~
 x=-5
-x=1
-~~
-Variables
-~~~
-Precal
-PC_1_12_image
-~
-x=-3
-x=-2
-~~
-Variables
-~~~
-Precal
-PC_1_13_image
-~
-x=-3
-x=0
-~~
-Variables
-~~~
-Precal
-PC_1_14_image
-~
-x=-2
-x=1
-~~
-Variables
-~~~
-Precal
-PC_1_15_image
-~
-x=0
-x=9
-~~
-Variables
-~~~
-Precal
-PC_1_16_image
-~
-x=-3
-x=2
-~~
-Variables
-~~~
-Precal
-PC_1_17_image
-~
-x=-4
-x=-1
-~~
-Variables
-~~~
-Precal
-PC_1_18_image
-~
-x=-1
-x=0
-~~
-Variables
-~~~
-Precal
-PC_1_19_image
-~
-x=-2
 x=1
 ~~
 Variables
@@ -6768,6 +6563,713 @@ Number
 ~~~
 Algebra 1
 A_97_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_1_1_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_1_2_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_1_3_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_1_4_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_1_5_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_1_6_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_1_7_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_1_8_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_1_9_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_1_10_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_1_11_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_1_12_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_1_15_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_1_16_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_1_17_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_1_18_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_1_19_image
+~
+E
+~~
+Number
+~~~
+Geometry
+G_1_20_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_1_21_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_1_22_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_1_23_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_1_24_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_1_25_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_2_1_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_2_2_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_2_3_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_2_4_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_2_5_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_2_6_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_2_7_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_2_8_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_2_9_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_2_10_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_2_11_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_2_12_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_2_13_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_2_14_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_2_15_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_2_16_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_2_17_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_2_18_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_2_19_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_2_20_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_2_21_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_2_22_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_2_23_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_2_24_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_2_25_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_2_26_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_2_27_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_2_28_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_2_29_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_3_1_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_3_3_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_3_4_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_3_5_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_3_6_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_7_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_3_8_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_9_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_3_10_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_11_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_3_12_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_3_13_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_3_14_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_3_15_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_16_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_3_17_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_18_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_19_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_20_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_3_21_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_22_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_3_23_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_24_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_25_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_26_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_3_27_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_28_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_29_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_3_30_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_31_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_3_32_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_33_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_34_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_3_35_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_3_36_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_3_37_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_3_38_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_39_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_3_40_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_3_41_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_3_42_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_3_43_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_3_44_image
+~
+D
+~~
+Number
+~~~
+Geometry
+G_3_45_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_3_46_image
+~
+B
+~~
+Number
+~~~
+Geometry
+G_3_47_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_48_image
+~
+C
+~~
+Number
+~~~
+Geometry
+G_3_49_image
+~
+A
+~~
+Number
+~~~
+Geometry
+G_3_50_image
 ~
 A
 ~~
