@@ -88,7 +88,7 @@ public class WalkableTile : MonoBehaviour
 
     public void FreezePlayer()
     {
-        playerScript.PlayAnimation("idleDown");
+        playerScript.PlayAnimation("spin");
         playerScript.move = Vector3.zero;
         player.GetComponent<Rigidbody2D>().velocity = Vector2.zero;
         player.GetComponent<Collider2D>().enabled = false;
@@ -97,6 +97,7 @@ public class WalkableTile : MonoBehaviour
 
     public void UnFreezePlayer()
     {
+        playerScript.PlayAnimation("idleDown");
         player.GetComponent<Collider2D>().enabled = true;
         playerScript.enabled = true;
     }

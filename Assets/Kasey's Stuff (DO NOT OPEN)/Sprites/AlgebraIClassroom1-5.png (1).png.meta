@@ -1,0 +1,3137 @@
+fileFormatVersion: 2
+guid: d6033e0d14bd26a48ac1816adff7a71a
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: -1653952658264199752
+    second: AlgebraIClassroom1-5.png (1)_0
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_0
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 456
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8bd69d002dafb09e0800000000000000
+      internalID: -1653952658264199752
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_1
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 456
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2d084be9e2ab0ed458221692e9a5b806
+      internalID: -516972957
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_2
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 456
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb2f67dd2bd6a4742b57b12a417419eb
+      internalID: -1676101337
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_3
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 456
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f6245091aa767a44aa54d908ff33aceb
+      internalID: -714555860
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_4
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 456
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0f9258f9b5512da4385eedf9d318e027
+      internalID: -235173311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_5
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 456
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 282c5ed4a91c36f4d9b1dde469c59a61
+      internalID: -354435857
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_6
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 456
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 299bbe19c38be314589898a19c787d6f
+      internalID: -1504405674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_7
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 456
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 51f88da4de7df6a4a9c5512fbf711869
+      internalID: -1548274651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_8
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 456
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 02f70d149902bb24ca6996efd9ebfdf7
+      internalID: 692401960
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_9
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 456
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8615c2f0f0ef32245a60a7834a0d7f98
+      internalID: -2111308286
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_10
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 456
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4f8a24335ebae3e4ea7a08466c052c2f
+      internalID: 1448640001
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_11
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 456
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dc0828418bbcd174dbe2a10dd144e8df
+      internalID: 684148413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_12
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 456
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d430c12d75d5732498a656df14d3a82a
+      internalID: -457710302
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_13
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 440
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3182ce386e74b4f43acb0fd3b4ff80ce
+      internalID: -369684947
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_14
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 440
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9d346e4883648fb46a3071b77c7332ee
+      internalID: -165109004
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_15
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 440
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: fb44931a3799f1a439ec329467b7f838
+      internalID: -1125887423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_16
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 440
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 06d768dc79779cf4e9771e0a03ce7754
+      internalID: -1934420575
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_17
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 440
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1adecbeb65f406a46ba617fb58acaed5
+      internalID: -1166818576
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_18
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 440
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c5666517a28be3e4f828bc4c34779e8a
+      internalID: -184351090
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_19
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 440
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f7f4a4e05950bb546b3bee0982a6a758
+      internalID: -67284848
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_20
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 440
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cfb008d1facca7548b63156e015034d4
+      internalID: -1662456669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_21
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 440
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 61079cad25ba8a94ab9c3c5979200713
+      internalID: -510601287
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_22
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 440
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1ba1f60bb7bb50b409c7d0fef10e10c2
+      internalID: 2049022041
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_23
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 440
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0324d0c4f88d22742b09de314f01241d
+      internalID: -454535495
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_24
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 440
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8a02e71c2fdbfbf44ad52aafa596e198
+      internalID: -79375676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_25
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 440
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e7ccf11e8d85a824085e06909081f397
+      internalID: 299144935
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_26
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 424
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f3e455600dc54304290df6e6910144aa
+      internalID: -1498011512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_27
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 424
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55d4155c85b79fe4a971358a3b205622
+      internalID: 376190992
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_28
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 424
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 30f77ec8e274e554a88b41faaaaaacf6
+      internalID: -1784054311
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_29
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 424
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0128b87e6a70ad14d878098d66dc2ef1
+      internalID: 1816256305
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_30
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 424
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 09dfc7394c8268848915bcae5c4a1973
+      internalID: -1966007383
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_31
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 424
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 07ae2a25f78960e428a7c61ecee72962
+      internalID: -1781131039
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_32
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 424
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 173538d9563108d4fa5df12b9878ed59
+      internalID: -1650389278
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_33
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 424
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f97836e4a14cd2140b532506cb8d48cd
+      internalID: -1223943875
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_34
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 424
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1f6438ffe0f957548b82cbf2b2174b96
+      internalID: 2136386760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_35
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 424
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d67b1df5ad100a84d8d56da69b201389
+      internalID: 1780237259
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_36
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 424
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6048c831dc4a7f2468af3859a6573e14
+      internalID: -1553387833
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_37
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 424
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9b9a69f2bc8041b49931e59a24508b64
+      internalID: -2086561983
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_38
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 424
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cde7a1a4088bbf445bb7f60eb9806bc4
+      internalID: -1534048402
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_39
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 8}
+        - {x: -8, y: 8}
+      - - {x: -8, y: -8}
+        - {x: 3, y: -8}
+        - {x: 3, y: -7}
+        - {x: -8, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 04bb6c2d6d41e044c909574bf5b55330
+      internalID: -804627899
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_40
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 8}
+        - {x: -8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e98eb213b20c8a442b0a4154a724b0b3
+      internalID: 555689669
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_41
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 8}
+        - {x: -8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d2191753ffa3b57408e2bd4da416e9f1
+      internalID: -1379458964
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_42
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 8}
+        - {x: -8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0ba6670df5361234f8839b098608e5e9
+      internalID: -2109656684
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_43
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 8}
+        - {x: -8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: afc6132227a82cf41a4fe3ad41fa757e
+      internalID: 1501135737
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_44
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 8}
+        - {x: -8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f875e11f7ab42834e8815a06dd0dbcc3
+      internalID: 1305071631
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_45
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 8}
+        - {x: -8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec40856125ae0324ca8520ca3d47068e
+      internalID: -1872561461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_46
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 8}
+        - {x: -8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f0b3f142b3dadd34e9094a0523f05581
+      internalID: 2141514748
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_47
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 8}
+        - {x: -8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0836687ca9ea12f4e9fba686db45f894
+      internalID: -1411589919
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_48
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 8}
+        - {x: -8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1560cec7ffa5faa428897c3202d56ccf
+      internalID: -1255871688
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_49
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 8}
+        - {x: -8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: db8ed9a8dce8af042a2ab4b3290611ed
+      internalID: -618477636
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_50
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 8}
+        - {x: -8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b85da75ae179004d8104f57f81e1486
+      internalID: 1094629552
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_51
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 408
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 8}
+        - {x: -8, y: 8}
+      - - {x: 3, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -7}
+        - {x: 3, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8905bd5722df9ec4a9f960e79a344bb7
+      internalID: -1852607231
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_52
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 3, y: -8}
+        - {x: 3, y: 8}
+        - {x: -8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 68db8450c393fd54ca9a8dcc3f4e7bc5
+      internalID: 886905181
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_53
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20e18f1317acf2943b2dd88daab26c0e
+      internalID: 2093252358
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_54
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 5054a59dde6618240b2fd40193187a86
+      internalID: -1130733531
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_55
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 778c6af88c2f4d94882870473ac3cba0
+      internalID: 1605033856
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_56
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: da21cb3f59335b14680b99d0e2141ef6
+      internalID: -616008564
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_57
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2dffc0ae20e4f5a44a1f06d23cbb1747
+      internalID: -420077313
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_58
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20607edfd5e1a08478e17640da0b5c04
+      internalID: -438623167
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_59
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 76b59d0006543f24abe2a82f534106d7
+      internalID: -2094476972
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_60
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 21a2754804536694ba5b4d281ea0e3d7
+      internalID: -1408297708
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_61
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ae6b275422a69b94a97433398f5451a7
+      internalID: -659834262
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_62
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 8d49e6366c361744c883180c0c31a0d7
+      internalID: 635190114
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_63
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b71d01771d5a8734cb1b288506fb76bc
+      internalID: 682905922
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_64
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 392
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
+        - {x: 3, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: c892e86b310ed214b95f9a13e4e56c17
+      internalID: -2003896138
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_65
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 376
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 3, y: -8}
+        - {x: 3, y: 8}
+        - {x: -8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: b82c2450d65c3744ea3f72ae2d3caf02
+      internalID: 2059601430
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_66
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 376
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4a66af9bdb698bb40914f7c977cc59a5
+      internalID: 1014026230
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_67
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 376
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdc08a0f4df6a87428b39a9083a99e6f
+      internalID: -1254171798
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_68
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 376
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1d5f96833aa8ea249bf27ad782f1249a
+      internalID: -1499254469
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_69
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 376
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 66f8c06a061b3c042b434bf468d5936d
+      internalID: 2054170866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_70
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 376
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ec0b483a67e6acd48bb499bfb149f723
+      internalID: 1198161731
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_71
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 376
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 6fe4ef8815593a44baf27d0388ff7234
+      internalID: -1499788512
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_72
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 376
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 9fdf64d36fb8cfe4e93c1c348a37ad25
+      internalID: -1837762115
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_73
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 376
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e1208a7056ea9894f88095c68071ca51
+      internalID: -752666656
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_74
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 376
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdb8ced1032ca794fb767d118bb9012d
+      internalID: 1992439439
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_75
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 376
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e8fd7046111783641b0eb0a3d2e5404a
+      internalID: -543199889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_76
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 376
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: bb4da870153d1884a8d9b7ac11557827
+      internalID: -276186691
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_77
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 376
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
+        - {x: 3, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 918c64717c46e0d4691cab8badceeb85
+      internalID: 997818822
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_78
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 3, y: -8}
+        - {x: 3, y: 8}
+        - {x: -8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e92083e8d9ca82d4c8799c441dc90e9d
+      internalID: -111510554
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_79
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: f27bef83a900da34187976f0f0c0a158
+      internalID: 11801819
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_80
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0def4165855d4bb4b8b6c099e85ee7f0
+      internalID: -1108839095
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_81
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 14d01f69e6571c94694ea34c622b1135
+      internalID: -1114857541
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_82
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: aa0c70aa284c41543a20d62e714a7c06
+      internalID: 1646899888
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_83
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d181f59cf603d9b46a2f2003833b4c6d
+      internalID: 570568672
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_84
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 141790632b119a74987f91b8217aadaa
+      internalID: -1284177120
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_85
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 28e41283127e8e0439ec0ae70b85e6ca
+      internalID: 875875020
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_86
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3766052b46723e04999c027c431fa6a7
+      internalID: -2009411070
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_87
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 2df3510853d00f34b8c190fba9d91d2a
+      internalID: -294192734
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_88
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 3635dfc26d7114642a2ed6d212d61971
+      internalID: -464716142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_89
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 521498bc3fa61b04caab866ea9aac37f
+      internalID: 753495444
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_90
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 360
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
+        - {x: 3, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 70339241a2dc8394d8773e89b6648618
+      internalID: 2068438555
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_91
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 3, y: -8}
+        - {x: 3, y: 8}
+        - {x: -8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4b1728ab6142eb0408b6249cf18f81e7
+      internalID: 1233606045
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_92
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: c4e911a952637ac4795d37958153d47d
+      internalID: 268308242
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_93
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1a92a031c299fb749a1ea27d0f1da9c8
+      internalID: 1607776676
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_94
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: b69488e429a314f4c866baba1ba1ab72
+      internalID: -1835301792
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_95
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 247fd74891da64d4bb6278e846ce1219
+      internalID: 1675940808
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_96
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 17ec5638d801c9b449517f6f20230afb
+      internalID: 344059158
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_97
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 78b34da77e36ecb4e952c65641113a86
+      internalID: -1424932866
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_98
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 63a45180b166ed1469b961561162c8d9
+      internalID: -956725350
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_99
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 566b9b460cb6d2d45a4cc03ff252eaf3
+      internalID: 1499825159
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_100
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: d402c55745e6a66439522993c3f0ef23
+      internalID: 16446142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_101
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 87c5c46ed6a9d494f99d4eb63abac36f
+      internalID: -1051049291
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_102
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 40ebe51f5e5c7ab4d8f4a10f49507d62
+      internalID: -955500348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_103
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 344
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
+        - {x: 3, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 24966793b839b3c4d8970281cbf688b7
+      internalID: -1062404116
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_104
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 3, y: -8}
+        - {x: 3, y: 8}
+        - {x: -8, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: e61b306d77d588a45bcdf018ecfe77a3
+      internalID: -756195914
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_105
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 1b0438aab9e1e5f42b6f607b5121519a
+      internalID: 2122677113
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_106
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ddf2a66b34df6814294e1b37b4bf2cdd
+      internalID: 1285346283
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_107
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e034ec72ade8d3b47a88c013090e7978
+      internalID: -1309960177
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_108
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 20d4d9d8c962ce7469fab2c121dcc3b7
+      internalID: 603480938
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_109
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 95d93a994d65bfc4aa9e822fdfbe12f3
+      internalID: -550433738
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_110
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 136516e097686b7468a3691aa1cb3725
+      internalID: -1696210288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_111
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 89da599b732ec6b41b57c443f39e3fa1
+      internalID: -1440624651
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_112
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: ed27f064980de3f4cb4e9ca2a06b171a
+      internalID: 563281209
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_113
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 089ef8f230723734bb9f767c61d22941
+      internalID: -181507334
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_114
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 197ac9455b4b0e143a573a4c4bd84791
+      internalID: -1113889573
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_115
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 0c0ebb33a5cded041b783444aa8cac5e
+      internalID: -1578125011
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_116
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 328
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: 3, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: 8}
+        - {x: 3, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4dc8cf42c1e954046ad594343eb1f6da
+      internalID: 1954468133
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_117
+      rect:
+        serializedVersion: 2
+        x: 512
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 3, y: -8}
+        - {x: 3, y: 8}
+        - {x: -8, y: 8}
+      - - {x: 3, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -7}
+        - {x: 3, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 665add9f2517d644faa551fff1caee87
+      internalID: 1822830616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_118
+      rect:
+        serializedVersion: 2
+        x: 528
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -7}
+        - {x: -8, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: cdcdd311d3cff784ea0231a5bb01edc5
+      internalID: -692273300
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_119
+      rect:
+        serializedVersion: 2
+        x: 544
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -7}
+        - {x: -8, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 99e08e17d2da8004da80676320773cd1
+      internalID: 49135907
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_120
+      rect:
+        serializedVersion: 2
+        x: 560
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -7}
+        - {x: -8, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7371436e129de6f4eb26db0ca2e27126
+      internalID: 1419282950
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_121
+      rect:
+        serializedVersion: 2
+        x: 576
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -7}
+        - {x: -8, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 55e252c8c2eb68343b43bfa72f729ec6
+      internalID: 1253888528
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_122
+      rect:
+        serializedVersion: 2
+        x: 592
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -7}
+        - {x: -8, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: f4bb86036ffa3f0409746262316557df
+      internalID: -1100974338
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_123
+      rect:
+        serializedVersion: 2
+        x: 608
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -7}
+        - {x: -8, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: d88a5fda4ffad7a4ca3d760b54f170d9
+      internalID: 716019284
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_124
+      rect:
+        serializedVersion: 2
+        x: 624
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -7}
+        - {x: -8, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 7ecffa993f28ad248bafb5f666f0d88a
+      internalID: 102171702
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_125
+      rect:
+        serializedVersion: 2
+        x: 640
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -7}
+        - {x: -8, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 589ab22cf5b37704a988c47fc182fdbd
+      internalID: 913320304
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_126
+      rect:
+        serializedVersion: 2
+        x: 656
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -7}
+        - {x: -8, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 64454e802b3138e439890b26f50f7f7a
+      internalID: -1438813492
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_127
+      rect:
+        serializedVersion: 2
+        x: 672
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -7}
+        - {x: -8, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 77a9edeecd64de84e8e6a8673a73fdc8
+      internalID: -861892862
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_128
+      rect:
+        serializedVersion: 2
+        x: 688
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -7}
+        - {x: -8, y: -7}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 363b3308dc449374bb3630e86e2a8595
+      internalID: 1326009923
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: AlgebraIClassroom1-5.png (1)_129
+      rect:
+        serializedVersion: 2
+        x: 704
+        y: 312
+        width: 16
+        height: 16
+      alignment: 0
+      pivot: {x: 0.5, y: 0.5}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape:
+      - - {x: -8, y: -8}
+        - {x: 8, y: -8}
+        - {x: 8, y: -7}
+        - {x: -8, y: -7}
+      - - {x: 3, y: -7}
+        - {x: 8, y: -7}
+        - {x: 8, y: 8}
+        - {x: 3, y: 8}
+      tessellationDetail: 0
+      bones: []
+      spriteID: 4d0d7da45eb452a439c23124c260f88e
+      internalID: 1952805514
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: c49f1c4d9448eb74298a8b37437f165e
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      AlgebraIClassroom1-5.png (1)_0: -1653952658264199752
+      AlgebraIClassroom1-5.png (1)_1: -516972957
+      AlgebraIClassroom1-5.png (1)_10: 1448640001
+      AlgebraIClassroom1-5.png (1)_100: 16446142
+      AlgebraIClassroom1-5.png (1)_101: -1051049291
+      AlgebraIClassroom1-5.png (1)_102: -955500348
+      AlgebraIClassroom1-5.png (1)_103: -1062404116
+      AlgebraIClassroom1-5.png (1)_104: -756195914
+      AlgebraIClassroom1-5.png (1)_105: 2122677113
+      AlgebraIClassroom1-5.png (1)_106: 1285346283
+      AlgebraIClassroom1-5.png (1)_107: -1309960177
+      AlgebraIClassroom1-5.png (1)_108: 603480938
+      AlgebraIClassroom1-5.png (1)_109: -550433738
+      AlgebraIClassroom1-5.png (1)_11: 684148413
+      AlgebraIClassroom1-5.png (1)_110: -1696210288
+      AlgebraIClassroom1-5.png (1)_111: -1440624651
+      AlgebraIClassroom1-5.png (1)_112: 563281209
+      AlgebraIClassroom1-5.png (1)_113: -181507334
+      AlgebraIClassroom1-5.png (1)_114: -1113889573
+      AlgebraIClassroom1-5.png (1)_115: -1578125011
+      AlgebraIClassroom1-5.png (1)_116: 1954468133
+      AlgebraIClassroom1-5.png (1)_117: 1822830616
+      AlgebraIClassroom1-5.png (1)_118: -692273300
+      AlgebraIClassroom1-5.png (1)_119: 49135907
+      AlgebraIClassroom1-5.png (1)_12: -457710302
+      AlgebraIClassroom1-5.png (1)_120: 1419282950
+      AlgebraIClassroom1-5.png (1)_121: 1253888528
+      AlgebraIClassroom1-5.png (1)_122: -1100974338
+      AlgebraIClassroom1-5.png (1)_123: 716019284
+      AlgebraIClassroom1-5.png (1)_124: 102171702
+      AlgebraIClassroom1-5.png (1)_125: 913320304
+      AlgebraIClassroom1-5.png (1)_126: -1438813492
+      AlgebraIClassroom1-5.png (1)_127: -861892862
+      AlgebraIClassroom1-5.png (1)_128: 1326009923
+      AlgebraIClassroom1-5.png (1)_129: 1952805514
+      AlgebraIClassroom1-5.png (1)_13: -369684947
+      AlgebraIClassroom1-5.png (1)_14: -165109004
+      AlgebraIClassroom1-5.png (1)_15: -1125887423
+      AlgebraIClassroom1-5.png (1)_16: -1934420575
+      AlgebraIClassroom1-5.png (1)_17: -1166818576
+      AlgebraIClassroom1-5.png (1)_18: -184351090
+      AlgebraIClassroom1-5.png (1)_19: -67284848
+      AlgebraIClassroom1-5.png (1)_2: -1676101337
+      AlgebraIClassroom1-5.png (1)_20: -1662456669
+      AlgebraIClassroom1-5.png (1)_21: -510601287
+      AlgebraIClassroom1-5.png (1)_22: 2049022041
+      AlgebraIClassroom1-5.png (1)_23: -454535495
+      AlgebraIClassroom1-5.png (1)_24: -79375676
+      AlgebraIClassroom1-5.png (1)_25: 299144935
+      AlgebraIClassroom1-5.png (1)_26: -1498011512
+      AlgebraIClassroom1-5.png (1)_27: 376190992
+      AlgebraIClassroom1-5.png (1)_28: -1784054311
+      AlgebraIClassroom1-5.png (1)_29: 1816256305
+      AlgebraIClassroom1-5.png (1)_3: -714555860
+      AlgebraIClassroom1-5.png (1)_30: -1966007383
+      AlgebraIClassroom1-5.png (1)_31: -1781131039
+      AlgebraIClassroom1-5.png (1)_32: -1650389278
+      AlgebraIClassroom1-5.png (1)_33: -1223943875
+      AlgebraIClassroom1-5.png (1)_34: 2136386760
+      AlgebraIClassroom1-5.png (1)_35: 1780237259
+      AlgebraIClassroom1-5.png (1)_36: -1553387833
+      AlgebraIClassroom1-5.png (1)_37: -2086561983
+      AlgebraIClassroom1-5.png (1)_38: -1534048402
+      AlgebraIClassroom1-5.png (1)_39: -804627899
+      AlgebraIClassroom1-5.png (1)_4: -235173311
+      AlgebraIClassroom1-5.png (1)_40: 555689669
+      AlgebraIClassroom1-5.png (1)_41: -1379458964
+      AlgebraIClassroom1-5.png (1)_42: -2109656684
+      AlgebraIClassroom1-5.png (1)_43: 1501135737
+      AlgebraIClassroom1-5.png (1)_44: 1305071631
+      AlgebraIClassroom1-5.png (1)_45: -1872561461
+      AlgebraIClassroom1-5.png (1)_46: 2141514748
+      AlgebraIClassroom1-5.png (1)_47: -1411589919
+      AlgebraIClassroom1-5.png (1)_48: -1255871688
+      AlgebraIClassroom1-5.png (1)_49: -618477636
+      AlgebraIClassroom1-5.png (1)_5: -354435857
+      AlgebraIClassroom1-5.png (1)_50: 1094629552
+      AlgebraIClassroom1-5.png (1)_51: -1852607231
+      AlgebraIClassroom1-5.png (1)_52: 886905181
+      AlgebraIClassroom1-5.png (1)_53: 2093252358
+      AlgebraIClassroom1-5.png (1)_54: -1130733531
+      AlgebraIClassroom1-5.png (1)_55: 1605033856
+      AlgebraIClassroom1-5.png (1)_56: -616008564
+      AlgebraIClassroom1-5.png (1)_57: -420077313
+      AlgebraIClassroom1-5.png (1)_58: -438623167
+      AlgebraIClassroom1-5.png (1)_59: -2094476972
+      AlgebraIClassroom1-5.png (1)_6: -1504405674
+      AlgebraIClassroom1-5.png (1)_60: -1408297708
+      AlgebraIClassroom1-5.png (1)_61: -659834262
+      AlgebraIClassroom1-5.png (1)_62: 635190114
+      AlgebraIClassroom1-5.png (1)_63: 682905922
+      AlgebraIClassroom1-5.png (1)_64: -2003896138
+      AlgebraIClassroom1-5.png (1)_65: 2059601430
+      AlgebraIClassroom1-5.png (1)_66: 1014026230
+      AlgebraIClassroom1-5.png (1)_67: -1254171798
+      AlgebraIClassroom1-5.png (1)_68: -1499254469
+      AlgebraIClassroom1-5.png (1)_69: 2054170866
+      AlgebraIClassroom1-5.png (1)_7: -1548274651
+      AlgebraIClassroom1-5.png (1)_70: 1198161731
+      AlgebraIClassroom1-5.png (1)_71: -1499788512
+      AlgebraIClassroom1-5.png (1)_72: -1837762115
+      AlgebraIClassroom1-5.png (1)_73: -752666656
+      AlgebraIClassroom1-5.png (1)_74: 1992439439
+      AlgebraIClassroom1-5.png (1)_75: -543199889
+      AlgebraIClassroom1-5.png (1)_76: -276186691
+      AlgebraIClassroom1-5.png (1)_77: 997818822
+      AlgebraIClassroom1-5.png (1)_78: -111510554
+      AlgebraIClassroom1-5.png (1)_79: 11801819
+      AlgebraIClassroom1-5.png (1)_8: 692401960
+      AlgebraIClassroom1-5.png (1)_80: -1108839095
+      AlgebraIClassroom1-5.png (1)_81: -1114857541
+      AlgebraIClassroom1-5.png (1)_82: 1646899888
+      AlgebraIClassroom1-5.png (1)_83: 570568672
+      AlgebraIClassroom1-5.png (1)_84: -1284177120
+      AlgebraIClassroom1-5.png (1)_85: 875875020
+      AlgebraIClassroom1-5.png (1)_86: -2009411070
+      AlgebraIClassroom1-5.png (1)_87: -294192734
+      AlgebraIClassroom1-5.png (1)_88: -464716142
+      AlgebraIClassroom1-5.png (1)_89: 753495444
+      AlgebraIClassroom1-5.png (1)_9: -2111308286
+      AlgebraIClassroom1-5.png (1)_90: 2068438555
+      AlgebraIClassroom1-5.png (1)_91: 1233606045
+      AlgebraIClassroom1-5.png (1)_92: 268308242
+      AlgebraIClassroom1-5.png (1)_93: 1607776676
+      AlgebraIClassroom1-5.png (1)_94: -1835301792
+      AlgebraIClassroom1-5.png (1)_95: 1675940808
+      AlgebraIClassroom1-5.png (1)_96: 344059158
+      AlgebraIClassroom1-5.png (1)_97: -1424932866
+      AlgebraIClassroom1-5.png (1)_98: -956725350
+      AlgebraIClassroom1-5.png (1)_99: 1499825159
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
