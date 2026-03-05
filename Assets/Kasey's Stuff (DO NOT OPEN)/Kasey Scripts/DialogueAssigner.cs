@@ -17,8 +17,8 @@ public class DialogueAssigner : MonoBehaviour
         int i = 0;
         while (file.Length > 0)
         {
-            //Check if NPC name is correct
-            if(i>0)
+            //Check if name in file is in NPCs list, if not skip to next name
+            if (i>0)
                 file = file.Substring(file.IndexOf("\n")+1);
 
             int NPCIndex = FindNPC(file.Substring(0, file.IndexOf("\n")).Trim());
