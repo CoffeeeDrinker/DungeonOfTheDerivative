@@ -900,7 +900,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: Assembly-CSharp::WalkableTile
   player: {fileID: 742102479}
   wallTilePosition: {x: 0, y: 0, z: 0}
-  groundTilePosition: {x: 0, y: 0, z: 0}
+  groundTilePosition: {x: 3, y: -2, z: 0}
   wallWalkTilemap: {fileID: 1028680493}
   groundWalkTilemap: {fileID: 1735752215}
   moveSpeed: 2.5
