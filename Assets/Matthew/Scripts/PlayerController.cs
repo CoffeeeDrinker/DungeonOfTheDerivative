@@ -44,9 +44,8 @@ public class PlayerController : MonoBehaviour, ICombatant
         staminaBarEmptySpace.transform.localScale = new Vector3(((float)(maxStamina - stamina) / (float)maxStamina), staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
         attackButton = attackButtonField.GetComponent<AttackHandler>();
         moveList = new List<Move>() //initializes list of moves
-        {
-            Moves.TAYLOREXPANSION,
-            /*new Move(
+        { 
+            new Move(
                 "Punch",
                 Move.DAMAGE, //is an attack
                 15, //stamina cost
@@ -58,7 +57,7 @@ public class PlayerController : MonoBehaviour, ICombatant
                         direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
                         origin.DepleteStamina(15);
                     }
-                }),*/
+                }),
             new Move(
                 "Lulaby",
                 Move.STATUS, //is an attack
@@ -196,6 +195,18 @@ public class PlayerController : MonoBehaviour, ICombatant
         staminaBarEmptySpace.transform.Translate(-0.5f * xDiff, 0, 0);
         //staminaBar.transform.Translate(recharge * (5.71F / maxStamina), 0, 0);
     }
+    /*
+    private IEnumerator ChangeStaminaBar(int staminaDiff)
+    {
+        for(int i = 1; i <= staminaDiff; i++)
+        {
+            float xInit = staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+            staminaBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(stamina+i) / (float)maxStamina)), staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
+            float xDiff = staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x - xInit;
+            staminaBarEmptySpace.transform.Translate(-0.5f * xDiff, 0, 0);
+            for (int i = 0; i < 5; i++) { yield return null; } //waits 5 frames between updating stamina bar
+        }
+    } */
 
     int ICombatant.getXP()
     {

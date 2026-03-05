@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      Caffiene Crash_0: -2154643249912208947
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
