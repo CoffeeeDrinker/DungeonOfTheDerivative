@@ -55,8 +55,7 @@ public class DialogueAssigner : MonoBehaviour
                 file = file.Substring(file.IndexOf("~~") + 3).Trim();
             }
             i++;
-        }
-              
+        }     
     }
 
     public int FindNPC(string name)

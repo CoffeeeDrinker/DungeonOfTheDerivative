@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      MVC_3_10_image_0: 7913296914730219014
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
