@@ -11378,11 +11378,6 @@ PolygonCollider2D:
       - {x: 0.375, y: -0.5}
       - {x: 1, y: -0.5}
   m_UseDelaunayMesh: 0
---- !u!1 &572730042 stripped
-GameObject:
-  m_CorrespondingSourceObject: {fileID: 621116630779742836, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
-  m_PrefabInstance: {fileID: 1423446223}
-  m_PrefabAsset: {fileID: 0}
 --- !u!1 &616261473
 GameObject:
   m_ObjectHideFlags: 0
@@ -59497,7 +59492,7 @@ GameObject:
   - component: {fileID: 1928148510}
   - component: {fileID: 1928148509}
   m_Layer: 0
-  m_Name: Lights Camera Action!
+  m_Name: MainCamera
   m_TagString: MainCamera
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -70108,11 +70103,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 520150794555468486, guid: 44b4f4c3bca431d4d87f6f1b94952ff7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 3.43
+      value: 0.35
       objectReference: {fileID: 0}
     - target: {fileID: 520150794555468486, guid: 44b4f4c3bca431d4d87f6f1b94952ff7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -2.23
+      value: -1.04
       objectReference: {fileID: 0}
     - target: {fileID: 520150794555468486, guid: 44b4f4c3bca431d4d87f6f1b94952ff7, type: 3}
       propertyPath: m_LocalPosition.z
@@ -70563,7 +70558,7 @@ PrefabInstance:
       objectReference: {fileID: 1992321415}
     - target: {fileID: 6318335149802630074, guid: b89c8ae6828eec5479277b86020f3c9e, type: 3}
       propertyPath: NPCs.Array.size
-      value: 6
+      value: 5
       objectReference: {fileID: 0}
     - target: {fileID: 6318335149802630074, guid: b89c8ae6828eec5479277b86020f3c9e, type: 3}
       propertyPath: 'NPCs.Array.data[0]'
@@ -70588,7 +70583,7 @@ PrefabInstance:
     - target: {fileID: 6318335149802630074, guid: b89c8ae6828eec5479277b86020f3c9e, type: 3}
       propertyPath: 'NPCs.Array.data[5]'
       value: 
-      objectReference: {fileID: 572730042}
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
