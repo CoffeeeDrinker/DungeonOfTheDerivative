@@ -17,19 +17,24 @@ public class DialogueAssigner : MonoBehaviour
         int i = 0;
         while (file.Length > 0)
         {
-            //Check if name in file is in NPCs list, if not skip to next name
+            //Remove the first line of the file if it isn't the first loop
             if (i>0)
                 file = file.Substring(file.IndexOf("\n")+1);
 
+            //Check if name in file is in NPCs list, if not skip to next name
             int NPCIndex = FindNPC(file.Substring(0, file.IndexOf("\n")).Trim());
+            Debug.Log(file.Substring(0, file.IndexOf("\n")));
             if (NPCIndex > -1){
                 file = file.Substring(file.IndexOf(NPCs[NPCIndex].name.Trim()));
             }
             else
             {
-                break;
+                file = file.Substring(file.IndexOf("~~")+3);
+                i++;
+                continue;
             }
 
+            Debug.Log("testing");
             if (NPCs[NPCIndex].name.Trim() == file.Substring(0, file.IndexOf("\n")).Trim())
             {
                 //Delete the name from the file
