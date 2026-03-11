@@ -16,6 +16,7 @@ public class PlayerController : MonoBehaviour, ICombatant
     private SpriteRenderer statusRenderer;
     [SerializeField] GameObject healthBarEmptySpace;
     [SerializeField] GameObject staminaBarEmptySpace;
+    private float totalStaminaDisplacement = 0;
     private StatusEffect status = null;
     private int health;
     private int stamina;
@@ -27,8 +28,6 @@ public class PlayerController : MonoBehaviour, ICombatant
     private int XP = 0;
     private Move lastMove;
     public List<Move> moveList;
-    // Start is called before the first frame update
-    // Start is called before the first frame update
     void Start()
     {
         statusRenderer = statusMarker.GetComponent<SpriteRenderer>();
@@ -171,6 +170,7 @@ public class PlayerController : MonoBehaviour, ICombatant
         staminaBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxStamina - stamina) / (float)maxStamina)), staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
         float xDiff = xInit - staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
         staminaBarEmptySpace.transform.Translate(0.5f * xDiff, 0, 0);
+        totalStaminaDisplacement += 0.5f * xDiff;
         //staminaBar.transform.Translate(-exhaustion * (5.71F/maxStamina), 0, 0);
         if (stamina > 0)
         {
@@ -215,11 +215,12 @@ public class PlayerController : MonoBehaviour, ICombatant
 
     void ICombatant.Win(int XP)
     {
+        int XPBase = 1000;
         this.XP += XP;
-        if(XP >= 100)
+        if(XP >= XPBase*playerLevel)
         {
+            XP -= XPBase * playerLevel;
             playerLevel++;
-            XP -= 100;
         }
         Debug.Log("Level: " + playerLevel);
     }
@@ -334,5 +335,13 @@ public class PlayerController : MonoBehaviour, ICombatant
             return false;
         }
         return true;
+    }
+
+    void ICombatant.Reset()
+    {
+        //reset stamina and stamina bar
+        stamina = maxStamina;
+        staminaBarEmptySpace.transform.Translate(-1 * totalStaminaDisplacement, 0, 0);
+        staminaBarEmptySpace.transform.localScale = new Vector3(((float)(maxStamina - stamina) / (float)maxStamina), staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
     }
 }

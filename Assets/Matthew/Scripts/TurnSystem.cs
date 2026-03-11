@@ -19,11 +19,10 @@ public class TurnSystem : MonoBehaviour
     public static int turnIndex; //Whoever is having their turn currently; 0 = player, 1 = enemy
     private bool isClicked;
     public static bool inInventory = false;
-
+    private static bool hasStarted = false;
     //Kasey was here
     public GameObject gameManager;
     
-    // Start is called before the first frame update
     void Start()
     {
         winner = null;
@@ -31,9 +30,18 @@ public class TurnSystem : MonoBehaviour
         player = playerField.GetComponent<PlayerController>();
         enemy = enemyField.GetComponent<EnemyController>();
         UI = UIField.GetComponent<UIController>();
-        turnIndex = 0;
-        itemManager.EnterCombat();
-        StartCoroutine(ManageTurns());
+        OnEnable();
+    }
+
+    private void OnEnable()
+    {
+        if (hasStarted)
+        {
+            turnIndex = 0;
+            itemManager.EnterCombat();
+            StartCoroutine(ManageTurns());
+        }
+        else { hasStarted = true; }
     }
 
     // Update is called once per frame
@@ -262,7 +270,9 @@ public class TurnSystem : MonoBehaviour
                     UI.HideText();
                     player.Win(enemy.getXP());
                     winner = player;
-
+                    enemy.Reset();
+                    player.Reset();
+  
                     //Continue dialogue
                     gameManager.GetComponent<CombatManager>().CloseCombatSystem();
                     itemManager.ExitCombat();
@@ -289,6 +299,7 @@ public class TurnSystem : MonoBehaviour
             UI.HideText();
             enemy.Win(0);
             winner = enemy;
+
             gameManager.GetComponent<CombatManager>().CloseCombatSystem();
             itemManager.ExitCombat();
         }

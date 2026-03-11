@@ -8342,6 +8342,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1595568308}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.ID
+      value: 0
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.level
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 1547938943}
@@ -8354,6 +8362,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 312337266}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.XPWorth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: problemManager
       value: 
       objectReference: {fileID: 312337267}
@@ -8362,13 +8374,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1959872024}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.maxStamina
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: typewriterInstance
       value: 
       objectReference: {fileID: 1547938940}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.attackModifier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.defenseModifier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: startCombatPostDialogue
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.personalityContainer
+      value: 
+      objectReference: {fileID: 7834177892109876469, guid: 453a7601753508b4ba8b034d614b74c0, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -8785,6 +8817,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1595568308}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.ID
+      value: 4
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.level
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 1547938943}
@@ -8805,13 +8845,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1959872024}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.maxStamina
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: typewriterInstance
       value: 
       objectReference: {fileID: 1547938940}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.attackModifier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.defenseModifier
+      value: 1.2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: startCombatPostDialogue
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.personalityContainer
+      value: 
+      objectReference: {fileID: 6864684854554597192, guid: 3d867f36106f3bd49a6ee53f45611cdc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -23070,8 +23130,12 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1983845548}
     - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
+      propertyPath: preset.ID
+      value: -1
+      objectReference: {fileID: 0}
+    - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
       propertyPath: preset.level
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
       propertyPath: statusMarker
@@ -23079,7 +23143,7 @@ PrefabInstance:
       objectReference: {fileID: 768340117}
     - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
       propertyPath: preset.XPWorth
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
       propertyPath: combatController
@@ -23087,11 +23151,11 @@ PrefabInstance:
       objectReference: {fileID: 1537186454}
     - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
       propertyPath: preset.maxHealth
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
       propertyPath: preset.maxStamina
-      value: 100
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
       propertyPath: healthBarEmptySpace
@@ -23099,11 +23163,11 @@ PrefabInstance:
       objectReference: {fileID: 1149194234}
     - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
       propertyPath: preset.attackModifier
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
       propertyPath: preset.defenseModifier
-      value: 1
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 3574089479875882453, guid: 8ce947b8103cef04ebb76040c155ebc0, type: 3}
       propertyPath: preset.personalityContainer
@@ -26396,6 +26460,10 @@ PrefabInstance:
       propertyPath: player
       value: 
       objectReference: {fileID: 1595568308}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.ID
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: Preset.level
       value: 1
@@ -30792,6 +30860,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1595568308}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.ID
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.level
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 1547938943}
@@ -30804,6 +30880,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 312337266}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.XPWorth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: problemManager
       value: 
       objectReference: {fileID: 312337267}
@@ -30812,13 +30892,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1959872024}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.maxStamina
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: typewriterInstance
       value: 
       objectReference: {fileID: 1547938940}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.attackModifier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.defenseModifier
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: startCombatPostDialogue
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.personalityContainer
+      value: 
+      objectReference: {fileID: 7882592324710550599, guid: 4441a204a5f5e39479f329949e916a01, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
@@ -45331,6 +45431,14 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1595568308}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.ID
+      value: 2
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.level
+      value: 10
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: dialogueText
       value: 
       objectReference: {fileID: 1547938943}
@@ -45343,6 +45451,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 312337266}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.XPWorth
+      value: 1000000
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: problemManager
       value: 
       objectReference: {fileID: 312337267}
@@ -45351,13 +45463,33 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1959872024}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.maxHealth
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.maxStamina
+      value: 100
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: typewriterInstance
       value: 
       objectReference: {fileID: 1547938940}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.attackModifier
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.defenseModifier
+      value: 3
+      objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: startCombatPostDialogue
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.personalityContainer
+      value: 
+      objectReference: {fileID: 6864684854554597192, guid: 3d867f36106f3bd49a6ee53f45611cdc, type: 3}
     m_RemovedComponents: []
     m_RemovedGameObjects: []
     m_AddedGameObjects: []
