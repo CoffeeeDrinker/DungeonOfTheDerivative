@@ -26,7 +26,7 @@ public class MathProblemManager : MonoBehaviour
         drawscreenStuff.SetActive(true);
         DeleteDrawings();
         drawscreenStuff.transform.position = player.position;
-        currentProb = mathProblemGetterScript.GetRandProblem("Algebra 1");
+        currentProb = mathProblemGetterScript.GetRandProblem("Linear Algebra");
         //Check if there is an image
         if (mathProblemGetterScript.GetProblemImage(currentProb) == null)
         {
@@ -37,6 +37,7 @@ public class MathProblemManager : MonoBehaviour
         {
             //Show image
             problemImage.sprite = mathProblemGetterScript.GetProblemImage(currentProb);
+            problemImage.SetNativeSize();
             problemTextBox.text = mathProblemGetterScript.GetProblemWithoutImage(currentProb);
         }
 
@@ -85,7 +86,11 @@ public class MathProblemManager : MonoBehaviour
 
         Answer();
         string input = answerInput.GetInput();
-        correct = input == currentProb.GetAnswer();
+        input = input.Replace("\n", "");
+        string ans = currentProb.GetAnswer().Replace("\n", "");
+        correct = input == ans;
+        Debug.Log(input);
+        Debug.Log(ans);
         if (correct)
         {
             Debug.Log("Right answer!");

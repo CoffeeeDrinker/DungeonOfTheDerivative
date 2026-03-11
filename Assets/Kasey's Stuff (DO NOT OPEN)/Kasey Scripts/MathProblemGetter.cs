@@ -1,5 +1,6 @@
 using System.Collections;
 using System.Collections.Generic;
+using System.IO;
 using UnityEngine;
 using UnityEngine.UI;
 
@@ -14,6 +15,7 @@ using UnityEngine.UI;
 
 public class MathProblemGetter : MonoBehaviour
 {
+    public string mathPath = Application.dataPath + "/NickFolder/MathProblems/MathProblems.txt";
     public TextAsset mathProblemsFile;
     public List<Sprite> images;
     private string text;
@@ -22,31 +24,87 @@ public class MathProblemGetter : MonoBehaviour
 
     void Start()
     {
+        string[] lines = File.ReadAllLines(mathPath);
         text = mathProblemsFile.text;
         string subj, prob, answ, ansInputText;
         GameObject answerInput = null;
+        int i = 0;
 
-        while (text.Length > 1)
+        while (text.Length > 1 && i < lines.Length)
         {
             subj = text.Substring(0, text.IndexOf("\n"));
             text = text.Substring(text.IndexOf("\n") + 1);
+            subj = lines[i];
+            i++;
 
             prob = text.Substring(0, text.IndexOf("~")-1);
             text = text.Substring(text.IndexOf("~") + 3);
+            prob = "";
 
-            answ = text.Substring(0, text.IndexOf("~~")-1);
+            while (lines[i] != "~")
+            {
+                prob += lines[i];
+                i++;
+            }
+            i++;
+
+            answ = text.Substring(0, text.IndexOf("~~")-2);
+            answ = "";
             text = text.Substring(text.IndexOf("~~")+4);
 
+            while (lines[i] != "~~")
+            {
+                answ += lines[i];
+                i++;
+            }
+            i++;
+
             ansInputText = text.Substring(0, text.IndexOf("~~~")-2);
+            ansInputText = "";
+
+            while (lines[i] != "~~~")
+            {
+                ansInputText += lines[i];
+                i++;
+            }
+            i++;
+
             text = text.Substring(text.IndexOf("~~~") + 5);
 
             switch (ansInputText)
             {
-                case "Matrix":
-                    answerInput = AnswerInputManager.Instance.GetAnswerInput(E_AnswerInputs.matrix);
+                case "1x2 Matrix":
+                    answerInput = AnswerInputManager.Instance.GetAnswerInput(E_AnswerInputs.matrix_1x2);
+                    break;
+                case "1x3 Matrix":
+                    answerInput = AnswerInputManager.Instance.GetAnswerInput(E_AnswerInputs.matrix_1x3);
+                    break;
+                case "2x1 Matrix":
+                    answerInput = AnswerInputManager.Instance.GetAnswerInput(E_AnswerInputs.matrix_2x1);
+                    break;
+                case "2x2 Matrix":
+                    answerInput = AnswerInputManager.Instance.GetAnswerInput(E_AnswerInputs.matrix_2x2);
+                    break;
+                case "2x3 Matrix":
+                    answerInput = AnswerInputManager.Instance.GetAnswerInput(E_AnswerInputs.matrix_2x3);
+                    break;
+                case "3x1 Matrix":
+                    answerInput = AnswerInputManager.Instance.GetAnswerInput(E_AnswerInputs.matrix_3x1);
+                    break;
+                case "3x3 Matrix":
+                    answerInput = AnswerInputManager.Instance.GetAnswerInput(E_AnswerInputs.matrix_3x3);
+                    break;
+                case "4x1 Matrix":
+                    answerInput = AnswerInputManager.Instance.GetAnswerInput(E_AnswerInputs.matrix_4x1);
                     break;
                 case "Number":
                     answerInput = AnswerInputManager.Instance.GetAnswerInput(E_AnswerInputs.number);
+                    break;
+                case "Variables":
+                    answerInput = AnswerInputManager.Instance.GetAnswerInput(E_AnswerInputs.variables);
+                    break;
+                case "Options":
+                    answerInput = AnswerInputManager.Instance.GetAnswerInput(E_AnswerInputs.options);
                     break;
             }
 
@@ -86,6 +144,7 @@ public class MathProblemGetter : MonoBehaviour
 
     public Sprite GetProblemImage(MathProblem prob)
     {
+        Debug.Log(prob.GetProblem().Substring(0, prob.GetProblem().IndexOf("_image")));
         if(prob == null || prob.GetProblem().IndexOf("_image") < 0)
         {
             return null;
@@ -93,8 +152,8 @@ public class MathProblemGetter : MonoBehaviour
         else
         {
             for (int i = 0; i < images.Count; i++)
-            {
-                if (prob.GetProblem().Substring(prob.GetProblem().LastIndexOf("\n") + 1, prob.GetProblem().IndexOf("_image") - prob.GetProblem().LastIndexOf("\n") - 1).Trim() == images[i].name.Trim())
+            {   
+                if (prob.GetProblem().Substring(prob.GetProblem().LastIndexOf("\n") + 1, prob.GetProblem().IndexOf("_image") - prob.GetProblem().LastIndexOf("\n") - 1).Trim() == images[i].name.Trim().Substring(0, images[i].name.Trim().IndexOf("_image")))
                     return images[i];
             }
         }
@@ -103,7 +162,13 @@ public class MathProblemGetter : MonoBehaviour
 
     public string GetProblemWithoutImage(MathProblem prob)
     {
-        return prob.GetProblem().Substring(0, prob.GetProblem().LastIndexOf("\n"));
+        if(prob.GetProblem().Contains("_image"))
+        {
+            return "";
+        } else
+        {
+            return prob.GetProblem();
+        }
     }
 
     public GameObject GetProblemAnswerInput(MathProblem prob)
