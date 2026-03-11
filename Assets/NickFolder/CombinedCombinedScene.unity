@@ -12959,7 +12959,7 @@ MonoBehaviour:
   canvas: {fileID: 193324287}
   heldItemManager: {fileID: 1681378042}
   playerMovement: {fileID: 1595568305}
-  pauseCanvas: {fileID: 0}
+  pauseCanvas: {fileID: 13480578}
 --- !u!4 &708770210
 Transform:
   m_ObjectHideFlags: 0

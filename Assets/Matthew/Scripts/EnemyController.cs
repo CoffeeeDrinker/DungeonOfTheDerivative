@@ -29,7 +29,6 @@ public class EnemyController : MonoBehaviour, ICombatant
     [SerializeField] GameObject statusMarker;
     [SerializeField] GameObject healthBarEmptySpace;
     private double totalHealthBarDisplacement = 0;
-    int ID;
     private bool hasStarted = false;
     // Start is called before the first frame update
     void Start()
@@ -47,13 +46,11 @@ public class EnemyController : MonoBehaviour, ICombatant
             return;
         }
         preset = combatController.GetComponent<EnemyInfoContainer>().GetPreset();
-        Debug.Log("ID: " + preset.ID);
         preset.Initialize();
         player = playerObj.GetComponent<ICombatant>();
         healthBarEmptySpace.SetActive(true);
         statusMarker.SetActive(false);
         level = preset.level;
-        ID = preset.ID;
         maxStamina = preset.maxStamina;
         maxHealth = preset.maxHealth;
         stamina = maxStamina;
@@ -415,7 +412,6 @@ public class EnemyController : MonoBehaviour, ICombatant
 
 [System.Serializable] public struct EnemyPreset
 {
-    [SerializeField] public int ID;
     [SerializeField] public int maxHealth;
     [SerializeField] public int maxStamina;
     [SerializeField] public int level;

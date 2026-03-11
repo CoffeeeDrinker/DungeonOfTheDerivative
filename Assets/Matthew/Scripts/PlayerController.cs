@@ -291,9 +291,17 @@ public class PlayerController : MonoBehaviour, ICombatant
         statusMarker.SetActive(false);
     }
 
-    void ICombatant.Heal(int health)
+    void ICombatant.Heal(int heal)
     {
-        this.health += health;
+        if (health + heal >= maxHealth)
+        {
+            heal = maxHealth - health;
+        }
+        float xInit = healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+        health += heal;
+        healthBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxHealth - health) / (float)maxHealth)), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
+        float xDiff = healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x - xInit;
+        healthBarEmptySpace.transform.Translate(-0.5f * xDiff, 0, 0);
     }
 
     float ICombatant.GetDefense()

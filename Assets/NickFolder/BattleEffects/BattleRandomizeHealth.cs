@@ -25,5 +25,6 @@ public class BattleRandomizeHealth : MonoBehaviour
         user.TakeDamage(user.GetMaxHealth());
         user.Heal(UnityEngine.Random.Range(0, user.GetMaxHealth()));
         TurnSystem.inInventory = false;
+        TurnSystem.itemUseText = "You randomized your health!";
     }
 }

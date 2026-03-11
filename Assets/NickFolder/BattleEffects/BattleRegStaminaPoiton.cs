@@ -21,5 +21,6 @@ public class BattleRegStaminaPoiton : MonoBehaviour
     {
         user.Rest(60 * user.GetLevel());
         TurnSystem.inInventory = false;
+        TurnSystem.itemUseText = "You drank a stamina potion!";
     }
 }

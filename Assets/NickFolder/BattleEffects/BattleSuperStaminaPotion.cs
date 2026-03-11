@@ -22,6 +22,7 @@ public class BattleSuperStaminaPotion : MonoBehaviour
     {
         user.Rest(user.GetMaxStamina()); //restores stamina to full
         TurnSystem.inInventory = false;
+        TurnSystem.itemUseText = "You drank a super stamina potion!";
     }
 }
  

@@ -23,5 +23,6 @@ public class BattleCoffee : MonoBehaviour
         user.Rest(25*user.GetLevel());
         user.AddStatusEffect(StatusEffects.CAFFEINATED);
         TurnSystem.inInventory = false;
+        TurnSystem.itemUseText = "You drank coffee!";
     }
 }

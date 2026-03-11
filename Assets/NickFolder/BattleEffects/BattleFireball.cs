@@ -25,5 +25,6 @@ public class BattleFireball : MonoBehaviour
         target.AddStatusEffect(StatusEffects.BURNING);
         //FIREBALL AAAAAAAAAA FIRE FIRE FIRE FIRE FIRE
         TurnSystem.inInventory = false;
+        TurnSystem.itemUseText = "You cast fireball at your opponent!";
     }
 }
