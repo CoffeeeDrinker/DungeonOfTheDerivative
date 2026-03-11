@@ -12,7 +12,7 @@ public class NPCDialogueScript : MonoBehaviour
 {
     //Player stuff
     public Transform player;
-    public PlayerMovement playerScript;
+    private PlayerMovement playerScript;
     public bool stopMovementWhenTalking;
     public bool startCombatPostDialogue;
 
@@ -35,10 +35,18 @@ public class NPCDialogueScript : MonoBehaviour
     private float startTime;
 
     //Managers
-    public MathProblemManager problemManager;
-    public CombatManager combatManager;
+    public GameObject gameManager;
+    private MathProblemManager problemManager;
+    private CombatManager combatManager;
 
     public bool talkNow = false;
+
+    void Start()
+    {
+        playerScript = player.GetComponent<PlayerMovement>();
+        problemManager = gameManager.GetComponent<MathProblemManager>();
+        combatManager = gameManager.GetComponent<CombatManager>();
+    }
 
     void Update()
     {

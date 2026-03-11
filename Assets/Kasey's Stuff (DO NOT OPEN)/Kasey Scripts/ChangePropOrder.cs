@@ -14,11 +14,11 @@ public class ChangePropOrder : MonoBehaviour
             {
                 if(player.position.y - transform.GetChild(i).position.y > 0.05)
                 {
-                    transform.GetChild(i).GetComponent<SpriteRenderer>().sortingOrder = player.GetComponent<SpriteRenderer>().sortingOrder + 1;
+                    transform.GetChild(i).GetComponent<SpriteRenderer>().sortingOrder = Mathf.Abs(transform.GetChild(i).GetComponent<SpriteRenderer>().sortingOrder);
                 }
                 else
                 {
-                    transform.GetChild(i).GetComponent<SpriteRenderer>().sortingOrder = player.GetComponent<SpriteRenderer>().sortingOrder - 1;
+                    transform.GetChild(i).GetComponent<SpriteRenderer>().sortingOrder = Mathf.Abs(transform.GetChild(i).GetComponent<SpriteRenderer>().sortingOrder) * (-1);
                 }
             }
         }

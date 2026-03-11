@@ -1,0 +1,3114 @@
+fileFormatVersion: 2
+guid: 6b3fdc284cddafe4abdebb1df8cacc9c
+TextureImporter:
+  internalIDToNameTable:
+  - first:
+      213: 6187909776481600579
+    second: pedroSpriteSheet_0
+  - first:
+      213: 6810323629670148208
+    second: pedroSpriteSheet_1
+  - first:
+      213: -2258764397988059740
+    second: pedroSpriteSheet_2
+  - first:
+      213: 7555542055003916616
+    second: pedroSpriteSheet_3
+  - first:
+      213: -1229102712311692723
+    second: pedroSpriteSheet_4
+  - first:
+      213: -5149197047500120981
+    second: pedroSpriteSheet_5
+  - first:
+      213: -149482069653285413
+    second: pedroSpriteSheet_6
+  - first:
+      213: -31941390564865813
+    second: pedroSpriteSheet_7
+  - first:
+      213: 835533187762236142
+    second: pedroSpriteSheet_8
+  - first:
+      213: -1774534733923774809
+    second: pedroSpriteSheet_9
+  - first:
+      213: -1369455394713075010
+    second: pedroSpriteSheet_10
+  - first:
+      213: -7793260422310633781
+    second: pedroSpriteSheet_11
+  - first:
+      213: -719694009289013584
+    second: pedroSpriteSheet_12
+  - first:
+      213: -8448970394806653470
+    second: pedroSpriteSheet_13
+  - first:
+      213: 4258801451137117779
+    second: pedroSpriteSheet_14
+  - first:
+      213: -2574724466808462710
+    second: pedroSpriteSheet_15
+  - first:
+      213: -1741987074775708978
+    second: pedroSpriteSheet_16
+  - first:
+      213: 5891189565525730515
+    second: pedroSpriteSheet_17
+  - first:
+      213: -5796646139803944339
+    second: pedroSpriteSheet_18
+  - first:
+      213: 4563021722853223136
+    second: pedroSpriteSheet_19
+  - first:
+      213: -424229009009900193
+    second: pedroSpriteSheet_20
+  - first:
+      213: -1928948464503085348
+    second: pedroSpriteSheet_21
+  - first:
+      213: 8966448433559150880
+    second: pedroSpriteSheet_22
+  - first:
+      213: 1034421134843757549
+    second: pedroSpriteSheet_23
+  - first:
+      213: -5929457050300661621
+    second: pedroSpriteSheet_24
+  - first:
+      213: -6627358782856927563
+    second: pedroSpriteSheet_25
+  - first:
+      213: -1425213929156786979
+    second: pedroSpriteSheet_26
+  - first:
+      213: -6290849525450225299
+    second: pedroSpriteSheet_27
+  - first:
+      213: 6853513641316977776
+    second: pedroSpriteSheet_28
+  - first:
+      213: -4294162834808775331
+    second: pedroSpriteSheet_29
+  - first:
+      213: -6309544089894015420
+    second: pedroSpriteSheet_30
+  - first:
+      213: -2836232767175217423
+    second: pedroSpriteSheet_31
+  - first:
+      213: -3293621267338993073
+    second: pedroSpriteSheet_32
+  - first:
+      213: 3960681519515381411
+    second: pedroSpriteSheet_33
+  - first:
+      213: -4055752068494868724
+    second: pedroSpriteSheet_34
+  - first:
+      213: 4802703134356736562
+    second: pedroSpriteSheet_35
+  - first:
+      213: -2839738890359144173
+    second: pedroSpriteSheet_36
+  - first:
+      213: 5940915235045675846
+    second: pedroSpriteSheet_37
+  - first:
+      213: -8790019299196286044
+    second: pedroSpriteSheet_38
+  - first:
+      213: -221923956504059157
+    second: pedroSpriteSheet_39
+  - first:
+      213: 1540056111400530743
+    second: pedroSpriteSheet_40
+  - first:
+      213: -7030984778737441647
+    second: pedroSpriteSheet_41
+  - first:
+      213: -7381586602011000072
+    second: pedroSpriteSheet_42
+  - first:
+      213: 4168621231982973634
+    second: pedroSpriteSheet_43
+  - first:
+      213: -162182396323771281
+    second: pedroSpriteSheet_44
+  - first:
+      213: -5255398794419259382
+    second: pedroSpriteSheet_45
+  - first:
+      213: -1435952646579998550
+    second: pedroSpriteSheet_46
+  - first:
+      213: -8109159442018125401
+    second: pedroSpriteSheet_47
+  - first:
+      213: 5849907301395841545
+    second: pedroSpriteSheet_48
+  - first:
+      213: -6064166693566733473
+    second: pedroSpriteSheet_49
+  - first:
+      213: 1069023036352567208
+    second: pedroSpriteSheet_50
+  - first:
+      213: -5887563399937527519
+    second: pedroSpriteSheet_51
+  - first:
+      213: 5054640947852968933
+    second: pedroSpriteSheet_52
+  - first:
+      213: 8068127349206396537
+    second: pedroSpriteSheet_53
+  - first:
+      213: -8472130071284742627
+    second: pedroSpriteSheet_54
+  - first:
+      213: -4340150900697091219
+    second: pedroSpriteSheet_55
+  - first:
+      213: 72879325616533461
+    second: pedroSpriteSheet_56
+  - first:
+      213: -4226691503918132436
+    second: pedroSpriteSheet_57
+  - first:
+      213: 6992326711909135759
+    second: pedroSpriteSheet_58
+  - first:
+      213: 698676073646216836
+    second: pedroSpriteSheet_59
+  - first:
+      213: 5091476068960862336
+    second: pedroSpriteSheet_60
+  - first:
+      213: 9009885642780043424
+    second: pedroSpriteSheet_61
+  - first:
+      213: -9013924455092043559
+    second: pedroSpriteSheet_62
+  - first:
+      213: -4227747482625419539
+    second: pedroSpriteSheet_63
+  - first:
+      213: -3356559933098837179
+    second: pedroSpriteSheet_64
+  - first:
+      213: -193959577648946082
+    second: pedroSpriteSheet_65
+  - first:
+      213: 203302969885999353
+    second: pedroSpriteSheet_66
+  - first:
+      213: -8245993153591469897
+    second: pedroSpriteSheet_67
+  - first:
+      213: -1051140105201623135
+    second: pedroSpriteSheet_68
+  - first:
+      213: 288643192409722837
+    second: pedroSpriteSheet_69
+  - first:
+      213: -5773045735677151081
+    second: pedroSpriteSheet_70
+  - first:
+      213: -7790861547018979951
+    second: pedroSpriteSheet_71
+  - first:
+      213: 8218395907681939375
+    second: pedroSpriteSheet_72
+  - first:
+      213: 7906442141480245867
+    second: pedroSpriteSheet_73
+  - first:
+      213: -6615289814746117928
+    second: pedroSpriteSheet_74
+  - first:
+      213: 8049411728281799363
+    second: pedroSpriteSheet_75
+  - first:
+      213: 2627133831190516949
+    second: pedroSpriteSheet_76
+  - first:
+      213: 847244973051827674
+    second: pedroSpriteSheet_77
+  - first:
+      213: 805716092800899494
+    second: pedroSpriteSheet_78
+  - first:
+      213: -6196635901477350288
+    second: pedroSpriteSheet_79
+  - first:
+      213: -9164961132266384437
+    second: pedroSpriteSheet_80
+  - first:
+      213: 4149332687326781606
+    second: pedroSpriteSheet_81
+  - first:
+      213: 4340558654706351200
+    second: pedroSpriteSheet_82
+  - first:
+      213: -4523158044882614275
+    second: pedroSpriteSheet_83
+  - first:
+      213: -767978887336233760
+    second: pedroSpriteSheet_84
+  - first:
+      213: -399511202467387490
+    second: pedroSpriteSheet_85
+  - first:
+      213: -6498125756759039244
+    second: pedroSpriteSheet_86
+  - first:
+      213: -9025718105265269889
+    second: pedroSpriteSheet_87
+  - first:
+      213: -6246723142301357933
+    second: pedroSpriteSheet_88
+  - first:
+      213: -6276630939229910521
+    second: pedroSpriteSheet_89
+  - first:
+      213: -3625904078081289142
+    second: pedroSpriteSheet_90
+  - first:
+      213: -9033180581203189457
+    second: pedroSpriteSheet_91
+  - first:
+      213: -5012858492316339613
+    second: pedroSpriteSheet_92
+  - first:
+      213: -3747280617665537343
+    second: pedroSpriteSheet_93
+  - first:
+      213: 3463261133211553220
+    second: pedroSpriteSheet_94
+  - first:
+      213: -8978516254318305378
+    second: pedroSpriteSheet_95
+  - first:
+      213: 8885597215258536761
+    second: pedroSpriteSheet_96
+  - first:
+      213: 5375051698849171307
+    second: pedroSpriteSheet_97
+  - first:
+      213: 6058934288998802421
+    second: pedroSpriteSheet_98
+  - first:
+      213: -6116772580546437965
+    second: pedroSpriteSheet_99
+  - first:
+      213: -5737229969158305881
+    second: pedroSpriteSheet_100
+  - first:
+      213: 6717570610923247059
+    second: pedroSpriteSheet_101
+  - first:
+      213: -1408304311903374343
+    second: pedroSpriteSheet_102
+  - first:
+      213: -3959220204934303205
+    second: pedroSpriteSheet_103
+  - first:
+      213: 8906856850935814871
+    second: pedroSpriteSheet_104
+  - first:
+      213: -4018325777489768471
+    second: pedroSpriteSheet_105
+  - first:
+      213: -3964163884666278789
+    second: pedroSpriteSheet_106
+  - first:
+      213: 741543334175811434
+    second: pedroSpriteSheet_107
+  - first:
+      213: -262706503557327037
+    second: pedroSpriteSheet_108
+  - first:
+      213: 8446995977752644956
+    second: pedroSpriteSheet_109
+  - first:
+      213: -4817415848851029187
+    second: pedroSpriteSheet_110
+  - first:
+      213: -3920045085184350537
+    second: pedroSpriteSheet_111
+  - first:
+      213: -2157459702683340396
+    second: pedroSpriteSheet_112
+  - first:
+      213: 7288862468477213340
+    second: pedroSpriteSheet_113
+  - first:
+      213: -5461672628787390714
+    second: pedroSpriteSheet_114
+  - first:
+      213: -9071113649445201406
+    second: pedroSpriteSheet_115
+  - first:
+      213: -733269843681309140
+    second: pedroSpriteSheet_116
+  - first:
+      213: -7061135406256407525
+    second: pedroSpriteSheet_117
+  - first:
+      213: 3495400574249375348
+    second: pedroSpriteSheet_118
+  - first:
+      213: 8066212386854894668
+    second: pedroSpriteSheet_119
+  externalObjects: {}
+  serializedVersion: 13
+  mipmaps:
+    mipMapMode: 0
+    enableMipMap: 0
+    sRGBTexture: 1
+    linearTexture: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+  bumpmap:
+    convertToNormalMap: 0
+    externalNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    flipGreenChannel: 0
+  isReadable: 0
+  streamingMipmaps: 0
+  streamingMipmapsPriority: 0
+  vTOnly: 0
+  ignoreMipmapLimit: 0
+  grayScaleToAlpha: 0
+  generateCubemap: 6
+  cubemapConvolution: 0
+  seamlessCubemap: 0
+  textureFormat: 1
+  maxTextureSize: 2048
+  textureSettings:
+    serializedVersion: 2
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+  nPOTScale: 0
+  lightmap: 0
+  compressionQuality: 50
+  spriteMode: 2
+  spriteExtrude: 1
+  spriteMeshType: 0
+  alignment: 0
+  spritePivot: {x: 0.5, y: 0.5}
+  spritePixelsToUnits: 16
+  spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+  spriteGenerateFallbackPhysicsShape: 1
+  alphaUsage: 1
+  alphaIsTransparency: 1
+  spriteTessellationDetail: -1
+  textureType: 8
+  textureShape: 1
+  singleChannelComponent: 0
+  flipbookRows: 1
+  flipbookColumns: 1
+  maxTextureSizeSet: 0
+  compressionQualitySet: 0
+  textureFormatSet: 0
+  ignorePngGamma: 0
+  applyGammaDecoding: 0
+  swizzle: 50462976
+  cookieLightType: 0
+  platformSettings:
+  - serializedVersion: 3
+    buildTarget: DefaultTexturePlatform
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 0
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  - serializedVersion: 3
+    buildTarget: Standalone
+    maxTextureSize: 2048
+    resizeAlgorithm: 0
+    textureFormat: -1
+    textureCompression: 1
+    compressionQuality: 50
+    crunchedCompression: 0
+    allowsAlphaSplitting: 0
+    overridden: 0
+    ignorePlatformSupport: 0
+    androidETC2FallbackOverride: 0
+    forceMaximumCompressionQuality_BC6H_BC7: 0
+  spriteSheet:
+    serializedVersion: 2
+    sprites:
+    - serializedVersion: 2
+      name: pedroSpriteSheet_0
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3444a51282fdfd550800000000000000
+      internalID: 6187909776481600579
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_1
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07820ff2241238e50800000000000000
+      internalID: 6810323629670148208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_2
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4a56f9a5fb147a0e0800000000000000
+      internalID: -2258764397988059740
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_3
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8498802d77daad860800000000000000
+      internalID: 7555542055003916616
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_4
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d424130689951fee0800000000000000
+      internalID: -1229102712311692723
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_5
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6cd34121906a88b0800000000000000
+      internalID: -5149197047500120981
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_6
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bd5960289deecedf0800000000000000
+      internalID: -149482069653285413
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_7
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be8cfb979758e8ff0800000000000000
+      internalID: -31941390564865813
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_8
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eea2e96e109689b00800000000000000
+      internalID: 835533187762236142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_9
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7ae81e6bf069f57e0800000000000000
+      internalID: -1774534733923774809
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_10
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eb2826ef297befce0800000000000000
+      internalID: -1369455394713075010
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_11
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bce5016bfe6c8d390800000000000000
+      internalID: -7793260422310633781
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_12
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0b60a559c122306f0800000000000000
+      internalID: -719694009289013584
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_13
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2ede1c3c03a3fba80800000000000000
+      internalID: -8448970394806653470
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_14
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 224
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 35e22ff0b5d4a1b30800000000000000
+      internalID: 4258801451137117779
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_15
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a82ef592dbdb44cd0800000000000000
+      internalID: -2574724466808462710
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_16
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: eca0ca42cf733d7e0800000000000000
+      internalID: -1741987074775708978
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_17
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d426ad62b5b1c150800000000000000
+      internalID: 5891189565525730515
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_18
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d6ab85c3c0d2e8fa0800000000000000
+      internalID: -5796646139803944339
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_19
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0eaae0db41c135f30800000000000000
+      internalID: 4563021722853223136
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_20
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f558c86c6f5dc1af0800000000000000
+      internalID: -424229009009900193
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_21
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: cd6224f679ffa35e0800000000000000
+      internalID: -1928948464503085348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_22
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 021a62318593f6c70800000000000000
+      internalID: 8966448433559150880
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_23
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de3c482aa800b5e00800000000000000
+      internalID: 1034421134843757549
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_24
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b80c4e57a3656bda0800000000000000
+      internalID: -5929457050300661621
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_25
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5b66fbcdc44e604a0800000000000000
+      internalID: -6627358782856927563
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_26
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: dd4cba78b7f983ce0800000000000000
+      internalID: -1425213929156786979
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_27
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d69ca1cdfa962b8a0800000000000000
+      internalID: -6290849525450225299
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_28
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07c0ef568529c1f50800000000000000
+      internalID: 6853513641316977776
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_29
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 192
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d5dd98737a11864c0800000000000000
+      internalID: -4294162834808775331
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_30
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 44ea333641fff68a0800000000000000
+      internalID: -6309544089894015420
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_31
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1fea234435da3a8d0800000000000000
+      internalID: -2836232767175217423
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_32
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f42669f58e4ba42d0800000000000000
+      internalID: -3293621267338993073
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_33
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ae2b2f7bda27f630800000000000000
+      internalID: 3960681519515381411
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_34
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c0fbe446bf217b7c0800000000000000
+      internalID: -4055752068494868724
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_35
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 23a0dfc0e01a6a240800000000000000
+      internalID: 4802703134356736562
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_36
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 311084956883798d0800000000000000
+      internalID: -2839738890359144173
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_37
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6439a911eee527250800000000000000
+      internalID: 5940915235045675846
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_38
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4abc396d404930680800000000000000
+      internalID: -8790019299196286044
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_39
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: be22d6d56519becf0800000000000000
+      internalID: -221923956504059157
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_40
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 733b23eafd06f5510800000000000000
+      internalID: 1540056111400530743
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_41
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1942d22789cec6e90800000000000000
+      internalID: -7030984778737441647
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_42
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8f20a5448165f8990800000000000000
+      internalID: -7381586602011000072
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_43
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 2c21f779ceae9d930800000000000000
+      internalID: 4168621231982973634
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_44
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 160
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f6ccc4648ffcfbdf0800000000000000
+      internalID: -162182396323771281
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_45
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a08bf9904a21117b0800000000000000
+      internalID: -5255398794419259382
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_46
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: aa0315a0da8721ce0800000000000000
+      internalID: -1435952646579998550
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_47
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a9318f937a767f80800000000000000
+      internalID: -8109159442018125401
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_48
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 902c9ac42bb0f2150800000000000000
+      internalID: 5849907301395841545
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_49
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f5323338580c7dba0800000000000000
+      internalID: -6064166693566733473
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_50
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8a71182a9cee5de00800000000000000
+      internalID: 1069023036352567208
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_51
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 121f12a084c2b4ea0800000000000000
+      internalID: -5887563399937527519
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_52
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5e38be35921b52640800000000000000
+      internalID: 5054640947852968933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_53
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 97eaf0cc31fb7ff60800000000000000
+      internalID: 8068127349206396537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_54
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d160b226692fc6a80800000000000000
+      internalID: -8472130071284742627
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_55
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d63bb5c30cfa4c3c0800000000000000
+      internalID: -4340150900697091219
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_56
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5dfe7da4c5be20100800000000000000
+      internalID: 72879325616533461
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_57
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c235ccd9876c755c0800000000000000
+      internalID: -4226691503918132436
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_58
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f85b1d8f81cb90160800000000000000
+      internalID: 6992326711909135759
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_59
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 128
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4865fbeef2232b900800000000000000
+      internalID: 698676073646216836
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_60
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 08080d8428e88a640800000000000000
+      internalID: 5091476068960862336
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_61
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0a8ebc4714b890d70800000000000000
+      internalID: 9009885642780043424
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_62
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9d04806477b18e280800000000000000
+      internalID: -9013924455092043559
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_63
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: de65f0a60160455c0800000000000000
+      internalID: -4227747482625419539
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_64
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 54bb550568a1b61d0800000000000000
+      internalID: -3356559933098837179
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_65
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e542371bacaee4df0800000000000000
+      internalID: -193959577648946082
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_66
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f046d559f642d200800000000000000
+      internalID: 203302969885999353
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_67
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b890eb7ae8509d80800000000000000
+      internalID: -8245993153591469897
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_68
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1af5a4cb4a99961f0800000000000000
+      internalID: -1051140105201623135
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_69
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5df8a664477710400800000000000000
+      internalID: 288643192409722837
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_70
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 79831e48d7502efa0800000000000000
+      internalID: -5773045735677151081
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_71
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 195fea363bc41e390800000000000000
+      internalID: -7790861547018979951
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_72
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: fafe7ecf88b9d0270800000000000000
+      internalID: 8218395907681939375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_73
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b6adb10dc3359bd60800000000000000
+      internalID: 7906442141480245867
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_74
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 96
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 8d84cc976f4c134a0800000000000000
+      internalID: -6615289814746117928
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_75
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3ca891bb15145bf60800000000000000
+      internalID: 8049411728281799363
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_76
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5d49581ec44757420800000000000000
+      internalID: 2627133831190516949
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_77
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: ad55d7860d402cb00800000000000000
+      internalID: 847244973051827674
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_78
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a9963d748a7e2b00800000000000000
+      internalID: 805716092800899494
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_79
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 07492029a70210aa0800000000000000
+      internalID: -6196635901477350288
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_80
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: bc3100388648fc080800000000000000
+      internalID: -9164961132266384437
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_81
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 6a0a7035814659930800000000000000
+      internalID: 4149332687326781606
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_82
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 06cf4846913cc3c30800000000000000
+      internalID: 4340558654706351200
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_83
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: df742df09b38a31c0800000000000000
+      internalID: -4523158044882614275
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_84
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 0e4f25955479755f0800000000000000
+      internalID: -767978887336233760
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_85
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9764259da6a47af0800000000000000
+      internalID: -399511202467387490
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_86
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4f2af828d0502d5a0800000000000000
+      internalID: -6498125756759039244
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_87
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f731adc14353eb280800000000000000
+      internalID: -9025718105265269889
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_88
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3986aec066e2f49a0800000000000000
+      internalID: -6246723142301357933
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_89
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 64
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 70a89f07a6de4e8a0800000000000000
+      internalID: -6276630939229910521
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_90
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a44135ca3733eadc0800000000000000
+      internalID: -3625904078081289142
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_91
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: f216d690f12b3a280800000000000000
+      internalID: -9033180581203189457
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_92
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3623f20b2cfbe6ab0800000000000000
+      internalID: -5012858492316339613
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_93
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 1cad656d12cfefbc0800000000000000
+      internalID: -3747280617665537343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_94
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 4cdcd79c6a9ff0030800000000000000
+      internalID: 3463261133211553220
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_95
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: e9f59437907e56380800000000000000
+      internalID: -8978516254318305378
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_96
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 93b6fa0e69bff4b70800000000000000
+      internalID: 8885597215258536761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_97
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b67c347ba05089a40800000000000000
+      internalID: 5375051698849171307
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_98
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 5f3253d52a8a51450800000000000000
+      internalID: 6058934288998802421
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_99
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3bc1eacfebbdc1ba0800000000000000
+      internalID: -6116772580546437965
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_100
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7a7089d7db34160b0800000000000000
+      internalID: -5737229969158305881
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_101
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 3d51fa121ea993d50800000000000000
+      internalID: 6717570610923247059
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_102
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9f3395990b2b47ce0800000000000000
+      internalID: -1408304311903374343
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_103
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b12775153360e09c0800000000000000
+      internalID: -3959220204934303205
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_104
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 32
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7da98498d138b9b70800000000000000
+      internalID: 8906856850935814871
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_105
+      rect:
+        serializedVersion: 2
+        x: 0
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 9ef4de0def90c38c0800000000000000
+      internalID: -4018325777489768471
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_106
+      rect:
+        serializedVersion: 2
+        x: 16
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b7ca80f23f57cf8c0800000000000000
+      internalID: -3964163884666278789
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_107
+      rect:
+        serializedVersion: 2
+        x: 32
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: a67ab1bcbbd7a4a00800000000000000
+      internalID: 741543334175811434
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_108
+      rect:
+        serializedVersion: 2
+        x: 48
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 347d74fa3ddaa5cf0800000000000000
+      internalID: -262706503557327037
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_109
+      rect:
+        serializedVersion: 2
+        x: 64
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c5d89117612c93570800000000000000
+      internalID: 8446995977752644956
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_110
+      rect:
+        serializedVersion: 2
+        x: 80
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: d33c5e92fc9152db0800000000000000
+      internalID: -4817415848851029187
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_111
+      rect:
+        serializedVersion: 2
+        x: 96
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 7b6221aa3c33999c0800000000000000
+      internalID: -3920045085184350537
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_112
+      rect:
+        serializedVersion: 2
+        x: 112
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 491f654c4d92f02e0800000000000000
+      internalID: -2157459702683340396
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_113
+      rect:
+        serializedVersion: 2
+        x: 128
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c9ad24a0ccd372560800000000000000
+      internalID: 7288862468477213340
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_114
+      rect:
+        serializedVersion: 2
+        x: 144
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 60757a96ead3434b0800000000000000
+      internalID: -5461672628787390714
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_115
+      rect:
+        serializedVersion: 2
+        x: 160
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 20a1f97523eec1280800000000000000
+      internalID: -9071113649445201406
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_116
+      rect:
+        serializedVersion: 2
+        x: 176
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c2e8ed256f6e2d5f0800000000000000
+      internalID: -733269843681309140
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_117
+      rect:
+        serializedVersion: 2
+        x: 192
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: b1c372f62cec10e90800000000000000
+      internalID: -7061135406256407525
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_118
+      rect:
+        serializedVersion: 2
+        x: 208
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: 47694d78d48228030800000000000000
+      internalID: 3495400574249375348
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: pedroSpriteSheet_119
+      rect:
+        serializedVersion: 2
+        x: 224
+        y: 0
+        width: 16
+        height: 32
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: -1
+      bones: []
+      spriteID: c4c7751ed61f0ff60800000000000000
+      internalID: 8066212386854894668
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    outline: []
+    physicsShape: []
+    bones: []
+    spriteID: 1d07951f600e66a47ae303903885f0ea
+    internalID: 0
+    vertices: []
+    indices: 
+    edges: []
+    weights: []
+    secondaryTextures: []
+    nameFileIdTable:
+      pedroSpriteSheet_0: 6187909776481600579
+      pedroSpriteSheet_1: 6810323629670148208
+      pedroSpriteSheet_10: -1369455394713075010
+      pedroSpriteSheet_100: -5737229969158305881
+      pedroSpriteSheet_101: 6717570610923247059
+      pedroSpriteSheet_102: -1408304311903374343
+      pedroSpriteSheet_103: -3959220204934303205
+      pedroSpriteSheet_104: 8906856850935814871
+      pedroSpriteSheet_105: -4018325777489768471
+      pedroSpriteSheet_106: -3964163884666278789
+      pedroSpriteSheet_107: 741543334175811434
+      pedroSpriteSheet_108: -262706503557327037
+      pedroSpriteSheet_109: 8446995977752644956
+      pedroSpriteSheet_11: -7793260422310633781
+      pedroSpriteSheet_110: -4817415848851029187
+      pedroSpriteSheet_111: -3920045085184350537
+      pedroSpriteSheet_112: -2157459702683340396
+      pedroSpriteSheet_113: 7288862468477213340
+      pedroSpriteSheet_114: -5461672628787390714
+      pedroSpriteSheet_115: -9071113649445201406
+      pedroSpriteSheet_116: -733269843681309140
+      pedroSpriteSheet_117: -7061135406256407525
+      pedroSpriteSheet_118: 3495400574249375348
+      pedroSpriteSheet_119: 8066212386854894668
+      pedroSpriteSheet_12: -719694009289013584
+      pedroSpriteSheet_13: -8448970394806653470
+      pedroSpriteSheet_14: 4258801451137117779
+      pedroSpriteSheet_15: -2574724466808462710
+      pedroSpriteSheet_16: -1741987074775708978
+      pedroSpriteSheet_17: 5891189565525730515
+      pedroSpriteSheet_18: -5796646139803944339
+      pedroSpriteSheet_19: 4563021722853223136
+      pedroSpriteSheet_2: -2258764397988059740
+      pedroSpriteSheet_20: -424229009009900193
+      pedroSpriteSheet_21: -1928948464503085348
+      pedroSpriteSheet_22: 8966448433559150880
+      pedroSpriteSheet_23: 1034421134843757549
+      pedroSpriteSheet_24: -5929457050300661621
+      pedroSpriteSheet_25: -6627358782856927563
+      pedroSpriteSheet_26: -1425213929156786979
+      pedroSpriteSheet_27: -6290849525450225299
+      pedroSpriteSheet_28: 6853513641316977776
+      pedroSpriteSheet_29: -4294162834808775331
+      pedroSpriteSheet_3: 7555542055003916616
+      pedroSpriteSheet_30: -6309544089894015420
+      pedroSpriteSheet_31: -2836232767175217423
+      pedroSpriteSheet_32: -3293621267338993073
+      pedroSpriteSheet_33: 3960681519515381411
+      pedroSpriteSheet_34: -4055752068494868724
+      pedroSpriteSheet_35: 4802703134356736562
+      pedroSpriteSheet_36: -2839738890359144173
+      pedroSpriteSheet_37: 5940915235045675846
+      pedroSpriteSheet_38: -8790019299196286044
+      pedroSpriteSheet_39: -221923956504059157
+      pedroSpriteSheet_4: -1229102712311692723
+      pedroSpriteSheet_40: 1540056111400530743
+      pedroSpriteSheet_41: -7030984778737441647
+      pedroSpriteSheet_42: -7381586602011000072
+      pedroSpriteSheet_43: 4168621231982973634
+      pedroSpriteSheet_44: -162182396323771281
+      pedroSpriteSheet_45: -5255398794419259382
+      pedroSpriteSheet_46: -1435952646579998550
+      pedroSpriteSheet_47: -8109159442018125401
+      pedroSpriteSheet_48: 5849907301395841545
+      pedroSpriteSheet_49: -6064166693566733473
+      pedroSpriteSheet_5: -5149197047500120981
+      pedroSpriteSheet_50: 1069023036352567208
+      pedroSpriteSheet_51: -5887563399937527519
+      pedroSpriteSheet_52: 5054640947852968933
+      pedroSpriteSheet_53: 8068127349206396537
+      pedroSpriteSheet_54: -8472130071284742627
+      pedroSpriteSheet_55: -4340150900697091219
+      pedroSpriteSheet_56: 72879325616533461
+      pedroSpriteSheet_57: -4226691503918132436
+      pedroSpriteSheet_58: 6992326711909135759
+      pedroSpriteSheet_59: 698676073646216836
+      pedroSpriteSheet_6: -149482069653285413
+      pedroSpriteSheet_60: 5091476068960862336
+      pedroSpriteSheet_61: 9009885642780043424
+      pedroSpriteSheet_62: -9013924455092043559
+      pedroSpriteSheet_63: -4227747482625419539
+      pedroSpriteSheet_64: -3356559933098837179
+      pedroSpriteSheet_65: -193959577648946082
+      pedroSpriteSheet_66: 203302969885999353
+      pedroSpriteSheet_67: -8245993153591469897
+      pedroSpriteSheet_68: -1051140105201623135
+      pedroSpriteSheet_69: 288643192409722837
+      pedroSpriteSheet_7: -31941390564865813
+      pedroSpriteSheet_70: -5773045735677151081
+      pedroSpriteSheet_71: -7790861547018979951
+      pedroSpriteSheet_72: 8218395907681939375
+      pedroSpriteSheet_73: 7906442141480245867
+      pedroSpriteSheet_74: -6615289814746117928
+      pedroSpriteSheet_75: 8049411728281799363
+      pedroSpriteSheet_76: 2627133831190516949
+      pedroSpriteSheet_77: 847244973051827674
+      pedroSpriteSheet_78: 805716092800899494
+      pedroSpriteSheet_79: -6196635901477350288
+      pedroSpriteSheet_8: 835533187762236142
+      pedroSpriteSheet_80: -9164961132266384437
+      pedroSpriteSheet_81: 4149332687326781606
+      pedroSpriteSheet_82: 4340558654706351200
+      pedroSpriteSheet_83: -4523158044882614275
+      pedroSpriteSheet_84: -767978887336233760
+      pedroSpriteSheet_85: -399511202467387490
+      pedroSpriteSheet_86: -6498125756759039244
+      pedroSpriteSheet_87: -9025718105265269889
+      pedroSpriteSheet_88: -6246723142301357933
+      pedroSpriteSheet_89: -6276630939229910521
+      pedroSpriteSheet_9: -1774534733923774809
+      pedroSpriteSheet_90: -3625904078081289142
+      pedroSpriteSheet_91: -9033180581203189457
+      pedroSpriteSheet_92: -5012858492316339613
+      pedroSpriteSheet_93: -3747280617665537343
+      pedroSpriteSheet_94: 3463261133211553220
+      pedroSpriteSheet_95: -8978516254318305378
+      pedroSpriteSheet_96: 8885597215258536761
+      pedroSpriteSheet_97: 5375051698849171307
+      pedroSpriteSheet_98: 6058934288998802421
+      pedroSpriteSheet_99: -6116772580546437965
+  mipmapLimitGroupName: 
+  pSDRemoveMatte: 0
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
