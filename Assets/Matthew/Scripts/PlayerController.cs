@@ -351,5 +351,6 @@ public class PlayerController : MonoBehaviour, ICombatant
         stamina = maxStamina;
         staminaBarEmptySpace.transform.Translate(-1 * totalStaminaDisplacement, 0, 0);
         staminaBarEmptySpace.transform.localScale = new Vector3(((float)(maxStamina - stamina) / (float)maxStamina), staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
+        totalStaminaDisplacement = 0;
     }
 }
