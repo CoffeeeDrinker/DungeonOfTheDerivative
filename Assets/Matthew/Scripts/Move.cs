@@ -22,7 +22,22 @@ public class MoveType { }
 
 public static class Moves
 {
-     
+    public static readonly Move POLAR = new Move(
+        "Polar",
+        Move.STATUS,
+        25,
+        (origin, direction) =>
+        {
+            if(origin.GetStamina() > 25)
+            {
+                origin.DepleteStamina(25);
+                direction.TakeDamage(origin.Attack(10));
+                if(UnityEngine.Random.Range(0f, 10f) > 5f)
+                {
+                    direction.AddStatusEffect(StatusEffects.POISONED);
+                }
+            }
+        });
     public static readonly Move TAYLOREXPANSION = new Move(
         "Taylor Expansion",
         Move.BUFF,

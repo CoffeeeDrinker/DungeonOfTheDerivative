@@ -43,7 +43,7 @@ public class PlayerController : MonoBehaviour, ICombatant
         staminaBarEmptySpace.transform.localScale = new Vector3(((float)(maxStamina - stamina) / (float)maxStamina), staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
         attackButton = attackButtonField.GetComponent<AttackHandler>();
         moveList = new List<Move>() //initializes list of moves
-        { 
+        {
             new Move(
                 "Punch",
                 Move.DAMAGE, //is an attack
@@ -69,7 +69,7 @@ public class PlayerController : MonoBehaviour, ICombatant
                         origin.DepleteStamina(15);
                     }
                 }),
-            new Move(
+            /*new Move(
                 "Iron Stare",
                 Move.STATUS, //is an attack
                 15, //stamina cost
@@ -84,7 +84,8 @@ public class PlayerController : MonoBehaviour, ICombatant
                         }
                         origin.DepleteStamina(15);
                     }
-                }),
+                }), */
+            Moves.POLAR,
             new Move(
                 "Evan Smash",
                 Move.DAMAGE, //is an attack

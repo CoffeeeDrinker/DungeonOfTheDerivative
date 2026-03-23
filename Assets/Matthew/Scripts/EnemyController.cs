@@ -280,10 +280,12 @@ public class EnemyController : MonoBehaviour, ICombatant
 
     void ICombatant.AddStatusEffect(StatusEffect s)
     {
-        if(status == null)
+        if (status == null)
+        {
             this.status = s;
-        statusMarker.SetActive(true);
-        statusMarker.GetComponent<SpriteRenderer>().sprite = s.sprite;
+            statusMarker.SetActive(true);
+            statusMarker.GetComponent<SpriteRenderer>().sprite = s.sprite;
+        }
     }
 
     StatusEffect ICombatant.GetStatus()

@@ -57,11 +57,11 @@ public static class StatusEffects
         {
             //Poisoned deals fixed 10 damage each turn and makes your attacks deal 0.75x damage
             //20% chance of escaping every turn
-            affected.TakeDamage(10);
-            //affected.SetDmgCoefficient(0.75);
+            affected.TakeDamage((int)(10*0.5*affected.GetLevel() + 0.5));
+            affected.SetAttackModifier(0.75f*affected.GetAttackModifier());
             if (UnityEngine.Random.Range(0f, 10f) <= 2)
             {
-                //affected.SetDmgCoefficient(1);
+                affected.SetAttackModifier(affected.GetAttackModifier()/0.75f);
                 affected.ClearStatusEffects();
             }
             return false; //never skips turn
@@ -74,7 +74,7 @@ public static class StatusEffects
         {
             //Asleep makes you skip every turn until you wake up
             //Chance of waking up each turn
-            if (UnityEngine.Random.Range(0f, 10f) <= 2)
+            if (UnityEngine.Random.Range(0f, 10f) <= 2.5f)
             {
                 affected.ClearStatusEffects();
                 return false;
@@ -86,7 +86,7 @@ public static class StatusEffects
         }
      );
     public readonly static StatusEffect CAFFEINECRASH = new StatusEffect(
-        "Caffeine Crash",
+        "Caffeine Crash", 
         StatusEffectSpriteHolder.CAFFEINECRASH,
         (affected) =>
         {
@@ -109,7 +109,7 @@ public static class StatusEffects
             //30% chance of waking up each turn
             if (UnityEngine.Random.Range(0f, 10f) <= 5)
             {
-                affected.TakeDamage(affected.Attack(20));
+                affected.TakeDamage(affected.Attack((int)(20*affected.GetAttackModifier()+0.5f)));
                 return true; //skips turn if makes affected attack itself
             }
             if (UnityEngine.Random.Range(0f, 10f) <= 3)
@@ -145,7 +145,7 @@ public static class StatusEffects
         (affected) =>
         {
             //Paralyzed gives you a 50% chance of losing your turn each turn
-            //20% chance of wearing off each turn
+            //10% chance of wearing off each turn
             if (UnityEngine.Random.Range(0f, 10f) <= 1)
             {
                 affected.ClearStatusEffects();
