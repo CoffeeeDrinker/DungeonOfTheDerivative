@@ -30,7 +30,7 @@ public class CombatManager : MonoBehaviour
             combatSystem.SetActive(true);
 
             needCombatActive = false;
-        }
+        } 
     }
 
     public void StartCombat(NPCDialogueScript currentNPC)
@@ -46,13 +46,10 @@ public class CombatManager : MonoBehaviour
 
     public void CloseCombatSystem()
     {
-        //Play Transition Animation
-        TransitionAnims.ResetTrigger("closeTransition");
-        TransitionAnims.SetTrigger("openTransition");
-
         player.GetComponent<SpriteRenderer>().enabled = true;
         combatSystem.SetActive(false);
         currentNPC.DefeatDialogue();
+        currentNPC.gameObject.transform.GetChild(0).gameObject.SetActive(false);
 
         currentNPC = null;
     }
