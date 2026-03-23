@@ -8,6 +8,13 @@ public class Dialogue
 {
     public List<string> dialogueLines = new List<string>();
 
+    public Dialogue(){}
+
+    public Dialogue(List<string> lines)
+    {
+        dialogueLines = lines;
+    }
+
     public void AddLine(string newLine)
     {
         if(newLine != "" && newLine != null)
