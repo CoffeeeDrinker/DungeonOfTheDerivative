@@ -136,9 +136,7 @@ public class EnemyController : MonoBehaviour, ICombatant
 
     int ICombatant.Attack(int baseDmg)
     {
-        double modifier = UnityEngine.Random.Range(0.1F, 2.0F);
-        int damage = (int)(baseDmg * modifier);
-        //Calculate total damage as totalDmg*modifier
+        int damage = (int)((baseDmg + baseDmg * 0.25 * (level-1)) * attackModifier);
         return damage;
     }
 

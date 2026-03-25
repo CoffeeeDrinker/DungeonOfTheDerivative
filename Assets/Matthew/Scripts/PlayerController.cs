@@ -115,7 +115,7 @@ public class PlayerController : MonoBehaviour, ICombatant
             //lastMove = move;
 
             //return damage after modifiers
-            int damage = (int)(baseDmg * playerLevel * attackModifier);
+            int damage = (int)((baseDmg + baseDmg * 0.25 * (1-playerLevel)) * attackModifier);
             return damage;
     }
 
@@ -129,15 +129,32 @@ public class PlayerController : MonoBehaviour, ICombatant
         {
             health = 0;
         }
-        float xInit = healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
-        healthBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxHealth - health) / (float)maxHealth)), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
-        float xDiff = xInit - healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
-        healthBarEmptySpace.transform.Translate(0.5f*xDiff, 0, 0);
+
+        StartCoroutine(DepleteHealthBar(1f));
+        //float xInit = healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+        //healthBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxHealth - health) / (float)maxHealth)), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
+        //float xDiff = xInit - healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+        //healthBarEmptySpace.transform.Translate(0.5f*xDiff, 0, 0);
         //healthBar.transform.Translate(-damage*(5.71F/(float)maxHealth), 0, 0);
         if (health > 0){
             return true;
         } else{
             return false;
+        }
+    }
+
+    private IEnumerator DepleteHealthBar(float duration)
+    {
+        float startScale = healthBarEmptySpace.transform.localScale.x;
+        float startTime = Time.time;
+        while (Time.time < startTime + duration)
+        {
+            float scaleDiff = ((Time.time - startTime) / (duration)) * (7.625111f * (((float)(maxHealth - health) / (float)maxHealth)));
+            float xInit = healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+            healthBarEmptySpace.transform.localScale = new Vector3(scaleDiff, healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
+            float xDiff = xInit - healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+            healthBarEmptySpace.transform.Translate(0.5f * xDiff, 0, 0);
+            yield return null;
         }
     }
 
@@ -214,10 +231,10 @@ public class PlayerController : MonoBehaviour, ICombatant
         throw new System.NotImplementedException();
     }
 
-    void ICombatant.Win(int XP)
+    void ICombatant.Win(int points)
     {
-        int XPBase = 1000;
-        this.XP += XP;
+        int XPBase = 100;
+        XP += points;
         if(XP >= XPBase*playerLevel)
         {
             XP -= XPBase * playerLevel;
