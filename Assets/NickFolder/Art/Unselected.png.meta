@@ -1,10 +1,10 @@
 fileFormatVersion: 2
-guid: 09400ad8cb9113b41814f9d6c6794dc8
+guid: 44742cec76b986b4eaf4a5926b1aae84
 TextureImporter:
   internalIDToNameTable:
   - first:
-      213: -457887676941820111
-    second: unselected_answer_button (1)-2.png (1)_0
+      213: -905662953049587544
+    second: selected_answer_button (1)_0
   externalObjects: {}
   serializedVersion: 13
   mipmaps:
@@ -100,13 +100,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: unselected_answer_button (1)-2.png (1)_0
+      name: selected_answer_button (1)_0
       rect:
         serializedVersion: 2
         x: 0
-        y: 0
-        width: 100
-        height: 36
+        y: 3
+        width: 97
+        height: 33
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -114,8 +114,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: -1
       bones: []
-      spriteID: 13f9ad4759145a9f0800000000000000
-      internalID: -457887676941820111
+      spriteID: 8a08f35b7507e63f0800000000000000
+      internalID: -905662953049587544
       vertices: []
       indices: 
       edges: []
@@ -130,7 +130,8 @@ TextureImporter:
     edges: []
     weights: []
     secondaryTextures: []
-    nameFileIdTable: {}
+    nameFileIdTable:
+      selected_answer_button (1)_0: -905662953049587544
   mipmapLimitGroupName: 
   pSDRemoveMatte: 0
   userData: 
