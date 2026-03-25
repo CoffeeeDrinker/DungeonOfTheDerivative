@@ -10,7 +10,7 @@ public class MathProblem
     public Sprite image = null;
     public GameObject answerInput;
     public string answer;
-
+    List<string> variables;
     public MathProblem()
     {
 
@@ -22,6 +22,15 @@ public class MathProblem
         this.problem = problem.Trim();
         this.answer = answer.Trim();
         this.answerInput = answerInput;
+    }
+
+    public MathProblem(string subject, string problem, string answer, GameObject answerInput, List<string> variables)
+    {
+        this.subject = subject.Trim();
+        this.problem = problem.Trim();
+        this.answer = answer.Trim();
+        this.answerInput = answerInput;
+        this.variables = variables;
     }
 
     public string GetSubject()
@@ -47,6 +56,11 @@ public class MathProblem
     public GameObject GetAnswerInput()
     {
         return answerInput;
+    }
+
+    public List<string> GetVariables()
+    {
+        return variables;
     }
 }
 

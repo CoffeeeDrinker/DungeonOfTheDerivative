@@ -45,6 +45,11 @@ public class MathProblemManager : MonoBehaviour
         answerInputGameObject = currentProb.GetAnswerInput();
         answerInputGameObject.SetActive(true);
         answerInput = answerInputGameObject.GetComponent<AnswerInput>();
+
+        if(answerInputGameObject.TryGetComponent<Variables>(out Variables variables))
+        {
+            variables.Create(currentProb.GetVariables());
+        }
     }
 
     public void DeleteDrawings()

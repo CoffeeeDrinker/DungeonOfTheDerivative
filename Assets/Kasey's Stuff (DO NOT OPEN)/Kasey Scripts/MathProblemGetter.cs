@@ -51,10 +51,13 @@ public class MathProblemGetter : MonoBehaviour
             answ = text.Substring(0, text.IndexOf("~~")-2);
             answ = "";
             text = text.Substring(text.IndexOf("~~")+4);
+            List<string> answers = new List<string>();
+            List<string> variables = new List<string>();
 
             while (lines[i] != "~~")
             {
                 answ += lines[i];
+                answers.Add(lines[i]);
                 i++;
             }
             i++;
@@ -102,13 +105,30 @@ public class MathProblemGetter : MonoBehaviour
                     break;
                 case "Variables":
                     answerInput = AnswerInputManager.Instance.GetAnswerInput(E_AnswerInputs.variables);
+                    answ = "";
+                    for(int j=0; j<answers.Count; j++)
+                    {
+                        if(answ != "")
+                        {
+                            answ += " ";
+                        }
+
+                        variables.Add(answers[j].Substring(0, answers[j].IndexOf("=")));
+                        answ += answers[j].Substring(answers[j].IndexOf("=") + 1);
+                    }
                     break;
                 case "Options":
                     answerInput = AnswerInputManager.Instance.GetAnswerInput(E_AnswerInputs.options);
                     break;
             }
 
-            problems.Add(new MathProblem(subj, prob, answ, answerInput));
+            if(ansInputText == "Variables")
+            {
+                problems.Add(new MathProblem(subj, prob, answ, answerInput, variables));
+            } else
+            {
+                problems.Add(new MathProblem(subj, prob, answ, answerInput));
+            }
         }
     }
 
