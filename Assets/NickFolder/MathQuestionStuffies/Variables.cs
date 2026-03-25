@@ -53,7 +53,7 @@ public class Variables : MonoBehaviour, AnswerInput
     {
         for(int i=0; i<list.Count; i++)
         {
-            Destroy(transform.GetChild(0).GetChild(i));
+            Destroy(transform.GetChild(0).GetChild(i).gameObject);
         }
         list.Clear();
     }

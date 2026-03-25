@@ -11,6 +11,7 @@ public class MathProblem
     public GameObject answerInput;
     public string answer;
     List<string> variables;
+    string[] options;
     public MathProblem()
     {
 
@@ -31,6 +32,15 @@ public class MathProblem
         this.answer = answer.Trim();
         this.answerInput = answerInput;
         this.variables = variables;
+    }
+
+    public MathProblem(string subject, string problem, string answer, GameObject answerInput, string[] options)
+    {
+        this.subject = subject.Trim();
+        this.problem = problem.Trim();
+        this.answer = answer.Trim();
+        this.answerInput = answerInput;
+        this.options = options;
     }
 
     public string GetSubject()
@@ -61,6 +71,11 @@ public class MathProblem
     public List<string> GetVariables()
     {
         return variables;
+    }
+
+    public string[] GetOptions()
+    {
+        return options;
     }
 }
 

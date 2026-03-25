@@ -49,6 +49,9 @@ public class MathProblemManager : MonoBehaviour
         if(answerInputGameObject.TryGetComponent<Variables>(out Variables variables))
         {
             variables.Create(currentProb.GetVariables());
+        } else if(answerInputGameObject.TryGetComponent<Options>(out Options options))
+        {
+            options.Create(currentProb.GetOptions());
         }
     }
 

@@ -53,6 +53,7 @@ public class MathProblemGetter : MonoBehaviour
             text = text.Substring(text.IndexOf("~~")+4);
             List<string> answers = new List<string>();
             List<string> variables = new List<string>();
+            string[] options = new string[0];
 
             while (lines[i] != "~~")
             {
@@ -119,12 +120,22 @@ public class MathProblemGetter : MonoBehaviour
                     break;
                 case "Options":
                     answerInput = AnswerInputManager.Instance.GetAnswerInput(E_AnswerInputs.options);
+                    answ = "";
+                    options = new string[answers.Count - 2];
+                    for(int j=0; j<answers.Count-2; j++)
+                    {
+                        options[j] = answers[j];
+                    }
+                    answ = answers[answers.Count - 1];
                     break;
             }
 
             if(ansInputText == "Variables")
             {
                 problems.Add(new MathProblem(subj, prob, answ, answerInput, variables));
+            } else if(ansInputText == "Options")
+            {
+                problems.Add(new MathProblem(subj, prob, answ, answerInput, options));
             } else
             {
                 problems.Add(new MathProblem(subj, prob, answ, answerInput));
