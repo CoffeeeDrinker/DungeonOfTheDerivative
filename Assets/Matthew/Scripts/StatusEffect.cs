@@ -16,6 +16,7 @@ public sealed class StatusEffect
 
 public static class StatusEffects
 {
+    private static bool hasAffected = false; //shows whether certain status effects that have effects as long as you have them (i.e. frostbite halving damage) has already taken effect
     public readonly static List<Sprite> statusSpriteList = new List<Sprite>()
     {
         //poisoned
@@ -166,11 +167,13 @@ public static class StatusEffects
         {
             //Frostbite halves the strength of your attacks
             //25% chance of wearing off each turn
-            //affected.SetDmgCoefficient(0.5);
+            if(!hasAffected)
+                affected.SetAttackModifier(0.5f*affected.GetAttackModifier());
             if (UnityEngine.Random.Range(0f, 10f) <= 3)
             {
-                 affected.ClearStatusEffects();
-                //affected.SetDmgCoefficient(1)
+                affected.ClearStatusEffects();
+                affected.SetAttackModifier(2*affected.GetAttackModifier());
+                hasAffected = false;
             }
             return false; //never skips turn
         }
