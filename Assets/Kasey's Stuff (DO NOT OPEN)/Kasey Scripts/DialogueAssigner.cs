@@ -23,7 +23,6 @@ public class DialogueAssigner : MonoBehaviour
 
             //Check if name in file is in NPCs list, if not skip to next name
             int NPCIndex = FindNPC(file.Substring(0, file.IndexOf("\n")).Trim());
-            Debug.Log(file.Substring(0, file.IndexOf("\n")));
             if (NPCIndex > -1){
                 file = file.Substring(file.IndexOf(NPCs[NPCIndex].name.Trim()));
             }
@@ -34,7 +33,6 @@ public class DialogueAssigner : MonoBehaviour
                 continue;
             }
 
-            Debug.Log("testing");
             if (NPCs[NPCIndex].name.Trim() == file.Substring(0, file.IndexOf("\n")).Trim())
             {
                 //Delete the name from the file

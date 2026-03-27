@@ -26,8 +26,8 @@ public class Cutscene : MonoBehaviour
 
     //Dialogue
     public GameObject dialogueTextBox;
-    public TextMeshProUGUI dialogueText;
-    public TextEffect typewriterInstance;
+    private TextMeshProUGUI dialogueText;
+    private TextEffect typewriterInstance;
     
     private int currentDialogueLineI = 0;
 
@@ -44,9 +44,8 @@ public class Cutscene : MonoBehaviour
 
     void Start()
     {
-        //cutsceneActions.Add(new CutsceneAction(NPCs[0], new Vector2(-1f, -1.5f), null));
-        //cutsceneActions.Add(new CutsceneAction(NPCs[0], Vector2.zero, new Dialogue(new List<string>() {"Hello I am Pedro.", "I used to be a girl scout.", "I will now walk away." })));
-        //cutsceneActions.Add(new CutsceneAction(NPCs[0], new Vector2(-8f, -1.5f), null));
+        dialogueText = dialogueTextBox.GetComponentInChildren<TextMeshProUGUI>();
+        typewriterInstance = dialogueText.GetComponent<TextEffect>();
     }
 
     void Update()
@@ -71,7 +70,7 @@ public class Cutscene : MonoBehaviour
         } else if (playerIsHere && cutsceneStarted)
         {
             currentAction = cutsceneActions[i];
-            if (currentAction.position != Vector2.zero && currentAction.position != null)
+            if (currentAction.position != Vector2.zero && currentAction.position != null) //Check if the action is movement
             {
                 //Start walk animation if not already started
                 if (!animStarted)
@@ -85,13 +84,13 @@ public class Cutscene : MonoBehaviour
                             anim = "walkLeft";
                         PlayAnimation(anim, currentAction.character.GetComponent<Animator>());
                     }
+                    animStarted = true;
                 }
-                animStarted = true;
 
                 //Move the character to the position
                 currentAction.character.transform.position = Vector2.MoveTowards(currentAction.character.transform.position, currentAction.position, walkSpeed * Time.deltaTime);
             }
-            else if (currentAction.dialogue != null)
+            else if (currentAction.dialogue != null) //Check if the action is dialogue
             {
                 //Stop animation
                 PlayAnimation("idleDown", currentAction.character.GetComponent<Animator>());
@@ -172,9 +171,12 @@ public class Cutscene : MonoBehaviour
 
     public void PlayAnimation(string anim, Animator npcAnimator)
     {
-        npcAnimator.ResetTrigger(currentAnim);
-        npcAnimator.SetTrigger(anim);
-        currentAnim = anim;
+        if (anim != currentAnim)
+        {
+            npcAnimator.ResetTrigger(currentAnim);
+            npcAnimator.SetTrigger(anim);
+            currentAnim = anim;
+        }
     }
 
     public void AddDialogueToTextBox()

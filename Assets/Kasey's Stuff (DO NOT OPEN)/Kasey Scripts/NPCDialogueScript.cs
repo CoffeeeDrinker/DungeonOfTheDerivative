@@ -25,8 +25,8 @@ public class NPCDialogueScript : MonoBehaviour
 
     //Dialogue Text Box Stuff
     public GameObject dialogueTextBox;
-    public TextMeshProUGUI dialogueText;
-    public TextEffect typewriterInstance;
+    private TextMeshProUGUI dialogueText;
+    private TextEffect typewriterInstance;
 
     //Typewriter
     public Effect_Color typewriterEffect;
@@ -43,6 +43,9 @@ public class NPCDialogueScript : MonoBehaviour
 
     void Start()
     {
+        dialogueText = dialogueTextBox.GetComponentInChildren<TextMeshProUGUI>();
+        typewriterInstance = dialogueText.GetComponent<TextEffect>();
+
         playerScript = player.GetComponent<PlayerMovement>();
         problemManager = gameManager.GetComponent<MathProblemManager>();
         combatManager = gameManager.GetComponent<CombatManager>();
