@@ -226,6 +226,7 @@ public class EnemyController : MonoBehaviour, ICombatant
             float xInit = healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
             healthBarEmptySpace.transform.localScale = new Vector3(scaleDiff + startScale, healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
             float xDiff = xInit - healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+            totalHealthBarDisplacement += 0.5f * xDiff;
             healthBarEmptySpace.transform.Translate(0.5f * xDiff, 0, 0);
             yield return null;
         }

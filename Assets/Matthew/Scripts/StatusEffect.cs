@@ -151,7 +151,7 @@ public static class StatusEffects
                 affected.ClearStatusEffects();
                 return false;
             }
-            if (UnityEngine.Random.Range(0f, 10f) >= 5)
+            if (UnityEngine.Random.Range(0f, 10f) >= 7)
             {
                 return true; //skips turn
             }

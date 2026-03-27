@@ -306,7 +306,35 @@ public class TurnSystem : MonoBehaviour
                     }
                     isClicked = false;
                     UI.HideText();
+                    UI.DisplayText("You gained " + enemy.getXP() + " XP!", 2f);
+                    startTime = Time.time;
+                    while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+                    {
+                        if (Time.time - startTime >= 2)
+                        {
+                            break;
+                        }
+                        yield return null;
+                    }
+                    isClicked = false;
+                    UI.HideText();
+                    int lvl = player.GetLevel();
                     player.Win(enemy.getXP());
+                    if(lvl != player.GetLevel())
+                    {
+                        UI.DisplayText("You leveled up from level " + lvl + " to level " + player.GetLevel() + "!", 2f);
+                        startTime = Time.time;
+                        while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+                        {
+                            if (Time.time - startTime >= 2)
+                            {
+                                break;
+                            }
+                            yield return null;
+                        }
+                        isClicked = false;
+                        UI.HideText();
+                    }
                     winner = player;
                     enemy.Reset();
                     player.Reset();

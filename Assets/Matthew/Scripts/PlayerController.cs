@@ -206,6 +206,7 @@ public class PlayerController : MonoBehaviour, ICombatant
             float xInit = staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
             staminaBarEmptySpace.transform.localScale = new Vector3(scaleDiff + startScale, staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
             float xDiff = xInit - staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+            totalStaminaDisplacement += 0.5f*xDiff;
             staminaBarEmptySpace.transform.Translate(0.5f * xDiff, 0, 0);
             yield return null;
         }
