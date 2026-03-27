@@ -81,7 +81,7 @@ public class EnemyController : MonoBehaviour, ICombatant
                         origin.DepleteStamina(15);
                     }
                 }),
-            new Move(
+            /*new Move(
                 "Lulaby",
                 Move.STATUS, //is an attack
                 15, //stamina cost
@@ -92,7 +92,7 @@ public class EnemyController : MonoBehaviour, ICombatant
                         direction.AddStatusEffect(StatusEffects.ASLEEP);
                         origin.DepleteStamina(15);
                     }
-                }),
+                }), */ Moves.POLAR,
             new Move(
                 "Iron Stare",
                 Move.STATUS, //is an attack
@@ -198,11 +198,13 @@ public class EnemyController : MonoBehaviour, ICombatant
         {
             health = 0;
         }
+        StartCoroutine(UpdateHealthBar(0.5f));
+        /*
         float xInit = healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
         healthBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxHealth - health) / (float)maxHealth)), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
         float xDiff = xInit - healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
         healthBarEmptySpace.transform.Translate(0.5f * xDiff, 0, 0);
-        totalHealthBarDisplacement += 0.5f * xDiff;
+        totalHealthBarDisplacement += 0.5f * xDiff; */
         //healthBar.transform.Translate(damage * (5.71F/maxHealth), 0, 0);
         if (health > 0)
         {
@@ -211,6 +213,21 @@ public class EnemyController : MonoBehaviour, ICombatant
         else
         {
             return false;
+        }
+    }
+
+    private IEnumerator UpdateHealthBar(float duration)
+    {
+        float startScale = healthBarEmptySpace.transform.localScale.x;
+        float startTime = Time.time;
+        while (Time.time < startTime + duration)
+        {
+            float scaleDiff = ((Time.time - startTime) / (duration)) * ((7.625111f * (((float)(maxHealth - health) / (float)maxHealth))) - startScale);
+            float xInit = healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+            healthBarEmptySpace.transform.localScale = new Vector3(scaleDiff + startScale, healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
+            float xDiff = xInit - healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+            healthBarEmptySpace.transform.Translate(0.5f * xDiff, 0, 0);
+            yield return null;
         }
     }
 
@@ -300,6 +317,7 @@ public class EnemyController : MonoBehaviour, ICombatant
     void ICombatant.Heal(int health)
     {
         this.health += health;
+        StartCoroutine(UpdateHealthBar(0.5f));
     }
 
     int ICombatant.GetMaxStamina()

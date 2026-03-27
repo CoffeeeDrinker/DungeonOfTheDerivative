@@ -130,12 +130,7 @@ public class PlayerController : MonoBehaviour, ICombatant
             health = 0;
         }
 
-        StartCoroutine(DepleteHealthBar(1f));
-        //float xInit = healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
-        //healthBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxHealth - health) / (float)maxHealth)), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
-        //float xDiff = xInit - healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
-        //healthBarEmptySpace.transform.Translate(0.5f*xDiff, 0, 0);
-        //healthBar.transform.Translate(-damage*(5.71F/(float)maxHealth), 0, 0);
+        StartCoroutine(UpdateHealthBar(0.5f));
         if (health > 0){
             return true;
         } else{
@@ -143,15 +138,15 @@ public class PlayerController : MonoBehaviour, ICombatant
         }
     }
 
-    private IEnumerator DepleteHealthBar(float duration)
+    private IEnumerator UpdateHealthBar(float duration)
     {
         float startScale = healthBarEmptySpace.transform.localScale.x;
         float startTime = Time.time;
         while (Time.time < startTime + duration)
         {
-            float scaleDiff = ((Time.time - startTime) / (duration)) * (7.625111f * (((float)(maxHealth - health) / (float)maxHealth)));
+            float scaleDiff = ((Time.time - startTime) / (duration)) * ((7.625111f * (((float)(maxHealth - health) / (float)maxHealth))) - startScale);
             float xInit = healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
-            healthBarEmptySpace.transform.localScale = new Vector3(scaleDiff, healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
+            healthBarEmptySpace.transform.localScale = new Vector3(scaleDiff + startScale, healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
             float xDiff = xInit - healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
             healthBarEmptySpace.transform.Translate(0.5f * xDiff, 0, 0);
             yield return null;
@@ -184,11 +179,13 @@ public class PlayerController : MonoBehaviour, ICombatant
         {
             stamina = 0;
         }
+        StartCoroutine(UpdateStaminaBar(0.5f));
+        /*
         float xInit = staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
         staminaBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxStamina - stamina) / (float)maxStamina)), staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
         float xDiff = xInit - staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
         staminaBarEmptySpace.transform.Translate(0.5f * xDiff, 0, 0);
-        totalStaminaDisplacement += 0.5f * xDiff;
+        totalStaminaDisplacement += 0.5f * xDiff; */
         //staminaBar.transform.Translate(-exhaustion * (5.71F/maxStamina), 0, 0);
         if (stamina > 0)
         {
@@ -199,6 +196,20 @@ public class PlayerController : MonoBehaviour, ICombatant
         }
     }
 
+    private IEnumerator UpdateStaminaBar(float duration)
+    {
+        float startScale = staminaBarEmptySpace.transform.localScale.x;
+        float startTime = Time.time;
+        while (Time.time < startTime + duration)
+        {
+            float scaleDiff = ((Time.time - startTime) / (duration)) * ((7.625111f * (((float)(maxStamina - stamina) / (float)maxStamina))) - startScale);
+            float xInit = staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+            staminaBarEmptySpace.transform.localScale = new Vector3(scaleDiff + startScale, staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
+            float xDiff = xInit - staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
+            staminaBarEmptySpace.transform.Translate(0.5f * xDiff, 0, 0);
+            yield return null;
+        }
+    }
     void ICombatant.Rest(int baseRecharge)
     {
         int recharge = baseRecharge; //make negative recharge positive
@@ -206,13 +217,10 @@ public class PlayerController : MonoBehaviour, ICombatant
         {
             recharge = maxStamina-stamina;
         }
-        float xInit = staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
         stamina += recharge;
-        staminaBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxStamina - stamina) / (float)maxStamina)), staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
-        float xDiff = staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x - xInit;
-        staminaBarEmptySpace.transform.Translate(-0.5f * xDiff, 0, 0);
-        //staminaBar.transform.Translate(recharge * (5.71F / maxStamina), 0, 0);
+        StartCoroutine(UpdateStaminaBar(0.5f));
     }
+
     /*
     private IEnumerator ChangeStaminaBar(int staminaDiff)
     {
@@ -315,11 +323,8 @@ public class PlayerController : MonoBehaviour, ICombatant
         {
             heal = maxHealth - health;
         }
-        float xInit = healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
         health += heal;
-        healthBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxHealth - health) / (float)maxHealth)), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
-        float xDiff = healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x - xInit;
-        healthBarEmptySpace.transform.Translate(-0.5f * xDiff, 0, 0);
+        StartCoroutine(UpdateHealthBar(0.5f));
     }
 
     float ICombatant.GetDefense()

@@ -74,7 +74,7 @@ public static class StatusEffects
         {
             //Asleep makes you skip every turn until you wake up
             //Chance of waking up each turn
-            if (UnityEngine.Random.Range(0f, 10f) <= 2.5f)
+            if (UnityEngine.Random.Range(0f, 10f) <= 4f)
             {
                 affected.ClearStatusEffects();
                 return false;
