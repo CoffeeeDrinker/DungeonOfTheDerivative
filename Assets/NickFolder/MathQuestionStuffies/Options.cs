@@ -8,8 +8,8 @@ using UnityEngine.UI;
 public class Options : MonoBehaviour, AnswerInput
 {
     [SerializeField] GameObject buttonPrefab;
-    [SerializeField] Sprite buttonSelected;
     [SerializeField] Sprite buttonNotSelected;
+    [SerializeField] Sprite buttonSelected;
     private GameObject[] buttons;
     private string chosen;
     // Start is called before the first frame update

@@ -138,7 +138,7 @@ public class ItemManager : MonoBehaviour
 
         //Red Cards
         itemEffects = new List<ItemEffectEnums>();
-        itemEffects.Add(ItemEffectEnums.randomizeStamina);
+        itemEffects.Add(ItemEffectEnums.randomizeHealth);
         itemEffectCombatMap[ItemNameEnum.redCards] = itemEffects;
 
         //Stamina Potion
