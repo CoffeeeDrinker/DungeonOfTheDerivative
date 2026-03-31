@@ -23,5 +23,6 @@ public class BattleRandomizeStamina : MonoBehaviour
         user.DepleteStamina(user.GetMaxStamina());
         user.Rest(UnityEngine.Random.Range(0, user.GetMaxStamina()));
         TurnSystem.inInventory = false;
+        TurnSystem.itemUseText = "You randomized your stamina!";
     }
 }

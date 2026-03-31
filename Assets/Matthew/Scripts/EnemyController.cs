@@ -5,10 +5,10 @@ using System.Data;
 using Unity.VisualScripting;
 using Unity.VisualScripting.Antlr3.Runtime.Tree;
 using UnityEngine;
-
 public class EnemyController : MonoBehaviour, ICombatant
 {
-    [SerializeField] EnemyPreset preset;
+    EnemyPreset preset;
+    public GameObject combatController;
     AttackAI personality;
     public GameObject m_enemy;
     public GameObject healthBar;
@@ -28,16 +28,31 @@ public class EnemyController : MonoBehaviour, ICombatant
     private ICombatant player;
     [SerializeField] GameObject statusMarker;
     [SerializeField] GameObject healthBarEmptySpace;
+    private double totalHealthBarDisplacement = 0;
+    private bool hasStarted = false;
     // Start is called before the first frame update
     void Start()
     {
+        OnEnable();
+    }
+
+
+    //Dear future matthew:
+    //I changed it so what was in Start is in OnEnable which theoretically should make it so combat restarts whenever you fight a new enemy but ITS NOT WORKING AND ITS ALL BROKEN AAAAAAAA
+    void OnEnable() {
+        if (!hasStarted)
+        {
+            hasStarted = true;
+            return;
+        }
+        preset = combatController.GetComponent<EnemyInfoContainer>().GetPreset();
         preset.Initialize();
         player = playerObj.GetComponent<ICombatant>();
         healthBarEmptySpace.SetActive(true);
         statusMarker.SetActive(false);
         level = preset.level;
-        maxStamina = preset.maxStamina*preset.level;
-        maxHealth = preset.maxHealth*(preset.level);
+        maxStamina = preset.maxStamina;
+        maxHealth = preset.maxHealth;
         stamina = maxStamina;
         health = maxHealth;
         defenseModifier = preset.defenseModifier;
@@ -108,14 +123,15 @@ public class EnemyController : MonoBehaviour, ICombatant
                     }
                 }),
         };
-        personality = new AttackAI(moveList, this, player, AttackAI.TRICKY);
-        priorities = personality.getPriorities();
-        healthBarEmptySpace.transform.localScale = new Vector3(((float)(maxHealth - health) / (float)maxHealth), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
+            personality = new AttackAI(moveList, this, player, AttackAI.TRICKY);
+            priorities = personality.getPriorities();
+            healthBarEmptySpace.transform.localScale = new Vector3(((float)(maxHealth - health) / (float)maxHealth), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
     }
 
     // Update is called once per frame
     void Update()
     {
+        
     }
 
     int ICombatant.Attack(int baseDmg)
@@ -188,6 +204,7 @@ public class EnemyController : MonoBehaviour, ICombatant
         healthBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxHealth - health) / (float)maxHealth)), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
         float xDiff = xInit - healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
         healthBarEmptySpace.transform.Translate(0.5f * xDiff, 0, 0);
+        totalHealthBarDisplacement += 0.5f * xDiff;
         //healthBar.transform.Translate(damage * (5.71F/maxHealth), 0, 0);
         if (health > 0)
         {
@@ -252,6 +269,13 @@ public class EnemyController : MonoBehaviour, ICombatant
             skip = status.statusEffect(this);
         }
         return skip;
+    }
+
+    void ICombatant.Reset()
+    {
+        healthBarEmptySpace.transform.Translate(-1f * (float)totalHealthBarDisplacement, 0, 0);
+        totalHealthBarDisplacement = 0f;
+        status = null;
     }
 
     void ICombatant.AddStatusEffect(StatusEffect s)
@@ -386,7 +410,7 @@ public class EnemyController : MonoBehaviour, ICombatant
       }*/
 }
 
-[System.Serializable] struct EnemyPreset
+[System.Serializable] public struct EnemyPreset
 {
     [SerializeField] public int maxHealth;
     [SerializeField] public int maxStamina;
@@ -394,7 +418,6 @@ public class EnemyController : MonoBehaviour, ICombatant
     [SerializeField] public float defenseModifier;
     [SerializeField] public float attackModifier;
     [SerializeField] public int XPWorth;
-    //public readonly String personalityType; //must be exactly the name of one of the predefined archetypes in AttackAI
     [SerializeField] GameObject personalityContainer;
     public Algorithm personality;
     public void Initialize()

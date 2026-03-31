@@ -49,4 +49,6 @@ public interface ICombatant
     float GetAttackModifier();
 
     bool SetAttackModifier(float a);
+
+    void Reset();
 }

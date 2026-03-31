@@ -24,5 +24,6 @@ public class BattleHeal : MonoBehaviour
         //Heal stuff AAAAAAAAAA
         user.Heal(40 * user.GetLevel());
         TurnSystem.inInventory = false;
+        TurnSystem.itemUseText = "You drank a healing potion!";
     }
 }

@@ -19,11 +19,11 @@ public class TurnSystem : MonoBehaviour
     public static int turnIndex; //Whoever is having their turn currently; 0 = player, 1 = enemy
     private bool isClicked;
     public static bool inInventory = false;
-
+    public static string itemUseText;
+    private static bool hasStarted = false;
     //Kasey was here
     public GameObject gameManager;
     
-    // Start is called before the first frame update
     void Start()
     {
         winner = null;
@@ -31,9 +31,18 @@ public class TurnSystem : MonoBehaviour
         player = playerField.GetComponent<PlayerController>();
         enemy = enemyField.GetComponent<EnemyController>();
         UI = UIField.GetComponent<UIController>();
-        turnIndex = 0;
-        itemManager.EnterCombat();
-        StartCoroutine(ManageTurns());
+        OnEnable();
+    }
+
+    private void OnEnable()
+    {
+        if (hasStarted)
+        {
+            turnIndex = 0;
+            itemManager.EnterCombat();
+            StartCoroutine(ManageTurns());
+        }
+        else { hasStarted = true; }
     }
 
     // Update is called once per frame
@@ -117,11 +126,28 @@ public class TurnSystem : MonoBehaviour
                         if (input.name == "Inventory")
                         {
                             inInventory = true;
+                            itemUseText = null;
                             while (inInventory)
                             {
                                 yield return null; //If nothing in inventory has been clicked, wait a frame
                             }
                             inventory.ToggleInventory();
+                            if (itemUseText != null)
+                            {
+                                UI.DisplayText(itemUseText, 2f);
+                                double startTime = Time.time;
+                                isClicked = false;
+                                while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+                                {
+                                    if (Time.time - startTime >= 2)
+                                    {
+                                        break;
+                                    }
+                                    yield return null;
+                                }
+                                isClicked = false;
+                                UI.HideText();
+                            }
                             turnIndex++;
                             UI.Unclick();
                         }
@@ -177,6 +203,26 @@ public class TurnSystem : MonoBehaviour
                 }
                 else
                 {
+                    if (player.GetStatus() == StatusEffects.ASLEEP)
+                    {
+                        UI.DisplayText("You are asleep!", 2f);
+                    }
+                    else if (player.GetStatus() == StatusEffects.PARALYZED)
+                    {
+                        UI.DisplayText("You are frozen in paralysis!", 2f);
+                    }
+                    float startTime = Time.time;
+                    isClicked = false;
+                    while (!isClicked) //checks if player is trying to skip by pressing left mouse button
+                    {
+                        if (Time.time - startTime >= 2)
+                        {
+                            break;
+                        }
+                        yield return null;
+                    }
+                    isClicked = false;
+                    UI.HideText();
                     turnIndex = 1; //skips turn if turn was skipped
                 }
             }
@@ -262,7 +308,9 @@ public class TurnSystem : MonoBehaviour
                     UI.HideText();
                     player.Win(enemy.getXP());
                     winner = player;
-
+                    enemy.Reset();
+                    player.Reset();
+  
                     //Continue dialogue
                     gameManager.GetComponent<CombatManager>().CloseCombatSystem();
                     itemManager.ExitCombat();
@@ -289,6 +337,7 @@ public class TurnSystem : MonoBehaviour
             UI.HideText();
             enemy.Win(0);
             winner = enemy;
+
             gameManager.GetComponent<CombatManager>().CloseCombatSystem();
             itemManager.ExitCombat();
         }
