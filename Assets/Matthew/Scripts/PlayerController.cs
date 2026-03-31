@@ -44,31 +44,8 @@ public class PlayerController : MonoBehaviour, ICombatant
         attackButton = attackButtonField.GetComponent<AttackHandler>();
         moveList = new List<Move>() //initializes list of moves
         {
-            new Move(
-                "Punch",
-                Move.DAMAGE, //is an attack
-                15, //stamina cost
-                (origin, direction) =>
-                {
-                    int dmg = UnityEngine.Random.Range(9, 11); //randomly generates base damage within pre-defined bounds
-                    if (origin.GetStamina() > 15)
-                    {
-                        direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
-                        origin.DepleteStamina(15);
-                    }
-                }),
-            new Move(
-                "Lulaby",
-                Move.STATUS, //is an attack
-                15, //stamina cost
-                (origin, direction) =>
-                {
-                    if (origin.GetStamina() > 15)
-                    {
-                        direction.AddStatusEffect(StatusEffects.ASLEEP);
-                        origin.DepleteStamina(15);
-                    }
-                }),
+            Moves.PUNCH,
+            Moves.LULLABY,
             /*new Move(
                 "Iron Stare",
                 Move.STATUS, //is an attack
@@ -86,19 +63,7 @@ public class PlayerController : MonoBehaviour, ICombatant
                     }
                 }), */
             Moves.POLAR,
-            new Move(
-                "Evan Smash",
-                Move.DAMAGE, //is an attack
-                15, //stamina cost
-                (origin, direction) =>
-                {
-                    int dmg = UnityEngine.Random.Range(25, 75); //randomly generates base damage within pre-defined bounds
-                    if (origin.GetStamina() > 15)
-                    {
-                        direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
-                        origin.DepleteStamina(15);
-                    }
-                }),
+            Moves.EVANSMASH,
         };
     }
 

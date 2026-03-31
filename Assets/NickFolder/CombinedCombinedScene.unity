@@ -8394,6 +8394,10 @@ PrefabInstance:
       value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.moves.move1Field
+      value: 
+      objectReference: {fileID: 181032475338495623, guid: 1deb797bec12f2040996ce16f3a9c874, type: 3}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: startCombatPostDialogue
       value: 1
       objectReference: {fileID: 0}
@@ -26512,6 +26516,22 @@ PrefabInstance:
       propertyPath: Preset.defenseModifier
       value: 1
       objectReference: {fileID: 0}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.moves.move1Field
+      value: 
+      objectReference: {fileID: 4046401722831873280, guid: e7bb0c3d72f1bf9448e570d3acbfaa58, type: 3}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.moves.move2Field
+      value: 
+      objectReference: {fileID: 4046401722831873280, guid: e7bb0c3d72f1bf9448e570d3acbfaa58, type: 3}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.moves.move3Field
+      value: 
+      objectReference: {fileID: 4046401722831873280, guid: e7bb0c3d72f1bf9448e570d3acbfaa58, type: 3}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.moves.move4Field
+      value: 
+      objectReference: {fileID: 4046401722831873280, guid: e7bb0c3d72f1bf9448e570d3acbfaa58, type: 3}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: startCombatPostDialogue
       value: 1

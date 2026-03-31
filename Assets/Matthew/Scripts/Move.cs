@@ -1,5 +1,8 @@
+using NUnit.Framework;
 using System;
+using System.Collections.Generic;
 using UnityEngine;
+using static UnityEngine.UI.Image;
 
 public sealed class Move
 {
@@ -22,6 +25,60 @@ public class MoveType { }
 
 public static class Moves
 {
+    public static readonly Move PUNCH = new Move(
+        "Punch",
+        Move.DAMAGE, //is an attack
+        15, //stamina cost
+        (origin, direction) =>
+        {
+            int dmg = UnityEngine.Random.Range(9, 11); //randomly generates base damage within pre-defined bounds
+            if (origin.GetStamina() > 15)
+            {
+                direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
+                origin.DepleteStamina(15);
+            }
+        });
+    public static readonly Move LULLABY = new Move(
+        "Lulaby",
+        Move.STATUS, //is an attack
+        15, //stamina cost
+        (origin, direction) =>
+        {
+            if (origin.GetStamina() > 15)
+            {
+                direction.AddStatusEffect(StatusEffects.ASLEEP);
+                origin.DepleteStamina(15);
+            }
+        });
+    public static readonly Move IRONSTARE = new Move(
+        "Iron Stare",
+                Move.STATUS, //is an attack
+                15, //stamina cost
+                (origin, direction) =>
+                {
+                    int dmg = UnityEngine.Random.Range(5, 10); //randomly generates base damage within pre-defined bounds
+                    if (origin.GetStamina() > 15)
+                    {
+                        if (UnityEngine.Random.Range(0f, 10f) > 5)
+                        {
+                            direction.AddStatusEffect(StatusEffects.PARALYZED);
+                        }
+                        origin.DepleteStamina(15);
+                    }
+                });
+    public static readonly Move EVANSMASH = new Move(
+        "Evan Smash",
+                Move.DAMAGE, //is an attack
+                15, //stamina cost
+                (origin, direction) =>
+                {
+                    int dmg = UnityEngine.Random.Range(25, 75); //randomly generates base damage within pre-defined bounds
+                    if (origin.GetStamina() > 15)
+                    {
+                        direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
+                        origin.DepleteStamina(15);
+                    }
+       });
     public static readonly Move POLAR = new Move(
         "Polar",
         Move.STATUS,
@@ -164,4 +221,22 @@ public static class Moves
             direction.TakeDamage(origin.Attack(UnityEngine.Random.Range(3, 7)));
             direction.TakeDamage(origin.Attack(UnityEngine.Random.Range(5, 10)));
         });
+    public static readonly List<Move> AllMoves = new List<Move>()
+    {
+        PUNCH,
+        LULLABY,
+        IRONSTARE,
+        EVANSMASH,
+        POLAR,
+        TAYLOREXPANSION,
+        EMPIRICALRECOVERY,
+        LINEARLYDEPEND,
+        AUGMENT,
+        DOPPONENTDLEVEL,
+        SERIESSTUN,
+        SUBTRACTIONSLASH,
+        CONSTANTCRUSH,
+        EXPONENTEXPLOSION,
+        COLUMNSPACECASCADE
+    };
 }

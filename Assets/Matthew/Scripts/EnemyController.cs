@@ -37,8 +37,6 @@ public class EnemyController : MonoBehaviour, ICombatant
     }
 
 
-    //Dear future matthew:
-    //I changed it so what was in Start is in OnEnable which theoretically should make it so combat restarts whenever you fight a new enemy but ITS NOT WORKING AND ITS ALL BROKEN AAAAAAAA
     void OnEnable() {
         if (!hasStarted)
         {
@@ -68,60 +66,10 @@ public class EnemyController : MonoBehaviour, ICombatant
                 {
                     origin.Rest(30);
                 }),
-            new Move(
-                "Punch",
-                Move.DAMAGE, //is an attack
-                15, //stamina cost
-                (origin, direction) =>
-                {
-                    int dmg = UnityEngine.Random.Range(9, 11); //randomly generates base damage within pre-defined bounds
-                    if (origin.GetStamina() > 15)
-                    {
-                        direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
-                        origin.DepleteStamina(15);
-                    }
-                }),
-            /*new Move(
-                "Lulaby",
-                Move.STATUS, //is an attack
-                15, //stamina cost
-                (origin, direction) =>
-                {
-                    if (origin.GetStamina() > 15)
-                    {
-                        direction.AddStatusEffect(StatusEffects.ASLEEP);
-                        origin.DepleteStamina(15);
-                    }
-                }), */ Moves.POLAR,
-            new Move(
-                "Iron Stare",
-                Move.STATUS, //is an attack
-                15, //stamina cost
-                (origin, direction) =>
-                {
-                    int dmg = UnityEngine.Random.Range(5, 10); //randomly generates base damage within pre-defined bounds
-                    if (origin.GetStamina() > 15)
-                    {
-                        if(UnityEngine.Random.Range(0f, 10f) > 5)
-                        {
-                            direction.AddStatusEffect(StatusEffects.PARALYZED);
-                        }
-                        origin.DepleteStamina(15);
-                    }
-                }),
-            new Move(
-                "Evan Smash",
-                Move.DAMAGE, //is an attack
-                15, //stamina cost
-                (origin, direction) =>
-                {
-                    int dmg = UnityEngine.Random.Range(25, 30); //randomly generates base damage within pre-defined bounds
-                    if (origin.GetStamina() > 15)
-                    {
-                        direction.TakeDamage(origin.Attack(dmg)); //adds modifiers to base damage from attacking combatant, then deals that much damage to target combatant
-                        origin.DepleteStamina(15);
-                    }
-                }),
+            preset.move1,
+            preset.move2,
+            preset.move3,
+            preset.move4,
         };
             personality = new AttackAI(moveList, this, player, AttackAI.TRICKY);
             priorities = personality.getPriorities();
@@ -437,10 +385,21 @@ public class EnemyController : MonoBehaviour, ICombatant
     [SerializeField] public float defenseModifier;
     [SerializeField] public float attackModifier;
     [SerializeField] public int XPWorth;
-    [SerializeField] GameObject personalityContainer;
+    [SerializeField] public GameObject personalityContainer;
+    [SerializeField] public EnemyMoves moves;
     public Algorithm personality;
+    public Move move1;
+    public Move move2;
+    public Move move3;
+    public Move move4;
     public void Initialize()
     {
+        Debug.Log("arg");
+        List<Move> moveList = moves.GetMoves();
+        move1 = moveList[0];
+        move2 = moveList[1];
+        move3 = moveList[2];
+        move4 = moveList[3];
         personality = personalityContainer.GetComponent<PersonalityHolder>().GetPersonality();
     }
     /*
@@ -486,4 +445,21 @@ public class EnemyController : MonoBehaviour, ICombatant
         this.XPWorth = XPWorth;
         personality = AI;
     } */
+}
+
+[System.Serializable] public struct EnemyMoves
+{
+    [SerializeField] public GameObject move1Field;
+    [SerializeField] public GameObject move2Field;
+    [SerializeField] public GameObject move3Field;
+    [SerializeField] public GameObject move4Field;
+    public List<Move> GetMoves()
+    {
+        return new List<Move>() {
+            move1Field.GetComponent<MoveContainer>().GetMove(),
+            move2Field.GetComponent<MoveContainer>().GetMove(),
+            move3Field.GetComponent<MoveContainer>().GetMove(),
+            move4Field.GetComponent<MoveContainer>().GetMove()
+        };
+    }
 }
