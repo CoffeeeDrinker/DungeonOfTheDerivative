@@ -35,7 +35,6 @@ public class ClockHand : MonoBehaviour
             //Set rotation direction to something other than 0 if we need to start rotating
             if (rotateDirection == 0)
             {
-                Debug.Log("testing");
                 GetNewRotateDirection();
 
                 //Set all colliders active while spinning
