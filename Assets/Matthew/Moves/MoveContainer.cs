@@ -1,12 +1,12 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
-    public class MoveContainer : MonoBehaviour
+[DefaultExecutionOrder(-10)]
+public class MoveContainer : MonoBehaviour
     {
         [SerializeField] string moveName;
         Move move;
-        // Start is called before the first frame update
-        void Start()
+        void Awake()
         {
             List<Move> moves = Moves.AllMoves;
             for (int i = 0; i < moves.Count; i++)
@@ -25,6 +25,18 @@ using UnityEngine;
     }
     public Move GetMove()
         {
-            return move;
+        if( move == null)
+        {
+            List<Move> moves = Moves.AllMoves;
+            for (int i = 0; i < moves.Count; i++)
+            {
+                if (moves[i].name == moveName)
+                {
+                    move = moves[i];
+                    break;
+                }
+            }
+        }
+        return move;
         }
     }

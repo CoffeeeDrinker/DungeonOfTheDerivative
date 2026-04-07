@@ -167,10 +167,11 @@ public class EnemyController : MonoBehaviour, ICombatant
     private IEnumerator UpdateHealthBar(float duration)
     {
         float startScale = healthBarEmptySpace.transform.localScale.x;
+        float finalScale = (7.625111f * (((float)(maxHealth - health) / (float)maxHealth)));
         float startTime = Time.time;
         while (Time.time < startTime + duration)
         {
-            float scaleDiff = ((Time.time - startTime) / (duration)) * ((7.625111f * (((float)(maxHealth - health) / (float)maxHealth))) - startScale);
+            float scaleDiff = ((Time.time - startTime) / (duration)) * (finalScale - startScale);
             float xInit = healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
             healthBarEmptySpace.transform.localScale = new Vector3(scaleDiff + startScale, healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
             float xDiff = xInit - healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
@@ -394,9 +395,9 @@ public class EnemyController : MonoBehaviour, ICombatant
     public Move move4;
     public void Initialize()
     {
-        Debug.Log("arg");
         List<Move> moveList = moves.GetMoves();
         move1 = moveList[0];
+        Debug.Log("AAA" + move1.name);
         move2 = moveList[1];
         move3 = moveList[2];
         move4 = moveList[3];

@@ -89,6 +89,8 @@ public struct AttackAI
         Dictionary<Move, float> priorityDict = new Dictionary<Move, float>();
         for (int i = 0; i < moves.Count; i++)
         {
+            Debug.Log("DEBUGGING ALGO: i = " + i);
+            Debug.Log(moves[i].name);
             priorityDict[moves[i]] = 1.0f;
             if (moves[i].type == Move.STATUS && opponent.GetStatus() != null)
             {
@@ -120,8 +122,8 @@ public struct AttackAI
     public AttackAI(List<Move> moveList, ICombatant attacker, ICombatant opp, Algorithm alg)
     {
         this.moveList = moveList;
-        algorithm = alg;
         this.attacker = attacker;
+        algorithm = alg;
         this.opponent = opp;
     }
 }
