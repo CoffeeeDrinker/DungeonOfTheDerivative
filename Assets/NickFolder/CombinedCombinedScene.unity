@@ -8386,6 +8386,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1547938940}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.typeContainer
+      value: 
+      objectReference: {fileID: 1553210607222494191, guid: 7f0073baf52d3154eb222aba83149141, type: 3}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: Preset.attackModifier
       value: 1
       objectReference: {fileID: 0}
@@ -8400,7 +8404,7 @@ PrefabInstance:
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: Preset.moves.move2Field
       value: 
-      objectReference: {fileID: 258987500652391060, guid: 16c843bc9655a5346bb50b3bde7a50ff, type: 3}
+      objectReference: {fileID: 4046401722831873280, guid: e7bb0c3d72f1bf9448e570d3acbfaa58, type: 3}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: Preset.moves.move3Field
       value: 
@@ -8872,6 +8876,10 @@ PrefabInstance:
       propertyPath: typewriterInstance
       value: 
       objectReference: {fileID: 1547938940}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.typeContainer
+      value: 
+      objectReference: {fileID: 453613408033948460, guid: bd7b926eaea67514194f13385781cb3e, type: 3}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: Preset.attackModifier
       value: 1
@@ -26537,6 +26545,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1547938940}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.typeContainer
+      value: 
+      objectReference: {fileID: 1553210607222494191, guid: 7f0073baf52d3154eb222aba83149141, type: 3}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: Preset.attackModifier
       value: 1
       objectReference: {fileID: 0}
@@ -26555,7 +26567,7 @@ PrefabInstance:
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: Preset.moves.move3Field
       value: 
-      objectReference: {fileID: 258987500652391060, guid: 16c843bc9655a5346bb50b3bde7a50ff, type: 3}
+      objectReference: {fileID: 4046401722831873280, guid: e7bb0c3d72f1bf9448e570d3acbfaa58, type: 3}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: Preset.moves.move4Field
       value: 
@@ -30952,6 +30964,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1547938940}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.typeContainer
+      value: 
+      objectReference: {fileID: 1553210607222494191, guid: 7f0073baf52d3154eb222aba83149141, type: 3}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: Preset.attackModifier
       value: 1
       objectReference: {fileID: 0}
@@ -30974,7 +30990,7 @@ PrefabInstance:
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: Preset.moves.move4Field
       value: 
-      objectReference: {fileID: 258987500652391060, guid: 16c843bc9655a5346bb50b3bde7a50ff, type: 3}
+      objectReference: {fileID: 4046401722831873280, guid: e7bb0c3d72f1bf9448e570d3acbfaa58, type: 3}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: startCombatPostDialogue
       value: 1
@@ -45539,6 +45555,10 @@ PrefabInstance:
       value: 
       objectReference: {fileID: 1547938940}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
+      propertyPath: Preset.typeContainer
+      value: 
+      objectReference: {fileID: 1553210607222494191, guid: 7f0073baf52d3154eb222aba83149141, type: 3}
+    - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: Preset.attackModifier
       value: 3
       objectReference: {fileID: 0}
@@ -45561,7 +45581,7 @@ PrefabInstance:
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: Preset.moves.move4Field
       value: 
-      objectReference: {fileID: 258987500652391060, guid: 16c843bc9655a5346bb50b3bde7a50ff, type: 3}
+      objectReference: {fileID: 4046401722831873280, guid: e7bb0c3d72f1bf9448e570d3acbfaa58, type: 3}
     - target: {fileID: 9103735467905809780, guid: 6882eae98d362fc44b8d02dd68666f60, type: 3}
       propertyPath: startCombatPostDialogue
       value: 1

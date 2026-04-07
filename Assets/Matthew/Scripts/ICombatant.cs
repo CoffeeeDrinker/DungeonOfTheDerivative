@@ -51,4 +51,13 @@ public interface ICombatant
     bool SetAttackModifier(float a);
 
     void Reset();
+
+    CombatantType GetType();
+}
+
+public class CombatantType
+{
+    public static CombatantType Boss;
+    public static CombatantType Grunt;
+    public static CombatantType Player;
 }

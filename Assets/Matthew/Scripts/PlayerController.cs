@@ -35,8 +35,8 @@ public class PlayerController : MonoBehaviour, ICombatant
         statusMarker.SetActive(false);
         healthBarEmptySpace.SetActive(true);
         staminaBarEmptySpace.SetActive(true);
-        maxHealth = (int)(100 + 100*((playerLevel - 1.0) * 0.1));
-        maxStamina = (int)(100 + 100 * ((playerLevel - 1.0) * 0.1));
+        maxHealth = (int)(100 * Math.Pow(0.1, playerLevel - 1.0));
+        maxStamina = (int)(100 * Math.Pow(0.1, playerLevel - 1.0));
         health = maxHealth;
         stamina = maxStamina;
         healthBarEmptySpace.transform.localScale = new Vector3(((float)(maxHealth - health) / (float)maxHealth), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
@@ -46,22 +46,6 @@ public class PlayerController : MonoBehaviour, ICombatant
         {
             Moves.PUNCH,
             Moves.LULLABY,
-            /*new Move(
-                "Iron Stare",
-                Move.STATUS, //is an attack
-                15, //stamina cost
-                (origin, direction) =>
-                {
-                    int dmg = UnityEngine.Random.Range(5, 10); //randomly generates base damage within pre-defined bounds
-                    if (origin.GetStamina() > 15)
-                    {
-                        if(UnityEngine.Random.Range(0f, 10f) > 5)
-                        {
-                            direction.AddStatusEffect(StatusEffects.PARALYZED);
-                        }
-                        origin.DepleteStamina(15);
-                    }
-                }), */
             Moves.POLAR,
             Moves.EVANSMASH,
         };
@@ -77,8 +61,6 @@ public class PlayerController : MonoBehaviour, ICombatant
     //Postcondition: returns damage dealt as a integer, 0 if attack missed
     int ICombatant.Attack(int baseDmg)
     {
-            //lastMove = move;
-
             //return damage after modifiers
             int damage = (int)((baseDmg + baseDmg * 0.25 * (1-playerLevel)) * attackModifier);
             return damage;
@@ -88,7 +70,7 @@ public class PlayerController : MonoBehaviour, ICombatant
     //Precondition: damage is an integer greater than 0
     //Postcondition: returns true if health is greater than 0, false otherwise
     public bool TakeDamage(int damage){
-        damage = (int)(damage / defenseModifier);
+        damage = (int)(damage / defenseModifier + 0.5);
         health -= damage;
         if(health < 0)
         {
@@ -145,13 +127,6 @@ public class PlayerController : MonoBehaviour, ICombatant
             stamina = 0;
         }
         StartCoroutine(UpdateStaminaBar(0.5f));
-        /*
-        float xInit = staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
-        staminaBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxStamina - stamina) / (float)maxStamina)), staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
-        float xDiff = xInit - staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
-        staminaBarEmptySpace.transform.Translate(0.5f * xDiff, 0, 0);
-        totalStaminaDisplacement += 0.5f * xDiff; */
-        //staminaBar.transform.Translate(-exhaustion * (5.71F/maxStamina), 0, 0);
         if (stamina > 0)
         {
             return true;
@@ -186,19 +161,6 @@ public class PlayerController : MonoBehaviour, ICombatant
         stamina += recharge;
         StartCoroutine(UpdateStaminaBar(0.5f));
     }
-
-    /*
-    private IEnumerator ChangeStaminaBar(int staminaDiff)
-    {
-        for(int i = 1; i <= staminaDiff; i++)
-        {
-            float xInit = staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
-            staminaBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(stamina+i) / (float)maxStamina)), staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
-            float xDiff = staminaBarEmptySpace.GetComponent<Renderer>().bounds.size.x - xInit;
-            staminaBarEmptySpace.transform.Translate(-0.5f * xDiff, 0, 0);
-            for (int i = 0; i < 5; i++) { yield return null; } //waits 5 frames between updating stamina bar
-        }
-    } */
 
     int ICombatant.getXP()
     {
@@ -341,5 +303,10 @@ public class PlayerController : MonoBehaviour, ICombatant
         staminaBarEmptySpace.transform.Translate(-1 * totalStaminaDisplacement, 0, 0);
         staminaBarEmptySpace.transform.localScale = new Vector3(((float)(maxStamina - stamina) / (float)maxStamina), staminaBarEmptySpace.transform.localScale.y, staminaBarEmptySpace.transform.localScale.z);
         totalStaminaDisplacement = 0;
+    }
+
+    CombatantType ICombatant.GetType()
+    {
+        return CombatantType.Player;
     }
 }

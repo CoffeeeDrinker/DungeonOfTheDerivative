@@ -18,6 +18,7 @@ public class EnemyController : MonoBehaviour, ICombatant
     int maxStamina;
     int health;
     int stamina;
+    CombatantType type;
     private float defenseModifier;
     private float attackModifier;
     public int XPWorth;
@@ -49,6 +50,7 @@ public class EnemyController : MonoBehaviour, ICombatant
         healthBarEmptySpace.SetActive(true);
         statusMarker.SetActive(false);
         level = preset.level;
+        type = preset.type;
         maxStamina = preset.maxStamina;
         maxHealth = preset.maxHealth;
         stamina = maxStamina;
@@ -92,11 +94,6 @@ public class EnemyController : MonoBehaviour, ICombatant
     {
         //Update rest priority
         priorities = personality.getPriorities();
-        /*
-        for (int i = 0; i < priorities.Count; i++)
-        {
-            Debug.Log("Move " + i + " prioritiy: " + priorities[moveList[i]]);
-        } */
         //select which move to use
         float selectionRange = 0;
         for (int i = 0; i < moveList.Count; i++)
@@ -140,20 +137,13 @@ public class EnemyController : MonoBehaviour, ICombatant
     //Postcondition: returns true if health is greater than 0, false otherwise
     bool ICombatant.TakeDamage(int damage)
     {
-        damage = (int)(damage/defenseModifier);
+        damage = (int)(damage/defenseModifier + 0.5);
         health -= damage;
         if (health < 0)
         {
             health = 0;
         }
         StartCoroutine(UpdateHealthBar(0.5f));
-        /*
-        float xInit = healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
-        healthBarEmptySpace.transform.localScale = new Vector3(7.625111f * (((float)(maxHealth - health) / (float)maxHealth)), healthBarEmptySpace.transform.localScale.y, healthBarEmptySpace.transform.localScale.z);
-        float xDiff = xInit - healthBarEmptySpace.GetComponent<Renderer>().bounds.size.x;
-        healthBarEmptySpace.transform.Translate(0.5f * xDiff, 0, 0);
-        totalHealthBarDisplacement += 0.5f * xDiff; */
-        //healthBar.transform.Translate(damage * (5.71F/maxHealth), 0, 0);
         if (health > 0)
         {
             return true;
@@ -326,6 +316,11 @@ public class EnemyController : MonoBehaviour, ICombatant
         return true;
     }
 
+    CombatantType ICombatant.GetType()
+    {
+        return type;
+    }
+
     //Debug method to test selection algorithm and determine distribution of move picks
     /*  private void testMoveProbability()
       {
@@ -388,7 +383,9 @@ public class EnemyController : MonoBehaviour, ICombatant
     [SerializeField] public int XPWorth;
     [SerializeField] public GameObject personalityContainer;
     [SerializeField] public EnemyMoves moves;
+    [SerializeField] public GameObject typeContainer;
     public Algorithm personality;
+    public CombatantType type;
     public Move move1;
     public Move move2;
     public Move move3;
