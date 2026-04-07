@@ -580,24 +580,6 @@ False
 ~~
 Options
 ~~~
-A is a nonsingular matrix: Ax = b has no solution for at least one b
-~
-True
-False
-_
-False
-~~
-Options
-~~~
-A is a nonsingular matrix: The determinate of A is nonzero
-~
-True
-False
-_
-True
-~~
-Options
-~~~
 Linear Algebra
 LA_3_21_image
 ~
@@ -4747,6 +4729,7 @@ PC_7_12_image
 ~~
 Number
 ~~~
+Precal
 PC_7_13_image
 ~
 high=5

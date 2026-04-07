@@ -32,13 +32,10 @@ public class MathProblemGetter : MonoBehaviour
 
         while (text.Length > 1 && i < lines.Length)
         {
-            subj = text.Substring(0, text.IndexOf("\n"));
-            text = text.Substring(text.IndexOf("\n") + 1);
+
             subj = lines[i];
             i++;
 
-            prob = text.Substring(0, text.IndexOf("~")-1);
-            text = text.Substring(text.IndexOf("~") + 3);
             prob = "";
 
             while (lines[i] != "~")
@@ -48,9 +45,8 @@ public class MathProblemGetter : MonoBehaviour
             }
             i++;
 
-            answ = text.Substring(0, text.IndexOf("~~")-2);
             answ = "";
-            text = text.Substring(text.IndexOf("~~")+4);
+
             List<string> answers = new List<string>();
             List<string> variables = new List<string>();
             string[] options = new string[0];
@@ -63,7 +59,6 @@ public class MathProblemGetter : MonoBehaviour
             }
             i++;
 
-            ansInputText = text.Substring(0, text.IndexOf("~~~")-2);
             ansInputText = "";
 
             while (lines[i] != "~~~")
@@ -73,7 +68,6 @@ public class MathProblemGetter : MonoBehaviour
             }
             i++;
 
-            text = text.Substring(text.IndexOf("~~~") + 5);
 
             switch (ansInputText)
             {

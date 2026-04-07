@@ -26,7 +26,8 @@ public class MathProblemManager : MonoBehaviour
         drawscreenStuff.SetActive(true);
         DeleteDrawings();
         drawscreenStuff.transform.position = player.position;
-        currentProb = mathProblemGetterScript.GetRandProblem("Linear Algebra");
+        currentProb = mathProblemGetterScript.GetRandProblem("Geometry");
+        Debug.Log(currentProb.GetProblem());
         //Check if there is an image
         if (mathProblemGetterScript.GetProblemImage(currentProb) == null)
         {
