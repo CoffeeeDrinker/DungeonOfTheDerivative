@@ -1275,7 +1275,7 @@ PrefabInstance:
       objectReference: {fileID: 558174821}
     - target: {fileID: 9131539008088698134, guid: e8b3ac917e520a44ea54e73ba2283950, type: 3}
       propertyPath: doorType
-      value: noClick
+      value: noclick
       objectReference: {fileID: 0}
     - target: {fileID: 9131539008088698134, guid: e8b3ac917e520a44ea54e73ba2283950, type: 3}
       propertyPath: newLocation.x
@@ -13616,7 +13616,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1
+      m_AllTileFlags: 1073741825
   - first: {x: 0, y: 7, z: 0}
     second:
       serializedVersion: 2
@@ -13626,7 +13626,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1
+      m_AllTileFlags: 1073741825
   - first: {x: 1, y: 7, z: 0}
     second:
       serializedVersion: 2
@@ -14206,7 +14206,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1
+      m_AllTileFlags: 1073741825
   - first: {x: -1, y: 8, z: 0}
     second:
       serializedVersion: 2
@@ -14236,7 +14236,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1
+      m_AllTileFlags: 1073741825
   - first: {x: 2, y: 8, z: 0}
     second:
       serializedVersion: 2
@@ -14806,7 +14806,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1
+      m_AllTileFlags: 1073741825
   - first: {x: -1, y: 9, z: 0}
     second:
       serializedVersion: 2
@@ -14836,7 +14836,7 @@ Tilemap:
       m_TileColorIndex: 0
       m_TileObjectToInstantiateIndex: 65535
       dummyAlignment: 0
-      m_AllTileFlags: 1
+      m_AllTileFlags: 1073741825
   - first: {x: 2, y: 9, z: 0}
     second:
       serializedVersion: 2
@@ -76331,7 +76331,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &986676328
 Transform:
   m_ObjectHideFlags: 0
@@ -88322,7 +88322,7 @@ PrefabInstance:
       objectReference: {fileID: 558174821}
     - target: {fileID: 9131539008088698134, guid: e8b3ac917e520a44ea54e73ba2283950, type: 3}
       propertyPath: doorType
-      value: noClick
+      value: noclick
       objectReference: {fileID: 0}
     - target: {fileID: 9131539008088698134, guid: e8b3ac917e520a44ea54e73ba2283950, type: 3}
       propertyPath: newLocation.x
@@ -88634,6 +88634,19 @@ MonoBehaviour:
   pivotPoint: {x: 0, y: 8.9, z: 0}
   rotationSpeed: 45
   goToAngle: 180
+  tilemap: {fileID: 111687279}
+  bottom:
+  - {fileID: 11400000, guid: 198d9a46f2ee43148b48bc2eb20fc95a, type: 2}
+  - {fileID: 11400000, guid: 2898df357bc26c444b47b9b2e3c9e6e5, type: 2}
+  left:
+  - {fileID: 11400000, guid: 5f669c1bb7f5e514c82b00d6c907c8ed, type: 2}
+  - {fileID: 11400000, guid: 893cdb1283c83de40836b6ecfc27ec23, type: 2}
+  right:
+  - {fileID: 11400000, guid: 52f50312f003f024ca06056cf347f768, type: 2}
+  - {fileID: 11400000, guid: db218276108b3764a90c7065ae0d0566, type: 2}
+  top:
+  - {fileID: 11400000, guid: f6ec860f24792cb43be9a6f09af86ea1, type: 2}
+  - {fileID: 11400000, guid: 33523ce3a5900004080fc418a0c91e6c, type: 2}
 --- !u!212 &1314886042
 SpriteRenderer:
   m_ObjectHideFlags: 0
@@ -88722,7 +88735,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: -1.1, y: -13.440577}
+  m_Offset: {x: -1.1, y: -13.349793}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -88732,7 +88745,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 6.359436}
+  m_Size: {x: 1, y: 6.5410023}
   m_EdgeRadius: 0
 --- !u!61 &1314886044
 BoxCollider2D:
@@ -88768,7 +88781,7 @@ BoxCollider2D:
   m_UsedByEffector: 0
   m_CompositeOperation: 0
   m_CompositeOrder: 0
-  m_Offset: {x: 1.1, y: -13.440577}
+  m_Offset: {x: 1.1, y: -13.349793}
   m_SpriteTilingProperty:
     border: {x: 0, y: 0, z: 0, w: 0}
     pivot: {x: 0.5, y: 0.5}
@@ -88778,7 +88791,7 @@ BoxCollider2D:
     drawMode: 0
     adaptiveTiling: 0
   m_AutoTiling: 0
-  m_Size: {x: 1, y: 6.359436}
+  m_Size: {x: 1, y: 6.5410023}
   m_EdgeRadius: 0
 --- !u!1 &1321664283 stripped
 GameObject:
@@ -94063,7 +94076,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1580306201
 Transform:
   m_ObjectHideFlags: 0
@@ -94779,7 +94792,7 @@ GameObject:
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
   m_StaticEditorFlags: 0
-  m_IsActive: 1
+  m_IsActive: 0
 --- !u!4 &1685102625
 Transform:
   m_ObjectHideFlags: 0
@@ -127783,7 +127796,7 @@ PrefabInstance:
       objectReference: {fileID: 558174821}
     - target: {fileID: 9131539008088698134, guid: e8b3ac917e520a44ea54e73ba2283950, type: 3}
       propertyPath: doorType
-      value: noClick
+      value: noclick
       objectReference: {fileID: 0}
     - target: {fileID: 9131539008088698134, guid: e8b3ac917e520a44ea54e73ba2283950, type: 3}
       propertyPath: newLocation.x
@@ -129951,11 +129964,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 520150794555468486, guid: 44b4f4c3bca431d4d87f6f1b94952ff7, type: 3}
       propertyPath: m_LocalPosition.x
-      value: 0.02
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 520150794555468486, guid: 44b4f4c3bca431d4d87f6f1b94952ff7, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 9.32
+      value: 9.5
       objectReference: {fileID: 0}
     - target: {fileID: 520150794555468486, guid: 44b4f4c3bca431d4d87f6f1b94952ff7, type: 3}
       propertyPath: m_LocalPosition.z
