@@ -150,6 +150,24 @@ public static class Moves
             }
             
         });
+    public static readonly Move ACTIVERECALL = new Move(
+        "Active Recall",
+        Move.BUFF,
+        20,
+        (origin, direction) =>
+        {
+            origin.SetAttackModifier(origin.GetAttackModifier() + 0.1f);
+        }
+        );
+    public static readonly Move PASSIVERECALL = new Move(
+        "Passive Recall",
+        Move.BUFF,
+        20,
+        (origin, direction) =>
+        {
+            origin.SetDefense(origin.GetDefense() + 0.1f);
+        }
+        );
     public static readonly Move AUGMENT = new Move(
         "Augment",
         Move.BUFF, //is not an attack
@@ -221,6 +239,15 @@ public static class Moves
             direction.TakeDamage(origin.Attack(UnityEngine.Random.Range(3, 7)));
             direction.TakeDamage(origin.Attack(UnityEngine.Random.Range(5, 10)));
         });
+    public static readonly Move LHOPITALCARE = new Move(
+        "L'Hopital Care",
+        Move.HEAL,
+        25,
+        (origin, direction) =>
+        {
+            origin.Heal((int)(origin.GetMaxHealth() * 0.2 + 0.5));
+        }
+        );
     public static readonly List<Move> AllMoves = new List<Move>()
     {
         PUNCH,
@@ -231,12 +258,15 @@ public static class Moves
         TAYLOREXPANSION,
         EMPIRICALRECOVERY,
         LINEARLYDEPEND,
+        ACTIVERECALL,
+        PASSIVERECALL,
         AUGMENT,
         DOPPONENTDLEVEL,
         SERIESSTUN,
         SUBTRACTIONSLASH,
         CONSTANTCRUSH,
         EXPONENTEXPLOSION,
-        COLUMNSPACECASCADE
+        COLUMNSPACECASCADE,
+        LHOPITALCARE
     };
 }

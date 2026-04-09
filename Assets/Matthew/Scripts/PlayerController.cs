@@ -46,7 +46,7 @@ public class PlayerController : MonoBehaviour, ICombatant
         {
             Moves.PUNCH,
             Moves.LULLABY,
-            Moves.POLAR,
+            Moves.PASSIVERECALL,
             Moves.EVANSMASH,
         };
     }
@@ -247,11 +247,11 @@ public class PlayerController : MonoBehaviour, ICombatant
 
     void ICombatant.Heal(int heal)
     {
-        if (health + heal >= maxHealth)
-        {
-            heal = maxHealth - health;
-        }
         health += heal;
+        if (health > maxHealth)
+        {
+            health = maxHealth;
+        }
         StartCoroutine(UpdateHealthBar(0.5f));
     }
 
@@ -298,6 +298,9 @@ public class PlayerController : MonoBehaviour, ICombatant
 
     void ICombatant.Reset()
     {
+        //reset temp stats
+        attackModifier = 1;
+        defenseModifier = 1;
         //reset stamina and stamina bar
         stamina = maxStamina;
         staminaBarEmptySpace.transform.Translate(-1 * totalStaminaDisplacement, 0, 0);
