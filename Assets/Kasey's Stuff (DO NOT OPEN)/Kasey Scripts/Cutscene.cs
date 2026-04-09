@@ -82,6 +82,10 @@ public class Cutscene : MonoBehaviour
                             anim = "walkRight";
                         else if (currentAction.position.x < currentAction.character.transform.position.x)
                             anim = "walkLeft";
+                        else if(currentAction.position.y < currentAction.character.transform.position.y)
+                            anim = "walkDown";
+                        else 
+                            anim = "walkUp";
                         PlayAnimation(anim, currentAction.character.GetComponent<Animator>());
                     }
                     animStarted = true;
@@ -198,7 +202,7 @@ public class Cutscene : MonoBehaviour
         }
         else
         {
-            dialogueText.color = Color.black;
+            dialogueText.color = Color.white;
         }
 
         //Actually put the dialogue in the text box thingy

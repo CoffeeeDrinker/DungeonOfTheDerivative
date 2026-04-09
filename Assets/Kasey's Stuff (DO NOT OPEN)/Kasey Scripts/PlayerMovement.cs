@@ -15,7 +15,7 @@ public class PlayerMovement : MonoBehaviour
     public string currentAnim = "idleDown";
     public string currentFacing = "down";
 
-    //Player name (this isn't being used in this script but I'm just holding it here)
+    //Player name (this isn't being used in this script, I'm just holding it here)
     public string playerName;
 
     void FixedUpdate()

@@ -210,7 +210,7 @@ public class NPCDialogueScript : MonoBehaviour
         }
         else
         {
-            dialogueText.color = Color.black;
+            dialogueText.color = Color.white;
         }
 
         //Actually put the dialogue in the text box thingy

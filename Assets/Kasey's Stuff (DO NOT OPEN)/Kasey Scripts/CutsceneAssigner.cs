@@ -5,6 +5,9 @@ using Unity.VisualScripting;
 using UnityEngine;
 using UnityEngine.UIElements;
 
+/*First number is the NPC index, second number is the x position, third number is the y position, 
+ * and then the dialogue (if there is any) in quotes. Each action is separated by a new line, and each cutscene is separated by ~
+*/
 public class CutsceneAssigner : MonoBehaviour
 {
     public List<Cutscene> cutscenes = new List<Cutscene>();

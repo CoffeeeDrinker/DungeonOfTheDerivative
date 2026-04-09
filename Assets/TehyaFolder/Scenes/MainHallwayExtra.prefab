@@ -11,7 +11,7 @@ GameObject:
   - component: {fileID: 8799885410991246719}
   - component: {fileID: 9142310500600738102}
   m_Layer: 0
-  m_Name: New Tile Palette
+  m_Name: MainHallwayExtra
   m_TagString: Untagged
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
