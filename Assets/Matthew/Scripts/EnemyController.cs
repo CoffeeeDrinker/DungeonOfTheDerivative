@@ -316,9 +316,9 @@ public class EnemyController : MonoBehaviour, ICombatant
         return true;
     }
 
-    CombatantType ICombatant.GetType()
+    CombatantType ICombatant.GetCombatantType()
     {
-        return type;
+        return preset.type;
     }
 
     //Debug method to test selection algorithm and determine distribution of move picks
@@ -399,6 +399,7 @@ public class EnemyController : MonoBehaviour, ICombatant
         move3 = moveList[2];
         move4 = moveList[3];
         personality = personalityContainer.GetComponent<PersonalityHolder>().GetPersonality();
+        type = typeContainer.GetComponent<TypeContainer>().GetCombatantType();
     }
     /*
     public EnemyPreset(int maxHealth, int maxStamina, int level, Algorithm AI)

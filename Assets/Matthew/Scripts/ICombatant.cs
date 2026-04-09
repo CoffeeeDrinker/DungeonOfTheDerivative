@@ -1,3 +1,4 @@
+using NUnit.Framework.Constraints;
 using System;
 using System.Collections;
 using System.Collections.Generic;
@@ -52,12 +53,12 @@ public interface ICombatant
 
     void Reset();
 
-    CombatantType GetType();
+    CombatantType GetCombatantType();
 }
 
 public class CombatantType
 {
-    public static CombatantType Boss;
-    public static CombatantType Grunt;
-    public static CombatantType Player;
+    public static CombatantType Boss = new CombatantType();
+    public static CombatantType Grunt = new CombatantType();
+    public static CombatantType Player = new CombatantType();
 }

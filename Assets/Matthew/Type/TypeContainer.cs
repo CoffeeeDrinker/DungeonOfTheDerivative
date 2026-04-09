@@ -2,7 +2,7 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class NewBehaviourScript : MonoBehaviour
+public class TypeContainer : MonoBehaviour
 {
     [SerializeField] string typeField;
     CombatantType type;
@@ -18,7 +18,7 @@ public class NewBehaviourScript : MonoBehaviour
         
     }
 
-    public CombatantType GetType()
+    public CombatantType GetCombatantType()
     {
         if(typeField == "Player")
         {

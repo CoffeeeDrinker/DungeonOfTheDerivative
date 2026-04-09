@@ -305,7 +305,7 @@ public class PlayerController : MonoBehaviour, ICombatant
         totalStaminaDisplacement = 0;
     }
 
-    CombatantType ICombatant.GetType()
+    CombatantType ICombatant.GetCombatantType()
     {
         return CombatantType.Player;
     }

@@ -85,7 +85,7 @@ public class TurnSystem : MonoBehaviour
                     else if (input.type == Move.RUN)
                     {
                         isClicked = false;
-                        if (enemy.GetType() == CombatantType.Boss)
+                        if (enemy.GetCombatantType() != CombatantType.Boss)
                         {
                             if (UnityEngine.Random.Range(0f, 1f) > 0.6) //60% chance of not escaping
                             {
@@ -101,6 +101,7 @@ public class TurnSystem : MonoBehaviour
                                 }
                                 isClicked = false;
                                 UI.HideText();
+                                UI.Unclick();
                                 winner = enemy;
                                 gameManager.GetComponent<CombatManager>().CloseCombatSystem();
                                 itemManager.ExitCombat();
