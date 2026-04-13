@@ -9,6 +9,7 @@ public class PlayerMovement : MonoBehaviour
     public float speed;
     public Vector3 move = new Vector3();
     private Vector3 prevMove;
+    public bool moving;
 
     //Player sprites/animation
     public Animator PlayerAnim;
@@ -25,12 +26,12 @@ public class PlayerMovement : MonoBehaviour
         move.y = Input.GetAxisRaw("Vertical");
         move.Normalize();
         PlayerRB.velocity = move * speed * Time.deltaTime;
-
         //Walk Animation
         if (prevMove == null || prevMove != move)
         {
             if (Input.GetAxisRaw("Horizontal") != 0 || Input.GetAxisRaw("Vertical") != 0)
             { //Choose walk direction if moving
+                moving = true;
                 if (Input.GetAxisRaw("Horizontal") < 0)
                 {
                     PlayAnimation("walkLeft");
@@ -52,6 +53,7 @@ public class PlayerMovement : MonoBehaviour
             { //Find direction to play idle animation in
                 PlayAnimation("idle" + currentAnim.Substring(4));
                 currentFacing = currentAnim.Substring(4).ToLower();
+                moving = false;
             }
         }
         prevMove = move;

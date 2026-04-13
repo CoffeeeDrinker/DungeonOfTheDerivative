@@ -11,7 +11,8 @@ public class SoundManager : MonoBehaviour
     Dictionary<SoundEnums, AudioSource> map;
     [SerializeField] int minSound;
     [SerializeField] int maxSound;
-
+    [SerializeField] PlayerMovement player;
+    [SerializeField] AudioSource footSteps;
     public static SoundManager Instance;
 
     // Start is called before the first frame update
@@ -31,6 +32,22 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    private void Update()
+    {
+        if(player.moving)
+        {
+            if(!footSteps.isPlaying)
+            {
+                footSteps.Play();
+            }
+        } else
+        {
+            if(footSteps.isPlaying)
+            {
+                footSteps.Play();
+            }
+        }
+    }
     public void PlaySound(SoundEnums soundEnum)
     {
         if (!map[soundEnum].isPlaying)
