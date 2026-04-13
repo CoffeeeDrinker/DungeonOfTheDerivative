@@ -18,13 +18,21 @@ public class PlayerMovement : MonoBehaviour
     //Player name (this isn't being used in this script, I'm just holding it here)
     public string playerName;
 
+    private Vector2 platformVelocity = Vector2.zero;
+
     void FixedUpdate()
     {
         //Move Player
         move.x = Input.GetAxisRaw("Horizontal");
         move.y = Input.GetAxisRaw("Vertical");
         move.Normalize();
-        PlayerRB.velocity = move * speed * Time.deltaTime;
+        if(platformVelocity != Vector2.zero)
+        {
+            PlayerRB.velocity = move * speed * Time.deltaTime;
+            PlayerRB.velocity += platformVelocity;
+        }
+        else
+            PlayerRB.velocity = move * speed * Time.deltaTime;
 
         //Walk Animation
         if (prevMove == null || prevMove != move)
@@ -64,5 +72,15 @@ public class PlayerMovement : MonoBehaviour
             PlayerAnim.SetTrigger(anim);
             currentAnim = anim;
         }
+    }
+
+    public void MoveWithPlatform(Vector2 platformVelocity)
+    {
+        this.platformVelocity = platformVelocity;
+    }
+
+    public void StopMovingWithPlatform()
+    {
+        platformVelocity = Vector2.zero;
     }
 }

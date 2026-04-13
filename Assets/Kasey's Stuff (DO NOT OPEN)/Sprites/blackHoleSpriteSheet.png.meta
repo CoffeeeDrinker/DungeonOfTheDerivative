@@ -104,9 +104,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 1200
-        width: 400
-        height: 300
+        y: 2100
+        width: 800
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -124,10 +124,10 @@ TextureImporter:
       name: blackHoleSpriteSheet_1
       rect:
         serializedVersion: 2
-        x: 400
-        y: 1200
-        width: 400
-        height: 300
+        x: 800
+        y: 2100
+        width: 800
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -145,10 +145,10 @@ TextureImporter:
       name: blackHoleSpriteSheet_2
       rect:
         serializedVersion: 2
-        x: 800
-        y: 1200
-        width: 400
-        height: 300
+        x: 1600
+        y: 2100
+        width: 800
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -167,9 +167,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 900
-        width: 400
-        height: 300
+        y: 1575
+        width: 800
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -187,10 +187,10 @@ TextureImporter:
       name: blackHoleSpriteSheet_4
       rect:
         serializedVersion: 2
-        x: 400
-        y: 900
-        width: 400
-        height: 300
+        x: 800
+        y: 1575
+        width: 800
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -208,10 +208,10 @@ TextureImporter:
       name: blackHoleSpriteSheet_5
       rect:
         serializedVersion: 2
-        x: 800
-        y: 900
-        width: 400
-        height: 300
+        x: 1600
+        y: 1575
+        width: 800
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -230,9 +230,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 600
-        width: 400
-        height: 300
+        y: 1050
+        width: 800
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -250,10 +250,10 @@ TextureImporter:
       name: blackHoleSpriteSheet_7
       rect:
         serializedVersion: 2
-        x: 400
-        y: 600
-        width: 400
-        height: 300
+        x: 800
+        y: 1050
+        width: 800
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -271,10 +271,10 @@ TextureImporter:
       name: blackHoleSpriteSheet_8
       rect:
         serializedVersion: 2
-        x: 800
-        y: 600
-        width: 400
-        height: 300
+        x: 1600
+        y: 1050
+        width: 800
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -293,9 +293,9 @@ TextureImporter:
       rect:
         serializedVersion: 2
         x: 0
-        y: 300
-        width: 400
-        height: 300
+        y: 525
+        width: 800
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -313,10 +313,10 @@ TextureImporter:
       name: blackHoleSpriteSheet_10
       rect:
         serializedVersion: 2
-        x: 400
-        y: 300
-        width: 400
-        height: 300
+        x: 800
+        y: 525
+        width: 800
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -334,10 +334,10 @@ TextureImporter:
       name: blackHoleSpriteSheet_11
       rect:
         serializedVersion: 2
-        x: 800
-        y: 300
-        width: 400
-        height: 300
+        x: 1600
+        y: 525
+        width: 800
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -357,8 +357,8 @@ TextureImporter:
         serializedVersion: 2
         x: 0
         y: 0
-        width: 400
-        height: 300
+        width: 800
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -376,10 +376,10 @@ TextureImporter:
       name: blackHoleSpriteSheet_13
       rect:
         serializedVersion: 2
-        x: 400
+        x: 800
         y: 0
-        width: 400
-        height: 300
+        width: 800
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -397,10 +397,10 @@ TextureImporter:
       name: blackHoleSpriteSheet_14
       rect:
         serializedVersion: 2
-        x: 800
+        x: 1600
         y: 0
-        width: 400
-        height: 300
+        width: 800
+        height: 525
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
