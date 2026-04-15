@@ -54,6 +54,8 @@ public class MathProblemManager : MonoBehaviour
         {
             options.Create(currentProb.GetOptions());
         }
+
+        Debug.Log(currentProb.GetAnswer());
     }
 
     public void DeleteDrawings()
@@ -97,7 +99,7 @@ public class MathProblemManager : MonoBehaviour
         string input = answerInput.GetInput();
         input = input.Replace("\n", "");
         string ans = currentProb.GetAnswer().Replace("\n", "");
-        correct = input == ans;
+        correct = input.ToLower() == ans.ToLower();
         Debug.Log(input);
         Debug.Log(ans);
         if (correct)
