@@ -12,13 +12,25 @@ public class ActiveMoveController : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        activeMove = moveHolder.GetComponent<Move>();
+        activeMove = moveHolder.GetComponent<MoveContainer>().GetMove();
     }
 
     // Update is called once per frame
     void Update()
     {
-        if(textObject.GetComponent<TextMeshPro>().text != activeMove.name)
-            textObject.GetComponent<TextMeshPro>().text = activeMove.name;
+        if(textObject.GetComponent<TextMeshProUGUI>().text != activeMove.name)
+            textObject.GetComponent<TextMeshProUGUI>().text = activeMove.name;
+    }
+
+    public void SetMove(Move move)
+    {
+        activeMove = move;
+    }
+
+    public Move GetMove() { return activeMove; }
+
+    public void OnClick()
+    {
+        ActiveMoveMaster.moveMaster.Click(this);
     }
 }
