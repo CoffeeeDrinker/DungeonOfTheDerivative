@@ -50,7 +50,7 @@ public class ActiveMoveMaster : MonoBehaviour
         {
             yield return null;
         }
-        for(int i = 0; i < 10; i++)
+        for(int i = 0; i < 50; i++)
             yield return null;
         Debug.Log("button: " + clickedButton);
         if (clickedButton != null)
