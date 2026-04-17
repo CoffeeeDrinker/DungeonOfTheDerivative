@@ -56,6 +56,11 @@ public class SoundManager : MonoBehaviour
         }
     }
 
+    public void PlaySoundOnce(SoundEnums soundEnum)
+    {
+        map[soundEnum].PlayOneShot(map[soundEnum].clip);
+    }
+
     public void StopSound(SoundEnums soundEnum)
     {
         map[soundEnum].Stop();

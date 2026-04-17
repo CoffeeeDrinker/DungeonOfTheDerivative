@@ -6,4 +6,6 @@ public enum SoundEnums
 {
     fredScream,
     fredIdle,
+    correct,
+    wrong
 }

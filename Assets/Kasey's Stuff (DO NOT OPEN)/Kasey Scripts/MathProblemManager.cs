@@ -16,6 +16,7 @@ public class MathProblemManager : MonoBehaviour
     public Image problemImage;
     public GameObject answerInputGameObject;
     public AnswerInput answerInput;
+    [SerializeField] SoundManager soundManager;
 
     public MathProblem currentProb;
     private bool answered;
@@ -105,10 +106,12 @@ public class MathProblemManager : MonoBehaviour
         if (correct)
         {
             Debug.Log("Right answer!");
+            soundManager.PlaySoundOnce(SoundEnums.correct);
         }
         else
         {
             Debug.Log("Wrong answer, Mr. Huff hates you");
+            soundManager.PlaySoundOnce(SoundEnums.wrong);
         }
         Debug.Log("a");
         answerInput.ResetField();
